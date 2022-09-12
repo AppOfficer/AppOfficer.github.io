@@ -1,4 +1,12 @@
-<div style="font-family:'Cascadia Mono','Fira Mono','Jetbrains Mono','Roboto Mono',Hack,'Ubuntu Mono',Monaco,Menlo,Consolas,'Courier New',monospace;background-color:white;color:black;">
+<script>
+    (function() {
+        let x=document.body.style;
+        x.backgroundColor="white";
+        x.color="black";
+    })()
+</script>
+
+<div style="font-family:'Cascadia Mono','Fira Mono','Jetbrains Mono','Roboto Mono',Hack,'Ubuntu Mono',Monaco,Menlo,Consolas,'Courier New',monospace;">
 
 | Rank | Name          |                     $perf$ |                 Ori.Rating |                 New Rating |                     Change |                  Score |                    A2 |                     C |                     E |                     F |                     G |                     H |                     I |                    A1 |
 | ---: | :------------ | -------------------------: | -------------------------: | -------------------------: | -------------------------: | ---------------------: | --------------------: | --------------------: | --------------------: | --------------------: | --------------------: | --------------------: | --------------------: | --------------------: |
