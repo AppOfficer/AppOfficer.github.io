@@ -9,5 +9,5 @@ About AOCode Round #5:
 
 ## Documents
 
-[Result](result.html)
-[Editorial](editorial.html)
+- [Result](result.html)
+- [Editorial](editorial.html)
