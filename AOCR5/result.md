@@ -1,4 +1,4 @@
-<span style="font-family:'Cascadia Mono','Fira Mono','Jetbrains Mono','Roboto Mono',Hack,'Ubuntu Mono',Monaco,Menlo,Consolas,'Courier New',monospace;background-color:antiquewhite;color:black;">
+<div style="font-family:'Cascadia Mono','Fira Mono','Jetbrains Mono','Roboto Mono',Hack,'Ubuntu Mono',Monaco,Menlo,Consolas,'Courier New',monospace;background-color:antiquewhite;color:black;">
 
 | Rank | Name          |                     $perf$ |                 Ori.Rating |                 New Rating |                     Change |                  Score |                    A2 |                     C |                     E |                     F |                     G |                     H |                     I |                    A1 |
 | ---: | :------------ | -------------------------: | -------------------------: | -------------------------: | -------------------------: | ---------------------: | --------------------: | --------------------: | --------------------: | --------------------: | --------------------: | --------------------: | --------------------: | --------------------: |
@@ -23,4 +23,4 @@
 |   19 | Derek0919     | $\color{#888888}  201.955$ | $\color{#804000}  678.000$ | $\color{#804000}  471.495$ | $\color{#008000} -206.505$ | $\color{#ff0000}   46$ | $\color{#ff0000}   6$ | $\color{#ff0000}   0$ | $\color{#ff0000}   0$ | $\color{#ff6200}  40$ | $\color{#ff0000}   0$ | $\color{#ff0000}   0$ | $\color{#ff0000}   0$ | $\color{#ff0000}   0$ |
 |   20 | 747           | $\color{#888888}   30.891$ | $\color{#804000}  558.000$ | $\color{#888888}  204.194$ | $\color{#008000} -353.806$ | $\color{#ff0000}    8$ | $\color{#ff0000}   0$ | $\color{#ff0000}   0$ | $\color{#ff0000}   0$ | $\color{#ff0000}   0$ | $\color{#ff0000}   0$ | $\color{#ff0000}   0$ | $\color{#ff0000}   0$ | $\color{#ff0000}   8$ |
 
-</span>
+</div>
