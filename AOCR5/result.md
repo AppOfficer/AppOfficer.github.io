@@ -3,6 +3,11 @@
         let x=document.body.style;
         x.backgroundColor="white";
         x.color="black";
+        let y=document.getElementsByTagName("table");
+        for(let i=0; i<y.length; ++i) {
+            let p=y[i];
+            p.style.borderWidth="1px";
+        }
     })()
 </script>
 
