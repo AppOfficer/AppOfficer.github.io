@@ -1,4 +1,4 @@
-<span style="font-family:'Cascadia Mono','Fira Mono','Jetbrains Mono','Roboto Mono',Hack,'Ubuntu Mono',Monaco,Menlo,Consolas,'Courier New',monospace">
+<span style="font-family:'Cascadia Mono','Fira Mono','Jetbrains Mono','Roboto Mono',Hack,'Ubuntu Mono',Monaco,Menlo,Consolas,'Courier New',monospace;background-color:antiquewhite;color:black;">
 
 | Rank | Name          |                     $perf$ |                 Ori.Rating |                 New Rating |                     Change |                  Score |                    A2 |                     C |                     E |                     F |                     G |                     H |                     I |                    A1 |
 | ---: | :------------ | -------------------------: | -------------------------: | -------------------------: | -------------------------: | ---------------------: | --------------------: | --------------------: | --------------------: | --------------------: | --------------------: | --------------------: | --------------------: | --------------------: |
