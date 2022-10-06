@@ -1,16 +1,3 @@
-<script>
-    (function() {
-        let x=document.body.style;
-        x.backgroundColor="white";
-        x.color="black";
-        let y=document.getElementsByTagName("table");
-        for(let i=0; i<y.length; ++i) {
-            let p=y[i];
-            p.style.borderWidth="1px";
-        }
-    })()
-</script>
-
 <div style="font-family:'Cascadia Mono','Fira Mono','Jetbrains Mono','Roboto Mono',Hack,'Ubuntu Mono',Monaco,Menlo,Consolas,'Courier New',monospace;">
 
 | Rank | Name          |                     $perf$ |                 Ori.Rating |                 New Rating |                     Change |                  Score |                    A2 |                     C |                     E |                     F |                     G |                     H |                     I |                    A1 |

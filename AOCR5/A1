@@ -2,7 +2,7 @@
     <html>
     <head>
         <meta charset="UTF-8">
-        <title>AOCode Round &num;5 PAGE</title>
+        <title>P1044 The Triangle Print</title>
         <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
@@ -69,7 +69,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
 <style>
             body {
-                font-family: 'Fira Sans','Open Sans',--apple-system,'PingFang SC','Sarasa Gothic SC','Microsoft Yahei','Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-family: 'Exo 2 Light','Fira Sans', --apple-system,'PingFang SC','Sarasa Gothic SC','Microsoft Yahei','Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
                 font-size: 13px;
                 line-height: 1.6;
             }
@@ -82,37 +82,121 @@ body { background-color: rgb(63, 63, 63); color: antiquewhite; font-size: 100%; 
 </style>
     </head>
     <body class="vscode-body vscode-dark">
-        <h1 id="AOCode-Round-5-PAGE">AOCode Round #5 PAGE</h1>
-<p>About AOCode Round #5:</p>
-<ul>
-<li>title(topic): Dates</li>
-<li>problem count: 8</li>
-<li>problem index: A1-A2-C-E-F-G-H-I</li>
-<li>extra prob: Ex</li>
-<li><strong>whether <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">Rated</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathnormal">a</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mord mathnormal">d</span></span></span></span>: Yes</strong></li>
-</ul>
-<h2 id="Documents">Documents</h2>
-<ul>
-<li>Problems:
+        <h1 id="P1044-The-Triangle-Print">P1044 The Triangle Print</h1>
+<h2 id="Problem-Statement">Problem Statement</h2>
+<p>See the Samples.</p>
+<h2 id="Input">Input</h2>
+<blockquote>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></p>
+</blockquote>
+<p>For more, see the Samples.</p>
+<h2 id="Output">Output</h2>
+<p>See the Samples.</p>
+<h2 id="Constraints">Constraints</h2>
 <table>
 <thead>
 <tr>
-<th style="text-align:center"><a href="A1">A1</a></th>
-<th style="text-align:center"><a href="A2">A2</a></th>
-<th style="text-align:center"><a href="C">C</a></th>
-<th style="text-align:center"><a href="E">E</a></th>
-<th style="text-align:center"><a href="F">F</a></th>
-<th style="text-align:center"><a href="G">G</a></th>
-<th style="text-align:center"><a href="H">H</a></th>
-<th style="text-align:center"><a href="I">I</a></th>
-<th style="text-align:center"><a href="Ex">Ex</a></th>
+<th style="text-align:center"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></th>
+<th style="text-align:center">Score (per test case)</th>
 </tr>
 </thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">10</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">10</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">10</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">15</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">20</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">20</td>
+</tr>
+</tbody>
 </table>
-</li>
-<li><a href="result.html">Result</a></li>
-<li><a href="editorial.html">Editorial</a></li>
-</ul>
+<h2 id="Samples">Samples</h2>
+<h3 id="Input-1">Input 1</h3>
+<pre><code class="language-markdown"><div>1
+</div></code></pre>
+<h3 id="Output-1">Output 1</h3>
+<pre><code><code><div>\--/
+ \/
+ /\
+/__\
+</div></code></code></pre>
+<h3 id="Input-2">Input 2</h3>
+<pre><code class="language-markdown"><div>2
+</div></code></pre>
+<h3 id="Output-2">Output 2</h3>
+<pre><code><code><div>\--/\--/
+ \/  \/
+  \--/
+   \/
+   /\
+  /__\
+ /\  /\
+/__\/__\
+</div></code></code></pre>
+<h3 id="Input-3">Input 3</h3>
+<pre><code><code><div>3
+</div></code></code></pre>
+<h3 id="Output-3">Output 3</h3>
+<pre><code><code><div>\--/\--/\--/\--/
+ \/  \/  \/  \/
+  \--/    \--/
+   \/      \/
+    \--/\--/
+     \/  \/
+      \--/
+       \/
+       /\
+      /__\
+     /\  /\
+    /__\/__\
+   /\      /\
+  /__\    /__\
+ /\  /\  /\  /\
+/__\/__\/__\/__\
+</div></code></code></pre>
+<p>When <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">n=3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span>, the output seems like this:</p>
+<p><img src="https://img1.imgtp.com/2022/05/01/dzMTQB4u.png" alt="p1044sample3.png"></p>
 
         <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
         
