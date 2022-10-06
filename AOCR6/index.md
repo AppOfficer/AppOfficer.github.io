@@ -10,8 +10,8 @@
 
 - [A - BG](A.html)
 - [B - B&B](B.html)
-- [C - RR](C.html)
+- [C - F2M](C.html)
 - [D - TS](D.html)
-- [E - NPC Prob](E.html)
+- [E - HP](E.html)
 - [F - P=NP|NTD](F.html)
 - [Editorial](editorial.html)
