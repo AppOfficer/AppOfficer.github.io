@@ -11,7 +11,7 @@ About AOCode Round #5:
 ## Documents
 
 - Problems:
-  | [A1](A1) | [A2](A2) | [C](C) | [E](E) | [F](F) | [G](G) | [H](H) | [I](I) | [Ex](Ex) |
-  | :------: | :------: | :----: | :----: | :----: | :----: | :----: | :----: | :------: |
+  | [A1](A1.html) | [A2](A2.html) | [C](C.html) | [E](E.html) | [F](F.html) | [G](G.html) | [H](H.html) | [I](I.html) | [Ex](Ex.html) |
+  | :-----------: | :-----------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :-----------: |
 - [Result](result.html)
 - [Editorial](editorial.html)
