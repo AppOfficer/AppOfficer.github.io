@@ -20322,9 +20322,3 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
     right: 10px;
     left: auto;
 }
-
-article figure > table > tr > td.gutter,
-article figure > table > tr > td.code {
-    border-width: 0px;
-    padding: 0px;
-}

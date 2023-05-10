@@ -1,0 +1,12 @@
+
+article tbody > tr > td.gutter {
+    visibility: hidden;
+    content: none;
+    box-sizing: content-box;
+    display: inline;
+}
+article tbody > tr > td.gutter, 
+article tbody > tr > td.code {
+    border-width: 0px;
+    padding: 0px;
+}
