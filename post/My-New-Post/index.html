@@ -24,7 +24,7 @@
 	<meta name="theme-color-rgb" content="94,114,228">
 	<meta name="theme-color-origin" content="#5e72e4">
 	<meta name="argon-enable-custom-theme-color" content="true">
-	<meta name="theme-card-radius" content="4">
+	<meta name="theme-card-radius" content="30">
 	<meta name="theme-version" content="1.0.2">
 	<link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
@@ -72,7 +72,7 @@
 		}
 	</script>
 	<script>
-		var darkmodeAutoSwitch = "false";
+		var darkmodeAutoSwitch = "time";
 		function setDarkmode(enable){
 			if (enable == true){
 				$("html").addClass("darkmode");
@@ -171,7 +171,7 @@
 </style>
 <style id="theme_cardradius_css">
 	:root{
-		--card-radius: 4px;
+		--card-radius: 30px;
 	}
 </style>
 
@@ -213,7 +213,7 @@
 							<ul class='navbar-nav navbar-nav-hover align-items-lg-center'>
 								
 										<li class='nav-item'>
-											<a href='/home' class='nav-link' >
+											<a href='/' class='nav-link' >
 												<i class='ni ni-book-bookmark d-lg-none'></i>
 												<span class='nav-link-inner--text'>首页</span>
 											</a>
@@ -456,6 +456,8 @@
 				<span class="leftbar-banner-title text-white">AOBlog</span>
 				
 				
+					<span class="leftbar-banner-subtitle text-white"><span class='hitokoto'></span></span>
+				
 			</div>
 			
 			
@@ -505,7 +507,7 @@
 							</div>
 						
 						<div class="tab-pane fade text-center" id="leftbar_tab_overview" role="tabpanel" aria-labelledby="leftbar_tab_overview_btn">
-							<img id="leftbar_overview_author_image" src="/assets/img/auther.jpg" class="img-fluid rounded-circle shadow-sm" style="width: 100px;" alt="avatar">
+							<img id="leftbar_overview_author_image" src="http://raw.githubusercontents.com/AppOfficer/blogdata/main/avatar.png" class="img-fluid rounded-circle shadow-sm" style="width: 100px;" alt="avatar">
 							<h6 id="leftbar_overview_author_name">AOBlog</h6>
 							<nav class="site-state">
 								<div class="site-state-item site-state-posts">
@@ -800,6 +802,28 @@ ital...',
 		
 		
 		
+			<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css">
+			<script src="//cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+			<script src="//cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body,{
+						delimiters: [
+							{left: "$$", right: "$$", display: true},
+							{left: "$", right: "$", display: false},
+							{left: "\\(", right: "\\)", display: false}
+						]
+					});
+				});
+			</script>
+		
+
+		
+			<script>
+				var argonEnableCodeHighlight = true;
+			</script>
+			
+<link rel="stylesheet" href="/assets/vendor/highlight/styles/vs2015.css">
 
 		
 
