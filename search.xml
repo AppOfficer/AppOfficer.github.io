@@ -4,11 +4,30 @@
   
     
     <entry>
+      <title>洛谷 P1131 题解</title>
+      <link href="/post/luogu-p1131-editorial/"/>
+      <url>/post/luogu-p1131-editorial/</url>
+      
+        <content type="html"><![CDATA[<h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><p>有一棵 $n$ 个节点的以 $s$ 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 $1$。</p><p>问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。</p><h2 id="结论-1"><a href="#结论-1" class="headerlink" title="结论 $1$"></a>结论 $1$</h2><p>对于任意子树，其根节点到其每个叶子节点的距离相等。</p><blockquote><p><strong>证明</strong>：<br>反证法。<br>设对于根为 $R$ 的树的根为 $r$ 的某一子树，有两个叶子 $a$、$b$ 到 $r$ 的距离不等。<br>那么不妨设节点 $x$ 与 $y$ 间的距离为 $dis(x,y)$，则有<br>$$dis(a,r)\not&#x3D;dis(b,r)$$<br>所以<br>$$dis(a,r)+dis(r,R)\not&#x3D;dis(b,r)+dis(r,R)$$<br>得<br>$$dis(a,R)\not&#x3D;dis(b,R)$$<br>即 $a$、$b$ 到 $R$ 的距离不等。这与题目条件矛盾，所以命题成立。</p></blockquote><h2 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h2><p>既然结论 $1$ 成立，那么先从最简单的情况入手。</p><p>如图，在这一棵以 $1$ 为根的树中，在操作后，根节点 $1$ 到叶子的距离最小是几？</p><p><img src="/blog_assets/editorial_luogu_p1131_1.png" alt="图 1"></p><p>很明显的，这个值应该是所有叶子到根的所有距离的最大值。</p><p>那么对于每个节点都实行此原则，就结束了。</p><h2 id="Code："><a href="#Code：" class="headerlink" title="Code："></a>Code：</h2><pre><code class="cpp">#include &lt;bits/stdc++.h&gt;using namespace std;using uint = unsigned;using ll = long long;using ull = unsigned long long;using pii = pair&lt;int,int&gt;;using pll = pair&lt;ll,ll&gt;;#define int llint hd[500005&lt;&lt;1],nxt[500005&lt;&lt;1],to[500005&lt;&lt;1],we[500005&lt;&lt;1],et=0;inline void adde(int u,int v,int w) &#123; ++et,to[et]=v,we[et]=w,nxt[et]=hd[u],hd[u]=et; &#125;int n,s,ans,dp[500005];void dfs(int u,int fa) &#123;    int mx=0,tot=0;    for(int i=hd[u],v,t; v=to[i],t=we[i],i; i=nxt[i]) &#123;        if(v==fa) continue;        dfs(v,u);        if(dp[v]+t&gt;mx) &#123;            ans+=(dp[v]+t-mx)*tot;            mx=dp[v]+t;        &#125; else ans+=(mx-dp[v]-t);        ++tot;    &#125;    dp[u]=mx;&#125;signed main() &#123;    cin&gt;&gt;n&gt;&gt;s;    for(int i=1; i&lt;n; ++i) &#123;        int u,v,t;        cin&gt;&gt;u&gt;&gt;v&gt;&gt;t;        adde(u,v,t); adde(v,u,t);    &#125;    dfs(s,0);    cout&lt;&lt;ans&lt;&lt;endl;&#125;</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Editorial </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/post/hello-world/"/>
       <url>/post/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
       

@@ -149,7 +149,7 @@
 	
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<link rel="stylesheet" href="/custom_style.css">
+
 
 <style id="themecolor_css">
 	
@@ -216,18 +216,20 @@
 											
 										</li>
 									
-										<li class='nav-item dropdown'>
-											<a href='' class='nav-link' onclick='return false;' data-toggle='dropdown' no-pjax>
+										<li class='nav-item'>
+											<a href='/archives' class='nav-link' >
 												<i class='ni ni-book-bookmark d-lg-none'></i>
-												<span class='nav-link-inner--text'>二级菜单</span>
+												<span class='nav-link-inner--text'>归档</span>
 											</a>
 											
-													<div class="dropdown-menu">
-														
-															<a href='/' class='dropdown-item'>归档</a>
-														
-													</div>
-												
+										</li>
+									
+										<li class='nav-item'>
+											<a target="_blank" rel="noopener" href='http://github.com/AppOfficer/AppOfficer.github.io' class='nav-link' >
+												<i class='ni ni-book-bookmark d-lg-none'></i>
+												<span class='nav-link-inner--text'>GitHub</span>
+											</a>
+											
 										</li>
 									
 							</ul>
@@ -295,12 +297,12 @@
 		
 			<div class="banner-title text-white" data-text="Sometimes we actually should talk less and smile more." data-interval=""><span class="banner-title-inner">&nbsp;</span>
 		
-		</div>
+		<span class="banner-subtitle d-block">From a man who is not good at communicating.</span></div>
 	</div>
 	
 		<style>
 			section.banner{
-				background-image: url(/assets/jpg/newbanner.jpg) !important;
+				background-image: url(/assets/img/banner.jpg) !important;
 			}
 		</style>
 	
@@ -317,7 +319,7 @@
 			top: 0;
 			bottom: 0;
 			z-index: -2;
-			background: url(/assets/img/banner.jpg);
+			background: url(/assets/img/newbanner.jpg);
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -337,7 +339,7 @@
 				top: 0;
 				bottom: 0;
 				z-index: -2;
-				background: url(/assets/img/banner.jpg);
+				background: url(/assets/img/newbanner.jpg);
 				background-position: center;
 				background-size: cover;
 				background-repeat: no-repeat;
@@ -494,7 +496,7 @@
 							<nav class="site-state">
 								<div class="site-state-item site-state-posts">
 									<a href="/archives">
-										<span class="site-state-item-count">1</span>
+										<span class="site-state-item-count">2</span>
 										<span class="site-state-item-name">文章</span>
 									</a>
 								</div>
@@ -506,7 +508,7 @@
 								</div>      
 								<div class="site-state-item site-state-tags">
 									<a data-toggle="modal" data-target="#blog_tags">
-										<span class="site-state-item-count">0</span>
+										<span class="site-state-item-count">1</span>
 										<span class="site-state-item-name">标签</span>
 									</a>
 								</div>
@@ -571,7 +573,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				
+				<a class="badge badge-secondary tag" href="/tags/Editorial/" rel="tag">Editorial <span class="tag-num">1</span></a>
 			</div>
 		</div>
 	</div>
@@ -582,6 +584,70 @@
 	<main id="main" class="site-main" role="main">
 		
 			
+	<article class="post card bg-white shadow-sm border-0 ">
+	<header class="post-header text-center">
+		
+		<a class="post-title" href="/post/luogu-p1131-editorial/">洛谷 P1131 题解</a>
+		<div class="post-meta">
+			
+						
+						<div class="post-meta-detail post-meta-detail-time">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+							<time title="发布于 2023-5-11 22:11:27 | 编辑于 2023-5-13 7:59:40">2023-5-11 22:11
+							</time>
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-words">
+							<i class="fa fa-book" aria-hidden="true"></i>
+							<span id="busuanzi_container_page_pv">
+								阅读<span id="busuanzi_value_page_pv"></span>次
+							</span>
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-words">
+							<i class="fa fa-file-word-o" aria-hidden="true"></i>
+							515 字
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-readingtime">
+							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
+							2 分钟
+						</div>
+					
+		</div>
+		
+	</header>
+
+	<div class="post-content">
+		
+			
+				题意有一棵 $n$ 个节点的以 $s$ 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 $1$。
+问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。
+结论 $1$对于任意子树，其根节点到其每个叶子节点的距离相等。
+
+证明：反证法。设对于根为 $R$ 的树的根为 $r$ 的某一子树，有两个叶子 $a$、$b$ 到 $r$ 的距...
+			
+		
+	</div>
+
+	
+		<div class="post-tags">
+			<i class="fa fa-tags" aria-hidden="true"></i>
+			<a class="tag badge badge-secondary post-meta-detail-tag -none-link" href="/tags/Editorial/" rel="tag">Editorial</a>
+		</div>
+	
+</article>
+
+
 	<article class="post card bg-white shadow-sm border-0 ">
 	<header class="post-header text-center">
 		
