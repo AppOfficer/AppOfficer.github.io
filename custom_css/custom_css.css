@@ -1,11 +1,10 @@
 body {
-    font-family: "Fira Sans", "Open Sans", -apple-system, BlinkMacSystemFont,
+    font-family: "Source Sans 3", "Fira Sans", "Open Sans", -apple-system, BlinkMacSystemFont,
         "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,
         "Source Han Sans SC", "Sarasa Gothic SC", "PingFang SC",
         "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
 }
-pre,
-code {
+.highlight .code>pre>code.hljs span {
     font-family: "Fira Code", "Fira Mono", "Jetbrains Mono", "Space Mono",
         Inconsolata, "Cascadia Code", "Cascadia Mono", Consolas, Menlo, Monaco,
         "Andale Mono WT", "Andale Mono", "Lucida Console",
