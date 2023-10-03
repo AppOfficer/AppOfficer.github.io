@@ -4,7 +4,7 @@ body {
         "Source Han Sans SC", "Sarasa Gothic SC", "PingFang SC",
         "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
 }
-.highlight .code>pre>code.hljs span {
+.highlight .code>pre>code.hljs {
     font-family: "Fira Code", "Fira Mono", "Jetbrains Mono", "Space Mono",
         Inconsolata, "Cascadia Code", "Cascadia Mono", Consolas, Menlo, Monaco,
         "Andale Mono WT", "Andale Mono", "Lucida Console",
