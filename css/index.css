@@ -1583,7 +1583,7 @@ blockquote > :last-child {
 #article-container pre,
 #article-container code {
   font-size: var(--global-font-size);
-  font-family: "Fira Code", "Fira Mono", "Jetbrains Mono", "Sarasa Mono SC", "Source Han Sans SC", "PingFang SC", "Microsoft Yahei" !important;
+  font-family: "Fira Code", "Fira Mono", "Jetbrains Mono", "Ubunto Mono", Consolas, "Courier New", "Sarasa Mono SC", "Source Han Sans SC", "PingFang SC", "Microsoft Yahei" !important;
 }
 #article-container code {
   padding: 2px 4px;
