@@ -1,6 +1,248 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>复数 (II)</title>
+    <url>/post/complex-numbers-2/</url>
+    <content><![CDATA[复数 (II)
+(4) 复变函数
+本章中，kkk 表示任意整数 .
+4.1 复数的开方运算
+一般地，如果复数 www 满足 wn=z(n∈N∗,z∈C)w^n=z(n\in\Bbb{N}^*,z\in\Bbb{C})wn=z(n∈N∗,z∈C)，那么 www 叫作 zzz 的一个 nnn 次方根，记作 w=znw=\sqrt[n]{z}w=nz​ .
+设 zzz 和 www 的三角形式为 z=r(cos⁡θ+isin⁡θ),w=ρ(cos⁡φ+isin⁡φ)z=r(\cos\theta+\text{i}\sin\theta),w=\rho(\cos\varphi+\text{i}\sin\varphi)z=r(cosθ+isinθ),w=ρ(cosφ+isinφ)，则根据棣莫弗公式有
+[ρ(cos⁡φ+isin⁡φ)]n=r(cos⁡θ+isin⁡θ) ,ρn(cos⁡nφ+isin⁡nφ)=r(cos⁡θ+isin⁡θ) .\begin{aligned}
+\big[\rho(\cos\varphi+\text{i}\sin\varphi)\big]^n &amp;= r(\cos\theta+\text{i}\sin\theta) ~, \\
+\rho^n(\cos n\varphi+\text{i}\sin n\varphi) &amp;= r(\cos\theta+\text{i}\sin\theta) ~.
+\end{aligned}
+[ρ(cosφ+isinφ)]nρn(cosnφ+isinnφ)​=r(cosθ+isinθ) ,=r(cosθ+isinθ) .​
+则
+{ρn=r  ⟹  ρ=rn ,nφ=θ+2kπ  ⟹  φ=θn+k⋅2πn .\begin{cases}
+\rho^n = r \implies \rho=\sqrt[n]{r} ~, \\
+n\varphi = \theta+2k\pi \implies \varphi=\frac{\theta}{n}+k\cdot\frac{2\pi}{n} ~.
+\end{cases}
+{ρn=r⟹ρ=nr​ ,nφ=θ+2kπ⟹φ=nθ​+k⋅n2π​ .​
+即
+w=ρ(cos⁡φ+isin⁡φ)=rn[cos⁡(θn+k⋅2πn)+isin⁡(θn+k⋅2πn)] .w=\rho(\cos\varphi+\text{i}\sin\varphi)=\sqrt[n]{r}\left[\cos\left(\frac{\theta}{n}+k\cdot\frac{2\pi}{n}\right)+\text{i}\sin\left(\frac{\theta}{n}+k\cdot\frac{2\pi}{n}\right)\right] ~.
+w=ρ(cosφ+isinφ)=nr​[cos(nθ​+k⋅n2π​)+isin(nθ​+k⋅n2π​)] .
+由于 ρ,r∈(R+∪{0})\rho,r\in(\Bbb{R}_+\cup\{0\})ρ,r∈(R+​∪{0})，故 ρ\rhoρ 有唯一值 .
+容易发现，当 kkk 取 0,1,2,…,n−10,1,2,\dots,n-10,1,2,…,n−1 时，www 有 nnn 个不同的值 .
+再观察这 nnn 个值的辐角，它们分别为 θn,θn+2πn,…,θn+(n−1)2πn\frac{\theta}{n},\frac{\theta}{n}+\frac{2\pi}{n},\dots,\frac{\theta}{n}+(n-1)\frac{2\pi}{n}nθ​,nθ​+n2π​,…,nθ​+(n−1)n2π​ . 容易发现，相邻两数的辐角都差 2πn\frac{2\pi}{n}n2π​ . 又知它们的模都为 ρ=rn\rho=\sqrt[n]{r}ρ=nr​，故这 nnn 个数在复平面上平分以原点 OOO 为圆心、半径为 ρ=rn\rho=\sqrt[n]{r}ρ=nr​ 的圆周 .
+
+例 1：i3={cos⁡π6+isin⁡π6,cos⁡5π6+isin⁡5π6,cos⁡3π2+isin⁡3π2}={32+12i,−32+12i,−i}\sqrt[3]{\text{i}} = \left\{\cos\frac{\pi}{6}+\text{i}\sin\frac{\pi}{6},\cos\frac{5\pi}{6}+\text{i}\sin\frac{5\pi}{6},\cos\frac{3\pi}{2}+\text{i}\sin\frac{3\pi}{2}\right\} = \left\{\frac{\sqrt{3}}{2}+\frac{1}{2}\text{i},-\frac{\sqrt{3}}{2}+\frac{1}{2}\text{i},-\text{i}\right\}3i​={cos6π​+isin6π​,cos65π​+isin65π​,cos23π​+isin23π​}={23​​+21​i,−23​​+21​i,−i} .
+这 333 个解在复平面中的点如图 4-1 所示 .
+
+例 2：325={2,2ei2π5,2ei4π5,2ei6π5,2ei8π5}\sqrt[5]{32} = \left\{2,2\text{e}^{\text{i}\frac{2\pi}{5}},2\text{e}^{\text{i}\frac{4\pi}{5}},2\text{e}^{\text{i}\frac{6\pi}{5}},2\text{e}^{\text{i}\frac{8\pi}{5}}\right\}532​={2,2ei52π​,2ei54π​,2ei56π​,2ei58π​} .
+这 555 个解在复平面中的点如图 4-2 所示 .
+
+
+4.2 复变函数的定义 代数基本定理
+回顾上一节的内容 . 如果我们定义一个函数 f(z)=znf(z)=\sqrt[n]{z}f(z)=nz​（nnn 是常数且 n∈Zn\in\Bbb{Z}n∈Z），容易发现，对于一个复数 zzz，f(z)f(z)f(z) 不只有 111 个值，而是有 nnn 个值 . 这样的函数叫什么呢？
+一般地，设 AAA 是一个复数集，∀z∈A\forall z\in A∀z∈A，通过一个确定的规则 fff 有一个或若干个复数 www 与之对应，就说在复数集 AAA 上定义了一个复变函数 (complex function)，记为 w=f(z)w=f(z)w=f(z) .
+容易从定义中看到，一个复变函数 w=f(z)w=f(z)w=f(z) 可能对于同一个数 zzz 有多个值 . 其实实变函数中也有许多多值函数的例子，如 sin⁡x\sin xsinx 的反函数 x=sin⁡yx=\sin yx=siny（注意不是 arcsin⁡x\arcsin xarcsinx），其定义域为 [0,1][0,1][0,1]，就是一个多值函数：
+
+引入了复数的幂与根后，实数的多项式方程（一元 nnn 次方程）可以被推广 .
+对于一元 nnn 次方程 anxn+an−1xn−1+an−2xn−2+⋯+a2x2+a1x+a0=0a_nx^n+a_{n-1}x^{n-1}+a_{n-2}x^{n-2}+\cdots+a_2x^2+a_1x+a_0=0an​xn+an−1​xn−1+an−2​xn−2+⋯+a2​x2+a1​x+a0​=0，现在 aaa 可以是复数了；其解 xxx 也可以是复数了 . 同时，一些原来在实数域中无解的方程有了解 .
+如一元二次方程 ax2+bx+c=0(a,b,c∈C)ax^2+bx+c=0 (a,b,c\in\Bbb{C})ax2+bx+c=0(a,b,c∈C)，其两根为 x=−b+b2−4ac2ax=\dfrac{-b+\sqrt{b^2-4ac}}{2a}x=2a−b+b2−4ac​​，其中的平方根有两个值，故有两个解 .
+高斯 (Gauss) 1799 年第一次证明了代数基本定理 (Fundamental theorem of algebra) . 其说明：任何一个一元复系数多项式方程都至少有一个复数根 . 或：任何一个非零的一元 nnn 次复系数多项式，都正好有 nnn 个复数根（重根视为多个根）.
+
+该定理的证明较为困难 . 但是，我们可以从复数的开方运算中获得一个直观的认识 .
+4.3 复变指数函数
+4.3.1 实变指数函数
+欧拉指出的指数函数 exp⁡x\exp xexpx 定义：
+exp⁡x=lim⁡n→∞(1+xn)n\exp x = \lim_{n\to\infty}\left(1+\frac{x}{n}\right)^n
+expx=n→∞lim​(1+nx​)n
+由于有 e=lim⁡n→∞(1+1n)n,lim⁡n→∞((1+1n)n)x=lim⁡n→∞(1+xn)\text{e}=\lim\limits_{n\to\infty}\left(1+\frac{1}{n}\right)^n,\lim\limits_{n\to\infty}\left(\left(1+\frac{1}{n}\right)^n\right)^x=\lim\limits_{n\to\infty}\left(1+\frac{x}{n}\right)e=n→∞lim​(1+n1​)n,n→∞lim​((1+n1​)n)x=n→∞lim​(1+nx​)，故
+ex=exp⁡x .\text{e}^x = \exp x ~. 
+ex=expx .
+实变指数函数具有以下性质：
+
+(ex)′=ex\left(\text{e}^x\right)&#x27;=\text{e}^x(ex)′=ex，即 exp⁡′x=exp⁡x\exp&#x27;x=\exp xexp′x=expx，其处处可导；
+ax=exln⁡aa^x=\text{e}^{x\ln a}ax=exlna；
+ex+y=exeye^{x+y}=e^xe^yex+y=exey，即 exp⁡(x+y)=exp⁡xexp⁡y\exp(x+y)=\exp x\exp yexp(x+y)=expxexpy；
+exy=(ex)ye^{xy}=\left(e^x\right)^yexy=(ex)y；即 exp⁡xy=exp⁡yx\exp xy=\exp^y xexpxy=expyx；
+e−x=1exe^{-x}=\frac{1}{e^x}e−x=ex1​，即 exp⁡(−x)=1exp⁡x\exp(-x)=\frac{1}{\exp x}exp(−x)=expx1​ .
+
+它们对任意 x,y∈Rx,y\in\Bbb{R}x,y∈R 都是有效的 .
+4.3.2 复变指数函数
+我们试图把 exp⁡x\exp xexpx 推广到复数域 .
+设此函数为 f(z)f(z)f(z) . 我们希望它与实变的指数函数 exp⁡x\exp xexpx 具有相似的性质 . 具体来说：
+
+f(z)f(z)f(z) 处处可导；
+f′(z)=f(z)f&#x27;(z)=f(z)f′(z)=f(z)；
+f(x0)=ex0f(x_0)=\text{e}^{x_0}f(x0​)=ex0​
+
+这个函数存在且唯一 . 我们将其称为复变指数函数 (complex exponential function)，记作 exp⁡(x+iy) (x,y∈R)\exp (x+\text{i}y)~(x,y\in\Bbb{R})exp(x+iy) (x,y∈R) . 有
+exp⁡(x+iy)=ex(cos⁡y+isin⁡y)=exeiy .\exp (x+\text{i}y)=\text{e}^x(\cos y+\text{i}\sin y)=\text{e}^x\text{e}^{\text{i}y} ~.
+exp(x+iy)=ex(cosy+isiny)=exeiy .
+验证，可知其满足上述条件 . （我也不会，反正是对的）
+对于指数函数，有重要等式 eaeb=ea+b\text{e}^a\text{e}^b=\text{e}^{a+b}eaeb=ea+b .
+验证可得：
+exp⁡z1⋅exp⁡z2=ex1eiy1ex2eiy2=ex1+x2ei(y1+y2)=exp⁡(z1+z2)\exp z_1\cdot\exp z_2 = \text{e}^{x_1}\text{e}^{\text{i}y_1}\text{e}^{x_2}\text{e}^{\text{i}y_2}=\text{e}^{x_1+x_2}\text{e}^{\text{i}(y_1+y_2)}=\exp(z_1+z_2)
+expz1​⋅expz2​=ex1​eiy1​ex2​eiy2​=ex1​+x2​ei(y1​+y2​)=exp(z1​+z2​)
+可以发现，这个函数的性质与实变指数函数的性质几乎一模一样 . 那么，在不引起歧义的情况下，我们就用 ez\text{e}^zez 来表示 exp⁡z\exp zexpz，即：
+ez=exp⁡z .\text{e}^z = \exp z ~.
+ez=expz .
+要注意此处 ez\text{e}^zez 只是代替 exp⁡z\exp zexpz 的一种写法，不能理解为 e\text{e}e 的 zzz 次幂 . 这是两个不同的概念 .
+令 x=0x=0x=0，即得欧拉公式 eiθ=(cos⁡θ+isin⁡θ)\text{e}^{\text{i}\theta} = (\cos\theta+\text{i}\sin\theta)eiθ=(cosθ+isinθ) .
+
+例：e2+i=e2ei\text{e}^{2+\text{i}} = \text{e}^2\text{e}^{\text{i}}e2+i=e2ei . 这是一个模为 e2\text{e}^2e2，辐角为 1 rad1 ~\text{rad}1 rad 的数 .
+
+4.4 复变对数函数
+复变对数函数定义为指数函数的反函数 .
+即，如果 ew=z\text{e}^w=zew=z，那么 www 关于 zzz 的函数就是复变对数函数 (complex logarithm function)，记作 w=Ln⁡zw=\operatorname{Ln}zw=Lnz
+已知 z=reiθz=r\text{e}^{\text{i}\theta}z=reiθ，我们来求一下 www .
+设 w=a+biw=a+b\text{i}w=a+bi，则有
+ea+bi=reiθ ,eaebi=reiθ .\begin{aligned}
+\text{e}^{a+b\text{i}} &amp;= r\text{e}^{i\theta} ~, \\
+\text{e}^a\text{e}^{b\text{i}} &amp;= r\text{e}^{i\theta} ~.
+\end{aligned}
+ea+bieaebi​=reiθ ,=reiθ .​
+则
+{ea=r  ⟺  a=ln⁡r ,b=θ+2kπ .\begin{cases}
+\text{e}^a=r \iff a=\ln r ~, \\
+b=\theta+2k\pi ~.
+\end{cases}
+{ea=r⟺a=lnr ,b=θ+2kπ .​
+故 w=Ln⁡z=ln⁡r+(θ+2kπ)iw=\operatorname{Ln}z=\ln r+(\theta+2k\pi)\text{i}w=Lnz=lnr+(θ+2kπ)i .
+容易发现，对数函数 w=Ln⁡zw=\operatorname{Ln}zw=Lnz 也是一个多值函数，它的所有值在与实轴垂直的一条直线上 .
+若 θ+2kπ=θ0=arg⁡z\theta+2k\pi=\theta_0=\arg zθ+2kπ=θ0​=argz，那么此时 www 的值称为 zzz 对数的主值 (principal value)，记作 ln⁡z\ln zlnz，有 ln⁡z=ln⁡r+θ0i\ln z = \ln r+\theta_0\text{i}lnz=lnr+θ0​i . 容易发现，Ln⁡z=ln⁡z+2kπi\operatorname{Ln}z=\ln z+2k\pi\text{i}Lnz=lnz+2kπi .
+对于一个固定的 kkk，Ln⁡z\operatorname{Ln}zLnz 会变成一个单值函数，这时的 Ln⁡z\operatorname{Ln}zLnz 称为其的一个分支 (branch) . 主值也是它的一个分支 .
+复变对数函数满足实变对数函数的某些性质 . 如：
+
+Ln⁡(xy)=Ln⁡x+Ln⁡y\operatorname{Ln}(xy)=\operatorname{Ln}x+\operatorname{Ln}yLn(xy)=Lnx+Lny；
+Ln⁡(xy)=Ln⁡x−Ln⁡y\operatorname{Ln}\left(\frac{x}{y}\right)=\operatorname{Ln}x-\operatorname{Ln}yLn(yx​)=Lnx−Lny .
+
+但同时，某些性质不满足 . 如：
+
+Ln⁡(xn)≠nLn⁡x\operatorname{Ln}(x^n)\neq n\operatorname{Ln}xLn(xn)=nLnx（nnn 是大于 111 的正整数）
+
+下面证明 Ln⁡(xn)≠nLn⁡x\operatorname{Ln}(x^n)\neq n\operatorname{Ln}xLn(xn)=nLnx：
+
+证明：
+
+下面举几个例子：
+
+Ln⁡(−1)=ln⁡1+(π+2kπ)i=(2k+1)πi\operatorname{Ln}(-1)=\ln 1+(\pi+2k\pi)\text{i}=(2k+1)\pi\text{i}Ln(−1)=ln1+(π+2kπ)i=(2k+1)πi
+Ln⁡(1+i)=ln⁡2+(π4+2kπ)i=ln⁡22+(π4+2kπ)i\operatorname{Ln}(1+\text{i})=\ln\sqrt{2}+\left(\frac{\pi}{4}+2k\pi\right)\text{i}=\frac{\ln 2}{2}+\left(\frac{\pi}{4}+2k\pi\right)\text{i}Ln(1+i)=ln2​+(4π​+2kπ)i=2ln2​+(4π​+2kπ)i
+
+4.5 复数的复数次幂
+有了复数的指数函数和对数函数，我们就可以定义复数的乘幂了 .
+如果 a,b∈Ca,b\in\Bbb{C}a,b∈C，那么我们定义 ab=ebLn⁡a=exp⁡(bLn⁡a)a^b=\text{e}^{b\operatorname{Ln}a}=\exp(b\operatorname{Ln}a)ab=ebLna=exp(bLna) . 注意到这里的 ez\text{e}^zez 为指数函数 exp⁡z\exp zexpz .
+Ln⁡a\operatorname{Ln}aLna 是多值的，bLn⁡ab\operatorname{Ln}abLna 就是多值的，所以整体也就是多值的 .
+到这就可以理解为什么 ez\text{e}^zez 理解为指数函数和幂是不一样的了 . 举个例子：
+
+exp⁡i=cos⁡1+isin⁡1\exp\text{i} = \cos 1+\text{i}\sin 1expi=cos1+isin1；
+ei=exp⁡(iLn⁡e)=exp⁡[i(ln⁡e+2kπi)]=exp⁡(i+2kπ)=(cos⁡1+sin⁡1)e2kπ\text{e}^{\text{i}} = \exp(i\operatorname{Ln}\text{e}) = \exp\big[\text{i}(\ln\text{e}+2k\pi\text{i})\big] = \exp(\text{i}+2k\pi) = (\cos 1+\sin 1)e^{2k\pi}ei=exp(iLne)=exp[i(lne+2kπi)]=exp(i+2kπ)=(cos1+sin1)e2kπ .
+显然这两个式子的值完全不同 .
+
+事实上，在这种乘幂的定义下，只要底数 a≠0a\neq 0a=0：
+
+指数 b∈Zb\in\Bbb{Z}b∈Z 时，aba^bab 单值；
+指数 b∈Qb\in\Bbb{Q}b∈Q 时，若 b=pq(p,q∈Z,gcd⁡(p,q)=1)b=\frac{p}{q} (p,q\in\Bbb{Z},\gcd(p,q)=1)b=qp​(p,q∈Z,gcd(p,q)=1)，aba^bab 有 qqq 个值；
+指数 bbb 为其他数（无理数或虚数）时，aba^bab 有无穷多个值 .
+比如 1π,(1+i)23,ii,(2+i)1+2i1^\pi,(1+\text{i})^{\sqrt[3]{2}},\text{i}^\text{i},(2+\text{i})^{1+2\text{i}}1π,(1+i)32​,ii,(2+i)1+2i 都有无穷多个值 .
+其中有趣的是，计算可得 ii=exp⁡(iLn⁡i)=exp⁡[i(π2+2kπ)i]=exp⁡(−π2+2kπ)∈R\text{i}^\text{i} = \exp(\text{i}\operatorname{Ln}\text{i}) = \exp\left[\text{i}\left(\frac{\pi}{2}+2k\pi\right)\text{i}\right]=\exp\left(-\frac{\pi}{2}+2k\pi\right)\in\Bbb{R}ii=exp(iLni)=exp[i(2π​+2kπ)i]=exp(−2π​+2kπ)∈R .
+
+下面逐个证明上面三条 .
+
+设 a=reiθa=r\text{e}^{\text{i}\theta}a=reiθ .
+
+(1) 指数 b∈Zb\in\Bbb{Z}b∈Z 时，aba^bab 单值 .
+
+证明：当 b∈Zb\in\Bbb{Z}b∈Z 时，有：
+ab=exp⁡(bLn⁡a)=exp⁡(b(ln⁡r+(θ+2kπ)i))=exp⁡(bln⁡r+b(θ+2kπ)i)=ebln⁡rei(bθ+b⋅2kπ)∵b∈Z,∴ab=ebln⁡reibθ\begin{aligned}
+a^b
+&amp;= \exp(b\operatorname{Ln}a) \\
+&amp;= \exp\left(b\left(\ln r+\left(\theta+2k\pi\right)\text{i}\right)\right) \\
+&amp;= \exp(b\ln r+b(\theta+2k\pi)\text{i}) \\
+&amp;= \text{e}^{b\ln r}\text{e}^{\text{i}(b\theta+b\cdot 2k\pi)} \\
+\because b\in\Bbb{Z},\therefore a^b
+&amp;= \text{e}^{b\ln r}\text{e}^{\text{i}b\theta}
+\end{aligned}
+ab∵b∈Z,∴ab​=exp(bLna)=exp(b(lnr+(θ+2kπ)i))=exp(blnr+b(θ+2kπ)i)=eblnrei(bθ+b⋅2kπ)=eblnreibθ​
+结果唯一 . 证毕 .
+
+(2) 指数 b∈Qb\in\Bbb{Q}b∈Q 时，若 b=pq(p,q∈Z,gcd⁡(p,q)=1)b=\frac{p}{q} (p,q\in\Bbb{Z},\gcd(p,q)=1)b=qp​(p,q∈Z,gcd(p,q)=1)，aba^bab 有 qqq 个值 .
+
+证明：当 b=pq∈Q (p,q∈Z,gcd⁡(p,q)=1)b=\frac{p}{q}\in\Bbb{Q}~(p,q\in\Bbb{Z},\gcd(p,q)=1)b=qp​∈Q (p,q∈Z,gcd(p,q)=1) 时，有
+ab=exp⁡(bLn⁡a)=exp⁡(pq(ln⁡r+(θ+2kπ)))=exp⁡(pln⁡r+p(θ+2kπ)iq)=exp⁡(pln⁡rq+p(θ+2kπ)iq)=epln⁡rq⋅ei(pqθ+pk⋅2πq)\begin{aligned}
+a^b
+&amp;= \exp(b\operatorname{Ln}a) \\
+&amp;= \exp\left(\frac{p}{q}\left(\ln r+\left(\theta+2k\pi\right)\right)\right) \\
+&amp;= \exp\left(\frac{p\ln r+p\left(\theta+2k\pi\right)\text{i}}{q}\right) \\
+&amp;= \exp\left(\frac{p\ln r}{q}+\frac{p\left(\theta+2k\pi\right)\text{i}}{q}\right) \\
+&amp;= \text{e}^{\frac{p\ln r}{q}}\cdot\text{e}^{\text{i}\left(\frac{p}{q}\theta+pk\cdot\frac{2\pi}{q}\right)}
+\end{aligned}
+ab​=exp(bLna)=exp(qp​(lnr+(θ+2kπ)))=exp(qplnr+p(θ+2kπ)i​)=exp(qplnr​+qp(θ+2kπ)i​)=eqplnr​⋅ei(qp​θ+pk⋅q2π​)​
+epln⁡rq\text{e}^{\frac{p\ln r}{q}}eqplnr​ 是实数域内的计算，值唯一；ei(pqθ+pk⋅2πq)\text{e}^{\text{i}\left(\frac{p}{q}\theta+pk\cdot\frac{2\pi}{q}\right)}ei(qp​θ+pk⋅q2π​) 中，由于 gcd⁡(p,q)=1\gcd(p,q)=1gcd(p,q)=1，故有 qqq 个不同值 . 故该式整体上有 qqq 个不同值 . 证毕 .
+
+(3) 指数 bbb 为其他数（无理数或虚数）时，aba^bab 有无穷多个值 .
+
+证明略 . 显而易见 .
+
+4.6 复变三角函数与双曲函数
+to do.
+]]></content>
+      <categories>
+        <category>notes</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/post/hello-world/</url>
+    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start
+Create a new post
+$ hexo new &quot;My New Post&quot;
+More info: Writing
+Run server
+$ hexo server
+More info: Server
+Generate static files
+$ hexo generate
+More info: Generating
+Deploy to remote sites
+$ hexo deploy
+More info: Deployment
+]]></content>
+  </entry>
+  <entry>
+    <title>洛谷 P1131 题解</title>
+    <url>/post/luogu-p1131-editorial/</url>
+    <content><![CDATA[传送门
+题意
+有一棵 nnn 个节点的以 sss 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 111。
+问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。
+结论 111
+对于任意子树，其根节点到其每个叶子节点的距离相等。
+
+证明：
+反证法。
+设对于根为 RRR 的树的根为 rrr 的某一子树，有两个叶子 aaa、bbb 到 rrr 的距离不等。
+那么不妨设节点 xxx 与 yyy 间的距离为 dis(x,y)dis(x,y)dis(x,y)，则有
+dis(a,r)≠dis(b,r)dis(a,r)\not=dis(b,r)
+dis(a,r)=dis(b,r)
+所以
+dis(a,r)+dis(r,R)≠dis(b,r)+dis(r,R)dis(a,r)+dis(r,R)\not=dis(b,r)+dis(r,R)
+dis(a,r)+dis(r,R)=dis(b,r)+dis(r,R)
+得
+dis(a,R)≠dis(b,R)dis(a,R)\not=dis(b,R)
+dis(a,R)=dis(b,R)
+即 aaa、bbb 到 RRR 的距离不等。这与题目条件矛盾，所以命题成立。
+
+解法
+既然结论 111 成立，那么先从最简单的情况入手。
+如图，在这一棵以 111 为根的树中，在操作后，根节点 111 到叶子的距离最小是几？
+
+很明显的，这个值应该是所有叶子到根的所有距离的最大值。
+那么对于每个节点都实行此原则，就结束了。
+Code：
+#include &lt;bits/stdc++.h&gt;using namespace std;using uint = unsigned;using ll = long long;using ull = unsigned long long;using pii = pair&lt;int,int&gt;;using pll = pair&lt;ll,ll&gt;;#define int llint hd[500005&lt;&lt;1],nxt[500005&lt;&lt;1],to[500005&lt;&lt;1],we[500005&lt;&lt;1],et=0;inline void adde(int u,int v,int w) &#123; ++et,to[et]=v,we[et]=w,nxt[et]=hd[u],hd[u]=et; &#125;int n,s,ans,dp[500005];void dfs(int u,int fa) &#123;    int mx=0,tot=0;    for(int i=hd[u],v,t; v=to[i],t=we[i],i; i=nxt[i]) &#123;        if(v==fa) continue;        dfs(v,u);        if(dp[v]+t&gt;mx) &#123;            ans+=(dp[v]+t-mx)*tot;            mx=dp[v]+t;        &#125; else ans+=(mx-dp[v]-t);        ++tot;    &#125;    dp[u]=mx;&#125;signed main() &#123;    cin&gt;&gt;n&gt;&gt;s;    for(int i=1; i&lt;n; ++i) &#123;        int u,v,t;        cin&gt;&gt;u&gt;&gt;v&gt;&gt;t;        adde(u,v,t); adde(v,u,t);    &#125;    dfs(s,0);    cout&lt;&lt;ans&lt;&lt;endl;&#125;
+]]></content>
+      <categories>
+        <category>editorial</category>
+      </categories>
+  </entry>
+  <entry>
     <title>复数 (I)</title>
     <url>/post/complex-numbers/</url>
     <content><![CDATA[复数 (I)
@@ -252,211 +494,6 @@ z=reiθz=r\text{e}^{\text{i}\theta}z=reiθ 称为复数 zzz 的指数形式 (exp
       </categories>
   </entry>
   <entry>
-    <title>复数 (II)</title>
-    <url>/post/complex-numbers-2/</url>
-    <content><![CDATA[复数 (II)
-(4) 复变函数
-本章中，kkk 表示任意整数 .
-4.1 复数的开方运算
-一般地，如果复数 www 满足 wn=z(n∈N∗,z∈C)w^n=z(n\in\Bbb{N}^*,z\in\Bbb{C})wn=z(n∈N∗,z∈C)，那么 www 叫作 zzz 的一个 nnn 次方根，记作 w=znw=\sqrt[n]{z}w=nz​ .
-设 zzz 和 www 的三角形式为 z=r(cos⁡θ+isin⁡θ),w=ρ(cos⁡φ+isin⁡φ)z=r(\cos\theta+\text{i}\sin\theta),w=\rho(\cos\varphi+\text{i}\sin\varphi)z=r(cosθ+isinθ),w=ρ(cosφ+isinφ)，则根据棣莫弗公式有
-[ρ(cos⁡φ+isin⁡φ)]n=r(cos⁡θ+isin⁡θ) ,ρn(cos⁡nφ+isin⁡nφ)=r(cos⁡θ+isin⁡θ) .\begin{aligned}
-\big[\rho(\cos\varphi+\text{i}\sin\varphi)\big]^n &amp;= r(\cos\theta+\text{i}\sin\theta) ~, \\
-\rho^n(\cos n\varphi+\text{i}\sin n\varphi) &amp;= r(\cos\theta+\text{i}\sin\theta) ~.
-\end{aligned}
-[ρ(cosφ+isinφ)]nρn(cosnφ+isinnφ)​=r(cosθ+isinθ) ,=r(cosθ+isinθ) .​
-则
-{ρn=r  ⟹  ρ=rn ,nφ=θ+2kπ  ⟹  φ=θn+k⋅2πn .\begin{cases}
-\rho^n = r \implies \rho=\sqrt[n]{r} ~, \\
-n\varphi = \theta+2k\pi \implies \varphi=\frac{\theta}{n}+k\cdot\frac{2\pi}{n} ~.
-\end{cases}
-{ρn=r⟹ρ=nr​ ,nφ=θ+2kπ⟹φ=nθ​+k⋅n2π​ .​
-即
-w=ρ(cos⁡φ+isin⁡φ)=rn[cos⁡(θn+k⋅2πn)+isin⁡(θn+k⋅2πn)] .w=\rho(\cos\varphi+\text{i}\sin\varphi)=\sqrt[n]{r}\left[\cos\left(\frac{\theta}{n}+k\cdot\frac{2\pi}{n}\right)+\text{i}\sin\left(\frac{\theta}{n}+k\cdot\frac{2\pi}{n}\right)\right] ~.
-w=ρ(cosφ+isinφ)=nr​[cos(nθ​+k⋅n2π​)+isin(nθ​+k⋅n2π​)] .
-由于 ρ,r∈(R+∪{0})\rho,r\in(\Bbb{R}_+\cup\{0\})ρ,r∈(R+​∪{0})，故 ρ\rhoρ 有唯一值 .
-容易发现，当 kkk 取 0,1,2,…,n−10,1,2,\dots,n-10,1,2,…,n−1 时，www 有 nnn 个不同的值 .
-再观察这 nnn 个值的辐角，它们分别为 θn,θn+2πn,…,θn+(n−1)2πn\frac{\theta}{n},\frac{\theta}{n}+\frac{2\pi}{n},\dots,\frac{\theta}{n}+(n-1)\frac{2\pi}{n}nθ​,nθ​+n2π​,…,nθ​+(n−1)n2π​ . 容易发现，相邻两数的辐角都差 2πn\frac{2\pi}{n}n2π​ . 又知它们的模都为 ρ=rn\rho=\sqrt[n]{r}ρ=nr​，故这 nnn 个数在复平面上平分以原点 OOO 为圆心、半径为 ρ=rn\rho=\sqrt[n]{r}ρ=nr​ 的圆周 .
-
-例 1：i3={cos⁡π6+isin⁡π6,cos⁡5π6+isin⁡5π6,cos⁡3π2+isin⁡3π2}={32+12i,−32+12i,−i}\sqrt[3]{\text{i}} = \left\{\cos\frac{\pi}{6}+\text{i}\sin\frac{\pi}{6},\cos\frac{5\pi}{6}+\text{i}\sin\frac{5\pi}{6},\cos\frac{3\pi}{2}+\text{i}\sin\frac{3\pi}{2}\right\} = \left\{\frac{\sqrt{3}}{2}+\frac{1}{2}\text{i},-\frac{\sqrt{3}}{2}+\frac{1}{2}\text{i},-\text{i}\right\}3i​={cos6π​+isin6π​,cos65π​+isin65π​,cos23π​+isin23π​}={23​​+21​i,−23​​+21​i,−i} .
-这 333 个解在复平面中的点如图 4-1 所示 .
-
-例 2：325={2,2ei2π5,2ei4π5,2ei6π5,2ei8π5}\sqrt[5]{32} = \left\{2,2\text{e}^{\text{i}\frac{2\pi}{5}},2\text{e}^{\text{i}\frac{4\pi}{5}},2\text{e}^{\text{i}\frac{6\pi}{5}},2\text{e}^{\text{i}\frac{8\pi}{5}}\right\}532​={2,2ei52π​,2ei54π​,2ei56π​,2ei58π​} .
-这 555 个解在复平面中的点如图 4-2 所示 .
-
-
-4.2 复变函数的定义 代数基本定理
-回顾上一节的内容 . 如果我们定义一个函数 f(z)=znf(z)=\sqrt[n]{z}f(z)=nz​（nnn 是常数且 n∈Zn\in\Bbb{Z}n∈Z），容易发现，对于一个复数 zzz，f(z)f(z)f(z) 不只有 111 个值，而是有 nnn 个值 . 这样的函数叫什么呢？
-一般地，设 AAA 是一个复数集，∀z∈A\forall z\in A∀z∈A，通过一个确定的规则 fff 有一个或若干个复数 www 与之对应，就说在复数集 AAA 上定义了一个复变函数 (complex function)，记为 w=f(z)w=f(z)w=f(z) .
-容易从定义中看到，一个复变函数 w=f(z)w=f(z)w=f(z) 可能对于同一个数 zzz 有多个值 . 其实实变函数中也有许多多值函数的例子，如 sin⁡x\sin xsinx 的反函数 x=sin⁡yx=\sin yx=siny（注意不是 arcsin⁡x\arcsin xarcsinx），其定义域为 [0,1][0,1][0,1]，就是一个多值函数：
-
-引入了复数的幂与根后，实数的多项式方程（一元 nnn 次方程）可以被推广 .
-对于一元 nnn 次方程 anxn+an−1xn−1+an−2xn−2+⋯+a2x2+a1x+a0=0a_nx^n+a_{n-1}x^{n-1}+a_{n-2}x^{n-2}+\cdots+a_2x^2+a_1x+a_0=0an​xn+an−1​xn−1+an−2​xn−2+⋯+a2​x2+a1​x+a0​=0，现在 aaa 可以是复数了；其解 xxx 也可以是复数了 . 同时，一些原来在实数域中无解的方程有了解 .
-如一元二次方程 ax2+bx+c=0(a,b,c∈C)ax^2+bx+c=0 (a,b,c\in\Bbb{C})ax2+bx+c=0(a,b,c∈C)，其两根为 x=−b+b2−4ac2ax=\dfrac{-b+\sqrt{b^2-4ac}}{2a}x=2a−b+b2−4ac​​，其中的平方根有两个值，故有两个解 .
-高斯 (Gauss) 1799 年第一次证明了代数基本定理 (Fundamental theorem of algebra) . 其说明：任何一个一元复系数多项式方程都至少有一个复数根 . 或：任何一个非零的一元 nnn 次复系数多项式，都正好有 nnn 个复数根（重根视为多个根）.
-
-该定理的证明较为困难 . 但是，我们可以从复数的开方运算中获得一个直观的认识 .
-4.3 复变指数函数
-4.3.1 实变指数函数
-欧拉指出的指数函数 exp⁡x\exp xexpx 定义：
-exp⁡x=lim⁡n→∞(1+xn)n\exp x = \lim_{n\to\infty}\left(1+\frac{x}{n}\right)^n
-expx=n→∞lim​(1+nx​)n
-由于有 e=lim⁡n→∞(1+1n)n,lim⁡n→∞((1+1n)n)x=lim⁡n→∞(1+xn)\text{e}=\lim\limits_{n\to\infty}\left(1+\frac{1}{n}\right)^n,\lim\limits_{n\to\infty}\left(\left(1+\frac{1}{n}\right)^n\right)^x=\lim\limits_{n\to\infty}\left(1+\frac{x}{n}\right)e=n→∞lim​(1+n1​)n,n→∞lim​((1+n1​)n)x=n→∞lim​(1+nx​)，故
-ex=exp⁡x .\text{e}^x = \exp x ~. 
-ex=expx .
-实变指数函数具有以下性质：
-
-(ex)′=ex\left(\text{e}^x\right)&#x27;=\text{e}^x(ex)′=ex，即 exp⁡′x=exp⁡x\exp&#x27;x=\exp xexp′x=expx，其处处可导；
-ax=exln⁡aa^x=\text{e}^{x\ln a}ax=exlna；
-ex+y=exeye^{x+y}=e^xe^yex+y=exey，即 exp⁡(x+y)=exp⁡xexp⁡y\exp(x+y)=\exp x\exp yexp(x+y)=expxexpy；
-exy=(ex)ye^{xy}=\left(e^x\right)^yexy=(ex)y；即 exp⁡xy=exp⁡yx\exp xy=\exp^y xexpxy=expyx；
-e−x=1exe^{-x}=\frac{1}{e^x}e−x=ex1​，即 exp⁡(−x)=1exp⁡x\exp(-x)=\frac{1}{\exp x}exp(−x)=expx1​ .
-
-它们对任意 x,y∈Rx,y\in\Bbb{R}x,y∈R 都是有效的 .
-4.3.2 复变指数函数
-我们试图把 exp⁡x\exp xexpx 推广到复数域 .
-设此函数为 f(z)f(z)f(z) . 我们希望它与实变的指数函数 exp⁡x\exp xexpx 具有相似的性质 . 具体来说：
-
-f(z)f(z)f(z) 处处可导；
-f′(z)=f(z)f&#x27;(z)=f(z)f′(z)=f(z)；
-f(x0)=ex0f(x_0)=\text{e}^{x_0}f(x0​)=ex0​
-
-这个函数存在且唯一 . 我们将其称为复变指数函数 (complex exponential function)，记作 exp⁡(x+iy) (x,y∈R)\exp (x+\text{i}y)~(x,y\in\Bbb{R})exp(x+iy) (x,y∈R) . 有
-exp⁡(x+iy)=ex(cos⁡y+isin⁡y)=exeiy .\exp (x+\text{i}y)=\text{e}^x(\cos y+\text{i}\sin y)=\text{e}^x\text{e}^{\text{i}y} ~.
-exp(x+iy)=ex(cosy+isiny)=exeiy .
-验证，可知其满足上述条件 . （我也不会，反正是对的）
-对于指数函数，有重要等式 eaeb=ea+b\text{e}^a\text{e}^b=\text{e}^{a+b}eaeb=ea+b .
-验证可得：
-exp⁡z1⋅exp⁡z2=ex1eiy1ex2eiy2=ex1+x2ei(y1+y2)=exp⁡(z1+z2)\exp z_1\cdot\exp z_2 = \text{e}^{x_1}\text{e}^{\text{i}y_1}\text{e}^{x_2}\text{e}^{\text{i}y_2}=\text{e}^{x_1+x_2}\text{e}^{\text{i}(y_1+y_2)}=\exp(z_1+z_2)
-expz1​⋅expz2​=ex1​eiy1​ex2​eiy2​=ex1​+x2​ei(y1​+y2​)=exp(z1​+z2​)
-可以发现，这个函数的性质与实变指数函数的性质几乎一模一样 . 那么，在不引起歧义的情况下，我们就用 ez\text{e}^zez 来表示 exp⁡z\exp zexpz，即：
-ez=exp⁡z .\text{e}^z = \exp z ~.
-ez=expz .
-要注意此处 ez\text{e}^zez 只是代替 exp⁡z\exp zexpz 的一种写法，不能理解为 e\text{e}e 的 zzz 次幂 . 这是两个不同的概念 .
-令 x=0x=0x=0，即得欧拉公式 eiθ=(cos⁡θ+isin⁡θ)\text{e}^{\text{i}\theta} = (\cos\theta+\text{i}\sin\theta)eiθ=(cosθ+isinθ) .
-
-例：e2+i=e2ei\text{e}^{2+\text{i}} = \text{e}^2\text{e}^{\text{i}}e2+i=e2ei . 这是一个模为 e2\text{e}^2e2，辐角为 1 rad1 ~\text{rad}1 rad 的数 .
-
-4.4 复变对数函数
-复变对数函数定义为指数函数的反函数 .
-即，如果 ew=z\text{e}^w=zew=z，那么 www 关于 zzz 的函数就是复变对数函数 (complex logarithm function)，记作 w=Ln⁡zw=\operatorname{Ln}zw=Lnz
-已知 z=reiθz=r\text{e}^{\text{i}\theta}z=reiθ，我们来求一下 www .
-设 w=a+biw=a+b\text{i}w=a+bi，则有
-ea+bi=reiθ ,eaebi=reiθ .\begin{aligned}
-\text{e}^{a+b\text{i}} &amp;= r\text{e}^{i\theta} ~, \\
-\text{e}^a\text{e}^{b\text{i}} &amp;= r\text{e}^{i\theta} ~.
-\end{aligned}
-ea+bieaebi​=reiθ ,=reiθ .​
-则
-{ea=r  ⟺  a=ln⁡r ,b=θ+2kπ .\begin{cases}
-\text{e}^a=r \iff a=\ln r ~, \\
-b=\theta+2k\pi ~.
-\end{cases}
-{ea=r⟺a=lnr ,b=θ+2kπ .​
-故 w=Ln⁡z=ln⁡r+(θ+2kπ)iw=\operatorname{Ln}z=\ln r+(\theta+2k\pi)\text{i}w=Lnz=lnr+(θ+2kπ)i .
-容易发现，对数函数 w=Ln⁡zw=\operatorname{Ln}zw=Lnz 也是一个多值函数，它的所有值在与实轴垂直的一条直线上 .
-若 θ+2kπ=θ0=arg⁡z\theta+2k\pi=\theta_0=\arg zθ+2kπ=θ0​=argz，那么此时 www 的值称为 zzz 对数的主值 (principal value)，记作 ln⁡z\ln zlnz，有 ln⁡z=ln⁡r+θ0i\ln z = \ln r+\theta_0\text{i}lnz=lnr+θ0​i . 容易发现，Ln⁡z=ln⁡z+2kπi\operatorname{Ln}z=\ln z+2k\pi\text{i}Lnz=lnz+2kπi .
-对于一个固定的 kkk，Ln⁡z\operatorname{Ln}zLnz 会变成一个单值函数，这时的 Ln⁡z\operatorname{Ln}zLnz 称为其的一个分支 (branch) . 主值也是它的一个分支 .
-复变对数函数满足实变对数函数的某些性质 . 如：
-
-Ln⁡(xy)=Ln⁡x+Ln⁡y\operatorname{Ln}(xy)=\operatorname{Ln}x+\operatorname{Ln}yLn(xy)=Lnx+Lny；
-Ln⁡(xy)=Ln⁡x−Ln⁡y\operatorname{Ln}\left(\frac{x}{y}\right)=\operatorname{Ln}x-\operatorname{Ln}yLn(yx​)=Lnx−Lny .
-
-但同时，某些性质不满足 . 如：
-
-Ln⁡(xn)≠nLn⁡x\operatorname{Ln}(x^n)\neq n\operatorname{Ln}xLn(xn)=nLnx（nnn 是大于 111 的正整数）
-
-下面证明 Ln⁡(xn)≠nLn⁡x\operatorname{Ln}(x^n)\neq n\operatorname{Ln}xLn(xn)=nLnx：
-
-证明：
-
-下面举几个例子：
-
-Ln⁡(−1)=ln⁡1+(π+2kπ)i=(2k+1)πi\operatorname{Ln}(-1)=\ln 1+(\pi+2k\pi)\text{i}=(2k+1)\pi\text{i}Ln(−1)=ln1+(π+2kπ)i=(2k+1)πi
-Ln⁡(1+i)=ln⁡2+(π4+2kπ)i=ln⁡22+(π4+2kπ)i\operatorname{Ln}(1+\text{i})=\ln\sqrt{2}+\left(\frac{\pi}{4}+2k\pi\right)\text{i}=\frac{\ln 2}{2}+\left(\frac{\pi}{4}+2k\pi\right)\text{i}Ln(1+i)=ln2​+(4π​+2kπ)i=2ln2​+(4π​+2kπ)i
-
-4.5 复数的复数次幂
-有了复数的指数函数和对数函数，我们就可以定义复数的乘幂了 .
-如果 a,b∈Ca,b\in\Bbb{C}a,b∈C，那么我们定义 ab=ebLn⁡a=exp⁡(bLn⁡a)a^b=\text{e}^{b\operatorname{Ln}a}=\exp(b\operatorname{Ln}a)ab=ebLna=exp(bLna) . 注意到这里的 ez\text{e}^zez 为指数函数 exp⁡z\exp zexpz .
-Ln⁡a\operatorname{Ln}aLna 是多值的，bLn⁡ab\operatorname{Ln}abLna 就是多值的，所以整体也就是多值的 .
-到这就可以理解为什么 ez\text{e}^zez 理解为指数函数和幂是不一样的了 . 举个例子：
-
-exp⁡i=cos⁡1+isin⁡1\exp\text{i} = \cos 1+\text{i}\sin 1expi=cos1+isin1；
-ei=exp⁡(iLn⁡e)=exp⁡[i(ln⁡e+2kπi)]=exp⁡(i+2kπ)=(cos⁡1+sin⁡1)e2kπ\text{e}^{\text{i}} = \exp(i\operatorname{Ln}\text{e}) = \exp\big[\text{i}(\ln\text{e}+2k\pi\text{i})\big] = \exp(\text{i}+2k\pi) = (\cos 1+\sin 1)e^{2k\pi}ei=exp(iLne)=exp[i(lne+2kπi)]=exp(i+2kπ)=(cos1+sin1)e2kπ .
-显然这两个式子的值完全不同 .
-
-事实上，在这种乘幂的定义下，只要底数 a≠0a\neq 0a=0：
-
-指数 b∈Zb\in\Bbb{Z}b∈Z 时，aba^bab 单值；
-指数 b∈Qb\in\Bbb{Q}b∈Q 时，若 b=pq(p,q∈Z,gcd⁡(p,q)=1)b=\frac{p}{q} (p,q\in\Bbb{Z},\gcd(p,q)=1)b=qp​(p,q∈Z,gcd(p,q)=1)，aba^bab 有 qqq 个值；
-指数 bbb 为其他数（无理数或虚数）时，aba^bab 有无穷多个值 .
-比如 1π,(1+i)23,ii,(2+i)1+2i1^\pi,(1+\text{i})^{\sqrt[3]{2}},\text{i}^\text{i},(2+\text{i})^{1+2\text{i}}1π,(1+i)32​,ii,(2+i)1+2i 都有无穷多个值 .
-其中有趣的是，计算可得 ii=exp⁡(iLn⁡i)=exp⁡[i(π2+2kπ)i]=exp⁡(−π2+2kπ)∈R\text{i}^\text{i} = \exp(\text{i}\operatorname{Ln}\text{i}) = \exp\left[\text{i}\left(\frac{\pi}{2}+2k\pi\right)\text{i}\right]=\exp\left(-\frac{\pi}{2}+2k\pi\right)\in\Bbb{R}ii=exp(iLni)=exp[i(2π​+2kπ)i]=exp(−2π​+2kπ)∈R .
-
-下面逐个证明上面三条 .
-
-设 a=reiθa=r\text{e}^{\text{i}\theta}a=reiθ .
-
-(1) 指数 b∈Zb\in\Bbb{Z}b∈Z 时，aba^bab 单值 .
-
-证明：当 b∈Zb\in\Bbb{Z}b∈Z 时，有：
-ab=exp⁡(bLn⁡a)=exp⁡(b(ln⁡r+(θ+2kπ)i))=exp⁡(bln⁡r+b(θ+2kπ)i)=ebln⁡rei(bθ+b⋅2kπ)∵b∈Z,∴ab=ebln⁡reibθ\begin{aligned}
-a^b
-&amp;= \exp(b\operatorname{Ln}a) \\
-&amp;= \exp\left(b\left(\ln r+\left(\theta+2k\pi\right)\text{i}\right)\right) \\
-&amp;= \exp(b\ln r+b(\theta+2k\pi)\text{i}) \\
-&amp;= \text{e}^{b\ln r}\text{e}^{\text{i}(b\theta+b\cdot 2k\pi)} \\
-\because b\in\Bbb{Z},\therefore a^b
-&amp;= \text{e}^{b\ln r}\text{e}^{\text{i}b\theta}
-\end{aligned}
-ab∵b∈Z,∴ab​=exp(bLna)=exp(b(lnr+(θ+2kπ)i))=exp(blnr+b(θ+2kπ)i)=eblnrei(bθ+b⋅2kπ)=eblnreibθ​
-结果唯一 . 证毕 .
-
-(2) 指数 b∈Qb\in\Bbb{Q}b∈Q 时，若 b=pq(p,q∈Z,gcd⁡(p,q)=1)b=\frac{p}{q} (p,q\in\Bbb{Z},\gcd(p,q)=1)b=qp​(p,q∈Z,gcd(p,q)=1)，aba^bab 有 qqq 个值 .
-
-证明：当 b=pq∈Q (p,q∈Z,gcd⁡(p,q)=1)b=\frac{p}{q}\in\Bbb{Q}~(p,q\in\Bbb{Z},\gcd(p,q)=1)b=qp​∈Q (p,q∈Z,gcd(p,q)=1) 时，有
-ab=exp⁡(bLn⁡a)=exp⁡(pq(ln⁡r+(θ+2kπ)))=exp⁡(pln⁡r+p(θ+2kπ)iq)=exp⁡(pln⁡rq+p(θ+2kπ)iq)=epln⁡rq⋅ei(pqθ+pk⋅2πq)\begin{aligned}
-a^b
-&amp;= \exp(b\operatorname{Ln}a) \\
-&amp;= \exp\left(\frac{p}{q}\left(\ln r+\left(\theta+2k\pi\right)\right)\right) \\
-&amp;= \exp\left(\frac{p\ln r+p\left(\theta+2k\pi\right)\text{i}}{q}\right) \\
-&amp;= \exp\left(\frac{p\ln r}{q}+\frac{p\left(\theta+2k\pi\right)\text{i}}{q}\right) \\
-&amp;= \text{e}^{\frac{p\ln r}{q}}\cdot\text{e}^{\text{i}\left(\frac{p}{q}\theta+pk\cdot\frac{2\pi}{q}\right)}
-\end{aligned}
-ab​=exp(bLna)=exp(qp​(lnr+(θ+2kπ)))=exp(qplnr+p(θ+2kπ)i​)=exp(qplnr​+qp(θ+2kπ)i​)=eqplnr​⋅ei(qp​θ+pk⋅q2π​)​
-epln⁡rq\text{e}^{\frac{p\ln r}{q}}eqplnr​ 是实数域内的计算，值唯一；ei(pqθ+pk⋅2πq)\text{e}^{\text{i}\left(\frac{p}{q}\theta+pk\cdot\frac{2\pi}{q}\right)}ei(qp​θ+pk⋅q2π​) 中，由于 gcd⁡(p,q)=1\gcd(p,q)=1gcd(p,q)=1，故有 qqq 个不同值 . 故该式整体上有 qqq 个不同值 . 证毕 .
-
-(3) 指数 bbb 为其他数（无理数或虚数）时，aba^bab 有无穷多个值 .
-
-证明略 . 显而易见 .
-
-4.6 复变三角函数与双曲函数
-to do.
-]]></content>
-      <categories>
-        <category>notes</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/post/hello-world/</url>
-    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start
-Create a new post
-$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server
-$ hexo server
-More info: Server
-Generate static files
-$ hexo generate
-More info: Generating
-Deploy to remote sites
-$ hexo deploy
-More info: Deployment
-]]></content>
-  </entry>
-  <entry>
     <title>中线定理的几种证明</title>
     <url>/post/pappus-law/</url>
     <content><![CDATA[中线定理
@@ -572,43 +609,6 @@ xrz曰：“是焉得为奆佬乎？子未学OI乎？奆佬之冠也，zc命之�
 ]]></content>
       <categories>
         <category>others</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>洛谷 P1131 题解</title>
-    <url>/post/luogu-p1131-editorial/</url>
-    <content><![CDATA[传送门
-题意
-有一棵 nnn 个节点的以 sss 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 111。
-问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。
-结论 111
-对于任意子树，其根节点到其每个叶子节点的距离相等。
-
-证明：
-反证法。
-设对于根为 RRR 的树的根为 rrr 的某一子树，有两个叶子 aaa、bbb 到 rrr 的距离不等。
-那么不妨设节点 xxx 与 yyy 间的距离为 dis(x,y)dis(x,y)dis(x,y)，则有
-dis(a,r)≠dis(b,r)dis(a,r)\not=dis(b,r)
-dis(a,r)=dis(b,r)
-所以
-dis(a,r)+dis(r,R)≠dis(b,r)+dis(r,R)dis(a,r)+dis(r,R)\not=dis(b,r)+dis(r,R)
-dis(a,r)+dis(r,R)=dis(b,r)+dis(r,R)
-得
-dis(a,R)≠dis(b,R)dis(a,R)\not=dis(b,R)
-dis(a,R)=dis(b,R)
-即 aaa、bbb 到 RRR 的距离不等。这与题目条件矛盾，所以命题成立。
-
-解法
-既然结论 111 成立，那么先从最简单的情况入手。
-如图，在这一棵以 111 为根的树中，在操作后，根节点 111 到叶子的距离最小是几？
-
-很明显的，这个值应该是所有叶子到根的所有距离的最大值。
-那么对于每个节点都实行此原则，就结束了。
-Code：
-#include &lt;bits/stdc++.h&gt;using namespace std;using uint = unsigned;using ll = long long;using ull = unsigned long long;using pii = pair&lt;int,int&gt;;using pll = pair&lt;ll,ll&gt;;#define int llint hd[500005&lt;&lt;1],nxt[500005&lt;&lt;1],to[500005&lt;&lt;1],we[500005&lt;&lt;1],et=0;inline void adde(int u,int v,int w) &#123; ++et,to[et]=v,we[et]=w,nxt[et]=hd[u],hd[u]=et; &#125;int n,s,ans,dp[500005];void dfs(int u,int fa) &#123;    int mx=0,tot=0;    for(int i=hd[u],v,t; v=to[i],t=we[i],i; i=nxt[i]) &#123;        if(v==fa) continue;        dfs(v,u);        if(dp[v]+t&gt;mx) &#123;            ans+=(dp[v]+t-mx)*tot;            mx=dp[v]+t;        &#125; else ans+=(mx-dp[v]-t);        ++tot;    &#125;    dp[u]=mx;&#125;signed main() &#123;    cin&gt;&gt;n&gt;&gt;s;    for(int i=1; i&lt;n; ++i) &#123;        int u,v,t;        cin&gt;&gt;u&gt;&gt;v&gt;&gt;t;        adde(u,v,t); adde(v,u,t);    &#125;    dfs(s,0);    cout&lt;&lt;ans&lt;&lt;endl;&#125;
-]]></content>
-      <categories>
-        <category>editorial</category>
       </categories>
   </entry>
 </search>
