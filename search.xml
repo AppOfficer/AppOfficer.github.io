@@ -457,66 +457,6 @@ More info: Deployment
 ]]></content>
   </entry>
   <entry>
-    <title>洛谷 P1131 题解</title>
-    <url>/post/luogu-p1131-editorial/</url>
-    <content><![CDATA[传送门
-题意
-有一棵 nnn 个节点的以 sss 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 111。
-问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。
-结论 111
-对于任意子树，其根节点到其每个叶子节点的距离相等。
-
-证明：
-反证法。
-设对于根为 RRR 的树的根为 rrr 的某一子树，有两个叶子 aaa、bbb 到 rrr 的距离不等。
-那么不妨设节点 xxx 与 yyy 间的距离为 dis(x,y)dis(x,y)dis(x,y)，则有
-dis(a,r)≠dis(b,r)dis(a,r)\not=dis(b,r)
-dis(a,r)=dis(b,r)
-所以
-dis(a,r)+dis(r,R)≠dis(b,r)+dis(r,R)dis(a,r)+dis(r,R)\not=dis(b,r)+dis(r,R)
-dis(a,r)+dis(r,R)=dis(b,r)+dis(r,R)
-得
-dis(a,R)≠dis(b,R)dis(a,R)\not=dis(b,R)
-dis(a,R)=dis(b,R)
-即 aaa、bbb 到 RRR 的距离不等。这与题目条件矛盾，所以命题成立。
-
-解法
-既然结论 111 成立，那么先从最简单的情况入手。
-如图，在这一棵以 111 为根的树中，在操作后，根节点 111 到叶子的距离最小是几？
-
-很明显的，这个值应该是所有叶子到根的所有距离的最大值。
-那么对于每个节点都实行此原则，就结束了。
-Code：
-#include &lt;bits/stdc++.h&gt;using namespace std;using uint = unsigned;using ll = long long;using ull = unsigned long long;using pii = pair&lt;int,int&gt;;using pll = pair&lt;ll,ll&gt;;#define int llint hd[500005&lt;&lt;1],nxt[500005&lt;&lt;1],to[500005&lt;&lt;1],we[500005&lt;&lt;1],et=0;inline void adde(int u,int v,int w) &#123; ++et,to[et]=v,we[et]=w,nxt[et]=hd[u],hd[u]=et; &#125;int n,s,ans,dp[500005];void dfs(int u,int fa) &#123;    int mx=0,tot=0;    for(int i=hd[u],v,t; v=to[i],t=we[i],i; i=nxt[i]) &#123;        if(v==fa) continue;        dfs(v,u);        if(dp[v]+t&gt;mx) &#123;            ans+=(dp[v]+t-mx)*tot;            mx=dp[v]+t;        &#125; else ans+=(mx-dp[v]-t);        ++tot;    &#125;    dp[u]=mx;&#125;signed main() &#123;    cin&gt;&gt;n&gt;&gt;s;    for(int i=1; i&lt;n; ++i) &#123;        int u,v,t;        cin&gt;&gt;u&gt;&gt;v&gt;&gt;t;        adde(u,v,t); adde(v,u,t);    &#125;    dfs(s,0);    cout&lt;&lt;ans&lt;&lt;endl;&#125;
-]]></content>
-      <categories>
-        <category>editorial</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>OI 名言</title>
-    <url>/post/well-known-OI-sayings/</url>
-    <content><![CDATA[《OI 子》三章
-
-《骗分榜一，暴力爆零》by 20210732ktq
-正解不如暴力，暴力不如骗分。一道题目，两种做法，想而编之而WA。夫想而编之，必有得正解者矣，然而WA者，是正解不如暴力也。手非不酸也，码非不短也，部分分非不多也，暴力非不正确也，排名第二，是暴力不如骗分也。故曰，AC不以思路之深，暴力不以代码之短，首杀不以手速之快。骗分者榜一，暴力者爆零。爆零之至，老师骂之。榜一之至，全球膜之。以全球之所膜，攻教练之所骂，故OIer有不战，战必AK。
-
-
-《水题不能淫》by 20210927chr
-chr曰：“ktq，xcx岂不诚奆佬哉？骗分而OIers惧，正解而OI熄。”
-xrz曰：“是焉得为奆佬乎？子未学OI乎？奆佬之冠也，zc命之，蒟蒻之冠也，ls命之，往送之CSP，戒之曰：‘往之CSP，必敬必戒，无违考规！’以骗为正者，蒟蒻之道也。做天下之难题，写天下之正解，AK天下之比赛。AK，与OIers由之；不AK，自己切题。水题不能淫，难题不能移，毒瘤不能屈，此之谓奆佬。”
-
-
-《生于练习，死于退费》by 20211202lxy
-轩发于范赵之中，Sai_t举于richup之间，澜译举于冰火之中，孔韬棋举于gen，项承煦举于florr，蒋亦霖举于ma，故天将降大任于是人也，必先苦其射飞，劳其破产，饿其王塔，空乏连击，行拂乱其所为，使其停止退费，曾益其所不会。
-人恒错，然后能改；减于空，缩于时，而后过；骗于分，暴于力，而后涨。入则无暴力骗分，出则无AC过题者，人恒寄。然后知生于练习而死于退费也。
-
-]]></content>
-      <categories>
-        <category>others</category>
-      </categories>
-  </entry>
-  <entry>
     <title>中线定理的几种证明</title>
     <url>/post/pappus-law/</url>
     <content><![CDATA[中线定理
@@ -609,6 +549,66 @@ b2+c2​=2x2+21​a2 .​
 ]]></content>
       <categories>
         <category>notes</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>洛谷 P1131 题解</title>
+    <url>/post/luogu-p1131-editorial/</url>
+    <content><![CDATA[传送门
+题意
+有一棵 nnn 个节点的以 sss 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 111。
+问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。
+结论 111
+对于任意子树，其根节点到其每个叶子节点的距离相等。
+
+证明：
+反证法。
+设对于根为 RRR 的树的根为 rrr 的某一子树，有两个叶子 aaa、bbb 到 rrr 的距离不等。
+那么不妨设节点 xxx 与 yyy 间的距离为 dis(x,y)dis(x,y)dis(x,y)，则有
+dis(a,r)≠dis(b,r)dis(a,r)\not=dis(b,r)
+dis(a,r)=dis(b,r)
+所以
+dis(a,r)+dis(r,R)≠dis(b,r)+dis(r,R)dis(a,r)+dis(r,R)\not=dis(b,r)+dis(r,R)
+dis(a,r)+dis(r,R)=dis(b,r)+dis(r,R)
+得
+dis(a,R)≠dis(b,R)dis(a,R)\not=dis(b,R)
+dis(a,R)=dis(b,R)
+即 aaa、bbb 到 RRR 的距离不等。这与题目条件矛盾，所以命题成立。
+
+解法
+既然结论 111 成立，那么先从最简单的情况入手。
+如图，在这一棵以 111 为根的树中，在操作后，根节点 111 到叶子的距离最小是几？
+
+很明显的，这个值应该是所有叶子到根的所有距离的最大值。
+那么对于每个节点都实行此原则，就结束了。
+Code：
+#include &lt;bits/stdc++.h&gt;using namespace std;using uint = unsigned;using ll = long long;using ull = unsigned long long;using pii = pair&lt;int,int&gt;;using pll = pair&lt;ll,ll&gt;;#define int llint hd[500005&lt;&lt;1],nxt[500005&lt;&lt;1],to[500005&lt;&lt;1],we[500005&lt;&lt;1],et=0;inline void adde(int u,int v,int w) &#123; ++et,to[et]=v,we[et]=w,nxt[et]=hd[u],hd[u]=et; &#125;int n,s,ans,dp[500005];void dfs(int u,int fa) &#123;    int mx=0,tot=0;    for(int i=hd[u],v,t; v=to[i],t=we[i],i; i=nxt[i]) &#123;        if(v==fa) continue;        dfs(v,u);        if(dp[v]+t&gt;mx) &#123;            ans+=(dp[v]+t-mx)*tot;            mx=dp[v]+t;        &#125; else ans+=(mx-dp[v]-t);        ++tot;    &#125;    dp[u]=mx;&#125;signed main() &#123;    cin&gt;&gt;n&gt;&gt;s;    for(int i=1; i&lt;n; ++i) &#123;        int u,v,t;        cin&gt;&gt;u&gt;&gt;v&gt;&gt;t;        adde(u,v,t); adde(v,u,t);    &#125;    dfs(s,0);    cout&lt;&lt;ans&lt;&lt;endl;&#125;
+]]></content>
+      <categories>
+        <category>editorial</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>OI 名言</title>
+    <url>/post/well-known-OI-sayings/</url>
+    <content><![CDATA[《OI 子》三章
+
+《骗分榜一，暴力爆零》by 20210732ktq
+正解不如暴力，暴力不如骗分。一道题目，两种做法，想而编之而WA。夫想而编之，必有得正解者矣，然而WA者，是正解不如暴力也。手非不酸也，码非不短也，部分分非不多也，暴力非不正确也，排名第二，是暴力不如骗分也。故曰，AC不以思路之深，暴力不以代码之短，首杀不以手速之快。骗分者榜一，暴力者爆零。爆零之至，老师骂之。榜一之至，全球膜之。以全球之所膜，攻教练之所骂，故OIer有不战，战必AK。
+
+
+《水题不能淫》by 20210927chr
+chr曰：“ktq，xcx岂不诚奆佬哉？骗分而OIers惧，正解而OI熄。”
+xrz曰：“是焉得为奆佬乎？子未学OI乎？奆佬之冠也，zc命之，蒟蒻之冠也，ls命之，往送之CSP，戒之曰：‘往之CSP，必敬必戒，无违考规！’以骗为正者，蒟蒻之道也。做天下之难题，写天下之正解，AK天下之比赛。AK，与OIers由之；不AK，自己切题。水题不能淫，难题不能移，毒瘤不能屈，此之谓奆佬。”
+
+
+《生于练习，死于退费》by 20211202lxy
+轩发于范赵之中，Sai_t举于richup之间，澜译举于冰火之中，孔韬棋举于gen，项承煦举于florr，蒋亦霖举于ma，故天将降大任于是人也，必先苦其射飞，劳其破产，饿其王塔，空乏连击，行拂乱其所为，使其停止退费，曾益其所不会。
+人恒错，然后能改；减于空，缩于时，而后过；骗于分，暴于力，而后涨。入则无暴力骗分，出则无AC过题者，人恒寄。然后知生于练习而死于退费也。
+
+]]></content>
+      <categories>
+        <category>others</category>
       </categories>
   </entry>
 </search>
