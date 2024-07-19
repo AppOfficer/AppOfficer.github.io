@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/post/hello-world/</url>
-    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start
-Create a new post
-$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server
-$ hexo server
-More info: Server
-Generate static files
-$ hexo generate
-More info: Generating
-Deploy to remote sites
-$ hexo deploy
-More info: Deployment
+    <title>OI 名言</title>
+    <url>/post/well-known-OI-sayings/</url>
+    <content><![CDATA[《OI 子》三章
+
+《骗分榜一，暴力爆零》by 20210732ktq
+正解不如暴力，暴力不如骗分。一道题目，两种做法，想而编之而WA。夫想而编之，必有得正解者矣，然而WA者，是正解不如暴力也。手非不酸也，码非不短也，部分分非不多也，暴力非不正确也，排名第二，是暴力不如骗分也。故曰，AC不以思路之深，暴力不以代码之短，首杀不以手速之快。骗分者榜一，暴力者爆零。爆零之至，老师骂之。榜一之至，全球膜之。以全球之所膜，攻教练之所骂，故OIer有不战，战必AK。
+
+
+《水题不能淫》by 20210927chr
+chr曰：“ktq，xcx岂不诚奆佬哉？骗分而OIers惧，正解而OI熄。”
+xrz曰：“是焉得为奆佬乎？子未学OI乎？奆佬之冠也，zc命之，蒟蒻之冠也，ls命之，往送之CSP，戒之曰：‘往之CSP，必敬必戒，无违考规！’以骗为正者，蒟蒻之道也。做天下之难题，写天下之正解，AK天下之比赛。AK，与OIers由之；不AK，自己切题。水题不能淫，难题不能移，毒瘤不能屈，此之谓奆佬。”
+
+
+《生于练习，死于退费》by 20211202lxy
+轩发于范赵之中，Sai_t举于richup之间，澜译举于冰火之中，孔韬棋举于gen，项承煦举于florr，蒋亦霖举于ma，故天将降大任于是人也，必先苦其射飞，劳其破产，饿其王塔，空乏连击，行拂乱其所为，使其停止退费，曾益其所不会。
+人恒错，然后能改；减于空，缩于时，而后过；骗于分，暴于力，而后涨。入则无暴力骗分，出则无AC过题者，人恒寄。然后知生于练习而死于退费也。
+
 ]]></content>
+      <categories>
+        <category>others</category>
+      </categories>
   </entry>
   <entry>
     <title>复数 (I)</title>
@@ -115,8 +119,8 @@ z^mz^n &amp; = z^{m+n} ~,\\
 zmzn(zm)n(z1​z2​)n​=zm+n ,=zmn ,=z1n​z2n​ .​
 计算复数乘方时，需用到虚数单位 i\text{i}i 的乘方：
 i1=i,i2=−1,i3=−i,i4=1  ⟹  i4n=1,i4n+1=i,i4n+2=−1,i4n+3=−i .\begin{aligned}
-&amp; i^1=i,i^2=-1,i^3=-i,i^4=1\\
-\implies &amp; i^{4n}=1,i^{4n+1}=i,i^{4n+2}=-1,i^{4n+3}=-i ~.
+&amp; \text{i}^1=\text{i},\text{i}^2=-1,\text{i}^3=-\text{i},\text{i}^4=1\\
+\implies &amp; \text{i}^{4n}=1,\text{i}^{4n+1}=\text{i},\text{i}^{4n+2}=-1,\text{i}^{4n+3}=-\text{i} ~.
 \end{aligned}
 ⟹​i1=i,i2=−1,i3=−i,i4=1i4n=1,i4n+1=i,i4n+2=−1,i4n+3=−i .​
 2.3 共轭复数与复数的除法
@@ -151,7 +155,7 @@ z−m=zm1​ .
 如图 3-1 . 这个平面叫作复平面 (complex plane) 或阿甘得图 (Argand diagram)，xxx 轴叫作实轴 (real axis)，yyy 轴叫作虚轴 (imaginary axis) . 显然，实轴上的点都表示实数；除原点外，虚轴上的点都表示虚数 . 容易发现，复平面实质上是数轴的扩展 .
 可以发现，复数 z=a+biz=a+b\text{i}z=a+bi 同时与向量 OZ→\overrightarrow{OZ}OZ 一一对应，于是，我们也可以用一个向量 OZ→\overrightarrow{OZ}OZ 来表示复数 .
 在此基础上，我们把向量 OZ→\overrightarrow{OZ}OZ 的模（即 ZZZ 到 OOO 的距离）rrr 称为复数 zzz 的模 (module)或强度 (magnitude)或绝对值 (absolute value)，用 ∣z∣\lvert z\rvert∣z∣ 表示 . 图 3-1 中 rrr 即为 zzz 的模 . 容易得到， ∣z∣=a2+b2\lvert z\rvert=\sqrt{a^2+b^2}∣z∣=a2+b2​，∣z∣∈R\lvert z\rvert\in\Bbb{R}∣z∣∈R 且 ∣z∣≥0\lvert z\rvert\ge 0∣z∣≥0 .
-我们把实轴正半轴旋转到向量 OZ→\overrightarrow{OZ}OZ 方向的角 θ\thetaθ（或 φ\varphiφ）称为复数 zzz 的辐角 (argument)或相位 (phase)，记作 Arg⁡z\operatorname{Arg} zArgz . 容易发现，一个复数 zzz 的辐角有无穷多个，因此，我们将处在区间 [0,2π)[0,2\pi)[0,2π)（另一种为 (−π,π](-\pi,\pi](−π,π]）的辐角称为复数 zzz 的辐角主值 (principal value of argument)，记作 arg⁡z\arg zargz .
+我们把实轴正半轴旋转到向量 OZ→\overrightarrow{OZ}OZ 方向的角 θ\thetaθ（或 φ\varphiφ）称为复数 zzz 的辐角 (argument)或相位 (phase)，记作 Arg⁡z\operatorname{Arg} zArgz . 容易发现，一个复数 zzz 的辐角有无穷多个，因此，我们将处在区间 [0,2π)[0,2\pi)[0,2π)（更常用的另一种区间为 (−π,π](-\pi,\pi](−π,π]）的辐角称为复数 zzz 的辐角主值 (principal value of argument)，记作 arg⁡z\arg zargz .
 显然，每一个非零复数 z=a+biz=a+b\text{i}z=a+bi 都有唯一确定的模和辐角主值；反过来，复数模和辐角主值可以唯一确定这个复数 . 于是
 
 两个非零复数相等的充要条件是这两个复数的模与辐角主值分别相等 .
@@ -271,122 +275,23 @@ z=reiθz=r\text{e}^{\text{i}\theta}z=reiθ 称为复数 zzz 的指数形式 (exp
       </categories>
   </entry>
   <entry>
-    <title>中线定理的几种证明</title>
-    <url>/post/pappus-law/</url>
-    <content><![CDATA[中线定理
-如图，在 △ABC\triangle ABC△ABC 中，DDD 是 BCBCBC 的中点，则有
-AB2+AC2=2AD2+12BC2=2AD2+2BD2=2AD2+2CD2 .AB^2+AC^2 = 2AD^2+\frac{1}{2}BC^2 = 2AD^2+2BD^2 = 2AD^2+2CD^2 ~. 
-AB2+AC2=2AD2+21​BC2=2AD2+2BD2=2AD2+2CD2 .
-即三角形一条中线两侧所对的边平方和等于底边平方的一半与该边中线平方的两倍的和 .
-
-
-以下讨论中，设 AD=x,AB=c,AC=b,BC=aAD=x,AB=c,AC=b,BC=aAD=x,AB=c,AC=b,BC=a，原命题即化为
-b2+c2=2x2+12a2 .b^2+c^2 = 2x^2+\frac{1}{2}a^2 ~. 
-b2+c2=2x2+21​a2 .
-第 1 种（繁）
-
-如图，在 △ABC\triangle ABC△ABC 中，有 AD→=AB→+BD→=AC→+CD→\overrightarrow{AD}=\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AC}+\overrightarrow{CD}AD=AB+BD=AC+CD .
-于是有
-AD→⋅AD→=(AB→+BD→)⋅(AC→+CD→)∣AD→∣2=AB→⋅AC→+AB→⋅CD→+BD→⋅AC→+BD→⋅CD→∣AD→∣2=∣AB→∣∣AC→∣cos⁡A+∣AB→∣∣CD→∣cos⁡B+∣BD→∣∣AC→∣cos⁡C−∣BD→∣∣CD→∣x2=bccos⁡A+12accos⁡B+12abcos⁡C−14a22x2=2bccos⁡A+accos⁡B+abcos⁡C−12a2 .\begin{aligned}
-\overrightarrow{AD}\cdot\overrightarrow{AD} &amp; = (\overrightarrow{AB}+\overrightarrow{BD})\cdot(\overrightarrow{AC}+\overrightarrow{CD})\\
-\left\lvert\overrightarrow{AD}\right\rvert^2 &amp; = \overrightarrow{AB}\cdot\overrightarrow{AC}+\overrightarrow{AB}\cdot\overrightarrow{CD}+\overrightarrow{BD}\cdot\overrightarrow{AC}+\overrightarrow{BD}\cdot\overrightarrow{CD}\\
-\left\lvert\overrightarrow{AD}\right\rvert^2 &amp; = \left\lvert\overrightarrow{AB}\right\rvert\left\lvert\overrightarrow{AC}\right\rvert\cos A+\left\lvert\overrightarrow{AB}\right\rvert\left\lvert\overrightarrow{CD}\right\rvert\cos B+\left\lvert\overrightarrow{BD}\right\rvert\left\lvert\overrightarrow{AC}\right\rvert\cos C-\left\lvert\overrightarrow{BD}\right\rvert\left\lvert\overrightarrow{CD}\right\rvert\\
-x^2 &amp; = bc\cos A + \frac{1}{2}ac\cos B + \frac{1}{2}ab\cos C - \frac{1}{4}a^2\\
-2x^2 &amp; = 2bc\cos A + ac\cos B + ab\cos C - \frac{1}{2}a^2 ~.
-\end{aligned}
-AD⋅AD​AD​2​AD​2x22x2​=(AB+BD)⋅(AC+CD)=AB⋅AC+AB⋅CD+BD⋅AC+BD⋅CD=​AB​​AC​cosA+​AB​​CD​cosB+​BD​​AC​cosC−​BD​​CD​=bccosA+21​accosB+21​abcosC−41​a2=2bccosA+accosB+abcosC−21​a2 .​
-由余弦定理
-bccos⁡A=b2+c2−a22 ,accos⁡B=a2+c2−b22 ,abcos⁡C=a2+b2−c22 .\begin{aligned}
-bc\cos A &amp; = \frac{b^2+c^2-a^2}{2} ~,\\
-ac\cos B &amp; = \frac{a^2+c^2-b^2}{2} ~,\\
-ab\cos C &amp; = \frac{a^2+b^2-c^2}{2} ~.
-\end{aligned}
-bccosAaccosBabcosC​=2b2+c2−a2​ ,=2a2+c2−b2​ ,=2a2+b2−c2​ .​
-代入，得
-2x2=b2+c2−a2+12a2+12c2−12b2+12a2+12b2−12c2−12a2 .\begin{aligned}
-2x^2 &amp; = b^2+c^2-a^2+\frac{1}{2}a^2+\frac{1}{2}c^2-\frac{1}{2}b^2+\frac{1}{2}a^2+\frac{1}{2}b^2-\frac{1}{2}c^2-\frac{1}{2}a^2 ~.
-\end{aligned}
-2x2​=b2+c2−a2+21​a2+21​c2−21​b2+21​a2+21​b2−21​c2−21​a2 .​
-即
-2x2=b2+c2−12a2 .\begin{aligned}
-2x^2 &amp; = b^2+c^2-\frac{1}{2}a^2 ~.
-\end{aligned}
-2x2​=b2+c2−21​a2 .​
-即
-b2+c2=2x2+12a2 .\begin{aligned}
-b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
-\end{aligned}
-b2+c2​=2x2+21​a2 .​
-第 2 种（余弦定理）
-在 △ABD\triangle ABD△ABD 与 △ABC\triangle ABC△ABC 中，由余弦定理可得
-{a2+c2−b2=2accos⁡B(1)14a2+c2−x2=accos⁡B(2)\begin{cases}
-a^2+c^2-b^2 = 2ac\cos B &amp; (1)\\
-\frac{1}{4}a^2+c^2-x^2 = ac\cos B &amp; (2)
-\end{cases}
-{a2+c2−b2=2accosB41​a2+c2−x2=accosB​(1)(2)​
-(2)×2−(1)(2)\times 2-(1)(2)×2−(1) 可得
-−12a2+c2+b2−2x2=0 .\begin{aligned}
--\frac{1}{2}a^2+c^2+b^2-2x^2 &amp; = 0 ~.
-\end{aligned}
-−21​a2+c2+b2−2x2​=0 .​
-即
-b2+c2=2x2+12a2 .\begin{aligned}
-b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
-\end{aligned}
-b2+c2​=2x2+21​a2 .​
-在 △ACD\triangle ACD△ACD 与 △ABC\triangle ABC△ABC 中，相似的推理可得相同结论 .
-第 3 种（作高）
-
-如图，作 AE⊥BCAE\perp BCAE⊥BC 于 EEE .
-若 EEE 在 DDD 的左侧，设 AE=h,BE=yAE=h,BE=yAE=h,BE=y，有
-{h2+y2=c2(1)h2+(12a−y)2=x2  ⟺  h2−14a2−ay+y2=x2(2)h2+(a−y)2=b2  ⟺  h2+a2−2ay+y2=b2(3)\begin{cases}
-h^2+y^2=c^2 &amp; (1)\\
-h^2+(\frac{1}{2}a-y)^2=x^2 \iff h^2-\frac{1}{4}a^2-ay+y^2=x^2 &amp; (2) \\
-h^2+(a-y)^2=b^2 \iff h^2+a^2-2ay+y^2=b^2 &amp; (3)
-\end{cases}
-⎩⎨⎧​h2+y2=c2h2+(21​a−y)2=x2⟺h2−41​a2−ay+y2=x2h2+(a−y)2=b2⟺h2+a2−2ay+y2=b2​(1)(2)(3)​
-(1)+(3)−(2)×2(1)+(3)-(2)\times 2(1)+(3)−(2)×2 得
-(h2+y2)+(h2+a2−2ay+y2)−2(h2+14a2−ay+y2)=b2+c2−2x2 .\begin{aligned}
-(h^2+y^2)+(h^2+a^2-2ay+y^2)-2(h^2+\frac{1}{4}a^2-ay+y^2) &amp; = b^2+c^2-2x^2 ~.
-\end{aligned}
-(h2+y2)+(h2+a2−2ay+y2)−2(h2+41​a2−ay+y2)​=b2+c2−2x2 .​
-即
-−12a2=b2+c2−2x2 .\begin{aligned}
--\frac{1}{2}a^2 &amp; = b^2+c^2-2x^2 ~.
-\end{aligned}
-−21​a2​=b2+c2−2x2 .​
-即
-b2+c2=2x2+12a2 .\begin{aligned}
-b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
-\end{aligned}
-b2+c2​=2x2+21​a2 .​
+    <title>Hello World</title>
+    <url>/post/hello-world/</url>
+    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start
+Create a new post
+$ hexo new &quot;My New Post&quot;
+More info: Writing
+Run server
+$ hexo server
+More info: Server
+Generate static files
+$ hexo generate
+More info: Generating
+Deploy to remote sites
+$ hexo deploy
+More info: Deployment
 ]]></content>
-      <categories>
-        <category>notes</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>OI 名言</title>
-    <url>/post/well-known-OI-sayings/</url>
-    <content><![CDATA[《OI 子》三章
-
-《骗分榜一，暴力爆零》by 20210732ktq
-正解不如暴力，暴力不如骗分。一道题目，两种做法，想而编之而WA。夫想而编之，必有得正解者矣，然而WA者，是正解不如暴力也。手非不酸也，码非不短也，部分分非不多也，暴力非不正确也，排名第二，是暴力不如骗分也。故曰，AC不以思路之深，暴力不以代码之短，首杀不以手速之快。骗分者榜一，暴力者爆零。爆零之至，老师骂之。榜一之至，全球膜之。以全球之所膜，攻教练之所骂，故OIer有不战，战必AK。
-
-
-《水题不能淫》by 20210927chr
-chr曰：“ktq，xcx岂不诚奆佬哉？骗分而OIers惧，正解而OI熄。”
-xrz曰：“是焉得为奆佬乎？子未学OI乎？奆佬之冠也，zc命之，蒟蒻之冠也，ls命之，往送之CSP，戒之曰：‘往之CSP，必敬必戒，无违考规！’以骗为正者，蒟蒻之道也。做天下之难题，写天下之正解，AK天下之比赛。AK，与OIers由之；不AK，自己切题。水题不能淫，难题不能移，毒瘤不能屈，此之谓奆佬。”
-
-
-《生于练习，死于退费》by 20211202lxy
-轩发于范赵之中，Sai_t举于richup之间，澜译举于冰火之中，孔韬棋举于gen，项承煦举于florr，蒋亦霖举于ma，故天将降大任于是人也，必先苦其射飞，劳其破产，饿其王塔，空乏连击，行拂乱其所为，使其停止退费，曾益其所不会。
-人恒错，然后能改；减于空，缩于时，而后过；骗于分，暴于力，而后涨。入则无暴力骗分，出则无AC过题者，人恒寄。然后知生于练习而死于退费也。
-
-]]></content>
-      <categories>
-        <category>others</category>
-      </categories>
   </entry>
   <entry>
     <title>洛谷 P1131 题解</title>
@@ -605,6 +510,101 @@ epln⁡rq\text{e}^{\frac{p\ln r}{q}}eqplnr​ 是实数域内的计算，值唯�
 
 4.6 复变三角函数与双曲函数
 to do.
+]]></content>
+      <categories>
+        <category>notes</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>中线定理的几种证明</title>
+    <url>/post/pappus-law/</url>
+    <content><![CDATA[中线定理
+如图，在 △ABC\triangle ABC△ABC 中，DDD 是 BCBCBC 的中点，则有
+AB2+AC2=2AD2+12BC2=2AD2+2BD2=2AD2+2CD2 .AB^2+AC^2 = 2AD^2+\frac{1}{2}BC^2 = 2AD^2+2BD^2 = 2AD^2+2CD^2 ~. 
+AB2+AC2=2AD2+21​BC2=2AD2+2BD2=2AD2+2CD2 .
+即三角形一条中线两侧所对的边平方和等于底边平方的一半与该边中线平方的两倍的和 .
+
+
+以下讨论中，设 AD=x,AB=c,AC=b,BC=aAD=x,AB=c,AC=b,BC=aAD=x,AB=c,AC=b,BC=a，原命题即化为
+b2+c2=2x2+12a2 .b^2+c^2 = 2x^2+\frac{1}{2}a^2 ~. 
+b2+c2=2x2+21​a2 .
+第 1 种（繁）
+
+如图，在 △ABC\triangle ABC△ABC 中，有 AD→=AB→+BD→=AC→+CD→\overrightarrow{AD}=\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AC}+\overrightarrow{CD}AD=AB+BD=AC+CD .
+于是有
+AD→⋅AD→=(AB→+BD→)⋅(AC→+CD→)∣AD→∣2=AB→⋅AC→+AB→⋅CD→+BD→⋅AC→+BD→⋅CD→∣AD→∣2=∣AB→∣∣AC→∣cos⁡A+∣AB→∣∣CD→∣cos⁡B+∣BD→∣∣AC→∣cos⁡C−∣BD→∣∣CD→∣x2=bccos⁡A+12accos⁡B+12abcos⁡C−14a22x2=2bccos⁡A+accos⁡B+abcos⁡C−12a2 .\begin{aligned}
+\overrightarrow{AD}\cdot\overrightarrow{AD} &amp; = (\overrightarrow{AB}+\overrightarrow{BD})\cdot(\overrightarrow{AC}+\overrightarrow{CD})\\
+\left\lvert\overrightarrow{AD}\right\rvert^2 &amp; = \overrightarrow{AB}\cdot\overrightarrow{AC}+\overrightarrow{AB}\cdot\overrightarrow{CD}+\overrightarrow{BD}\cdot\overrightarrow{AC}+\overrightarrow{BD}\cdot\overrightarrow{CD}\\
+\left\lvert\overrightarrow{AD}\right\rvert^2 &amp; = \left\lvert\overrightarrow{AB}\right\rvert\left\lvert\overrightarrow{AC}\right\rvert\cos A+\left\lvert\overrightarrow{AB}\right\rvert\left\lvert\overrightarrow{CD}\right\rvert\cos B+\left\lvert\overrightarrow{BD}\right\rvert\left\lvert\overrightarrow{AC}\right\rvert\cos C-\left\lvert\overrightarrow{BD}\right\rvert\left\lvert\overrightarrow{CD}\right\rvert\\
+x^2 &amp; = bc\cos A + \frac{1}{2}ac\cos B + \frac{1}{2}ab\cos C - \frac{1}{4}a^2\\
+2x^2 &amp; = 2bc\cos A + ac\cos B + ab\cos C - \frac{1}{2}a^2 ~.
+\end{aligned}
+AD⋅AD​AD​2​AD​2x22x2​=(AB+BD)⋅(AC+CD)=AB⋅AC+AB⋅CD+BD⋅AC+BD⋅CD=​AB​​AC​cosA+​AB​​CD​cosB+​BD​​AC​cosC−​BD​​CD​=bccosA+21​accosB+21​abcosC−41​a2=2bccosA+accosB+abcosC−21​a2 .​
+由余弦定理
+bccos⁡A=b2+c2−a22 ,accos⁡B=a2+c2−b22 ,abcos⁡C=a2+b2−c22 .\begin{aligned}
+bc\cos A &amp; = \frac{b^2+c^2-a^2}{2} ~,\\
+ac\cos B &amp; = \frac{a^2+c^2-b^2}{2} ~,\\
+ab\cos C &amp; = \frac{a^2+b^2-c^2}{2} ~.
+\end{aligned}
+bccosAaccosBabcosC​=2b2+c2−a2​ ,=2a2+c2−b2​ ,=2a2+b2−c2​ .​
+代入，得
+2x2=b2+c2−a2+12a2+12c2−12b2+12a2+12b2−12c2−12a2 .\begin{aligned}
+2x^2 &amp; = b^2+c^2-a^2+\frac{1}{2}a^2+\frac{1}{2}c^2-\frac{1}{2}b^2+\frac{1}{2}a^2+\frac{1}{2}b^2-\frac{1}{2}c^2-\frac{1}{2}a^2 ~.
+\end{aligned}
+2x2​=b2+c2−a2+21​a2+21​c2−21​b2+21​a2+21​b2−21​c2−21​a2 .​
+即
+2x2=b2+c2−12a2 .\begin{aligned}
+2x^2 &amp; = b^2+c^2-\frac{1}{2}a^2 ~.
+\end{aligned}
+2x2​=b2+c2−21​a2 .​
+即
+b2+c2=2x2+12a2 .\begin{aligned}
+b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
+\end{aligned}
+b2+c2​=2x2+21​a2 .​
+第 2 种（余弦定理）
+在 △ABD\triangle ABD△ABD 与 △ABC\triangle ABC△ABC 中，由余弦定理可得
+{a2+c2−b2=2accos⁡B(1)14a2+c2−x2=accos⁡B(2)\begin{cases}
+a^2+c^2-b^2 = 2ac\cos B &amp; (1)\\
+\frac{1}{4}a^2+c^2-x^2 = ac\cos B &amp; (2)
+\end{cases}
+{a2+c2−b2=2accosB41​a2+c2−x2=accosB​(1)(2)​
+(2)×2−(1)(2)\times 2-(1)(2)×2−(1) 可得
+−12a2+c2+b2−2x2=0 .\begin{aligned}
+-\frac{1}{2}a^2+c^2+b^2-2x^2 &amp; = 0 ~.
+\end{aligned}
+−21​a2+c2+b2−2x2​=0 .​
+即
+b2+c2=2x2+12a2 .\begin{aligned}
+b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
+\end{aligned}
+b2+c2​=2x2+21​a2 .​
+在 △ACD\triangle ACD△ACD 与 △ABC\triangle ABC△ABC 中，相似的推理可得相同结论 .
+第 3 种（作高）
+
+如图，作 AE⊥BCAE\perp BCAE⊥BC 于 EEE .
+若 EEE 在 DDD 的左侧，设 AE=h,BE=yAE=h,BE=yAE=h,BE=y，有
+{h2+y2=c2(1)h2+(12a−y)2=x2  ⟺  h2−14a2−ay+y2=x2(2)h2+(a−y)2=b2  ⟺  h2+a2−2ay+y2=b2(3)\begin{cases}
+h^2+y^2=c^2 &amp; (1)\\
+h^2+(\frac{1}{2}a-y)^2=x^2 \iff h^2-\frac{1}{4}a^2-ay+y^2=x^2 &amp; (2) \\
+h^2+(a-y)^2=b^2 \iff h^2+a^2-2ay+y^2=b^2 &amp; (3)
+\end{cases}
+⎩⎨⎧​h2+y2=c2h2+(21​a−y)2=x2⟺h2−41​a2−ay+y2=x2h2+(a−y)2=b2⟺h2+a2−2ay+y2=b2​(1)(2)(3)​
+(1)+(3)−(2)×2(1)+(3)-(2)\times 2(1)+(3)−(2)×2 得
+(h2+y2)+(h2+a2−2ay+y2)−2(h2+14a2−ay+y2)=b2+c2−2x2 .\begin{aligned}
+(h^2+y^2)+(h^2+a^2-2ay+y^2)-2(h^2+\frac{1}{4}a^2-ay+y^2) &amp; = b^2+c^2-2x^2 ~.
+\end{aligned}
+(h2+y2)+(h2+a2−2ay+y2)−2(h2+41​a2−ay+y2)​=b2+c2−2x2 .​
+即
+−12a2=b2+c2−2x2 .\begin{aligned}
+-\frac{1}{2}a^2 &amp; = b^2+c^2-2x^2 ~.
+\end{aligned}
+−21​a2​=b2+c2−2x2 .​
+即
+b2+c2=2x2+12a2 .\begin{aligned}
+b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
+\end{aligned}
+b2+c2​=2x2+21​a2 .​
 ]]></content>
       <categories>
         <category>notes</category>
