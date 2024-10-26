@@ -57,9 +57,9 @@ ex=expx .
 
 (ex)′=ex\left(\mathrm{e}^x\right)&#x27;=\mathrm{e}^x(ex)′=ex，即 exp⁡′x=exp⁡x\exp&#x27;x=\exp xexp′x=expx，其处处可导；
 ax=exln⁡aa^x=\mathrm{e}^{x\ln a}ax=exlna；
-ex+y=exeye^{x+y}=e^xe^yex+y=exey，即 exp⁡(x+y)=exp⁡xexp⁡y\exp(x+y)=\exp x\exp yexp(x+y)=expxexpy；
-exy=(ex)ye^{xy}=\left(e^x\right)^yexy=(ex)y；即 exp⁡xy=exp⁡yx\exp xy=\exp^y xexpxy=expyx；
-e−x=1exe^{-x}=\frac{1}{e^x}e−x=ex1​，即 exp⁡(−x)=1exp⁡x\exp(-x)=\frac{1}{\exp x}exp(−x)=expx1​ .
+ex+y=exey\mathrm{e}^{x+y}=\mathrm{e}^x\mathrm{e}^yex+y=exey，即 exp⁡(x+y)=exp⁡xexp⁡y\exp(x+y)=\exp x\exp yexp(x+y)=expxexpy；
+exy=(ex)y\mathrm{e}^{xy}=\left(\mathrm{e}^x\right)^yexy=(ex)y；即 exp⁡xy=exp⁡yx\exp xy=\exp^y xexpxy=expyx；
+e−x=1ex\mathrm{e}^{-x}=\frac{1}{\mathrm{e}^x}e−x=ex1​，即 exp⁡(−x)=1exp⁡x\exp(-x)=\frac{1}{\exp x}exp(−x)=expx1​ .
 
 它们对任意 x,y∈Rx,y\in\Bbb{R}x,y∈R 都是有效的 .
 4.3.2 复变指数函数
