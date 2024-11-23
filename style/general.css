@@ -1,11 +1,11 @@
 .font-serif {
     font-family: "CMU Serif", "Source Serif Pro", "Source Serif 4",
-        "Times New Roman", "Source Han Serif", "Noto Serif CJK SC", "华文中宋",
+        "Times New Roman", "Source Han Serif SC", "Noto Serif CJK SC", "华文中宋",
         "宋体", serif;
 }
 
 .font-sans {
     font-family: "CMU Sans Serif", "Source Sans Pro", "Source Sans 3",
-        "Noto Sans", "Helvetica Neue", "Arial", "Source Han Sans",
+        "Noto Sans", "Helvetica Neue", "Arial", "Source Han Sans SC",
         "Noto Sans CJK SC", "PingFang SC", "Microsoft Yahei", sans-serif;
 }
