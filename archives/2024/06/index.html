@@ -6,20 +6,109 @@
 <meta property="og:image" content="https://appofficer.github.io/bassets/author.jpg">
 <meta property="article:author" content="AppOfficer">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://appofficer.github.io/bassets/author.jpg"><link rel="shortcut icon" href="/bassets/author.jpg"><link rel="canonical" href="https://appofficer.github.io/archives/2024/06/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//static.cloudflareinsights.com"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script defer="defer" data-pjax="data-pjax" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;9df342e2bac045988cf62ba88f46beea&quot;}"></script><script>(function(c,l,a,r,i,t,y){
+<meta name="twitter:image" content="https://appofficer.github.io/bassets/author.jpg"><link rel="shortcut icon" href="/bassets/author.jpg"><link rel="canonical" href="https://appofficer.github.io/archives/2024/06/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//static.cloudflareinsights.com"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.2.2"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script defer="defer" data-pjax="data-pjax" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;9df342e2bac045988cf62ba88f46beea&quot;}"></script><script>(function(c,l,a,r,i,t,y){
     c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
     t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
     y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 })(window, document, "clarity", "script", "mxh58dvg4f");</script><script>const GLOBAL_CONFIG = {
   root: '/',
   algolia: undefined,
-  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found"}},
+  localSearch: undefined,
   translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
   copy: {
     success: 'Copy Successful',
-    error: 'Copy Error',
+    error: 'Copy Failed',
     noSupport: 'Browser Not Supported'
   },
   relativeDate: {
@@ -35,10 +124,10 @@
     month: 'months ago'
   },
   copyright: undefined,
-  lightbox: 'fancybox',
+  lightbox: 'null',
   Snackbar: {"chs_to_cht":"You have switched to Traditional Chinese","cht_to_chs":"You have switched to Simplified Chinese","day_to_night":"You have switched to Dark Mode","night_to_day":"You have switched to Light Mode","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
   infinitegrid: {
-    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
     buttonText: 'Load More'
   },
   isPhotoFigcaption: true,
@@ -55,104 +144,8 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-11-23 18:00:48'
-}</script><script>(win=>{
-      win.saveToLocal = {
-        set: (key, value, ttl) => {
-          if (ttl === 0) return
-          const now = Date.now()
-          const expiry = now + ttl * 86400000
-          const item = {
-            value,
-            expiry
-          }
-          localStorage.setItem(key, JSON.stringify(item))
-        },
-      
-        get: key => {
-          const itemStr = localStorage.getItem(key)
-      
-          if (!itemStr) {
-            return undefined
-          }
-          const item = JSON.parse(itemStr)
-          const now = Date.now()
-      
-          if (now > item.expiry) {
-            localStorage.removeItem(key)
-            return undefined
-          }
-          return item.value
-        }
-      }
-    
-      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
-        const script = document.createElement('script')
-        script.src = url
-        script.async = true
-        script.onerror = reject
-        script.onload = script.onreadystatechange = function() {
-          const loadState = this.readyState
-          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-          script.onload = script.onreadystatechange = null
-          resolve()
-        }
-
-        Object.keys(attr).forEach(key => {
-          script.setAttribute(key, attr[key])
-        })
-
-        document.head.appendChild(script)
-      })
-    
-      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
-        const link = document.createElement('link')
-        link.rel = 'stylesheet'
-        link.href = url
-        if (id) link.id = id
-        link.onerror = reject
-        link.onload = link.onreadystatechange = function() {
-          const loadState = this.readyState
-          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-          link.onload = link.onreadystatechange = null
-          resolve()
-        }
-        document.head.appendChild(link)
-      })
-    
-      win.activateDarkMode = () => {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = () => {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
-    
-        if (t === 'dark') activateDarkMode()
-        else if (t === 'light') activateLightMode()
-      
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
-    
-      const detectApple = () => {
-        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-          document.documentElement.classList.add('apple')
-        }
-      }
-      detectApple()
-    })(window)</script><link rel="stylesheet" href="/style/fonts/fira_code/fira_code.css"><link rel="stylesheet" href="/hlstyle/monokai.css"><link rel="stylesheet" href="/style/general.css"><meta name="generator" content="Hexo 7.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><script>(()=>{
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/style/fonts/fira_code/fira_code.css"><link rel="stylesheet" href="/hlstyle/monokai.css"><link rel="stylesheet" href="/style/general.css"><meta name="generator" content="Hexo 7.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><script>(()=>{
   const $loadingBox = document.getElementById('loading-box')
   const $body = document.body
   const preloader = {
@@ -167,87 +160,105 @@
   }
 
   preloader.initLoading()
-  window.addEventListener('load',() => { preloader.endLoading() })
+  window.addEventListener('load', preloader.endLoading)
 
   if (true) {
-    document.addEventListener('pjax:send', () => { preloader.initLoading() })
-    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
   }
-})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/bassets/author.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart fa-beat"></i><span> About</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Friend Links</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="http://oj.oimaster.top"><i class="fa-fw fas fa-paper-plane"></i><span> GutcOJ</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://xiaruize0911.github.io"><i class="fa-fw fas fa-blog fa-shake"></i><span> Xiaruize's Blog</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://oimaster.top"><i class="fa-fw fas fa-blog fa-shake"></i><span> OI-Master's Blog</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder"></i><span> LocalGen</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="http://github.com/SZXC-WG/LocalGen-new"><i class="fa-fw fas fa-code fa-shake"></i><span> Repository</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://github.com/SZXC-WG/LocalGen-new/releases"><i class="fa-fw fas fa-file"></i><span> Releases</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://github.com/SZXC-WG/LocalGen-new/releases/latest"><i class="fa-fw fas fa-file"></i><span> Latest Release</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page fixed" id="page-header" style="background-image: url('/bassets/spotlight/img000_h.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="AOBlog"><img class="site-icon" src="/bassets/author.jpg"/><span class="site-name">AOBlog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart fa-beat"></i><span> About</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Friend Links</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="http://oj.oimaster.top"><i class="fa-fw fas fa-paper-plane"></i><span> GutcOJ</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://xiaruize0911.github.io"><i class="fa-fw fas fa-blog fa-shake"></i><span> Xiaruize's Blog</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://oimaster.top"><i class="fa-fw fas fa-blog fa-shake"></i><span> OI-Master's Blog</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder"></i><span> LocalGen</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="http://github.com/SZXC-WG/LocalGen-new"><i class="fa-fw fas fa-code fa-shake"></i><span> Repository</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://github.com/SZXC-WG/LocalGen-new/releases"><i class="fa-fw fas fa-file"></i><span> Releases</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://github.com/SZXC-WG/LocalGen-new/releases/latest"><i class="fa-fw fas fa-file"></i><span> Latest Release</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">June 2024</h1></div></header><main class="layout" id="content-inner"><div id="archive"><div class="article-sort-title">Articles - 3</div><div class="article-sort"><div class="article-sort-item year">2024</div><div class="article-sort-item no-article-cover"><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2024-06-22T09:20:07.000Z" title="Created 2024-06-22 17:20:07">2024-06-22</time></div><a class="article-sort-item-title" href="/post/complex-numbers-2/" title="复数 (II)">复数 (II)</a></div></div><div class="article-sort-item no-article-cover"><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2024-06-17T12:29:11.000Z" title="Created 2024-06-17 20:29:11">2024-06-17</time></div><a class="article-sort-item-title" href="/post/complex-numbers/" title="复数 (I)">复数 (I)</a></div></div><div class="article-sort-item no-article-cover"><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2024-06-16T15:00:00.000Z" title="Created 2024-06-16 23:00:00">2024-06-16</time></div><a class="article-sort-item-title" href="/post/pappus-law/" title="中线定理的几种证明">中线定理的几种证明</a></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/bassets/author.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">AppOfficer</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/AppOfficer/AppOfficer.github.io"><i class="fab fa-github"></i><span>Talk less. Smile more.</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/AppOfficer" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:lennyzhang0322@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="mailto:lennyzhang0322@gmail.com" target="_blank" title="Gmail"><i class="fab fa-google" style="color: #4285f4;"></i></a><a class="social-icon" href="https://www.instagram.com/lennyzhang2048" target="_blank" title="Instagram"><i class="fab fa-instagram" style="color: #e4405f;"></i></a><a class="social-icon" href="https://x.com/lennyzhang2048" target="_blank" title="Twitter (X)"><i class="fab fa-x-twitter" style="color: #1da1f2;"></i></a><a class="social-icon" href="https://wpa.qq.com/msgrd?V=3&amp;Uin=1840056308" target="_blank" title="QQ"><i class="fab fa-qq" style="color: #ea1b25;"></i></a><a class="social-icon" href="https://steamcommunity.com/id/lennyzhang0322" target="_blank" title="Steam"><i class="fab fa-steam" style="color: #1e3050;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">2024/06/17：中考结束了。博客写起来吧。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/complex-numbers-2/" title="复数 (II)">复数 (II)</a><time datetime="2024-06-22T09:20:07.000Z" title="Created 2024-06-22 17:20:07">2024-06-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/complex-numbers/" title="复数 (I)">复数 (I)</a><time datetime="2024-06-17T12:29:11.000Z" title="Created 2024-06-17 20:29:11">2024-06-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/pappus-law/" title="中线定理的几种证明">中线定理的几种证明</a><time datetime="2024-06-16T15:00:00.000Z" title="Created 2024-06-16 23:00:00">2024-06-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/well-known-OI-sayings/" title="OI 名言">OI 名言</a><time datetime="2023-05-13T03:14:11.000Z" title="Created 2023-05-13 11:14:11">2023-05-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/luogu-p1131-editorial/" title="洛谷 P1131 题解">洛谷 P1131 题解</a><time datetime="2023-05-11T14:11:27.000Z" title="Created 2023-05-11 22:11:27">2023-05-11</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+})()</script><div id="web_bg" style="background-image: url(url('/bassets/other-bg/Starry sky at midnight.png'));"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/bassets/author.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart fa-beat"></i><span> About</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> Friend Links</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="http://oj.oimaster.top"><i class="fa-fw fas fa-paper-plane"></i><span> GutcOJ</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://xiaruize0911.github.io"><i class="fa-fw fas fa-blog fa-shake"></i><span> Xiaruize's Blog</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://oimaster.top"><i class="fa-fw fas fa-blog fa-shake"></i><span> OI-Master's Blog</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-folder"></i><span> LocalGen</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="http://github.com/SZXC-WG/LocalGen-new"><i class="fa-fw fas fa-code fa-shake"></i><span> Repository</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://github.com/SZXC-WG/LocalGen-new/releases"><i class="fa-fw fas fa-file"></i><span> Releases</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://github.com/SZXC-WG/LocalGen-new/releases/latest"><i class="fa-fw fas fa-file"></i><span> Latest Release</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page fixed" id="page-header" style="background-image: url(/bassets/spotlight/img000_h.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/bassets/author.jpg" alt="Logo"><span class="site-name">AOBlog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart fa-beat"></i><span> About</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> Friend Links</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="http://oj.oimaster.top"><i class="fa-fw fas fa-paper-plane"></i><span> GutcOJ</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://xiaruize0911.github.io"><i class="fa-fw fas fa-blog fa-shake"></i><span> Xiaruize's Blog</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://oimaster.top"><i class="fa-fw fas fa-blog fa-shake"></i><span> OI-Master's Blog</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-folder"></i><span> LocalGen</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="http://github.com/SZXC-WG/LocalGen-new"><i class="fa-fw fas fa-code fa-shake"></i><span> Repository</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://github.com/SZXC-WG/LocalGen-new/releases"><i class="fa-fw fas fa-file"></i><span> Releases</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://github.com/SZXC-WG/LocalGen-new/releases/latest"><i class="fa-fw fas fa-file"></i><span> Latest Release</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">June 2024</h1></div></header><main class="layout" id="content-inner"><div id="archive"><div class="article-sort-title">All Articles - 3</div><div class="article-sort"><div class="article-sort-item year">2024</div><div class="article-sort-item no-article-cover"><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2024-06-22T09:20:07.000Z" title="Created 2024-06-22 17:20:07">2024-06-22</time></div><a class="article-sort-item-title" href="/post/complex-numbers-2/" title="复数 (II)">复数 (II)</a></div></div><div class="article-sort-item no-article-cover"><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2024-06-17T12:29:11.000Z" title="Created 2024-06-17 20:29:11">2024-06-17</time></div><a class="article-sort-item-title" href="/post/complex-numbers/" title="复数 (I)">复数 (I)</a></div></div><div class="article-sort-item no-article-cover"><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2024-06-16T15:00:00.000Z" title="Created 2024-06-16 23:00:00">2024-06-16</time></div><a class="article-sort-item-title" href="/post/pappus-law/" title="中线定理的几种证明">中线定理的几种证明</a></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/bassets/author.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">AppOfficer</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/AppOfficer/AppOfficer.github.io"><i class="fab fa-github"></i><span>Talk less. Smile more.</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/AppOfficer" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:lennyzhang0322@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="mailto:lennyzhang0322@gmail.com" target="_blank" title="Gmail"><i class="fab fa-google" style="color: #4285f4;"></i></a><a class="social-icon" href="https://www.instagram.com/lennyzhang2048" target="_blank" title="Instagram"><i class="fab fa-instagram" style="color: #e4405f;"></i></a><a class="social-icon" href="https://x.com/lennyzhang2048" target="_blank" title="Twitter (X)"><i class="fab fa-x-twitter" style="color: #1da1f2;"></i></a><a class="social-icon" href="https://wpa.qq.com/msgrd?V=3&amp;Uin=1840056308" target="_blank" title="QQ"><i class="fab fa-qq" style="color: #ea1b25;"></i></a><a class="social-icon" href="https://steamcommunity.com/id/lennyzhang0322" target="_blank" title="Steam"><i class="fab fa-steam" style="color: #1e3050;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">2024/06/17：中考结束了。博客写起来吧。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/complex-numbers-2/" title="复数 (II)">复数 (II)</a><time datetime="2024-06-22T09:20:07.000Z" title="Created 2024-06-22 17:20:07">2024-06-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/complex-numbers/" title="复数 (I)">复数 (I)</a><time datetime="2024-06-17T12:29:11.000Z" title="Created 2024-06-17 20:29:11">2024-06-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/pappus-law/" title="中线定理的几种证明">中线定理的几种证明</a><time datetime="2024-06-16T15:00:00.000Z" title="Created 2024-06-16 23:00:00">2024-06-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/well-known-OI-sayings/" title="OI 名言">OI 名言</a><time datetime="2023-05-13T03:14:11.000Z" title="Created 2023-05-13 11:14:11">2023-05-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/luogu-p1131-editorial/" title="洛谷 P1131 题解">洛谷 P1131 题解</a><time datetime="2023-05-11T14:11:27.000Z" title="Created 2023-05-11 22:11:27">2023-05-11</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
             <i class="fas fa-folder-open"></i>
             <span>Categories</span>
             
-            </div>
-            <ul class="card-category-list" id="aside-cat-list">
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/editorial/"><span class="card-category-list-name">editorial</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/notes/"><span class="card-category-list-name">notes</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/others/"><span class="card-category-list-name">others</span><span class="card-category-list-count">1</span></a></li>
-            </ul></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/06/"><span class="card-archive-list-date">June 2024</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">May 2023</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">6</div></div><div class="webinfo-item"><div class="item-name">Total Count :</div><div class="item-count">11k</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-11-23T10:00:48.537Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By AppOfficer</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi everyone, welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="Toggle Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="/js/tw_cn.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="2487780506" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+          </ul></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>Archives</span>
+      
+    </div>
+    <ul class="card-archive-list">
+  
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/06/">
+          <span class="card-archive-list-date">June 2024</span>
+          <span class="card-archive-list-count">3</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2023/05/">
+          <span class="card-archive-list-date">May 2023</span>
+          <span class="card-archive-list-count">3</span>
+        </a>
+      </li>
+    </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">6</div></div><div class="webinfo-item"><div class="item-name">Total Word Count :</div><div class="item-count">11k</div></div><div class="webinfo-item"><div class="item-name">Unique Visitors :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Page Views :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-11-23T10:05:39.720Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By AppOfficer</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi everyone, welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="Toggle Between Traditional and Simplified Chinese">繁</button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.2.2"></script><script src="/js/main.js?v=5.2.2"></script><script src="/js/tw_cn.js?v=5.2.2"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="2487780506" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.4/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
 POWERMODE.shake = true;
 POWERMODE.mobile = false;
 document.body.addEventListener('input', POWERMODE);
-</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/click-show-text.min.js" data-mobile="false" data-text="How does the bastard orphan,son of a whore and a Scotsman,dropped in the middle of ,a forgotten spot,in the Caribbean,by providence ,impoverished ,in squalor,grow up to be ,a hero and a scholar?,The ten-dollar ,founding father,without a father ,got a lot farther,by working a lot harder,by being a lot smarter,by being a self-starter,by 14 they place him ,in charge of,a trading charter.,And every day ,while slaves were,being slaughtered ,and carted away,across the waves,he struggled and,kept his guard up. ,Inside he was longing ,for something to be a part of,the brother was ready,to beg steal borrow or barter.,Then a hurricane came,and devastation reigned,our man saw his future drip,dripping down the drain.,Put a pencil to his temple,connected it to his brain,and he wrote his first refrain,a testament to his pain.,Well the word got around they said,&quot;This kid is insane man&quot;,took up a collection just to send,him to the mainland,&quot;Get your education do not forget&quot;,&quot;from whence you came and the world&quot;,&quot;is gonna know your name.&quot;,&quot;What is your name man?&quot;,Alexander Hamilton.,My name is Alexander Hamilton.,And there is a million things I have not done.,But just you wait just you wait..." data-fontsize="15px" data-random="false" async="async"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["link[rel=\"canonical\"]","meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
-
-var pjax = new Pjax({
-  elements: 'a:not([target="_blank"])',
-  selectors: pjaxSelectors,
-  cacheBust: false,
-  analytics: false,
-  scrollRestoration: false
-})
-
-document.addEventListener('pjax:send', function () {
-
-  // removeEventListener
-  btf.removeGlobalFnEvent('pjax')
-  btf.removeGlobalFnEvent('themeChange')
-
-  document.getElementById('rightside').classList.remove('rightside-show')
-  
-  if (window.aplayers) {
-    for (let i = 0; i < window.aplayers.length; i++) {
-      if (!window.aplayers[i].options.fixed) {
-        window.aplayers[i].destroy()
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.4/dist/click-show-text.min.js" data-mobile="false" data-text="How does the bastard orphan,son of a whore and a Scotsman,dropped in the middle of ,a forgotten spot,in the Caribbean,by providence ,impoverished ,in squalor,grow up to be ,a hero and a scholar?,The ten-dollar ,founding father,without a father ,got a lot farther,by working a lot harder,by being a lot smarter,by being a self-starter,by 14 they place him ,in charge of,a trading charter.,And every day ,while slaves were,being slaughtered ,and carted away,across the waves,he struggled and,kept his guard up. ,Inside he was longing ,for something to be a part of,the brother was ready,to beg steal borrow or barter.,Then a hurricane came,and devastation reigned,our man saw his future drip,dripping down the drain.,Put a pencil to his temple,connected it to his brain,and he wrote his first refrain,a testament to his pain.,Well the word got around they said,&quot;This kid is insane man&quot;,took up a collection just to send,him to the mainland,&quot;Get your education do not forget&quot;,&quot;from whence you came and the world&quot;,&quot;is gonna know your name.&quot;,&quot;What is your name man?&quot;,Alexander Hamilton.,My name is Alexander Hamilton.,And there is a million things I have not done.,But just you wait just you wait..." data-fontsize="15px" data-random="false" async="async"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.4/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
       }
     }
   }
 
-  typeof typed === 'object' && typed.destroy()
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
 
-  //reset readmode
-  const $bodyClassList = document.body.classList
-  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["link[rel=\"canonical\"]","meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
 
-  typeof disqusjs === 'object' && disqusjs.destroy()
-})
-
-document.addEventListener('pjax:complete', function () {
-  window.refreshFn()
-
-  document.querySelectorAll('script[data-pjax]').forEach(item => {
-    const newScript = document.createElement('script')
-    const content = item.text || item.textContent || item.innerHTML || ""
-    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
-    newScript.appendChild(document.createTextNode(content))
-    item.parentNode.replaceChild(newScript, item)
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
   })
 
-  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
-
-  typeof panguInit === 'function' && panguInit()
-
-  // google analytics
-  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
-
-  // baidu analytics
-  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
-
-  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
-
-  // prismjs
-  typeof Prism === 'object' && Prism.highlightAll()
-})
-
-document.addEventListener('pjax:error', e => {
-  if (e.request.status === 404) {
-    pjax.loadUrl('/404')
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
   }
-})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404')
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
