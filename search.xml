@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/post/hello-world/</url>
+    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start
+Create a new post
+$ hexo new &quot;My New Post&quot;
+More info: Writing
+Run server
+$ hexo server
+More info: Server
+Generate static files
+$ hexo generate
+More info: Generating
+Deploy to remote sites
+$ hexo deploy
+More info: Deployment
+]]></content>
+  </entry>
+  <entry>
     <title>复数 (II)</title>
     <url>/post/complex-numbers-2/</url>
     <content><![CDATA[复数 (II)
@@ -167,12 +186,12 @@ ab∵b∈Z,∴ab​=exp(bLna)=exp(b(lnr+(θ+2kπ)i))=exp(blnr+b(θ+2kπ)i)=eblnr
 ab=exp⁡(bLn⁡a)=exp⁡(pq(ln⁡r+(θ+2kπ)))=exp⁡(pln⁡r+p(θ+2kπ)iq)=exp⁡(pln⁡rq+p(θ+2kπ)iq)=epln⁡rq⋅ei(pqθ+pk⋅2πq)\begin{aligned}
 a^b
 &amp;= \exp(b\operatorname{Ln}a) \\
-&amp;= \exp\left(\frac{p}{q}\left(\ln r+\left(\theta+2k\pi\right)\right)\right) \\
-&amp;= \exp\left(\frac{p\ln r+p\left(\theta+2k\pi\right)\mathrm{i}}{q}\right) \\
-&amp;= \exp\left(\frac{p\ln r}{q}+\frac{p\left(\theta+2k\pi\right)\mathrm{i}}{q}\right) \\
-&amp;= \mathrm{e}^{\frac{p\ln r}{q}}\cdot\mathrm{e}^{\mathrm{i}\left(\frac{p}{q}\theta+pk\cdot\frac{2\pi}{q}\right)}
+&amp;= \exp\left(\vcenter{\frac{p}{q}\left(\ln r+\left(\theta+2k\pi\right)\right)}\right) \\
+&amp;= \exp\left(\vcenter{\frac{p\ln r+p\left(\theta+2k\pi\right)\mathrm{i}}{q}}\right) \\
+&amp;= \exp\left(\vcenter{\frac{p\ln r}{q}+\frac{p\left(\theta+2k\pi\right)\mathrm{i}}{q}}\right) \\
+&amp;= \mathrm{e}^{\frac{p\ln r}{q}}\cdot\mathrm{e}^{\mathrm{i}\left(\vcenter{\frac{p}{q}\theta+pk\cdot\frac{2\pi}{q}}\right)}
 \end{aligned}
-ab​=exp(bLna)=exp(qp​(lnr+(θ+2kπ)))=exp(qplnr+p(θ+2kπ)i​)=exp(qplnr​+qp(θ+2kπ)i​)=eqplnr​⋅ei(qp​θ+pk⋅q2π​)​
+ab​=exp(bLna)=exp(qp​(lnr+(θ+2kπ))​)=exp(qplnr+p(θ+2kπ)i​​)=exp(qplnr​+qp(θ+2kπ)i​​)=eqplnr​⋅ei(qp​θ+pk⋅q2π​​)​
 epln⁡rq\mathrm{e}^{\frac{p\ln r}{q}}eqplnr​ 是实数域内的计算，值唯一；ei(pqθ+pk⋅2πq)\mathrm{e}^{\mathrm{i}\left(\frac{p}{q}\theta+pk\cdot\frac{2\pi}{q}\right)}ei(qp​θ+pk⋅q2π​) 中，由于 gcd⁡(p,q)=1\gcd(p,q)=1gcd(p,q)=1，故有 qqq 个不同值 . 故该式整体上有 qqq 个不同值 . 证毕 .
 
 (3) 指数 bbb 为其他数（无理数或虚数）时，aba^bab 有无穷多个值 .
@@ -184,6 +203,43 @@ to do.
 ]]></content>
       <categories>
         <category>notes</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>洛谷 P1131 题解</title>
+    <url>/post/luogu-p1131-editorial/</url>
+    <content><![CDATA[传送门
+题意
+有一棵 nnn 个节点的以 sss 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 111。
+问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。
+结论 111
+对于任意子树，其根节点到其每个叶子节点的距离相等。
+
+证明：
+反证法。
+设对于根为 RRR 的树的根为 rrr 的某一子树，有两个叶子 aaa、bbb 到 rrr 的距离不等。
+那么不妨设节点 xxx 与 yyy 间的距离为 dis(x,y)dis(x,y)dis(x,y)，则有
+dis(a,r)≠dis(b,r)dis(a,r)\not=dis(b,r)
+dis(a,r)=dis(b,r)
+所以
+dis(a,r)+dis(r,R)≠dis(b,r)+dis(r,R)dis(a,r)+dis(r,R)\not=dis(b,r)+dis(r,R)
+dis(a,r)+dis(r,R)=dis(b,r)+dis(r,R)
+得
+dis(a,R)≠dis(b,R)dis(a,R)\not=dis(b,R)
+dis(a,R)=dis(b,R)
+即 aaa、bbb 到 RRR 的距离不等。这与题目条件矛盾，所以命题成立。
+
+解法
+既然结论 111 成立，那么先从最简单的情况入手。
+如图，在这一棵以 111 为根的树中，在操作后，根节点 111 到叶子的距离最小是几？
+
+很明显的，这个值应该是所有叶子到根的所有距离的最大值。
+那么对于每个节点都实行此原则，就结束了。
+Code：
+#include &lt;bits/stdc++.h&gt;using namespace std;using uint = unsigned;using ll = long long;using ull = unsigned long long;using pii = pair&lt;int,int&gt;;using pll = pair&lt;ll,ll&gt;;#define int llint hd[500005&lt;&lt;1],nxt[500005&lt;&lt;1],to[500005&lt;&lt;1],we[500005&lt;&lt;1],et=0;inline void adde(int u,int v,int w) &#123; ++et,to[et]=v,we[et]=w,nxt[et]=hd[u],hd[u]=et; &#125;int n,s,ans,dp[500005];void dfs(int u,int fa) &#123;    int mx=0,tot=0;    for(int i=hd[u],v,t; v=to[i],t=we[i],i; i=nxt[i]) &#123;        if(v==fa) continue;        dfs(v,u);        if(dp[v]+t&gt;mx) &#123;            ans+=(dp[v]+t-mx)*tot;            mx=dp[v]+t;        &#125; else ans+=(mx-dp[v]-t);        ++tot;    &#125;    dp[u]=mx;&#125;signed main() &#123;    cin&gt;&gt;n&gt;&gt;s;    for(int i=1; i&lt;n; ++i) &#123;        int u,v,t;        cin&gt;&gt;u&gt;&gt;v&gt;&gt;t;        adde(u,v,t); adde(v,u,t);    &#125;    dfs(s,0);    cout&lt;&lt;ans&lt;&lt;endl;&#125;
+]]></content>
+      <categories>
+        <category>editorial</category>
       </categories>
   </entry>
   <entry>
@@ -384,7 +440,7 @@ eiπ=−1 .
 欧拉证明此公式时，使用了此方法（方法一），而促进了复数域指数函数（exp⁡z\exp zexpz 等）的产生 . 但由于复数域中的泰勒展开等运算均需用到欧拉公式，故此一方法会造成循环论证，而不能作为证明，只能作为一种“验证方法” .
 下面证明过程引自 Wikipedia：
 
-首先，在复数域上对 exe^xex 进行定义：
+首先，在复数域上对 ex\mathrm{e}^xex 进行定义：
 
 对于 a,b∈R,c=a+bi∈Ca,b\in\Bbb{R},c=a+b\mathrm{i}\in\Bbb{C}a,b∈R,c=a+bi∈C，规定 ec=lim⁡n→∞(1+cn)n\mathrm{e}^c=\lim\limits_{n\to\infty}\left(1+\dfrac{c}{n}\right)^nec=n→∞lim​(1+nc​)n .
 
@@ -436,25 +492,6 @@ z=reiθz=r\mathrm{e}^{\mathrm{i}\theta}z=reiθ 称为复数 zzz 的指数形式 
       <categories>
         <category>notes</category>
       </categories>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/post/hello-world/</url>
-    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start
-Create a new post
-$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server
-$ hexo server
-More info: Server
-Generate static files
-$ hexo generate
-More info: Generating
-Deploy to remote sites
-$ hexo deploy
-More info: Deployment
-]]></content>
   </entry>
   <entry>
     <title>中线定理的几种证明</title>
@@ -549,43 +586,6 @@ b2+c2​=2x2+21​a2 .​
 ]]></content>
       <categories>
         <category>notes</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>洛谷 P1131 题解</title>
-    <url>/post/luogu-p1131-editorial/</url>
-    <content><![CDATA[传送门
-题意
-有一棵 nnn 个节点的以 sss 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 111。
-问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。
-结论 111
-对于任意子树，其根节点到其每个叶子节点的距离相等。
-
-证明：
-反证法。
-设对于根为 RRR 的树的根为 rrr 的某一子树，有两个叶子 aaa、bbb 到 rrr 的距离不等。
-那么不妨设节点 xxx 与 yyy 间的距离为 dis(x,y)dis(x,y)dis(x,y)，则有
-dis(a,r)≠dis(b,r)dis(a,r)\not=dis(b,r)
-dis(a,r)=dis(b,r)
-所以
-dis(a,r)+dis(r,R)≠dis(b,r)+dis(r,R)dis(a,r)+dis(r,R)\not=dis(b,r)+dis(r,R)
-dis(a,r)+dis(r,R)=dis(b,r)+dis(r,R)
-得
-dis(a,R)≠dis(b,R)dis(a,R)\not=dis(b,R)
-dis(a,R)=dis(b,R)
-即 aaa、bbb 到 RRR 的距离不等。这与题目条件矛盾，所以命题成立。
-
-解法
-既然结论 111 成立，那么先从最简单的情况入手。
-如图，在这一棵以 111 为根的树中，在操作后，根节点 111 到叶子的距离最小是几？
-
-很明显的，这个值应该是所有叶子到根的所有距离的最大值。
-那么对于每个节点都实行此原则，就结束了。
-Code：
-#include &lt;bits/stdc++.h&gt;using namespace std;using uint = unsigned;using ll = long long;using ull = unsigned long long;using pii = pair&lt;int,int&gt;;using pll = pair&lt;ll,ll&gt;;#define int llint hd[500005&lt;&lt;1],nxt[500005&lt;&lt;1],to[500005&lt;&lt;1],we[500005&lt;&lt;1],et=0;inline void adde(int u,int v,int w) &#123; ++et,to[et]=v,we[et]=w,nxt[et]=hd[u],hd[u]=et; &#125;int n,s,ans,dp[500005];void dfs(int u,int fa) &#123;    int mx=0,tot=0;    for(int i=hd[u],v,t; v=to[i],t=we[i],i; i=nxt[i]) &#123;        if(v==fa) continue;        dfs(v,u);        if(dp[v]+t&gt;mx) &#123;            ans+=(dp[v]+t-mx)*tot;            mx=dp[v]+t;        &#125; else ans+=(mx-dp[v]-t);        ++tot;    &#125;    dp[u]=mx;&#125;signed main() &#123;    cin&gt;&gt;n&gt;&gt;s;    for(int i=1; i&lt;n; ++i) &#123;        int u,v,t;        cin&gt;&gt;u&gt;&gt;v&gt;&gt;t;        adde(u,v,t); adde(v,u,t);    &#125;    dfs(s,0);    cout&lt;&lt;ans&lt;&lt;endl;&#125;
-]]></content>
-      <categories>
-        <category>editorial</category>
       </categories>
   </entry>
   <entry>
