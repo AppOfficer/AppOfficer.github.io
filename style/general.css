@@ -11,6 +11,6 @@
 }
 
 .katex {
-    display: inherit;
+    display: contents;
 }
 
