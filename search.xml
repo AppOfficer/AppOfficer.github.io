@@ -206,6 +206,138 @@ More info: Deployment
 ]]></content>
   </entry>
   <entry>
+    <title>洛谷 P1131 题解</title>
+    <url>/post/luogu-p1131-editorial/</url>
+    <content><![CDATA[传送门
+题意
+有一棵 nnn 个节点的以 sss 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 111。
+问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。
+结论 111
+对于任意子树，其根节点到其每个叶子节点的距离相等。
+
+证明：
+反证法。
+设对于根为 RRR 的树的根为 rrr 的某一子树，有两个叶子 aaa、bbb 到 rrr 的距离不等。
+那么不妨设节点 xxx 与 yyy 间的距离为 dis(x,y)dis(x,y)dis(x,y)，则有
+dis(a,r)≠dis(b,r)dis(a,r)\not=dis(b,r)
+dis(a,r)=dis(b,r)
+所以
+dis(a,r)+dis(r,R)≠dis(b,r)+dis(r,R)dis(a,r)+dis(r,R)\not=dis(b,r)+dis(r,R)
+dis(a,r)+dis(r,R)=dis(b,r)+dis(r,R)
+得
+dis(a,R)≠dis(b,R)dis(a,R)\not=dis(b,R)
+dis(a,R)=dis(b,R)
+即 aaa、bbb 到 RRR 的距离不等。这与题目条件矛盾，所以命题成立。
+
+解法
+既然结论 111 成立，那么先从最简单的情况入手。
+如图，在这一棵以 111 为根的树中，在操作后，根节点 111 到叶子的距离最小是几？
+
+很明显的，这个值应该是所有叶子到根的所有距离的最大值。
+那么对于每个节点都实行此原则，就结束了。
+Code：
+#include &lt;bits/stdc++.h&gt;using namespace std;using uint = unsigned;using ll = long long;using ull = unsigned long long;using pii = pair&lt;int,int&gt;;using pll = pair&lt;ll,ll&gt;;#define int llint hd[500005&lt;&lt;1],nxt[500005&lt;&lt;1],to[500005&lt;&lt;1],we[500005&lt;&lt;1],et=0;inline void adde(int u,int v,int w) &#123; ++et,to[et]=v,we[et]=w,nxt[et]=hd[u],hd[u]=et; &#125;int n,s,ans,dp[500005];void dfs(int u,int fa) &#123;    int mx=0,tot=0;    for(int i=hd[u],v,t; v=to[i],t=we[i],i; i=nxt[i]) &#123;        if(v==fa) continue;        dfs(v,u);        if(dp[v]+t&gt;mx) &#123;            ans+=(dp[v]+t-mx)*tot;            mx=dp[v]+t;        &#125; else ans+=(mx-dp[v]-t);        ++tot;    &#125;    dp[u]=mx;&#125;signed main() &#123;    cin&gt;&gt;n&gt;&gt;s;    for(int i=1; i&lt;n; ++i) &#123;        int u,v,t;        cin&gt;&gt;u&gt;&gt;v&gt;&gt;t;        adde(u,v,t); adde(v,u,t);    &#125;    dfs(s,0);    cout&lt;&lt;ans&lt;&lt;endl;&#125;
+]]></content>
+      <categories>
+        <category>editorial</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>中线定理的几种证明</title>
+    <url>/post/pappus-law/</url>
+    <content><![CDATA[中线定理
+如图，在 △ABC\triangle ABC△ABC 中，DDD 是 BCBCBC 的中点，则有
+AB2+AC2=2AD2+12BC2=2AD2+2BD2=2AD2+2CD2 .AB^2+AC^2 = 2AD^2+\frac{1}{2}BC^2 = 2AD^2+2BD^2 = 2AD^2+2CD^2 ~. 
+AB2+AC2=2AD2+21​BC2=2AD2+2BD2=2AD2+2CD2 .
+即三角形一条中线两侧所对的边平方和等于底边平方的一半与该边中线平方的两倍的和 .
+
+
+以下讨论中，设 AD=x,AB=c,AC=b,BC=aAD=x,AB=c,AC=b,BC=aAD=x,AB=c,AC=b,BC=a，原命题即化为
+b2+c2=2x2+12a2 .b^2+c^2 = 2x^2+\frac{1}{2}a^2 ~. 
+b2+c2=2x2+21​a2 .
+第 1 种（繁）
+
+如图，在 △ABC\triangle ABC△ABC 中，有 AD→=AB→+BD→=AC→+CD→\overrightarrow{AD}=\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AC}+\overrightarrow{CD}AD=AB+BD=AC+CD .
+于是有
+AD→⋅AD→=(AB→+BD→)⋅(AC→+CD→)∣AD→∣2=AB→⋅AC→+AB→⋅CD→+BD→⋅AC→+BD→⋅CD→∣AD→∣2=∣AB→∣∣AC→∣cos⁡A+∣AB→∣∣CD→∣cos⁡B+∣BD→∣∣AC→∣cos⁡C−∣BD→∣∣CD→∣x2=bccos⁡A+12accos⁡B+12abcos⁡C−14a22x2=2bccos⁡A+accos⁡B+abcos⁡C−12a2 .\begin{aligned}
+\overrightarrow{AD}\cdot\overrightarrow{AD} &amp; = (\overrightarrow{AB}+\overrightarrow{BD})\cdot(\overrightarrow{AC}+\overrightarrow{CD})\\
+\left\lvert\overrightarrow{AD}\right\rvert^2 &amp; = \overrightarrow{AB}\cdot\overrightarrow{AC}+\overrightarrow{AB}\cdot\overrightarrow{CD}+\overrightarrow{BD}\cdot\overrightarrow{AC}+\overrightarrow{BD}\cdot\overrightarrow{CD}\\
+\left\lvert\overrightarrow{AD}\right\rvert^2 &amp; = \left\lvert\overrightarrow{AB}\right\rvert\left\lvert\overrightarrow{AC}\right\rvert\cos A+\left\lvert\overrightarrow{AB}\right\rvert\left\lvert\overrightarrow{CD}\right\rvert\cos B+\left\lvert\overrightarrow{BD}\right\rvert\left\lvert\overrightarrow{AC}\right\rvert\cos C-\left\lvert\overrightarrow{BD}\right\rvert\left\lvert\overrightarrow{CD}\right\rvert\\
+x^2 &amp; = bc\cos A + \frac{1}{2}ac\cos B + \frac{1}{2}ab\cos C - \frac{1}{4}a^2\\
+2x^2 &amp; = 2bc\cos A + ac\cos B + ab\cos C - \frac{1}{2}a^2 ~.
+\end{aligned}
+AD⋅AD​AD​2​AD​2x22x2​=(AB+BD)⋅(AC+CD)=AB⋅AC+AB⋅CD+BD⋅AC+BD⋅CD=​AB​​AC​cosA+​AB​​CD​cosB+​BD​​AC​cosC−​BD​​CD​=bccosA+21​accosB+21​abcosC−41​a2=2bccosA+accosB+abcosC−21​a2 .​
+由余弦定理
+bccos⁡A=b2+c2−a22 ,accos⁡B=a2+c2−b22 ,abcos⁡C=a2+b2−c22 .\begin{aligned}
+bc\cos A &amp; = \frac{b^2+c^2-a^2}{2} ~,\\
+ac\cos B &amp; = \frac{a^2+c^2-b^2}{2} ~,\\
+ab\cos C &amp; = \frac{a^2+b^2-c^2}{2} ~.
+\end{aligned}
+bccosAaccosBabcosC​=2b2+c2−a2​ ,=2a2+c2−b2​ ,=2a2+b2−c2​ .​
+代入，得
+2x2=b2+c2−a2+12a2+12c2−12b2+12a2+12b2−12c2−12a2 .\begin{aligned}
+2x^2 &amp; = b^2+c^2-a^2+\frac{1}{2}a^2+\frac{1}{2}c^2-\frac{1}{2}b^2+\frac{1}{2}a^2+\frac{1}{2}b^2-\frac{1}{2}c^2-\frac{1}{2}a^2 ~.
+\end{aligned}
+2x2​=b2+c2−a2+21​a2+21​c2−21​b2+21​a2+21​b2−21​c2−21​a2 .​
+即
+2x2=b2+c2−12a2 .\begin{aligned}
+2x^2 &amp; = b^2+c^2-\frac{1}{2}a^2 ~.
+\end{aligned}
+2x2​=b2+c2−21​a2 .​
+即
+b2+c2=2x2+12a2 .\begin{aligned}
+b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
+\end{aligned}
+b2+c2​=2x2+21​a2 .​
+第 2 种（余弦定理）
+在 △ABD\triangle ABD△ABD 与 △ABC\triangle ABC△ABC 中，由余弦定理可得
+{a2+c2−b2=2accos⁡B(1)14a2+c2−x2=accos⁡B(2)\begin{cases}
+a^2+c^2-b^2 = 2ac\cos B &amp; (1)\\
+\frac{1}{4}a^2+c^2-x^2 = ac\cos B &amp; (2)
+\end{cases}
+{a2+c2−b2=2accosB41​a2+c2−x2=accosB​(1)(2)​
+(2)×2−(1)(2)\times 2-(1)(2)×2−(1) 可得
+−12a2+c2+b2−2x2=0 .\begin{aligned}
+-\frac{1}{2}a^2+c^2+b^2-2x^2 &amp; = 0 ~.
+\end{aligned}
+−21​a2+c2+b2−2x2​=0 .​
+即
+b2+c2=2x2+12a2 .\begin{aligned}
+b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
+\end{aligned}
+b2+c2​=2x2+21​a2 .​
+在 △ACD\triangle ACD△ACD 与 △ABC\triangle ABC△ABC 中，相似的推理可得相同结论 .
+第 3 种（作高）
+
+如图，作 AE⊥BCAE\perp BCAE⊥BC 于 EEE .
+若 EEE 在 DDD 的左侧，设 AE=h,BE=yAE=h,BE=yAE=h,BE=y，有
+{h2+y2=c2(1)h2+(12a−y)2=x2  ⟺  h2−14a2−ay+y2=x2(2)h2+(a−y)2=b2  ⟺  h2+a2−2ay+y2=b2(3)\begin{cases}
+h^2+y^2=c^2 &amp; (1)\\
+h^2+(\frac{1}{2}a-y)^2=x^2 \iff h^2-\frac{1}{4}a^2-ay+y^2=x^2 &amp; (2) \\
+h^2+(a-y)^2=b^2 \iff h^2+a^2-2ay+y^2=b^2 &amp; (3)
+\end{cases}
+⎩⎨⎧​h2+y2=c2h2+(21​a−y)2=x2⟺h2−41​a2−ay+y2=x2h2+(a−y)2=b2⟺h2+a2−2ay+y2=b2​(1)(2)(3)​
+(1)+(3)−(2)×2(1)+(3)-(2)\times 2(1)+(3)−(2)×2 得
+(h2+y2)+(h2+a2−2ay+y2)−2(h2+14a2−ay+y2)=b2+c2−2x2 .\begin{aligned}
+(h^2+y^2)+(h^2+a^2-2ay+y^2)-2(h^2+\frac{1}{4}a^2-ay+y^2) &amp; = b^2+c^2-2x^2 ~.
+\end{aligned}
+(h2+y2)+(h2+a2−2ay+y2)−2(h2+41​a2−ay+y2)​=b2+c2−2x2 .​
+即
+−12a2=b2+c2−2x2 .\begin{aligned}
+-\frac{1}{2}a^2 &amp; = b^2+c^2-2x^2 ~.
+\end{aligned}
+−21​a2​=b2+c2−2x2 .​
+即
+b2+c2=2x2+12a2 .\begin{aligned}
+b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
+\end{aligned}
+b2+c2​=2x2+21​a2 .​
+]]></content>
+      <categories>
+        <category>notes</category>
+      </categories>
+  </entry>
+  <entry>
     <title>复数 (I)</title>
     <url>/post/complex-numbers/</url>
     <content><![CDATA[复数 (I)
@@ -454,138 +586,6 @@ z=reiθz=r\mathrm{e}^{\mathrm{i}\theta}z=reiθ 称为复数 zzz 的指数形式 
 ]]></content>
       <categories>
         <category>notes</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>中线定理的几种证明</title>
-    <url>/post/pappus-law/</url>
-    <content><![CDATA[中线定理
-如图，在 △ABC\triangle ABC△ABC 中，DDD 是 BCBCBC 的中点，则有
-AB2+AC2=2AD2+12BC2=2AD2+2BD2=2AD2+2CD2 .AB^2+AC^2 = 2AD^2+\frac{1}{2}BC^2 = 2AD^2+2BD^2 = 2AD^2+2CD^2 ~. 
-AB2+AC2=2AD2+21​BC2=2AD2+2BD2=2AD2+2CD2 .
-即三角形一条中线两侧所对的边平方和等于底边平方的一半与该边中线平方的两倍的和 .
-
-
-以下讨论中，设 AD=x,AB=c,AC=b,BC=aAD=x,AB=c,AC=b,BC=aAD=x,AB=c,AC=b,BC=a，原命题即化为
-b2+c2=2x2+12a2 .b^2+c^2 = 2x^2+\frac{1}{2}a^2 ~. 
-b2+c2=2x2+21​a2 .
-第 1 种（繁）
-
-如图，在 △ABC\triangle ABC△ABC 中，有 AD→=AB→+BD→=AC→+CD→\overrightarrow{AD}=\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AC}+\overrightarrow{CD}AD=AB+BD=AC+CD .
-于是有
-AD→⋅AD→=(AB→+BD→)⋅(AC→+CD→)∣AD→∣2=AB→⋅AC→+AB→⋅CD→+BD→⋅AC→+BD→⋅CD→∣AD→∣2=∣AB→∣∣AC→∣cos⁡A+∣AB→∣∣CD→∣cos⁡B+∣BD→∣∣AC→∣cos⁡C−∣BD→∣∣CD→∣x2=bccos⁡A+12accos⁡B+12abcos⁡C−14a22x2=2bccos⁡A+accos⁡B+abcos⁡C−12a2 .\begin{aligned}
-\overrightarrow{AD}\cdot\overrightarrow{AD} &amp; = (\overrightarrow{AB}+\overrightarrow{BD})\cdot(\overrightarrow{AC}+\overrightarrow{CD})\\
-\left\lvert\overrightarrow{AD}\right\rvert^2 &amp; = \overrightarrow{AB}\cdot\overrightarrow{AC}+\overrightarrow{AB}\cdot\overrightarrow{CD}+\overrightarrow{BD}\cdot\overrightarrow{AC}+\overrightarrow{BD}\cdot\overrightarrow{CD}\\
-\left\lvert\overrightarrow{AD}\right\rvert^2 &amp; = \left\lvert\overrightarrow{AB}\right\rvert\left\lvert\overrightarrow{AC}\right\rvert\cos A+\left\lvert\overrightarrow{AB}\right\rvert\left\lvert\overrightarrow{CD}\right\rvert\cos B+\left\lvert\overrightarrow{BD}\right\rvert\left\lvert\overrightarrow{AC}\right\rvert\cos C-\left\lvert\overrightarrow{BD}\right\rvert\left\lvert\overrightarrow{CD}\right\rvert\\
-x^2 &amp; = bc\cos A + \frac{1}{2}ac\cos B + \frac{1}{2}ab\cos C - \frac{1}{4}a^2\\
-2x^2 &amp; = 2bc\cos A + ac\cos B + ab\cos C - \frac{1}{2}a^2 ~.
-\end{aligned}
-AD⋅AD​AD​2​AD​2x22x2​=(AB+BD)⋅(AC+CD)=AB⋅AC+AB⋅CD+BD⋅AC+BD⋅CD=​AB​​AC​cosA+​AB​​CD​cosB+​BD​​AC​cosC−​BD​​CD​=bccosA+21​accosB+21​abcosC−41​a2=2bccosA+accosB+abcosC−21​a2 .​
-由余弦定理
-bccos⁡A=b2+c2−a22 ,accos⁡B=a2+c2−b22 ,abcos⁡C=a2+b2−c22 .\begin{aligned}
-bc\cos A &amp; = \frac{b^2+c^2-a^2}{2} ~,\\
-ac\cos B &amp; = \frac{a^2+c^2-b^2}{2} ~,\\
-ab\cos C &amp; = \frac{a^2+b^2-c^2}{2} ~.
-\end{aligned}
-bccosAaccosBabcosC​=2b2+c2−a2​ ,=2a2+c2−b2​ ,=2a2+b2−c2​ .​
-代入，得
-2x2=b2+c2−a2+12a2+12c2−12b2+12a2+12b2−12c2−12a2 .\begin{aligned}
-2x^2 &amp; = b^2+c^2-a^2+\frac{1}{2}a^2+\frac{1}{2}c^2-\frac{1}{2}b^2+\frac{1}{2}a^2+\frac{1}{2}b^2-\frac{1}{2}c^2-\frac{1}{2}a^2 ~.
-\end{aligned}
-2x2​=b2+c2−a2+21​a2+21​c2−21​b2+21​a2+21​b2−21​c2−21​a2 .​
-即
-2x2=b2+c2−12a2 .\begin{aligned}
-2x^2 &amp; = b^2+c^2-\frac{1}{2}a^2 ~.
-\end{aligned}
-2x2​=b2+c2−21​a2 .​
-即
-b2+c2=2x2+12a2 .\begin{aligned}
-b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
-\end{aligned}
-b2+c2​=2x2+21​a2 .​
-第 2 种（余弦定理）
-在 △ABD\triangle ABD△ABD 与 △ABC\triangle ABC△ABC 中，由余弦定理可得
-{a2+c2−b2=2accos⁡B(1)14a2+c2−x2=accos⁡B(2)\begin{cases}
-a^2+c^2-b^2 = 2ac\cos B &amp; (1)\\
-\frac{1}{4}a^2+c^2-x^2 = ac\cos B &amp; (2)
-\end{cases}
-{a2+c2−b2=2accosB41​a2+c2−x2=accosB​(1)(2)​
-(2)×2−(1)(2)\times 2-(1)(2)×2−(1) 可得
-−12a2+c2+b2−2x2=0 .\begin{aligned}
--\frac{1}{2}a^2+c^2+b^2-2x^2 &amp; = 0 ~.
-\end{aligned}
-−21​a2+c2+b2−2x2​=0 .​
-即
-b2+c2=2x2+12a2 .\begin{aligned}
-b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
-\end{aligned}
-b2+c2​=2x2+21​a2 .​
-在 △ACD\triangle ACD△ACD 与 △ABC\triangle ABC△ABC 中，相似的推理可得相同结论 .
-第 3 种（作高）
-
-如图，作 AE⊥BCAE\perp BCAE⊥BC 于 EEE .
-若 EEE 在 DDD 的左侧，设 AE=h,BE=yAE=h,BE=yAE=h,BE=y，有
-{h2+y2=c2(1)h2+(12a−y)2=x2  ⟺  h2−14a2−ay+y2=x2(2)h2+(a−y)2=b2  ⟺  h2+a2−2ay+y2=b2(3)\begin{cases}
-h^2+y^2=c^2 &amp; (1)\\
-h^2+(\frac{1}{2}a-y)^2=x^2 \iff h^2-\frac{1}{4}a^2-ay+y^2=x^2 &amp; (2) \\
-h^2+(a-y)^2=b^2 \iff h^2+a^2-2ay+y^2=b^2 &amp; (3)
-\end{cases}
-⎩⎨⎧​h2+y2=c2h2+(21​a−y)2=x2⟺h2−41​a2−ay+y2=x2h2+(a−y)2=b2⟺h2+a2−2ay+y2=b2​(1)(2)(3)​
-(1)+(3)−(2)×2(1)+(3)-(2)\times 2(1)+(3)−(2)×2 得
-(h2+y2)+(h2+a2−2ay+y2)−2(h2+14a2−ay+y2)=b2+c2−2x2 .\begin{aligned}
-(h^2+y^2)+(h^2+a^2-2ay+y^2)-2(h^2+\frac{1}{4}a^2-ay+y^2) &amp; = b^2+c^2-2x^2 ~.
-\end{aligned}
-(h2+y2)+(h2+a2−2ay+y2)−2(h2+41​a2−ay+y2)​=b2+c2−2x2 .​
-即
-−12a2=b2+c2−2x2 .\begin{aligned}
--\frac{1}{2}a^2 &amp; = b^2+c^2-2x^2 ~.
-\end{aligned}
-−21​a2​=b2+c2−2x2 .​
-即
-b2+c2=2x2+12a2 .\begin{aligned}
-b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
-\end{aligned}
-b2+c2​=2x2+21​a2 .​
-]]></content>
-      <categories>
-        <category>notes</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>洛谷 P1131 题解</title>
-    <url>/post/luogu-p1131-editorial/</url>
-    <content><![CDATA[传送门
-题意
-有一棵 nnn 个节点的以 sss 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 111。
-问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。
-结论 111
-对于任意子树，其根节点到其每个叶子节点的距离相等。
-
-证明：
-反证法。
-设对于根为 RRR 的树的根为 rrr 的某一子树，有两个叶子 aaa、bbb 到 rrr 的距离不等。
-那么不妨设节点 xxx 与 yyy 间的距离为 dis(x,y)dis(x,y)dis(x,y)，则有
-dis(a,r)≠dis(b,r)dis(a,r)\not=dis(b,r)
-dis(a,r)=dis(b,r)
-所以
-dis(a,r)+dis(r,R)≠dis(b,r)+dis(r,R)dis(a,r)+dis(r,R)\not=dis(b,r)+dis(r,R)
-dis(a,r)+dis(r,R)=dis(b,r)+dis(r,R)
-得
-dis(a,R)≠dis(b,R)dis(a,R)\not=dis(b,R)
-dis(a,R)=dis(b,R)
-即 aaa、bbb 到 RRR 的距离不等。这与题目条件矛盾，所以命题成立。
-
-解法
-既然结论 111 成立，那么先从最简单的情况入手。
-如图，在这一棵以 111 为根的树中，在操作后，根节点 111 到叶子的距离最小是几？
-
-很明显的，这个值应该是所有叶子到根的所有距离的最大值。
-那么对于每个节点都实行此原则，就结束了。
-Code：
-#include &lt;bits/stdc++.h&gt;using namespace std;using uint = unsigned;using ll = long long;using ull = unsigned long long;using pii = pair&lt;int,int&gt;;using pll = pair&lt;ll,ll&gt;;#define int llint hd[500005&lt;&lt;1],nxt[500005&lt;&lt;1],to[500005&lt;&lt;1],we[500005&lt;&lt;1],et=0;inline void adde(int u,int v,int w) &#123; ++et,to[et]=v,we[et]=w,nxt[et]=hd[u],hd[u]=et; &#125;int n,s,ans,dp[500005];void dfs(int u,int fa) &#123;    int mx=0,tot=0;    for(int i=hd[u],v,t; v=to[i],t=we[i],i; i=nxt[i]) &#123;        if(v==fa) continue;        dfs(v,u);        if(dp[v]+t&gt;mx) &#123;            ans+=(dp[v]+t-mx)*tot;            mx=dp[v]+t;        &#125; else ans+=(mx-dp[v]-t);        ++tot;    &#125;    dp[u]=mx;&#125;signed main() &#123;    cin&gt;&gt;n&gt;&gt;s;    for(int i=1; i&lt;n; ++i) &#123;        int u,v,t;        cin&gt;&gt;u&gt;&gt;v&gt;&gt;t;        adde(u,v,t); adde(v,u,t);    &#125;    dfs(s,0);    cout&lt;&lt;ans&lt;&lt;endl;&#125;
-]]></content>
-      <categories>
-        <category>editorial</category>
       </categories>
   </entry>
   <entry>
