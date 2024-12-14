@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/post/hello-world/</url>
-    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start
-Create a new post
-$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server
-$ hexo server
-More info: Server
-Generate static files
-$ hexo generate
-More info: Generating
-Deploy to remote sites
-$ hexo deploy
-More info: Deployment
-]]></content>
-  </entry>
-  <entry>
     <title>复数 (II)</title>
     <url>/post/complex-numbers-2/</url>
     <content><![CDATA[复数 (II)
@@ -204,6 +185,120 @@ to do.
       <categories>
         <category>notes</category>
       </categories>
+  </entry>
+  <entry>
+    <title>中线定理的几种证明</title>
+    <url>/post/pappus-law/</url>
+    <content><![CDATA[中线定理
+如图，在 △ABC\triangle ABC△ABC 中，DDD 是 BCBCBC 的中点，则有
+AB2+AC2=2AD2+12BC2=2AD2+2BD2=2AD2+2CD2 .AB^2+AC^2 = 2AD^2+\frac{1}{2}BC^2 = 2AD^2+2BD^2 = 2AD^2+2CD^2 ~. 
+AB2+AC2=2AD2+21​BC2=2AD2+2BD2=2AD2+2CD2 .
+即三角形一条中线两侧所对的边平方和等于底边平方的一半与该边中线平方的两倍的和 .
+
+
+以下讨论中，设 AD=x,AB=c,AC=b,BC=aAD=x,AB=c,AC=b,BC=aAD=x,AB=c,AC=b,BC=a，原命题即化为
+b2+c2=2x2+12a2 .b^2+c^2 = 2x^2+\frac{1}{2}a^2 ~. 
+b2+c2=2x2+21​a2 .
+第 1 种（繁）
+
+如图，在 △ABC\triangle ABC△ABC 中，有 AD→=AB→+BD→=AC→+CD→\overrightarrow{AD}=\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AC}+\overrightarrow{CD}AD=AB+BD=AC+CD .
+于是有
+AD→⋅AD→=(AB→+BD→)⋅(AC→+CD→)∣AD→∣2=AB→⋅AC→+AB→⋅CD→+BD→⋅AC→+BD→⋅CD→∣AD→∣2=∣AB→∣∣AC→∣cos⁡A+∣AB→∣∣CD→∣cos⁡B+∣BD→∣∣AC→∣cos⁡C−∣BD→∣∣CD→∣x2=bccos⁡A+12accos⁡B+12abcos⁡C−14a22x2=2bccos⁡A+accos⁡B+abcos⁡C−12a2 .\begin{aligned}
+\overrightarrow{AD}\cdot\overrightarrow{AD} &amp; = (\overrightarrow{AB}+\overrightarrow{BD})\cdot(\overrightarrow{AC}+\overrightarrow{CD})\\
+\left\lvert\overrightarrow{AD}\right\rvert^2 &amp; = \overrightarrow{AB}\cdot\overrightarrow{AC}+\overrightarrow{AB}\cdot\overrightarrow{CD}+\overrightarrow{BD}\cdot\overrightarrow{AC}+\overrightarrow{BD}\cdot\overrightarrow{CD}\\
+\left\lvert\overrightarrow{AD}\right\rvert^2 &amp; = \left\lvert\overrightarrow{AB}\right\rvert\left\lvert\overrightarrow{AC}\right\rvert\cos A+\left\lvert\overrightarrow{AB}\right\rvert\left\lvert\overrightarrow{CD}\right\rvert\cos B+\left\lvert\overrightarrow{BD}\right\rvert\left\lvert\overrightarrow{AC}\right\rvert\cos C-\left\lvert\overrightarrow{BD}\right\rvert\left\lvert\overrightarrow{CD}\right\rvert\\
+x^2 &amp; = bc\cos A + \frac{1}{2}ac\cos B + \frac{1}{2}ab\cos C - \frac{1}{4}a^2\\
+2x^2 &amp; = 2bc\cos A + ac\cos B + ab\cos C - \frac{1}{2}a^2 ~.
+\end{aligned}
+AD⋅AD​AD​2​AD​2x22x2​=(AB+BD)⋅(AC+CD)=AB⋅AC+AB⋅CD+BD⋅AC+BD⋅CD=​AB​​AC​cosA+​AB​​CD​cosB+​BD​​AC​cosC−​BD​​CD​=bccosA+21​accosB+21​abcosC−41​a2=2bccosA+accosB+abcosC−21​a2 .​
+由余弦定理
+bccos⁡A=b2+c2−a22 ,accos⁡B=a2+c2−b22 ,abcos⁡C=a2+b2−c22 .\begin{aligned}
+bc\cos A &amp; = \frac{b^2+c^2-a^2}{2} ~,\\
+ac\cos B &amp; = \frac{a^2+c^2-b^2}{2} ~,\\
+ab\cos C &amp; = \frac{a^2+b^2-c^2}{2} ~.
+\end{aligned}
+bccosAaccosBabcosC​=2b2+c2−a2​ ,=2a2+c2−b2​ ,=2a2+b2−c2​ .​
+代入，得
+2x2=b2+c2−a2+12a2+12c2−12b2+12a2+12b2−12c2−12a2 .\begin{aligned}
+2x^2 &amp; = b^2+c^2-a^2+\frac{1}{2}a^2+\frac{1}{2}c^2-\frac{1}{2}b^2+\frac{1}{2}a^2+\frac{1}{2}b^2-\frac{1}{2}c^2-\frac{1}{2}a^2 ~.
+\end{aligned}
+2x2​=b2+c2−a2+21​a2+21​c2−21​b2+21​a2+21​b2−21​c2−21​a2 .​
+即
+2x2=b2+c2−12a2 .\begin{aligned}
+2x^2 &amp; = b^2+c^2-\frac{1}{2}a^2 ~.
+\end{aligned}
+2x2​=b2+c2−21​a2 .​
+即
+b2+c2=2x2+12a2 .\begin{aligned}
+b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
+\end{aligned}
+b2+c2​=2x2+21​a2 .​
+第 2 种（余弦定理）
+在 △ABD\triangle ABD△ABD 与 △ABC\triangle ABC△ABC 中，由余弦定理可得
+{a2+c2−b2=2accos⁡B(1)14a2+c2−x2=accos⁡B(2)\begin{cases}
+a^2+c^2-b^2 = 2ac\cos B &amp; (1)\\
+\frac{1}{4}a^2+c^2-x^2 = ac\cos B &amp; (2)
+\end{cases}
+{a2+c2−b2=2accosB41​a2+c2−x2=accosB​(1)(2)​
+(2)×2−(1)(2)\times 2-(1)(2)×2−(1) 可得
+−12a2+c2+b2−2x2=0 .\begin{aligned}
+-\frac{1}{2}a^2+c^2+b^2-2x^2 &amp; = 0 ~.
+\end{aligned}
+−21​a2+c2+b2−2x2​=0 .​
+即
+b2+c2=2x2+12a2 .\begin{aligned}
+b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
+\end{aligned}
+b2+c2​=2x2+21​a2 .​
+在 △ACD\triangle ACD△ACD 与 △ABC\triangle ABC△ABC 中，相似的推理可得相同结论 .
+第 3 种（作高）
+
+如图，作 AE⊥BCAE\perp BCAE⊥BC 于 EEE .
+若 EEE 在 DDD 的左侧，设 AE=h,BE=yAE=h,BE=yAE=h,BE=y，有
+{h2+y2=c2(1)h2+(12a−y)2=x2  ⟺  h2−14a2−ay+y2=x2(2)h2+(a−y)2=b2  ⟺  h2+a2−2ay+y2=b2(3)\begin{cases}
+h^2+y^2=c^2 &amp; (1)\\
+h^2+(\frac{1}{2}a-y)^2=x^2 \iff h^2-\frac{1}{4}a^2-ay+y^2=x^2 &amp; (2) \\
+h^2+(a-y)^2=b^2 \iff h^2+a^2-2ay+y^2=b^2 &amp; (3)
+\end{cases}
+⎩⎨⎧​h2+y2=c2h2+(21​a−y)2=x2⟺h2−41​a2−ay+y2=x2h2+(a−y)2=b2⟺h2+a2−2ay+y2=b2​(1)(2)(3)​
+(1)+(3)−(2)×2(1)+(3)-(2)\times 2(1)+(3)−(2)×2 得
+(h2+y2)+(h2+a2−2ay+y2)−2(h2+14a2−ay+y2)=b2+c2−2x2 .\begin{aligned}
+(h^2+y^2)+(h^2+a^2-2ay+y^2)-2(h^2+\frac{1}{4}a^2-ay+y^2) &amp; = b^2+c^2-2x^2 ~.
+\end{aligned}
+(h2+y2)+(h2+a2−2ay+y2)−2(h2+41​a2−ay+y2)​=b2+c2−2x2 .​
+即
+−12a2=b2+c2−2x2 .\begin{aligned}
+-\frac{1}{2}a^2 &amp; = b^2+c^2-2x^2 ~.
+\end{aligned}
+−21​a2​=b2+c2−2x2 .​
+即
+b2+c2=2x2+12a2 .\begin{aligned}
+b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
+\end{aligned}
+b2+c2​=2x2+21​a2 .​
+]]></content>
+      <categories>
+        <category>notes</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/post/hello-world/</url>
+    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start
+Create a new post
+$ hexo new &quot;My New Post&quot;
+More info: Writing
+Run server
+$ hexo server
+More info: Server
+Generate static files
+$ hexo generate
+More info: Generating
+Deploy to remote sites
+$ hexo deploy
+More info: Deployment
+]]></content>
   </entry>
   <entry>
     <title>洛谷 P1131 题解</title>
@@ -449,31 +544,31 @@ r=u2+v2∈R,θ=arctan⁡(vu)∈R .r=\sqrt{u^2+v^2}\in\Bbb{R},\theta=\arctan\lef
 r=u2+v2​∈R,θ=arctan(uv​)∈R .
 且根据棣莫弗公式，wn=(u+vi)n=rn(cos⁡nθ+isin⁡nθ)w^n=(u+v\mathrm{i})^n=r^n(\cos n\theta+\mathrm{i}\sin n\theta)wn=(u+vi)n=rn(cosnθ+isinnθ) .
 从而有：
-(1+a+bin)=[(1+an)+i⋅bn]=rn(cos⁡θn+isin⁡θn) .\left(1+\frac{a+b\mathrm{i}}{n}\right) = \left[\left(1+\frac{a}{n}\right)+\mathrm{i}\cdot\frac{b}{n}\right] = r_n(\cos\theta_n+\mathrm{i}\sin\theta_n) ~. 
-(1+na+bi​)=[(1+na​)+i⋅nb​]=rn​(cosθn​+isinθn​) .
+(1+a+bin)=[(1+an)+i⋅bn]=rn(cos⁡θn+isin⁡θn) .\left(1+\frac{a+b\mathrm{i}}{n}\right) = \left[\left(1+\frac{a}{n}\right)+\mathrm{i}\cdot\frac{b}{n}\right] = r^n(\cos\theta^n+\mathrm{i}\sin\theta^n) ~. 
+(1+na+bi​)=[(1+na​)+i⋅nb​]=rn(cosθn+isinθn) .
 假设 n&gt;∣a∣n&gt;\lvert a\rvertn&gt;∣a∣，则：
-rn=[(1+an)+(bn)2]n2,θn=narctan⁡bn1+an .r_n=\left[\left(1+\frac{a}{n}\right)+\left(\frac{b}{n}\right)^2\right]^{\frac{n}{2}},\theta_n=n\arctan\frac{\frac{b}{n}}{1+\frac{a}{n}} ~. 
-rn​=[(1+na​)+(nb​)2]2n​,θn​=narctan1+na​nb​​ .
+rn=[(1+an)+(bn)2]n2,θn=narctan⁡bn1+an .r^n=\left[\left(1+\frac{a}{n}\right)+\left(\frac{b}{n}\right)^2\right]^{\frac{n}{2}},\theta^n=n\arctan\frac{\frac{b}{n}}{1+\frac{a}{n}} ~. 
+rn=[(1+na​)+(nb​)2]2n​,θn=narctan1+na​nb​​ .
 为除去幂上的 nnn，两边取对数得
 lim⁡n→∞ln⁡rn=lim⁡n→∞[n2ln⁡(1+2an+a2+b2n2)]=lim⁡n→∞[n2(2an+a2+b2n2)]=a .\begin{aligned}
-\lim\limits_{n\to\infty}\ln r_n
+\lim\limits_{n\to\infty}\ln r^n
 &amp;= \lim\limits_{n\to\infty}\left[\frac{n}{2}\ln\left(1+\frac{2a}{n}+\frac{a^2+b^2}{n^2}\right)\right] \\
 &amp;= \lim\limits_{n\to\infty}\left[\frac{n}{2}\left(\frac{2a}{n}+\frac{a^2+b^2}{n^2}\right)\right] \\
 &amp;= a ~.
 \end{aligned}
-n→∞lim​lnrn​​=n→∞lim​[2n​ln(1+n2a​+n2a2+b2​)]=n→∞lim​[2n​(n2a​+n2a2+b2​)]=a .​
+n→∞lim​lnrn​=n→∞lim​[2n​ln(1+n2a​+n2a2+b2​)]=n→∞lim​[2n​(n2a​+n2a2+b2​)]=a .​
 这一步骤用到 ln⁡(1+x)≈x\ln(1+x)\approx xln(1+x)≈x（墨卡托级数）.
 即：
-lim⁡n→∞rn=lim⁡n→∞eln⁡rn=ea .\lim\limits_{n\to\infty}r_n = \lim\limits_{n\to\infty}\mathrm{e}^{\ln r_n} = \mathrm{e}^a ~.
-n→∞lim​rn​=n→∞lim​elnrn​=ea .
+lim⁡n→∞rn=lim⁡n→∞eln⁡rn=ea .\lim\limits_{n\to\infty}r^n = \lim\limits_{n\to\infty}\mathrm{e}^{\ln r^n} = \mathrm{e}^a ~.
+n→∞lim​rn=n→∞lim​elnrn=ea .
 又有（arctan⁡x\arctan xarctanx 在 000 附近约等于 000）：
 lim⁡n→∞θn=lim⁡n→∞(narctan⁡bn1+an)=lim⁡n→∞(n⋅bn1+an)=b .\begin{aligned}
-\lim\limits_{n\to\infty}\theta_n
+\lim\limits_{n\to\infty}\theta^n
 &amp;= \lim\limits_{n\to\infty}\left(n\arctan\frac{\frac{b}{n}}{1+\frac{a}{n}}\right) \\
 &amp;= \lim\limits_{n\to\infty}\left(n\cdot\frac{\frac{b}{n}}{1+\frac{a}{n}}\right) \\
 &amp;= b ~.
 \end{aligned}
-n→∞lim​θn​​=n→∞lim​(narctan1+na​nb​​)=n→∞lim​(n⋅1+na​nb​​)=b .​
+n→∞lim​θn​=n→∞lim​(narctan1+na​nb​​)=n→∞lim​(n⋅1+na​nb​​)=b .​
 从而可以证明：
 lim⁡n→∞(1+a+bin)n=ea(cos⁡b+isin⁡b) .\lim\limits_{n\to\infty}\left(1+\frac{a+b\mathrm{i}}{n}\right)^n = \mathrm{e}^a(\cos b+\mathrm{i}\sin b) ~.
 n→∞lim​(1+na+bi​)n=ea(cosb+isinb) .
@@ -488,101 +583,6 @@ z=a+bi=r(cos⁡θ+isin⁡θ)=reiθ .z=a+b\mathrm{i}=r(\cos\theta+\mathrm{i}\sin
 z=a+bi=r(cosθ+isinθ)=reiθ .
 z=reiθz=r\mathrm{e}^{\mathrm{i}\theta}z=reiθ 称为复数 zzz 的指数形式 (exponential form of complex numbers) .
 复数的三角形式与指数形式由于都用模 rrr 与辐角 θ\thetaθ 表示复数，故又称为复数的极坐标形式 (polar form of complex numbers)；同样的，复数的代数形式又称为复数的直角坐标形式 (cartesian form of complex numbers) .
-]]></content>
-      <categories>
-        <category>notes</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>中线定理的几种证明</title>
-    <url>/post/pappus-law/</url>
-    <content><![CDATA[中线定理
-如图，在 △ABC\triangle ABC△ABC 中，DDD 是 BCBCBC 的中点，则有
-AB2+AC2=2AD2+12BC2=2AD2+2BD2=2AD2+2CD2 .AB^2+AC^2 = 2AD^2+\frac{1}{2}BC^2 = 2AD^2+2BD^2 = 2AD^2+2CD^2 ~. 
-AB2+AC2=2AD2+21​BC2=2AD2+2BD2=2AD2+2CD2 .
-即三角形一条中线两侧所对的边平方和等于底边平方的一半与该边中线平方的两倍的和 .
-
-
-以下讨论中，设 AD=x,AB=c,AC=b,BC=aAD=x,AB=c,AC=b,BC=aAD=x,AB=c,AC=b,BC=a，原命题即化为
-b2+c2=2x2+12a2 .b^2+c^2 = 2x^2+\frac{1}{2}a^2 ~. 
-b2+c2=2x2+21​a2 .
-第 1 种（繁）
-
-如图，在 △ABC\triangle ABC△ABC 中，有 AD→=AB→+BD→=AC→+CD→\overrightarrow{AD}=\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AC}+\overrightarrow{CD}AD=AB+BD=AC+CD .
-于是有
-AD→⋅AD→=(AB→+BD→)⋅(AC→+CD→)∣AD→∣2=AB→⋅AC→+AB→⋅CD→+BD→⋅AC→+BD→⋅CD→∣AD→∣2=∣AB→∣∣AC→∣cos⁡A+∣AB→∣∣CD→∣cos⁡B+∣BD→∣∣AC→∣cos⁡C−∣BD→∣∣CD→∣x2=bccos⁡A+12accos⁡B+12abcos⁡C−14a22x2=2bccos⁡A+accos⁡B+abcos⁡C−12a2 .\begin{aligned}
-\overrightarrow{AD}\cdot\overrightarrow{AD} &amp; = (\overrightarrow{AB}+\overrightarrow{BD})\cdot(\overrightarrow{AC}+\overrightarrow{CD})\\
-\left\lvert\overrightarrow{AD}\right\rvert^2 &amp; = \overrightarrow{AB}\cdot\overrightarrow{AC}+\overrightarrow{AB}\cdot\overrightarrow{CD}+\overrightarrow{BD}\cdot\overrightarrow{AC}+\overrightarrow{BD}\cdot\overrightarrow{CD}\\
-\left\lvert\overrightarrow{AD}\right\rvert^2 &amp; = \left\lvert\overrightarrow{AB}\right\rvert\left\lvert\overrightarrow{AC}\right\rvert\cos A+\left\lvert\overrightarrow{AB}\right\rvert\left\lvert\overrightarrow{CD}\right\rvert\cos B+\left\lvert\overrightarrow{BD}\right\rvert\left\lvert\overrightarrow{AC}\right\rvert\cos C-\left\lvert\overrightarrow{BD}\right\rvert\left\lvert\overrightarrow{CD}\right\rvert\\
-x^2 &amp; = bc\cos A + \frac{1}{2}ac\cos B + \frac{1}{2}ab\cos C - \frac{1}{4}a^2\\
-2x^2 &amp; = 2bc\cos A + ac\cos B + ab\cos C - \frac{1}{2}a^2 ~.
-\end{aligned}
-AD⋅AD​AD​2​AD​2x22x2​=(AB+BD)⋅(AC+CD)=AB⋅AC+AB⋅CD+BD⋅AC+BD⋅CD=​AB​​AC​cosA+​AB​​CD​cosB+​BD​​AC​cosC−​BD​​CD​=bccosA+21​accosB+21​abcosC−41​a2=2bccosA+accosB+abcosC−21​a2 .​
-由余弦定理
-bccos⁡A=b2+c2−a22 ,accos⁡B=a2+c2−b22 ,abcos⁡C=a2+b2−c22 .\begin{aligned}
-bc\cos A &amp; = \frac{b^2+c^2-a^2}{2} ~,\\
-ac\cos B &amp; = \frac{a^2+c^2-b^2}{2} ~,\\
-ab\cos C &amp; = \frac{a^2+b^2-c^2}{2} ~.
-\end{aligned}
-bccosAaccosBabcosC​=2b2+c2−a2​ ,=2a2+c2−b2​ ,=2a2+b2−c2​ .​
-代入，得
-2x2=b2+c2−a2+12a2+12c2−12b2+12a2+12b2−12c2−12a2 .\begin{aligned}
-2x^2 &amp; = b^2+c^2-a^2+\frac{1}{2}a^2+\frac{1}{2}c^2-\frac{1}{2}b^2+\frac{1}{2}a^2+\frac{1}{2}b^2-\frac{1}{2}c^2-\frac{1}{2}a^2 ~.
-\end{aligned}
-2x2​=b2+c2−a2+21​a2+21​c2−21​b2+21​a2+21​b2−21​c2−21​a2 .​
-即
-2x2=b2+c2−12a2 .\begin{aligned}
-2x^2 &amp; = b^2+c^2-\frac{1}{2}a^2 ~.
-\end{aligned}
-2x2​=b2+c2−21​a2 .​
-即
-b2+c2=2x2+12a2 .\begin{aligned}
-b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
-\end{aligned}
-b2+c2​=2x2+21​a2 .​
-第 2 种（余弦定理）
-在 △ABD\triangle ABD△ABD 与 △ABC\triangle ABC△ABC 中，由余弦定理可得
-{a2+c2−b2=2accos⁡B(1)14a2+c2−x2=accos⁡B(2)\begin{cases}
-a^2+c^2-b^2 = 2ac\cos B &amp; (1)\\
-\frac{1}{4}a^2+c^2-x^2 = ac\cos B &amp; (2)
-\end{cases}
-{a2+c2−b2=2accosB41​a2+c2−x2=accosB​(1)(2)​
-(2)×2−(1)(2)\times 2-(1)(2)×2−(1) 可得
-−12a2+c2+b2−2x2=0 .\begin{aligned}
--\frac{1}{2}a^2+c^2+b^2-2x^2 &amp; = 0 ~.
-\end{aligned}
-−21​a2+c2+b2−2x2​=0 .​
-即
-b2+c2=2x2+12a2 .\begin{aligned}
-b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
-\end{aligned}
-b2+c2​=2x2+21​a2 .​
-在 △ACD\triangle ACD△ACD 与 △ABC\triangle ABC△ABC 中，相似的推理可得相同结论 .
-第 3 种（作高）
-
-如图，作 AE⊥BCAE\perp BCAE⊥BC 于 EEE .
-若 EEE 在 DDD 的左侧，设 AE=h,BE=yAE=h,BE=yAE=h,BE=y，有
-{h2+y2=c2(1)h2+(12a−y)2=x2  ⟺  h2−14a2−ay+y2=x2(2)h2+(a−y)2=b2  ⟺  h2+a2−2ay+y2=b2(3)\begin{cases}
-h^2+y^2=c^2 &amp; (1)\\
-h^2+(\frac{1}{2}a-y)^2=x^2 \iff h^2-\frac{1}{4}a^2-ay+y^2=x^2 &amp; (2) \\
-h^2+(a-y)^2=b^2 \iff h^2+a^2-2ay+y^2=b^2 &amp; (3)
-\end{cases}
-⎩⎨⎧​h2+y2=c2h2+(21​a−y)2=x2⟺h2−41​a2−ay+y2=x2h2+(a−y)2=b2⟺h2+a2−2ay+y2=b2​(1)(2)(3)​
-(1)+(3)−(2)×2(1)+(3)-(2)\times 2(1)+(3)−(2)×2 得
-(h2+y2)+(h2+a2−2ay+y2)−2(h2+14a2−ay+y2)=b2+c2−2x2 .\begin{aligned}
-(h^2+y^2)+(h^2+a^2-2ay+y^2)-2(h^2+\frac{1}{4}a^2-ay+y^2) &amp; = b^2+c^2-2x^2 ~.
-\end{aligned}
-(h2+y2)+(h2+a2−2ay+y2)−2(h2+41​a2−ay+y2)​=b2+c2−2x2 .​
-即
-−12a2=b2+c2−2x2 .\begin{aligned}
--\frac{1}{2}a^2 &amp; = b^2+c^2-2x^2 ~.
-\end{aligned}
-−21​a2​=b2+c2−2x2 .​
-即
-b2+c2=2x2+12a2 .\begin{aligned}
-b^2+c^2 &amp; = 2x^2+\frac{1}{2}a^2 ~.
-\end{aligned}
-b2+c2​=2x2+21​a2 .​
 ]]></content>
       <categories>
         <category>notes</category>
