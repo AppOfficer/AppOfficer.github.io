@@ -122,7 +122,7 @@ Ln⁡(xn)≠nLn⁡x\operatorname{Ln}(x^n)\neq n\operatorname{Ln}xLn(xn)=nLnx�
 下面举几个例子：
 
 Ln⁡(−1)=ln⁡1+(π+2kπ)i=(2k+1)πi\operatorname{Ln}(-1)=\ln 1+(\pi+2k\pi)\mathrm{i}=(2k+1)\pi\mathrm{i}Ln(−1)=ln1+(π+2kπ)i=(2k+1)πi
-Ln⁡(1+i)=ln⁡2+(π4+2kπ)i=ln⁡22+(π4+2kπ)i\operatorname{Ln}(1+\mathrm{i})=\ln\sqrt{2}+\left(\frac{\pi}{4}+2k\pi\right)\mathrm{i}=\frac{\ln 2}{2}+\left(\frac{\pi}{4}+2k\pi\right)\mathrm{i}Ln(1+i)=ln2​+(4π​+2kπ)i=2ln2​+(4π​+2kπ)i
+Ln⁡(1+i)=ln⁡2+(π4+2kπ)i=ln⁡22+(π4+2kπ)i\operatorname{Ln}(1+\mathrm{i})=\ln\sqrt{2}+\left(\vcenter{\frac{\pi}{4}}+2k\pi\right)\mathrm{i}=\frac{\ln 2}{2}+\left(\vcenter{\frac{\pi}{4}}+2k\pi\right)\mathrm{i}Ln(1+i)=ln2​+(4π​​+2kπ)i=2ln2​+(4π​​+2kπ)i
 
 4.5 复数的复数次幂
 有了复数的指数函数和对数函数，我们就可以定义复数的乘幂了 .
@@ -457,6 +457,43 @@ More info: Deployment
 ]]></content>
   </entry>
   <entry>
+    <title>洛谷 P1131 题解</title>
+    <url>/post/luogu-p1131-editorial/</url>
+    <content><![CDATA[传送门
+题意
+有一棵 nnn 个节点的以 sss 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 111。
+问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。
+结论 111
+对于任意子树，其根节点到其每个叶子节点的距离相等。
+
+证明：
+反证法。
+设对于根为 RRR 的树的根为 rrr 的某一子树，有两个叶子 aaa、bbb 到 rrr 的距离不等。
+那么不妨设节点 xxx 与 yyy 间的距离为 dis(x,y)dis(x,y)dis(x,y)，则有
+dis(a,r)≠dis(b,r)dis(a,r)\not=dis(b,r)
+dis(a,r)=dis(b,r)
+所以
+dis(a,r)+dis(r,R)≠dis(b,r)+dis(r,R)dis(a,r)+dis(r,R)\not=dis(b,r)+dis(r,R)
+dis(a,r)+dis(r,R)=dis(b,r)+dis(r,R)
+得
+dis(a,R)≠dis(b,R)dis(a,R)\not=dis(b,R)
+dis(a,R)=dis(b,R)
+即 aaa、bbb 到 RRR 的距离不等。这与题目条件矛盾，所以命题成立。
+
+解法
+既然结论 111 成立，那么先从最简单的情况入手。
+如图，在这一棵以 111 为根的树中，在操作后，根节点 111 到叶子的距离最小是几？
+
+很明显的，这个值应该是所有叶子到根的所有距离的最大值。
+那么对于每个节点都实行此原则，就结束了。
+Code：
+#include &lt;bits/stdc++.h&gt;using namespace std;using uint = unsigned;using ll = long long;using ull = unsigned long long;using pii = pair&lt;int,int&gt;;using pll = pair&lt;ll,ll&gt;;#define int llint hd[500005&lt;&lt;1],nxt[500005&lt;&lt;1],to[500005&lt;&lt;1],we[500005&lt;&lt;1],et=0;inline void adde(int u,int v,int w) &#123; ++et,to[et]=v,we[et]=w,nxt[et]=hd[u],hd[u]=et; &#125;int n,s,ans,dp[500005];void dfs(int u,int fa) &#123;    int mx=0,tot=0;    for(int i=hd[u],v,t; v=to[i],t=we[i],i; i=nxt[i]) &#123;        if(v==fa) continue;        dfs(v,u);        if(dp[v]+t&gt;mx) &#123;            ans+=(dp[v]+t-mx)*tot;            mx=dp[v]+t;        &#125; else ans+=(mx-dp[v]-t);        ++tot;    &#125;    dp[u]=mx;&#125;signed main() &#123;    cin&gt;&gt;n&gt;&gt;s;    for(int i=1; i&lt;n; ++i) &#123;        int u,v,t;        cin&gt;&gt;u&gt;&gt;v&gt;&gt;t;        adde(u,v,t); adde(v,u,t);    &#125;    dfs(s,0);    cout&lt;&lt;ans&lt;&lt;endl;&#125;
+]]></content>
+      <categories>
+        <category>editorial</category>
+      </categories>
+  </entry>
+  <entry>
     <title>中线定理的几种证明</title>
     <url>/post/pappus-law/</url>
     <content><![CDATA[中线定理
@@ -572,43 +609,6 @@ xrz曰：“是焉得为奆佬乎？子未学OI乎？奆佬之冠也，zc命之�
 ]]></content>
       <categories>
         <category>others</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>洛谷 P1131 题解</title>
-    <url>/post/luogu-p1131-editorial/</url>
-    <content><![CDATA[传送门
-题意
-有一棵 nnn 个节点的以 sss 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 111。
-问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。
-结论 111
-对于任意子树，其根节点到其每个叶子节点的距离相等。
-
-证明：
-反证法。
-设对于根为 RRR 的树的根为 rrr 的某一子树，有两个叶子 aaa、bbb 到 rrr 的距离不等。
-那么不妨设节点 xxx 与 yyy 间的距离为 dis(x,y)dis(x,y)dis(x,y)，则有
-dis(a,r)≠dis(b,r)dis(a,r)\not=dis(b,r)
-dis(a,r)=dis(b,r)
-所以
-dis(a,r)+dis(r,R)≠dis(b,r)+dis(r,R)dis(a,r)+dis(r,R)\not=dis(b,r)+dis(r,R)
-dis(a,r)+dis(r,R)=dis(b,r)+dis(r,R)
-得
-dis(a,R)≠dis(b,R)dis(a,R)\not=dis(b,R)
-dis(a,R)=dis(b,R)
-即 aaa、bbb 到 RRR 的距离不等。这与题目条件矛盾，所以命题成立。
-
-解法
-既然结论 111 成立，那么先从最简单的情况入手。
-如图，在这一棵以 111 为根的树中，在操作后，根节点 111 到叶子的距离最小是几？
-
-很明显的，这个值应该是所有叶子到根的所有距离的最大值。
-那么对于每个节点都实行此原则，就结束了。
-Code：
-#include &lt;bits/stdc++.h&gt;using namespace std;using uint = unsigned;using ll = long long;using ull = unsigned long long;using pii = pair&lt;int,int&gt;;using pll = pair&lt;ll,ll&gt;;#define int llint hd[500005&lt;&lt;1],nxt[500005&lt;&lt;1],to[500005&lt;&lt;1],we[500005&lt;&lt;1],et=0;inline void adde(int u,int v,int w) &#123; ++et,to[et]=v,we[et]=w,nxt[et]=hd[u],hd[u]=et; &#125;int n,s,ans,dp[500005];void dfs(int u,int fa) &#123;    int mx=0,tot=0;    for(int i=hd[u],v,t; v=to[i],t=we[i],i; i=nxt[i]) &#123;        if(v==fa) continue;        dfs(v,u);        if(dp[v]+t&gt;mx) &#123;            ans+=(dp[v]+t-mx)*tot;            mx=dp[v]+t;        &#125; else ans+=(mx-dp[v]-t);        ++tot;    &#125;    dp[u]=mx;&#125;signed main() &#123;    cin&gt;&gt;n&gt;&gt;s;    for(int i=1; i&lt;n; ++i) &#123;        int u,v,t;        cin&gt;&gt;u&gt;&gt;v&gt;&gt;t;        adde(u,v,t); adde(v,u,t);    &#125;    dfs(s,0);    cout&lt;&lt;ans&lt;&lt;endl;&#125;
-]]></content>
-      <categories>
-        <category>editorial</category>
       </categories>
   </entry>
 </search>
