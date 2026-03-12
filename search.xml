@@ -34,7 +34,7 @@ w=ρ(cosφ+isinφ)=nr​[cos(nθ​+k⋅n2π​)+isin(nθ​+k⋅n2π​)] .
 这 555 个解在复平面中的点如图 4-2 所示．
 
 
-4.2 复变函数的定义 代数基本定理
+4.2 复变函数的定义　代数基本定理
 回顾上一节的内容．如果我们定义一个函数 f(z)=znf(z)=\sqrt[n]{z}f(z)=nz​（nnn 是常数且 n∈Zn\in\Bbb{Z}n∈Z），容易发现，对于一个复数 zzz，f(z)f(z)f(z) 不只有 111 个值，而是有 nnn 个值．这样的函数叫什么呢？
 一般地，设 AAA 是一个复数集，∀z∈A\forall z\in A∀z∈A，通过一个确定的规则 fff 有一个或若干个复数 www 与之对应，就说在复数集 AAA 上定义了一个复变函数 (complex function)，记为 w=f(z)w=f(z)w=f(z)．
 容易从定义中看到，一个复变函数 w=f(z)w=f(z)w=f(z) 可能对于同一个数 zzz 有多个值．其实实变函数中也有许多多值函数的例子，如 sin⁡x\sin xsinx 的反函数 x=sin⁡yx=\sin yx=siny（注意不是 arcsin⁡x\arcsin xarcsinx），其定义域为 [0,1][0,1][0,1]，就是一个多值函数：
@@ -187,6 +187,25 @@ to do.
       </categories>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/post/hello-world/</url>
+    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start
+Create a new post
+$ hexo new &quot;My New Post&quot;
+More info: Writing
+Run server
+$ hexo server
+More info: Server
+Generate static files
+$ hexo generate
+More info: Generating
+Deploy to remote sites
+$ hexo deploy
+More info: Deployment
+]]></content>
+  </entry>
+  <entry>
     <title>复数 (I)</title>
     <url>/post/complex-numbers/</url>
     <content><![CDATA[复数 (I)
@@ -228,7 +247,7 @@ a+bi=c+di⟺a=c 且 b=d .
 (2) 复数的运算
 本节中，a,b,c,d∈Ra,b,c,d\in\Bbb{R}a,b,c,d∈R．
 已经知道虚数单位 i\mathrm{i}i 与实数一起可以按照实数的运算法则进行运算．
-2.1 复数的加减 相反数
+2.1 复数的加减　相反数
 设 z1=a+bi,z2=c+diz_1=a+b\mathrm{i},z_2=c+d\mathrm{i}z1​=a+bi,z2​=c+di，复数的加法如此计算：
 (a+bi)+(c+di)=(a+c)+(b+d)i .(a+b\mathrm{i})+(c+d\mathrm{i})=(a+c)+(b+d)\mathrm{i} ~. 
 (a+bi)+(c+di)=(a+c)+(b+d)i .
@@ -311,7 +330,7 @@ z−m=1zm .z^{-m}=\frac{1}{z^m} ~.
 z−m=zm1​ .
 并且有 z0=1(z≠0)z^0=1(z\neq 0)z0=1(z=0)．复数乘方满足实数乘方所有运算律．
 (3) 复数的几何意义
-3.1 复平面 模与辐角
+3.1 复平面　模与辐角
 对于每一个复数 z=a+bi(a,b∈R)z=a+b\mathrm{i} (a,b\in\Bbb{R})z=a+bi(a,b∈R)，都有唯一的数对 (a,b)(a,b)(a,b) 与其对应．同时，在直角坐标系中的每一个点，也都有唯一确定的数对 (a,b)(a,b)(a,b) 与其对应．
 因此，我们可以仿照直角坐标系，建立一个平面，将复数 z=a+biz=a+b\mathrm{i}z=a+bi 与平面上的点一一对应．
 
@@ -344,7 +363,7 @@ a=rcos⁡θ,b=rsin⁡θ .a=r\cos\theta,b=r\sin\theta ~.
 a=rcosθ,b=rsinθ .
 于是，可以得到 z=a+bi=rcos⁡θ+irsin⁡θ=r(cos⁡θ+isin⁡θ)z=a+b\mathrm{i}=r\cos\theta+\mathrm{i}r\sin\theta=r(\cos\theta+\mathrm{i}\sin\theta)z=a+bi=rcosθ+irsinθ=r(cosθ+isinθ)．这就是复数 zzz 的三角形式 (trigonometric form of complex numbers)，而 a+bia+b\mathrm{i}a+bi 称为复数 zzz 的代数形式 (algebraic form of complex numbers)．
 有时，会使用 cis⁡θ\operatorname{cis}\thetacisθ 代替 cos⁡θ+isin⁡θ\cos\theta+\mathrm{i}\sin\thetacosθ+isinθ．
-3.4 复数乘除法的几何意义 棣莫弗公式
+3.4 复数乘除法的几何意义　棣莫弗公式
 设复数 z1=r1(cos⁡θ1+isin⁡θ1),z2=r2(cos⁡θ2+isin⁡θ2)z_1=r_1(\cos\theta_1+\mathrm{i}\sin\theta_1),z_2=r_2(\cos\theta_2+\mathrm{i}\sin\theta_2)z1​=r1​(cosθ1​+isinθ1​),z2​=r2​(cosθ2​+isinθ2​)．若它们的乘积为 z=z1z2z=z_1z_2z=z1​z2​，且 z=r(cos⁡θ+isin⁡θ)z=r(\cos\theta+\mathrm{i}\sin\theta)z=r(cosθ+isinθ)，则根据三角函数和角公式有
 z=z1z2=r1(cos⁡θ1+isin⁡θ1)⋅r2(cos⁡θ2+isin⁡θ2)=r1r2(cos⁡θ1cos⁡θ2+icos⁡θ1sin⁡θ2+isin⁡θ1cos⁡θ2+i2sin⁡θ1sin⁡θ2)=r1r2[(cos⁡θ1cos⁡θ2−sin⁡θ1sin⁡θ2)+i(sin⁡θ1cos⁡θ2+cos⁡θ1sin⁡θ2)]=r1r2[cos⁡(θ1+θ2)+isin⁡(θ1+θ2)]\begin{aligned}
 z=z_1z_2 &amp;= r_1(\cos\theta_1+\mathrm{i}\sin\theta_1)\cdot r_2(\cos\theta_2+\mathrm{i}\sin\theta_2) \\
@@ -373,7 +392,7 @@ i=1∏n​zi​=i=1∏n​ri​⋅(cosi=1∑n​θi​+isini=1∑n​θi​) .
 zn=[r(cos⁡θ+isin⁡θ)]n=rn(cos⁡nθ+isin⁡nθ) .z^n = \big[r(\cos\theta+\mathrm{i}\sin\theta)\big]^n = r^n(\cos n\theta+\mathrm{i}\sin n\theta) ~. 
 zn=[r(cosθ+isinθ)]n=rn(cosnθ+isinnθ) .
 即为复数的乘方公式．其为棣莫弗公式的一个特例．
-3.5 欧拉公式 复数的指数形式
+3.5 欧拉公式　复数的指数形式
 
 欧拉 (Euler) 对复数进行了系统研究后，得出欧拉公式 (Euler’s formula)：
 eiθ=cos⁡θ+isin⁡θ .\mathrm{e}^{\mathrm{i}\theta} = \cos\theta+\mathrm{i}\sin\theta ~. 
@@ -436,25 +455,6 @@ z=reiθz=r\mathrm{e}^{\mathrm{i}\theta}z=reiθ 称为复数 zzz 的指数形式 
       <categories>
         <category>notes</category>
       </categories>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/post/hello-world/</url>
-    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start
-Create a new post
-$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server
-$ hexo server
-More info: Server
-Generate static files
-$ hexo generate
-More info: Generating
-Deploy to remote sites
-$ hexo deploy
-More info: Deployment
-]]></content>
   </entry>
   <entry>
     <title>洛谷 P1131 题解</title>
