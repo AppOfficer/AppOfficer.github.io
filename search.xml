@@ -187,6 +187,25 @@ to do.
       </categories>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/post/hello-world/</url>
+    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start
+Create a new post
+$ hexo new &quot;My New Post&quot;
+More info: Writing
+Run server
+$ hexo server
+More info: Server
+Generate static files
+$ hexo generate
+More info: Generating
+Deploy to remote sites
+$ hexo deploy
+More info: Deployment
+]]></content>
+  </entry>
+  <entry>
     <title>复数 (I)</title>
     <url>/post/complex-numbers/</url>
     <content><![CDATA[复数 (I)
@@ -438,25 +457,6 @@ z=reiθz=r\mathrm{e}^{\mathrm{i}\theta}z=reiθ 称为复数 zzz 的指数形式 
       </categories>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/post/hello-world/</url>
-    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start
-Create a new post
-$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server
-$ hexo server
-More info: Server
-Generate static files
-$ hexo generate
-More info: Generating
-Deploy to remote sites
-$ hexo deploy
-More info: Deployment
-]]></content>
-  </entry>
-  <entry>
     <title>洛谷 P1131 题解</title>
     <url>/post/luogu-p1131-editorial/</url>
     <content><![CDATA[传送门
@@ -647,6 +647,9 @@ I privately put a quart into a pint pot, and have recently used those low-level 
 仆窃不逊，近自托于无能之辞，网罗天下放失旧闻，略考其行事，综其终始，稽其成败兴坏之纪，上计轩辕，下至于兹，为十表，本纪十二，书八章，世家三十，列传七十，凡百三十篇。亦欲以究天人之际，通古今之变，成一家之言。草创未就，会遭此祸，惜其不成，是以就极刑而无愠色。仆诚以著此书，藏之名山，传之其人，通邑大都，则仆偿前辱之责，虽万被戮，岂有悔哉！然此可为智者道，难为俗人言也。
 
 ]]></content>
+      <categories>
+        <category>translations</category>
+      </categories>
   </entry>
   <entry>
     <title>OI 名言</title>
@@ -669,6 +672,24 @@ xrz曰：“是焉得为奆佬乎？子未学OI乎？奆佬之冠也，zc命之�
 ]]></content>
       <categories>
         <category>others</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>《又四日文集》序</title>
+    <url>/post/yousiri-foreword/</url>
+    <content><![CDATA[欣闻又四日先生（AllInTime）决定编辑这部《又四日文集》，又命不才任主编一职，不胜感激，故为又四日先生作序一篇，谨此。
+余初识又四日先生，已是公元纪年二〇二三年矣。自昔日起，便发现又四日先生素有非凡不同于常人之气质也。又四日先生虽形容枯槁，体形瘦削，但见过他的人必会发现他神情严肃，姿态挺拔，颇有一代豪杰之势也。与他交往数日，闻者必得深刻之见解，因是又四日先生常用独到而一针见血的推理，得出深刻而精致的结论，并用他那朴实、简洁而又精确的浅显语言表达出口，传至听者之耳，使其顿悟得人生大道；然再细细咀嚼，又可品出其背后又四日先生的独家精髓。
+余阅又四日先生之文，实乃近二年之事也，未敢详细评之。但阅前余便认定，又四日先生之文章，必是与其实人相似风格之物矣。阅，确如此。俗语言曰：“字如其人，文亦如其人。”又四日先生之字迹，实与其本人一致，粗犷而豪放；虽潦草但不失风度，虽崎岖却不丢端正。读又四日先生之字，恰似研究那古体文字，优美而透有庄重、沉稳之感。再详读又四日先生之数十篇文章，可见又四日先生之见识广博，语言深入而不失瑰丽之感。无论是像“社会性的严肃可得严肃性的社会”这样的对社会的剖析，还是像“湖中岛，岛中湖。人中心，心中人”这样的对人情感的深挖，都凸显出又四日先生独特的处世哲学。
+先生“又四日”之名号，实为拆字之法。而得“又四日”三字，又正符先生之性情特征，故先生取之以作号也。“又四日”者，四日一计，方有其“四”；而生命无穷，故有“又”字居于词
+头。“又四日”云云，实蕴生命之无穷，而又循环周始也。
+呜呼！世如又四日先生之人，有几何哉？幸今有此《又四日文集》存，而先生之言得以永传焉。
+
+AppOfficer
+二〇二六年二月一日夜，子时
+
+]]></content>
+      <categories>
+        <category>articles</category>
       </categories>
   </entry>
 </search>
