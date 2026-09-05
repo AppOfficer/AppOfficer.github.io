@@ -187,6 +187,25 @@ to do.
       </categories>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/post/hello-world/</url>
+    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start
+Create a new post
+$ hexo new &quot;My New Post&quot;
+More info: Writing
+Run server
+$ hexo server
+More info: Server
+Generate static files
+$ hexo generate
+More info: Generating
+Deploy to remote sites
+$ hexo deploy
+More info: Deployment
+]]></content>
+  </entry>
+  <entry>
     <title>复数 (I)</title>
     <url>/post/complex-numbers/</url>
     <content><![CDATA[复数 (I)
@@ -438,25 +457,6 @@ z=reiθz=r\mathrm{e}^{\mathrm{i}\theta}z=reiθ 称为复数 zzz 的指数形式 
       </categories>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/post/hello-world/</url>
-    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start
-Create a new post
-$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server
-$ hexo server
-More info: Server
-Generate static files
-$ hexo generate
-More info: Generating
-Deploy to remote sites
-$ hexo deploy
-More info: Deployment
-]]></content>
-  </entry>
-  <entry>
     <title>洛谷 P1131 题解</title>
     <url>/post/luogu-p1131-editorial/</url>
     <content><![CDATA[传送门
@@ -492,6 +492,66 @@ Code：
       <categories>
         <category>editorial</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Weird Translations</title>
+    <url>/post/weird-translations/</url>
+    <content><![CDATA[The Barbaric Bodhisattva (XIAOSHANCHONGDIEJINMINGMIE)
+
+Author: WEN Tingyun [Tang Dynasty]
+
+Small hills overlapping and gold glimmering, cloud-like hair seeming to drift over the snowing fragrant cheek. Lazily got up to draw the moth-like brows; it was late to wash and do make-up. Checking the flower from the double mirrors, in which the face and flowers shone upon each other. Newly embroidered Ruqun on, with pairs of golden partridges.
+
+菩萨蛮（小山重叠金明灭）
+温庭筠【唐】
+小山重叠金明灭，鬓云欲度香腮雪。懒起画蛾眉，弄妆梳洗迟。照花前后镜，花面交相映。新贴绣罗襦，双双金鹧鸪。
+
+Green Curtain Covers (LIAOCHENXIANG)
+
+Author: ZHOU Bangyan [Northern Song Dynasty]
+
+Burnt the eaglewood, to erase summer’s moisty heat. Birds hailing the sunlight, at dawn chirping while peeking at the eave. Early sun dried the night’s rain on leaves; on the clear and round water, every water lily stood out in the morning wind.
+So far is my hometown, then on which day would I ever set off? Near Wu my family lives, but so long have I been a traveller in Chang’an. Remember or not the fishing lad in May? With small paddles on a light boat, I dreamt into a lotus pond.
+
+苏幕遮（燎沉香）
+周邦彦【北宋】
+燎沉香，消溽暑。鸟雀呼晴，侵晓窥檐语。叶上初阳干宿雨，水面清圆，一一风荷举。　　故乡遥，何日去？家住吴门，久作长安旅。五月渔郎相忆否？小楫轻舟，梦入芙蓉浦。
+
+The Barbaric Bodhisattva : Written on the Zaokou Wall in Jiangxi
+
+Author: XIN Qiji [Southern Song Dynasty]
+
+Clear river flows below the Yugu Tower, inside dissolved how many refugees’ tears! Gazing afar to the northwest for Chang’an, such a pity so many mountains lie between.
+Green mountains can’t block the way; water flows to the east after all. 'Night near the river I was worrying, when partridge sounds entered my ears from the deep mountain.
+
+菩萨蛮·书江西造口壁
+辛弃疾【南宋】
+郁孤台下清江水，中间多少行人泪。西北望长安，可怜无数山。　　青山遮不住，毕竟东流去。江晚正愁余，山深闻鹧鸪。
+
+Turquoise Jade Bowl : The Lantern Festival
+
+Author: XIN Qiji [Southern Song Dynasty]
+
+'Night, wind from the east bloomed flowers on thousands of trees. Then blew them off, stars dropped like rain. Fine horses and carved carriages spread out with roads full of scent. Music flew, the moon shone; it was a night of fish and loongs dancing.
+Moth ornaments, snow-willows, threads of gold; they left with faint fragrances, talking and laughing. Having looked for her hundreds of thousands of times, I suddenly turned round; she was just there, where the light was waning.
+
+青玉案·元夕
+辛弃疾【南宋】
+东风夜放花千树。更吹落，星如雨。宝马雕车香满路。凤箫声动，玉壶光转，一夜鱼龙舞。　　蛾儿雪柳黄金缕，笑语盈盈暗香去。众里寻他千百度，蓦然回首，那人却在，灯火阑珊处。
+
+Reply Letter to REN An (Excerpt)
+
+Author: SIMA Qian [Western Han Dynasty]
+
+Those people in ancient times that were noble and rich but faded out in history cannot be counted; only the most extraordinary ones are still praised today. King Wen of Zhou was confined and then deduced The Book of Changes; Confucius suffered adversity and The Spring and Autumn Annals was written; QU Yuan was exiled so he wrote the poem Lisao; ZUO Qiuming became blind and The Discourses of the States thus emerged; SUN Bin’s kneecaps were chopped, and then he composed his Art of War; LÜ Buwei was demoted to Sichuan, and then Lüshi Chunqiu passed on to generations; HAN Fei was imprisoned in Qin and then there came out Shuonan and Gufen; the three hundred poems of The Book of Songs were mostly written by wise people venting their grievances. These people all have stressful and upset feelings and cannot realise their ideals, so they wrote about past deeds, hoping that people would read them in the future. Just like ZUO Qiuming having his eyes blind, SUN Bing having his leg broken; they cannot be put to significant use for the rest of their lives, so they stepped back, wrote books and established theories to let out their bad feelings, wanting to leave articles presenting their own thoughts.
+I privately put a quart into a pint pot, and have recently used those low-level words of mine, to collect the missing historic deeds, roughly examine their truths, summarise their ins and outs, and inspect the laws of how they succeed, fail, rise, or fall; from the Yellow Emperor to the current era, I have written ten Tables, twelve _Benji_s, eight Books, thirty _Shijia_s, seventy _Liezhuan_s, in total one hundred and thirty pieces. Also I want to research the relationship between natural phenomena and the human society, have a good command of the threads of the changes from ancient to present, and form a distinctive view. Just having begun and not yet finished, I unfortunately suffered this disaster; I pity that the book can’t be finished, and thus accepted the most cruel punishments without daring be annoyed. Now I have finally finished this book, planning to hide it into famous mountains, pass on to people worthy of it, and let it spread in big cities; then, I have compensated for the debt I owed by being disgraced; how can I ever regret even if to suffer ten thousand times of humiliation! However these words can only be spoken to wise people; it is very hard to let vulgar people understand.
+
+报任安书（节选）
+司马迁【西汉】
+古者富贵而名摩灭，不可胜记，唯倜傥非常之人称焉。盖文王拘而演《周易》；仲尼厄而作《春秋》；屈原放逐，乃赋《离骚》；左丘失明，厥有《国语》；孙子膑脚，《兵法》修列；不韦迁蜀，世传《吕览》；韩非囚秦，《说难》《孤愤》；《诗》三百篇，大底圣贤发愤之所为作也。此人皆意有所郁结，不得通其道，故述往事、思来者。乃如左丘无目，孙子断足，终不可用，退而论书策，以舒其愤，思垂空文以自见。
+仆窃不逊，近自托于无能之辞，网罗天下放失旧闻，略考其行事，综其终始，稽其成败兴坏之纪，上计轩辕，下至于兹，为十表，本纪十二，书八章，世家三十，列传七十，凡百三十篇。亦欲以究天人之际，通古今之变，成一家之言。草创未就，会遭此祸，惜其不成，是以就极刑而无愠色。仆诚以著此书，藏之名山，传之其人，通邑大都，则仆偿前辱之责，虽万被戮，岂有悔哉！然此可为智者道，难为俗人言也。
+
+]]></content>
   </entry>
   <entry>
     <title>中线定理的几种证明</title>
@@ -587,66 +647,6 @@ b2+c2​=2x2+21​a2 .​
       <categories>
         <category>notes</category>
       </categories>
-  </entry>
-  <entry>
-    <title>Weird Translations</title>
-    <url>/post/weird-translations/</url>
-    <content><![CDATA[The Barbaric Bodhisattva (XIAOSHANCHONGDIEJINMINGMIE)
-
-Author: WEN Tingyun [Tang Dynasty]
-
-Small hills overlapping and gold glimmering, cloud-like hair seeming to drift over the snowing fragrant cheek. Lazily got up to draw the moth-like brows; it was late to wash and do make-up. Checking the flower from the double mirrors, in which the face and flowers shone upon each other. Newly embroidered Ruqun on, with pairs of golden partridges.
-
-菩萨蛮（小山重叠金明灭）
-温庭筠【唐】
-小山重叠金明灭，鬓云欲度香腮雪。懒起画蛾眉，弄妆梳洗迟。照花前后镜，花面交相映。新贴绣罗襦，双双金鹧鸪。
-
-Green Curtain Covers (LIAOCHENXIANG)
-
-Author: ZHOU Bangyan [North Song Dynasty]
-
-Burnt the eaglewood, to erase summer’s moisty heat. Birds hailing the sunlight, at dawn chirping while peeking at the eave. Early sun dried the night’s rain on leaves; on the clear and round water, every water lily stood out in the morning wind.
-So far is my hometown, then on which day would I ever set off? Near Wu my family lives, but so long have I been a traveller in Chang’an. Remember or not the fishing lad in May? With small paddles on a light boat, I dreamt into a lotus pond.
-
-苏幕遮（燎沉香）
-周邦彦【北宋】
-燎沉香，消溽暑。鸟雀呼晴，侵晓窥檐语。叶上初阳干宿雨，水面清圆，一一风荷举。　　故乡遥，何日去？家住吴门，久作长安旅。五月渔郎相忆否？小楫轻舟，梦入芙蓉浦。
-
-The Barbaric Bodhisattva : Written on the Zaokou Wall in Jiangxi
-
-Author: XIN Qiji [South Song Dynasty]
-
-Clear river flows below the Yugu Tower, inside dissolved how many refugees’ tears! Gazing afar to the northwest for Chang’an, such a pity so many mountains lie between.
-Green mountains can’t block the way; water flows to the east after all. 'Night near the river I was worrying, when partridge sounds entered my ears from the deep mountain.
-
-菩萨蛮·书江西造口壁
-辛弃疾【南宋】
-郁孤台下清江水，中间多少行人泪。西北望长安，可怜无数山。　　青山遮不住，毕竟东流去。江晚正愁余，山深闻鹧鸪。
-
-Turquoise Jade Bowl : The Lantern Festival
-
-Author: XIN Qiji [South Song Dynasty]
-
-'Night, wind from the east bloomed flowers on thousands of trees. Then blew them off, stars dropped like rain. Fine horses and carved carriages spread out with roads full of scent. Music flew, the moon shone; it was a night of fish and loongs dancing.
-Moth ornaments, snow-willows, threads of gold; they left with faint fragrances, talking and laughing. Having looked for her hundreds of thousands of times, I suddenly turned round; she was just there, where the light was waning.
-
-青玉案·元夕
-辛弃疾【南宋】
-东风夜放花千树。更吹落，星如雨。宝马雕车香满路。凤箫声动，玉壶光转，一夜鱼龙舞。　　蛾儿雪柳黄金缕，笑语盈盈暗香去。众里寻他千百度，蓦然回首，那人却在，灯火阑珊处。
-
-Reply Letter to REN An (Excerpt)
-
-Author: SIMA Qian [West Han Dynasty]
-
-Those people in ancient times that were noble and rich but faded out in history cannot be counted; only the most extraordinary ones are still praised today. King Wen of Zhou was confined and then deduced The Book of Changes; Confucius suffered adversity and The Spring and Autumn Annals was written; QU Yuan was exiled so he wrote the poem Lisao; ZUO Qiuming became blind and The Discourses of the States thus emerged; SUN Bin’s kneecaps were chopped, and then he composed his Art of War; LÜ Buwei was demoted to Sichuan, and then Lüshi Chunqiu passed on to generations; HAN Fei was gaoled in Qin and then there came out Shuonan and Gufen; the three hundred poems of The Book of Songs were mostly written by wise people venting their grievances. These people all have stressful and upset feelings and cannot realise their ideals, so they wrote about past deeds, hoping that people would read them in the future. Just like ZUO Qiuming having his eyes blind, SUN Bing having his leg broken; they cannot be put to significant use for the rest of their lives, so they stepped back, wrote books and established theories to let out their bad feelings, wanting to leave articles presenting their own thoughts.
-I privately put a quart into a pint pot, and have recently used those low-level words of mine, to collect the missing historic deeds, roughly examine their truths, summarise their ins and outs, and inspect the laws of how they succeed, fail, rise, or fall; from the Yellow Emperor to the current era, I have written ten Tables, twelve _Benji_s, eight Books, thirty _Shijia_s, seventy _Liezhuan_s, in total one hundred and thirty pieces. Also I want to research the relationship between natural phenomena and the human society, have a good command of the threads of the changes from ancient to present, and form a distinctive view. Just having begun and not yet finished, I unfortunately suffered this disaster; I pity that the book can’t be finished, and thus accepted the most cruel punishments without daring be annoyed. Now I have finally finished this book, planning to hide it into famous mountains, pass on to people worthy of, and let it spread in big cities; then, I have compensated for the debt I owed by being disgraced; how can I ever regret even if to suffer ten thousand times of humiliation! However these words can only be spoken to wise people; it is very hard to let vulgar people understand.
-
-报任安书（节选）
-司马迁【西汉】
-古者富贵而名摩灭，不可胜记，唯倜傥非常之人称焉。盖文王拘而演《周易》；仲尼厄而作《春秋》；屈原放逐，乃赋《离骚》；左丘失明，厥有《国语》；孙子膑脚，《兵法》修列；不韦迁蜀，世传《吕览》；韩非囚秦，《说难》《孤愤》；《诗》三百篇，大底圣贤发愤之所为作也。此人皆意有所郁结，不得通其道，故述往事、思来者。乃如左丘无目，孙子断足，终不可用，退而论书策，以舒其愤，思垂空文以自见。
-仆窃不逊，近自托于无能之辞，网罗天下放失旧闻，略考其行事，综其终始，稽其成败兴坏之纪，上计轩辕，下至于兹，为十表，本纪十二，书八章，世家三十，列传七十，凡百三十篇。亦欲以究天人之际，通古今之变，成一家之言。草创未就，会遭此祸，惜其不成，是以就极刑而无愠色。仆诚以著此书，藏之名山，传之其人，通邑大都，则仆偿前辱之责，虽万被戮，岂有悔哉！然此可为智者道，难为俗人言也。
-
-]]></content>
   </entry>
   <entry>
     <title>OI 名言</title>
