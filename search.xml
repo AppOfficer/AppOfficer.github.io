@@ -457,6 +457,137 @@ More info: Deployment
 ]]></content>
   </entry>
   <entry>
+    <title>洛谷 P1131 题解</title>
+    <url>/post/luogu-p1131-editorial/</url>
+    <content><![CDATA[传送门
+题意
+有一棵 nnn 个节点的以 sss 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 111。
+问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。
+结论 111
+对于任意子树，其根节点到其每个叶子节点的距离相等。
+
+证明：
+反证法。
+设对于根为 RRR 的树的根为 rrr 的某一子树，有两个叶子 aaa、bbb 到 rrr 的距离不等。
+那么不妨设节点 xxx 与 yyy 间的距离为 dis(x,y)dis(x,y)dis(x,y)，则有
+dis(a,r)≠dis(b,r)dis(a,r)\not=dis(b,r)
+dis(a,r)=dis(b,r)
+所以
+dis(a,r)+dis(r,R)≠dis(b,r)+dis(r,R)dis(a,r)+dis(r,R)\not=dis(b,r)+dis(r,R)
+dis(a,r)+dis(r,R)=dis(b,r)+dis(r,R)
+得
+dis(a,R)≠dis(b,R)dis(a,R)\not=dis(b,R)
+dis(a,R)=dis(b,R)
+即 aaa、bbb 到 RRR 的距离不等。这与题目条件矛盾，所以命题成立。
+
+解法
+既然结论 111 成立，那么先从最简单的情况入手。
+如图，在这一棵以 111 为根的树中，在操作后，根节点 111 到叶子的距离最小是几？
+
+很明显的，这个值应该是所有叶子到根的所有距离的最大值。
+那么对于每个节点都实行此原则，就结束了。
+Code：
+#include &lt;bits/stdc++.h&gt;using namespace std;using uint = unsigned;using ll = long long;using ull = unsigned long long;using pii = pair&lt;int,int&gt;;using pll = pair&lt;ll,ll&gt;;#define int llint hd[500005&lt;&lt;1],nxt[500005&lt;&lt;1],to[500005&lt;&lt;1],we[500005&lt;&lt;1],et=0;inline void adde(int u,int v,int w) &#123; ++et,to[et]=v,we[et]=w,nxt[et]=hd[u],hd[u]=et; &#125;int n,s,ans,dp[500005];void dfs(int u,int fa) &#123;    int mx=0,tot=0;    for(int i=hd[u],v,t; v=to[i],t=we[i],i; i=nxt[i]) &#123;        if(v==fa) continue;        dfs(v,u);        if(dp[v]+t&gt;mx) &#123;            ans+=(dp[v]+t-mx)*tot;            mx=dp[v]+t;        &#125; else ans+=(mx-dp[v]-t);        ++tot;    &#125;    dp[u]=mx;&#125;signed main() &#123;    cin&gt;&gt;n&gt;&gt;s;    for(int i=1; i&lt;n; ++i) &#123;        int u,v,t;        cin&gt;&gt;u&gt;&gt;v&gt;&gt;t;        adde(u,v,t); adde(v,u,t);    &#125;    dfs(s,0);    cout&lt;&lt;ans&lt;&lt;endl;&#125;
+]]></content>
+      <categories>
+        <category>editorial</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Weird Translations</title>
+    <url>/post/weird-translations/</url>
+    <content><![CDATA[Thought at Quiet Night
+Author: LI Bai [Tang Dynasty]
+Bed front bright moon light,
+Frost on ground it might.
+Head up watch bright moon,
+Head down nostalgia I knew.
+Watching the Sea Tides (DONGNANXINGSHENG)
+Author: LIU Yong [Northern Song Dynasty]
+Attractions in the southeast, capital of the triple Wu, since ancient times is Qiantang so prosperous. Smoky willows, gorgeous bridges, window-covering windows and turquoise screen, leads to the hundred thousands of families. Tall trees that grow into the clouds surround the dam sands; angry waves wrap the snow-like sprays; the natural chasm is boundless. Jewelry displayed at markets, satin filled in houses; people compete in extravagance.
+Duplicated lakes and overlapped ranges are beautiful; there are laurels in autumn and ten miles of lotus flowers in summer. Qiang pipes trick sunny days, fishermen’s songs spread the night, joyful are the fishing old men and the lotus children. Thousand riders surround the High Tooth, by drunk listen to the xiao and drums, appreciate the smoky colourful clouds alone. Other day draw this great scenery, back to the Phoenix Pool praise.
+
+望海潮（东南形胜）
+柳永【北宋】
+东南形胜，三吴都会，钱塘自古繁华。烟柳画桥，风帘翠幕，参差十万人家。云树绕堤沙，怒涛卷霜雪，天堑无涯。市列珠玑，户盈罗绮，竞豪奢。　　重湖叠𪩘清嘉，有三秋桂子，十里荷花。羌管弄晴，菱歌泛夜，嬉嬉钓叟莲娃。千骑拥高牙，乘醉听萧鼓，吟赏烟霞。异日图将好景，归去凤池夸。
+
+Sichuan Road is Difficult
+Author: LI Bai [Tang Dynasty]
+Ah ah ah, so dangerous, so high! The difficulty of Sichuan Road, is more to climbing up the blue sky! Kings Cancong and Yufu, how obscure was their kingdom founded! From then forty-eight thousand years, none with Qin stronghold through human smoke. West to Mount Taibai are bird paths, which are able to fly over peak of Mount Emei. Grounds broke, mountains collapsed, robust men died, then sky ladders and stone stacks were linked. Up are high tops that make the sun’s six loongs return, down are torrents swirling caused by rapid streams refluxing when crushing rocks. High flights by yellow swans cannot yet pass, apes hesitate climbing when trying to get through. Mount Qingni is so hooling twisty, hundred steps with nine turns go round its peaks. Touch Star Shen, pass Star Jing, look up and hold your breath; put hands on chest, sit and sigh deeply.
+I ask you: when to return from your westward journey? Scary ways and precipitous rocks cannot be climbed; only to see sorrowful bird crying for ancient woods, males flying and females chasing round the trees, and to listen to cuckoos singing night moons, and worrying empty mountains. Harder than climbing up the blue sky is the Sichuan Road, people who hear this, their rosy cheeks will die away! Continuously linked-up crests are less than one foot from the sky; withered pines hang upside-down on cliffs. Flying torrents and waterfall flows compete for noise, crashing the cliffs, pushing the rocks, thunder roaring between ridges. How dangerous it is, you afar for what to come?
+Jian’ge is so high and towering, that one man in defence can reject hundreds of thousands of men. If untrustworthy men defend it, they will turn into wolves and jackals. Early avoid fierce tigers, late avoid long snakes, grind teeth, suck blood, kill men like hemp. Silk city is though said happy, you’d better get home early. Sichuan Road is so difficult, turn and look west, sigh long.
+
+蜀道难
+李白【唐】
+噫吁嚱，危乎高哉！蜀道之难，难于上青天！蚕丛及鱼凫，开国何茫然！尔来四万八千岁，不与秦塞通人烟。西当太白有鸟道，可以横绝峨眉巅。地崩山摧壮士死，然后天梯石栈相钩连。上有六龙回日之高标，下有冲波逆折之回川。黄鹤之飞尚不得过，猿猱欲度愁攀援。青泥何盘盘，百步九折萦岩峦。扪参历井仰胁息，以手抚膺坐长叹。
+问君西游何时还？畏途巉岩不可攀。但见悲鸟号古木，雄飞雌从绕林间。又闻子规啼夜月，愁空山。蜀道之难，难于上青天，使人听此凋朱颜！连峰去天不盈尺，枯松倒挂倚绝壁。飞湍瀑流争喧豗，砯崖转石万壑雷。其险也如此，嗟尔远道之人胡为乎来哉！
+剑阁峥嵘而崔嵬，一夫当关，万夫莫开。所守或匪亲，化为狼与豺。朝避猛虎，夕避长蛇，磨牙吮血，杀人如麻。锦城虽云乐，不如早还家。蜀道之难，难于上青天，侧身西望长咨嗟！
+
+The Barbaric Bodhisattva (XIAOSHANCHONGDIEJINMINGMIE)
+Author: WEN Tingyun [Tang Dynasty]
+Small hills overlapping and gold glimmering, cloud-like hair seeming to drift over the snowing fragrant cheek. Lazily got up to draw the moth-like brows; it was late to wash and do make-up. Checking the flower from the double mirrors, in which the face and flowers shone upon each other. Newly embroidered Ruqun on, with pairs of golden partridges.
+
+菩萨蛮（小山重叠金明灭）
+温庭筠【唐】
+小山重叠金明灭，鬓云欲度香腮雪。懒起画蛾眉，弄妆梳洗迟。照花前后镜，花面交相映。新贴绣罗襦，双双金鹧鸪。
+
+Green Curtain Covers (LIAOCHENXIANG)
+Author: ZHOU Bangyan [Northern Song Dynasty]
+Burnt the eaglewood, to erase summer’s moisty heat. Birds hailing the sunlight, at dawn chirping while peeking at the eave. Early sun dried the night’s rain on leaves; on the clear and round water, every water lily stood out in the morning wind.
+So far is my hometown, then on which day would I ever set off? Near Wu my family lives, but so long have I been a traveller in Chang’an. Remember or not the fishing lad in May? With small paddles on a light boat, I dreamt into a lotus pond.
+
+苏幕遮（燎沉香）
+周邦彦【北宋】
+燎沉香，消溽暑。鸟雀呼晴，侵晓窥檐语。叶上初阳干宿雨，水面清圆，一一风荷举。　　故乡遥，何日去？家住吴门，久作长安旅。五月渔郎相忆否？小楫轻舟，梦入芙蓉浦。
+
+The Barbaric Bodhisattva : Written on the Zaokou Wall in Jiangxi
+Author: XIN Qiji [Southern Song Dynasty]
+Clear river flows below the Yugu Tower, inside dissolved how many refugees’ tears! Gazing afar to the northwest for Chang’an, such a pity so many mountains lie between.
+Green mountains can’t block the way; water flows to the east after all. 'Night near the river I was worrying, when partridge sounds entered my ears from the deep mountain.
+
+菩萨蛮·书江西造口壁
+辛弃疾【南宋】
+郁孤台下清江水，中间多少行人泪。西北望长安，可怜无数山。　　青山遮不住，毕竟东流去。江晚正愁余，山深闻鹧鸪。
+
+Turquoise Jade Bowl : The Lantern Festival
+Author: XIN Qiji [Southern Song Dynasty]
+'Night, wind from the east bloomed flowers on thousands of trees. Then blew them off, stars dropped like rain. Fine horses and carved carriages spread out with roads full of scent. Music flew, the moon shone; it was a night of fish and loongs dancing.
+Moth ornaments, snow-willows, threads of gold; they left with faint fragrances, talking and laughing. Having looked for her hundreds of thousands of times, I suddenly turned round; she was just there, where the light was waning.
+
+青玉案·元夕
+辛弃疾【南宋】
+东风夜放花千树。更吹落，星如雨。宝马雕车香满路。凤箫声动，玉壶光转，一夜鱼龙舞。　　蛾儿雪柳黄金缕，笑语盈盈暗香去。众里寻他千百度，蓦然回首，那人却在，灯火阑珊处。
+
+Reply Letter to REN An (Excerpt)
+Author: SIMA Qian [Western Han Dynasty]
+Those people in ancient times that were noble and rich but faded out in history cannot be counted; only the most extraordinary ones are still praised today. King Wen of Zhou was confined and then deduced The Book of Changes; Confucius suffered adversity and The Spring and Autumn Annals was written; QU Yuan was exiled so he wrote the poem Lisao; ZUO Qiuming became blind and The Discourses of the States thus emerged; SUN Bin’s kneecaps were chopped, and then he composed his Art of War; LÜ Buwei was demoted to Sichuan, and then Lüshi Chunqiu passed on to generations; HAN Fei was imprisoned in Qin and then there came out Shuonan and Gufen; the three hundred poems of The Book of Songs were mostly written by wise people venting their grievances. These people all have stressful and upset feelings and cannot realise their ideals, so they wrote about past deeds, hoping that people would read them in the future. Just like ZUO Qiuming having his eyes blind, SUN Bin having his leg broken; they cannot be put to significant use for the rest of their lives, so they stepped back, wrote books and established theories to let out their bad feelings, wanting to leave writings presenting their own thoughts.
+I privately put a quart into a pint pot, and have recently used those low-level words of mine, to collect the missing historic deeds, roughly examine their truths, summarise their ins and outs, and inspect the laws of how they succeed, fail, rise, or fall; from the Yellow Emperor to the current era, I have written ten Tables, twelve Benji, eight Books, thirty Shijia, seventy Liezhuan, in total one hundred and thirty pieces. Also I want to research the relationship between natural phenomena and the human society, have a good command of the threads of the changes from ancient to present, and form a distinctive view. Just having begun and not yet finished, I unfortunately suffered this disaster; I pity that the book can’t be finished, and thus accepted the most cruel punishments without daring be annoyed. Now I have finally finished this book, planning to hide it into famous mountains, pass on to people worthy of it, and let it spread in big cities; then, I have compensated for the debt I owed by being disgraced; how can I ever regret even if I were to suffer ten thousand times of that humiliation! However these words can only be spoken to the wise; it is very hard to let the vulgar understand.
+
+报任安书（节选）
+司马迁【西汉】
+古者富贵而名摩灭，不可胜记，唯倜傥非常之人称焉。盖文王拘而演《周易》；仲尼厄而作《春秋》；屈原放逐，乃赋《离骚》；左丘失明，厥有《国语》；孙子膑脚，《兵法》修列；不韦迁蜀，世传《吕览》；韩非囚秦，《说难》《孤愤》；《诗》三百篇，大底圣贤发愤之所为作也。此人皆意有所郁结，不得通其道，故述往事、思来者。乃如左丘无目，孙子断足，终不可用，退而论书策，以舒其愤，思垂空文以自见。
+仆窃不逊，近自托于无能之辞，网罗天下放失旧闻，略考其行事，综其终始，稽其成败兴坏之纪，上计轩辕，下至于兹，为十表，本纪十二，书八章，世家三十，列传七十，凡百三十篇。亦欲以究天人之际，通古今之变，成一家之言。草创未就，会遭此祸，惜其不成，是以就极刑而无愠色。仆诚以著此书，藏之名山，传之其人，通邑大都，则仆偿前辱之责，虽万被戮，岂有悔哉！然此可为智者道，难为俗人言也。
+
+Visiting the Son of Heaven : Ode to the Suona Horn
+Author: WANG Pan [Ming Dynasty]
+Trumpets, suona horns, tunes small but sounds loud. Official boats come and go messily like hemp, all depending on you to raise their status. On hearing you armies become anxious, civilians become frightened. Where to find whether it is real or fake? See it blow overturn this family, blow hurt that family; just blow until water exhaust and geese fly!
+
+朝天子·咏喇叭
+王磐【明】
+喇叭，唢呐，曲儿小腔儿大。官船来往乱如麻，全仗你抬声价。军听了军愁，民听了民怕。哪里去辨甚么真共假？眼见的吹翻了这家，吹伤了那家，只吹的水尽鹅飞罢！
+
+The Book of Rites : Conveyance of Rites (Excerpt)
+When the Great Principle ran, the whole world is as one community. Select the virtuous, vote the talented, speak of honesty and build harmony. Then people do not only treat relatives as relatives, do not only treat their children as their children, ensure that the old have their ends, the strong have their use, the young have their growth; widowers, widows, orphans, the childless and the disabled are all supported; the male have their limits, the female have their families. Things, one hates them being thrown onto the ground, not wanting to keep it oneself; Force, one hates it not coming from one’s own, not wanting interest for oneself. Then, schemes vanish and never rise; theft and raid are never done; thus, outward doors never close. This is what is called the ‘Great Unity’.
+
+礼记·礼运（节选）
+大道之行也，天下为公。选贤与能，讲信修睦。故人不独亲其亲，不独子其子，使老有所终，壮有所用，幼有所长，矜、寡、孤、独废疾者皆有所养，男有分，女有归。货恶其弃于地也，不必藏于己；力恶其不出于身也，不必为己。是故谋闭而不兴，盗窃乱贼而不作，故外户而不闭。是谓大同。
+
+]]></content>
+      <categories>
+        <category>translations</category>
+      </categories>
+  </entry>
+  <entry>
     <title>中线定理的几种证明</title>
     <url>/post/pappus-law/</url>
     <content><![CDATA[中线定理
@@ -552,43 +683,6 @@ b2+c2​=2x2+21​a2 .​
       </categories>
   </entry>
   <entry>
-    <title>洛谷 P1131 题解</title>
-    <url>/post/luogu-p1131-editorial/</url>
-    <content><![CDATA[传送门
-题意
-有一棵 nnn 个节点的以 sss 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 111。
-问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。
-结论 111
-对于任意子树，其根节点到其每个叶子节点的距离相等。
-
-证明：
-反证法。
-设对于根为 RRR 的树的根为 rrr 的某一子树，有两个叶子 aaa、bbb 到 rrr 的距离不等。
-那么不妨设节点 xxx 与 yyy 间的距离为 dis(x,y)dis(x,y)dis(x,y)，则有
-dis(a,r)≠dis(b,r)dis(a,r)\not=dis(b,r)
-dis(a,r)=dis(b,r)
-所以
-dis(a,r)+dis(r,R)≠dis(b,r)+dis(r,R)dis(a,r)+dis(r,R)\not=dis(b,r)+dis(r,R)
-dis(a,r)+dis(r,R)=dis(b,r)+dis(r,R)
-得
-dis(a,R)≠dis(b,R)dis(a,R)\not=dis(b,R)
-dis(a,R)=dis(b,R)
-即 aaa、bbb 到 RRR 的距离不等。这与题目条件矛盾，所以命题成立。
-
-解法
-既然结论 111 成立，那么先从最简单的情况入手。
-如图，在这一棵以 111 为根的树中，在操作后，根节点 111 到叶子的距离最小是几？
-
-很明显的，这个值应该是所有叶子到根的所有距离的最大值。
-那么对于每个节点都实行此原则，就结束了。
-Code：
-#include &lt;bits/stdc++.h&gt;using namespace std;using uint = unsigned;using ll = long long;using ull = unsigned long long;using pii = pair&lt;int,int&gt;;using pll = pair&lt;ll,ll&gt;;#define int llint hd[500005&lt;&lt;1],nxt[500005&lt;&lt;1],to[500005&lt;&lt;1],we[500005&lt;&lt;1],et=0;inline void adde(int u,int v,int w) &#123; ++et,to[et]=v,we[et]=w,nxt[et]=hd[u],hd[u]=et; &#125;int n,s,ans,dp[500005];void dfs(int u,int fa) &#123;    int mx=0,tot=0;    for(int i=hd[u],v,t; v=to[i],t=we[i],i; i=nxt[i]) &#123;        if(v==fa) continue;        dfs(v,u);        if(dp[v]+t&gt;mx) &#123;            ans+=(dp[v]+t-mx)*tot;            mx=dp[v]+t;        &#125; else ans+=(mx-dp[v]-t);        ++tot;    &#125;    dp[u]=mx;&#125;signed main() &#123;    cin&gt;&gt;n&gt;&gt;s;    for(int i=1; i&lt;n; ++i) &#123;        int u,v,t;        cin&gt;&gt;u&gt;&gt;v&gt;&gt;t;        adde(u,v,t); adde(v,u,t);    &#125;    dfs(s,0);    cout&lt;&lt;ans&lt;&lt;endl;&#125;
-]]></content>
-      <categories>
-        <category>editorial</category>
-      </categories>
-  </entry>
-  <entry>
     <title>OI 名言</title>
     <url>/post/well-known-OI-sayings/</url>
     <content><![CDATA[《OI 子》三章
@@ -626,100 +720,6 @@ AppOfficer
 ]]></content>
       <categories>
         <category>articles</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Weird Translations</title>
-    <url>/post/weird-translations/</url>
-    <content><![CDATA[Thought at Quiet Night
-Author: LI Bai [Tang Dynasty]
-Bed front bright moon light,
-Frost on ground it might.
-Head up watch bright moon,
-Head down nostalgia I knew.
-Watching the Sea Tides (DONGNANXINGSHENG)
-Author: LIU Yong [Northern Song Dynasty]
-Attractions in the southeast, capital of the triple Wu, since ancient times is Qiantang so prosperous. Smoky willows, gorgeous bridges, window-covering windows and turquoise screen, leads to the hundred thousands of families. Tall trees that grow into the clouds surround the dam sands; angry waves wrap the snow-like sprays; the natural chasm is boundless. Jewelry displayed at markets, satin filled in houses; people compete in extravagance.
-Duplicated lakes and overlapped ranges are beautiful; there are laurels in autumn and ten miles of lotus flowers in summer. Qiang pipes trick sunny days, fishermen’s songs spread the night, joyful are the fishing old men and the lotus children. Thousand riders surround the High Tooth, by drunk listen to the xiao and drums, appreciate the smoky colourful clouds alone. Other day draw this great scenery, back to the Phoenix Pool praise.
-
-望海潮（东南形胜）
-柳永【北宋】
-东南形胜，三吴都会，钱塘自古繁华。烟柳画桥，风帘翠幕，参差十万人家。云树绕堤沙，怒涛卷霜雪，天堑无涯。市列珠玑，户盈罗绮，竞豪奢。　　重湖叠𪩘清嘉，有三秋桂子，十里荷花。羌管弄晴，菱歌泛夜，嬉嬉钓叟莲娃。千骑拥高牙，乘醉听萧鼓，吟赏烟霞。异日图将好景，归去凤池夸。
-
-Sichuan Road is Difficult
-Author: LI Bai [Tang Dynasty]
-Ah ah ah, so dangerous, so high! The difficulty of Sichuan Road, is more to climbing up the blue sky! Kings Cancong and Yufu, how obscure was their kingdom founded! From then forty-eight thousand years, none with Qin stronghold through human smoke. West to Mount Taibai are bird paths, which are able to fly over peak of Mount Emei. Grounds broke, mountains collapsed, robust men died, then sky ladders and stone stacks were linked. Up are high tops that make the sun’s six loongs return, down are torrents swirling caused by rapid streams refluxing when crushing rocks. High flights by yellow swans cannot yet pass, apes hesitate climbing when trying to get through. Mount Qingni is so hooling twisty, hundred steps with nine turns go round its peaks. Touch Star Shen, pass Star Jing, look up and hold your breath; put hands on chest, sit and sigh deeply.
-I ask you: when to return from your westward journey? Scary ways and precipitous rocks cannot be climbed; only to see sorrowful bird crying for ancient woods, males flying and females chasing round the trees, and to listen to cuckoos singing night moons, and worrying empty mountains. Harder than climbing up the blue sky is the Sichuan Road, people who hear this, their rosy cheeks will die away! Continuously linked-up crests are less than one foot from the sky; withered pines hang upside-down on cliffs. Flying torrents and waterfall flows compete for noise, crashing the cliffs, pushing the rocks, thunder roaring between ridges. How dangerous it is, you afar for what to come?
-Jian’ge is so high and towering, that one man in defence can reject hundreds of thousands of men. If untrustworthy men defend it, they will turn into wolves and jackals. Early avoid fierce tigers, late avoid long snakes, grind teeth, suck blood, kill men like hemp. Silk city is though said happy, you’d better get home early. Sichuan Road is so difficult, turn and look west, sigh long.
-
-蜀道难
-李白【唐】
-噫吁嚱，危乎高哉！蜀道之难，难于上青天！蚕丛及鱼凫，开国何茫然！尔来四万八千岁，不与秦塞通人烟。西当太白有鸟道，可以横绝峨眉巅。地崩山摧壮士死，然后天梯石栈相钩连。上有六龙回日之高标，下有冲波逆折之回川。黄鹤之飞尚不得过，猿猱欲度愁攀援。青泥何盘盘，百步九折萦岩峦。扪参历井仰胁息，以手抚膺坐长叹。
-问君西游何时还？畏途巉岩不可攀。但见悲鸟号古木，雄飞雌从绕林间。又闻子规啼夜月，愁空山。蜀道之难，难于上青天，使人听此凋朱颜！连峰去天不盈尺，枯松倒挂倚绝壁。飞湍瀑流争喧豗，砯崖转石万壑雷。其险也如此，嗟尔远道之人胡为乎来哉！
-剑阁峥嵘而崔嵬，一夫当关，万夫莫开。所守或匪亲，化为狼与豺。朝避猛虎，夕避长蛇，磨牙吮血，杀人如麻。锦城虽云乐，不如早还家。蜀道之难，难于上青天，侧身西望长咨嗟！
-
-The Barbaric Bodhisattva (XIAOSHANCHONGDIEJINMINGMIE)
-Author: WEN Tingyun [Tang Dynasty]
-Small hills overlapping and gold glimmering, cloud-like hair seeming to drift over the snowing fragrant cheek. Lazily got up to draw the moth-like brows; it was late to wash and do make-up. Checking the flower from the double mirrors, in which the face and flowers shone upon each other. Newly embroidered Ruqun on, with pairs of golden partridges.
-
-菩萨蛮（小山重叠金明灭）
-温庭筠【唐】
-小山重叠金明灭，鬓云欲度香腮雪。懒起画蛾眉，弄妆梳洗迟。照花前后镜，花面交相映。新贴绣罗襦，双双金鹧鸪。
-
-Green Curtain Covers (LIAOCHENXIANG)
-Author: ZHOU Bangyan [Northern Song Dynasty]
-Burnt the eaglewood, to erase summer’s moisty heat. Birds hailing the sunlight, at dawn chirping while peeking at the eave. Early sun dried the night’s rain on leaves; on the clear and round water, every water lily stood out in the morning wind.
-So far is my hometown, then on which day would I ever set off? Near Wu my family lives, but so long have I been a traveller in Chang’an. Remember or not the fishing lad in May? With small paddles on a light boat, I dreamt into a lotus pond.
-
-苏幕遮（燎沉香）
-周邦彦【北宋】
-燎沉香，消溽暑。鸟雀呼晴，侵晓窥檐语。叶上初阳干宿雨，水面清圆，一一风荷举。　　故乡遥，何日去？家住吴门，久作长安旅。五月渔郎相忆否？小楫轻舟，梦入芙蓉浦。
-
-The Barbaric Bodhisattva : Written on the Zaokou Wall in Jiangxi
-Author: XIN Qiji [Southern Song Dynasty]
-Clear river flows below the Yugu Tower, inside dissolved how many refugees’ tears! Gazing afar to the northwest for Chang’an, such a pity so many mountains lie between.
-Green mountains can’t block the way; water flows to the east after all. 'Night near the river I was worrying, when partridge sounds entered my ears from the deep mountain.
-
-菩萨蛮·书江西造口壁
-辛弃疾【南宋】
-郁孤台下清江水，中间多少行人泪。西北望长安，可怜无数山。　　青山遮不住，毕竟东流去。江晚正愁余，山深闻鹧鸪。
-
-Turquoise Jade Bowl : The Lantern Festival
-Author: XIN Qiji [Southern Song Dynasty]
-'Night, wind from the east bloomed flowers on thousands of trees. Then blew them off, stars dropped like rain. Fine horses and carved carriages spread out with roads full of scent. Music flew, the moon shone; it was a night of fish and loongs dancing.
-Moth ornaments, snow-willows, threads of gold; they left with faint fragrances, talking and laughing. Having looked for her hundreds of thousands of times, I suddenly turned round; she was just there, where the light was waning.
-
-青玉案·元夕
-辛弃疾【南宋】
-东风夜放花千树。更吹落，星如雨。宝马雕车香满路。凤箫声动，玉壶光转，一夜鱼龙舞。　　蛾儿雪柳黄金缕，笑语盈盈暗香去。众里寻他千百度，蓦然回首，那人却在，灯火阑珊处。
-
-Reply Letter to REN An (Excerpt)
-Author: SIMA Qian [Western Han Dynasty]
-Those people in ancient times that were noble and rich but faded out in history cannot be counted; only the most extraordinary ones are still praised today. King Wen of Zhou was confined and then deduced The Book of Changes; Confucius suffered adversity and The Spring and Autumn Annals was written; QU Yuan was exiled so he wrote the poem Lisao; ZUO Qiuming became blind and The Discourses of the States thus emerged; SUN Bin’s kneecaps were chopped, and then he composed his Art of War; LÜ Buwei was demoted to Sichuan, and then Lüshi Chunqiu passed on to generations; HAN Fei was imprisoned in Qin and then there came out Shuonan and Gufen; the three hundred poems of The Book of Songs were mostly written by wise people venting their grievances. These people all have stressful and upset feelings and cannot realise their ideals, so they wrote about past deeds, hoping that people would read them in the future. Just like ZUO Qiuming having his eyes blind, SUN Bin having his leg broken; they cannot be put to significant use for the rest of their lives, so they stepped back, wrote books and established theories to let out their bad feelings, wanting to leave writings presenting their own thoughts.
-I privately put a quart into a pint pot, and have recently used those low-level words of mine, to collect the missing historic deeds, roughly examine their truths, summarise their ins and outs, and inspect the laws of how they succeed, fail, rise, or fall; from the Yellow Emperor to the current era, I have written ten Tables, twelve Benji, eight Books, thirty Shijia, seventy Liezhuan, in total one hundred and thirty pieces. Also I want to research the relationship between natural phenomena and the human society, have a good command of the threads of the changes from ancient to present, and form a distinctive view. Just having begun and not yet finished, I unfortunately suffered this disaster; I pity that the book can’t be finished, and thus accepted the most cruel punishments without daring be annoyed. Now I have finally finished this book, planning to hide it into famous mountains, pass on to people worthy of it, and let it spread in big cities; then, I have compensated for the debt I owed by being disgraced; how can I ever regret even if I were to suffer ten thousand times of that humiliation! However these words can only be spoken to the wise; it is very hard to let the vulgar understand.
-
-报任安书（节选）
-司马迁【西汉】
-古者富贵而名摩灭，不可胜记，唯倜傥非常之人称焉。盖文王拘而演《周易》；仲尼厄而作《春秋》；屈原放逐，乃赋《离骚》；左丘失明，厥有《国语》；孙子膑脚，《兵法》修列；不韦迁蜀，世传《吕览》；韩非囚秦，《说难》《孤愤》；《诗》三百篇，大底圣贤发愤之所为作也。此人皆意有所郁结，不得通其道，故述往事、思来者。乃如左丘无目，孙子断足，终不可用，退而论书策，以舒其愤，思垂空文以自见。
-仆窃不逊，近自托于无能之辞，网罗天下放失旧闻，略考其行事，综其终始，稽其成败兴坏之纪，上计轩辕，下至于兹，为十表，本纪十二，书八章，世家三十，列传七十，凡百三十篇。亦欲以究天人之际，通古今之变，成一家之言。草创未就，会遭此祸，惜其不成，是以就极刑而无愠色。仆诚以著此书，藏之名山，传之其人，通邑大都，则仆偿前辱之责，虽万被戮，岂有悔哉！然此可为智者道，难为俗人言也。
-
-Visiting the Son of Heaven : Ode to the Suona Horn
-Author: WANG Pan [Ming Dynasty]
-Trumpets, suona horns, tunes small but sounds loud. Official boats come and go messily like hemp, all depending on you to raise their status. On hearing you armies become anxious, civilians become frightened. Where to find whether it is real or fake? See it blow overturn this family, blow hurt that family; just blow until water exhaust and geese fly!
-
-朝天子·咏喇叭
-王磐【明】
-喇叭，唢呐，曲儿小腔儿大。官船来往乱如麻，全仗你抬声价。军听了军愁，民听了民怕。哪里去辨甚么真共假？眼见的吹翻了这家，吹伤了那家，只吹的水尽鹅飞罢！
-
-The Book of Rites: Conveyance of Rites (Excerpt)
-When the Great Principle ran, the whole world is as one community. Select the virtuous, vote the talented, speak of honesty and build harmony. Then people do not only treat relatives as relatives, do not only treat their children as their children, ensure that the old have their ends, the strong have their use, the young have their growth; widowers, widows, orphans, the childless and the disabled are all supported; the male have their limits, the female have their families. Things, one hates it being thrown onto the ground, not wanting to keep it oneself; Force, one hates it not coming from one’s own, not wanting interest for oneself. Then, schemes vanish and never rise; theft and raid are never done; thus, outward doors never close. This is what is called the ‘Great Unity’.
-
-礼记·礼运（节选）
-大道之行也，天下为公。选贤与能，讲信修睦。故人不独亲其亲，不独子其子，使老有所终，壮有所用，幼有所长，矜、寡、孤、独废疾者皆有所养，男有分，女有归。货恶其弃于地也，不必藏于己；力恶其不出于身也，不必为己。是故谋闭而不兴，盗窃乱贼而不作，故外户而不闭。是谓大同。
-
-]]></content>
-      <categories>
-        <category>translations</category>
       </categories>
   </entry>
 </search>
