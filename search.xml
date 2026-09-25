@@ -589,14 +589,43 @@ b2+c2​=2x2+21​a2 .​
       </categories>
   </entry>
   <entry>
+    <title>OI 名言</title>
+    <url>/post/well-known-OI-sayings/</url>
+    <content><![CDATA[《OI 子》三章
+
+《骗分榜一，暴力爆零》by 20210732ktq
+正解不如暴力，暴力不如骗分。一道题目，两种做法，想而编之而WA。夫想而编之，必有得正解者矣，然而WA者，是正解不如暴力也。手非不酸也，码非不短也，部分分非不多也，暴力非不正确也，排名第二，是暴力不如骗分也。故曰，AC不以思路之深，暴力不以代码之短，首杀不以手速之快。骗分者榜一，暴力者爆零。爆零之至，老师骂之。榜一之至，全球膜之。以全球之所膜，攻教练之所骂，故OIer有不战，战必AK。
+
+
+《水题不能淫》by 20210927chr
+chr曰：“ktq，xcx岂不诚奆佬哉？骗分而OIers惧，正解而OI熄。”
+xrz曰：“是焉得为奆佬乎？子未学OI乎？奆佬之冠也，zc命之，蒟蒻之冠也，ls命之，往送之CSP，戒之曰：‘往之CSP，必敬必戒，无违考规！’以骗为正者，蒟蒻之道也。做天下之难题，写天下之正解，AK天下之比赛。AK，与OIers由之；不AK，自己切题。水题不能淫，难题不能移，毒瘤不能屈，此之谓奆佬。”
+
+
+《生于练习，死于退费》by 20211202lxy
+轩发于范赵之中，Sai_t举于richup之间，澜译举于冰火之中，孔韬棋举于gen，项承煦举于florr，蒋亦霖举于ma，故天将降大任于是人也，必先苦其射飞，劳其破产，饿其王塔，空乏连击，行拂乱其所为，使其停止退费，曾益其所不会。
+人恒错，然后能改；减于空，缩于时，而后过；骗于分，暴于力，而后涨。入则无暴力骗分，出则无AC过题者，人恒寄。然后知生于练习而死于退费也。
+
+]]></content>
+      <categories>
+        <category>others</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Weird Translations</title>
     <url>/post/weird-translations/</url>
     <content><![CDATA[Thought at Quiet Night
 Author: LI Bai [Tang Dynasty]
 Bed front bright moon light,
-Frost on ground it might.
-Head up watch bright moon,
-Head down nostalgia I knew.
+Be frost on ground it might.
+Head up to watch bright moon,
+Head down it’s nostalgia I knew.
+
+静夜思
+李白【唐】
+床前明月光，疑是地上霜。
+举头望明月，低头思故乡。
+
 Watching the Sea Tides (DONGNANXINGSHENG)
 Author: LIU Yong [Northern Song Dynasty]
 Attractions in the southeast, capital of the triple Wu, since ancient times is Qiantang so prosperous. Smoky willows, gorgeous bridges, window-covering windows and turquoise screen, leads to the hundred thousands of families. Tall trees that grow into the clouds surround the dam sands; angry waves wrap the snow-like sprays; the natural chasm is boundless. Jewelry displayed at markets, satin filled in houses; people compete in extravagance.
@@ -672,7 +701,7 @@ Trumpets, suona horns, tunes small but sounds loud. Official boats come and go m
 喇叭，唢呐，曲儿小腔儿大。官船来往乱如麻，全仗你抬声价。军听了军愁，民听了民怕。哪里去辨甚么真共假？眼见的吹翻了这家，吹伤了那家，只吹的水尽鹅飞罢！
 
 The Book of Rites : Conveyance of Rites (Excerpt)
-When the Great Way prevailed, the whole world is as one community. Select the virtuous, vote the talented, speak of honesty and build harmony. Then people do not only treat relatives as relatives, do not only treat their children as their children, ensure that the old have their ends, the strong have their use, the young have their growth; widowers, widows, orphans, the childless and the disabled are all supported; the male have their limits, the female have their families. Things, one hates them being thrown onto the ground, not wanting to keep it oneself; Force, one hates it not coming from one’s own, not wanting interest for oneself. Then, schemes vanish and never rise; theft and raid are never done; thus, outward doors never close. This is what is called the ‘Great Unity’.
+When the Great Way prevailed, the whole world is as one community. People select the virtuous, vote the talented, speak of honesty and build harmony. Then people do not only treat relatives as relatives, do not only treat their children as their children, and ensure that the old have their ends, the strong have their use, the young have their growth; widowers, widows, orphans, the childless and the disabled are all supported; the male have their limits, and the female have their families. Things, one hates them being thrown onto the ground, not wanting to keep it oneself; Force, one hates it not coming from one’s own, not wanting interest for oneself. Like this, schemes vanish and never rise; theft and raid are never done; thus outward doors never close. This is what is called the ‘Great Unity’.
 
 礼记·礼运（节选）
 大道之行也，天下为公。选贤与能，讲信修睦。故人不独亲其亲，不独子其子，使老有所终，壮有所用，幼有所长，矜、寡、孤、独废疾者皆有所养，男有分，女有归。货恶其弃于地也，不必藏于己；力恶其不出于身也，不必为己。是故谋闭而不兴，盗窃乱贼而不作，故外户而不闭。是谓大同。
@@ -680,29 +709,6 @@ When the Great Way prevailed, the whole world is as one community. Select the vi
 ]]></content>
       <categories>
         <category>translations</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>OI 名言</title>
-    <url>/post/well-known-OI-sayings/</url>
-    <content><![CDATA[《OI 子》三章
-
-《骗分榜一，暴力爆零》by 20210732ktq
-正解不如暴力，暴力不如骗分。一道题目，两种做法，想而编之而WA。夫想而编之，必有得正解者矣，然而WA者，是正解不如暴力也。手非不酸也，码非不短也，部分分非不多也，暴力非不正确也，排名第二，是暴力不如骗分也。故曰，AC不以思路之深，暴力不以代码之短，首杀不以手速之快。骗分者榜一，暴力者爆零。爆零之至，老师骂之。榜一之至，全球膜之。以全球之所膜，攻教练之所骂，故OIer有不战，战必AK。
-
-
-《水题不能淫》by 20210927chr
-chr曰：“ktq，xcx岂不诚奆佬哉？骗分而OIers惧，正解而OI熄。”
-xrz曰：“是焉得为奆佬乎？子未学OI乎？奆佬之冠也，zc命之，蒟蒻之冠也，ls命之，往送之CSP，戒之曰：‘往之CSP，必敬必戒，无违考规！’以骗为正者，蒟蒻之道也。做天下之难题，写天下之正解，AK天下之比赛。AK，与OIers由之；不AK，自己切题。水题不能淫，难题不能移，毒瘤不能屈，此之谓奆佬。”
-
-
-《生于练习，死于退费》by 20211202lxy
-轩发于范赵之中，Sai_t举于richup之间，澜译举于冰火之中，孔韬棋举于gen，项承煦举于florr，蒋亦霖举于ma，故天将降大任于是人也，必先苦其射飞，劳其破产，饿其王塔，空乏连击，行拂乱其所为，使其停止退费，曾益其所不会。
-人恒错，然后能改；减于空，缩于时，而后过；骗于分，暴于力，而后涨。入则无暴力骗分，出则无AC过题者，人恒寄。然后知生于练习而死于退费也。
-
-]]></content>
-      <categories>
-        <category>others</category>
       </categories>
   </entry>
   <entry>
