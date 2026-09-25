@@ -438,6 +438,25 @@ z=reiθz=r\mathrm{e}^{\mathrm{i}\theta}z=reiθ 称为复数 zzz 的指数形式 
       </categories>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/post/hello-world/</url>
+    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start
+Create a new post
+$ hexo new &quot;My New Post&quot;
+More info: Writing
+Run server
+$ hexo server
+More info: Server
+Generate static files
+$ hexo generate
+More info: Generating
+Deploy to remote sites
+$ hexo deploy
+More info: Deployment
+]]></content>
+  </entry>
+  <entry>
     <title>洛谷 P1131 题解</title>
     <url>/post/luogu-p1131-editorial/</url>
     <content><![CDATA[传送门
@@ -570,25 +589,6 @@ b2+c2​=2x2+21​a2 .​
       </categories>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/post/hello-world/</url>
-    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start
-Create a new post
-$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server
-$ hexo server
-More info: Server
-Generate static files
-$ hexo generate
-More info: Generating
-Deploy to remote sites
-$ hexo deploy
-More info: Deployment
-]]></content>
-  </entry>
-  <entry>
     <title>Serious Translations</title>
     <url>/post/serious-translations/</url>
     <content><![CDATA[我们不建议阅读下面的文字。译者仅进行了翻译，不对下面文字所述的内容的正确性或公正性负任何责任。
@@ -597,7 +597,7 @@ We do not recommend reading the following text. The translator has only provided
 Publisher’s Note to the Fifth Volume of The Selected Works of Mao Zedong
 The works of the great leader and tutor, Chairman Mao Zedong, are immortal contributions to Marxism-Leninism. In the light of the resolution of the Central Committee of the Communist Party of China, the fifth volume of The Selected Works of Mao Zedong is now published; further volumes will also be published in succession.
 The first to the fourth volumes of The Selected Works of Mao Zedong published in the past are important works during the New-Democratic Revolution period. The fifth and further volumes are important works during the Socialist Revolution and Socialist Construction period.
-In the new historical period after the founding of the People’s Republic of China, comrade Mao Zedong persisted in the consistent principles of uniting the universal truths of Marxism-Leninism with the specific practice of revolution, and led our Party and the people of our country inherit, defend and developed Marxism-Leninism, during the conflicts with proceeding the Socialist Revolution and the Socialist Construction, the conflicts of opposing the revisionist lines of Gao Gang and Rao Shushi, Peng Dehuai, Liu Shaoqi, Lin Biao, and Wang Hongwen, Zhang Chunqiao, Jiang Qing and Yao Wenyuan, the conflicts of opposing imperialism and reactionaries of other countries, and the conflicts of opposing modern revisionism centred around the traitor group of the Soviet revisionists. In this period, the greatest theoretic contributions of comrade Mao Zedong is that he systematically summarised the historical experiences of the proletarian dictatorship both international and of our country, applied the basic standpoint of the unity of opposites of materialist dialectics, analysed the laws of development of socialism, and established the great theory of Continuing Revolution Under Proletarian Dictatorship. The new thought and theory of proletarian revolution and proletarian dictatorship by comrade Mao Zedong, greatly enriched the theoretic treasure-house of Marxism-Leninism in the fields of philosophy, political economy and scientific socialism. It not only points out the fundamental road to consolidating proletarian dictatorship, guarding against restoration of capitalism, and constructing socialism, but possesses great, far-reaching global significance as well.
+In the new historical period after the founding of the People’s Republic of China, comrade Mao Zedong persisted in the consistent principles of uniting the universal truths of Marxism-Leninism with the specific practice of revolution, and led our Party and the people of our country inherit, defend and developed Marxism-Leninism during the conflicts with proceeding the Socialist Revolution and the Socialist Construction, the conflicts of opposing the revisionist lines of Gao Gang and Rao Shushi, Peng Dehuai, Liu Shaoqi, Lin Biao, and Wang Hongwen, Zhang Chunqiao, Jiang Qing and Yao Wenyuan, the conflicts of opposing imperialism and reactionaries of other countries, and the conflicts of opposing modern revisionism centred around the traitor group of the Soviet revisionists. In this period, the greatest theoretic contributions of comrade Mao Zedong is that he systematically summarised the historical experiences of the proletarian dictatorship both international and of our country, applied the basic standpoint of the unity of opposites of materialist dialectics, analysed the laws of development of socialism, and established the great theory of Continuing Revolution Under Proletarian Dictatorship. The new thought and theory of proletarian revolution and proletarian dictatorship by comrade Mao Zedong, greatly enriched the theoretic treasure-house of Marxism-Leninism in the fields of philosophy, political economy and scientific socialism. It not only points out the fundamental road to consolidating proletarian dictatorship, guarding against restoration of capitalism, and constructing socialism, but possesses great, far-reaching global significance as well.
 The fifth volume of The Selected Works of Mao Zedong contains important works frin July 1949 to 1957. The scientific thesis of conflicts between the proletariat and the bourgeoisie and between the socialist road and the capitalist road still long-lastingly exist after the basic accomplishment of the socialist transformation of the system of ownership of the means of production, the theory of how to distinguish and deal with the two contradictions of different nature, contradictions between ourselves and the enemy and contradictions among the people, correctly, the great theory of Continuing Revolution Under Proletarian Dictatorship, and the basic concept of the general line of socialist construction by comrade Mao Zedong are first advanced in this volume of works, Later, especially in the Great Proletarian Cultural Revolution, comrade Mao Zedong continually enriched and developed these glorious thoughts according to the experiences of revolutional practice.
 Comrade Mao Zedong was the greatest Marxist-Leninist in the contemporary era. Mao Zedong Thought is the victorious flag of the unitedly fighting and continuing revolution of our Party, our Army, and our people, and is the common treasure of international proletariats and each country’s revolutionary people. The thoughts and theories of comrade Mao Zedong are immortal.
 The selected works of comrade Mao Zedong during the period of the Socialist Revolution and Socialist Construction have part of them publicly issued in the past, the others not, including the files, manuscripts and speeches’ formal records by comrade Mao Zedong. Speech records were essentially, technically straightened out when editing.
