@@ -438,6 +438,25 @@ z=reiθz=r\mathrm{e}^{\mathrm{i}\theta}z=reiθ 称为复数 zzz 的指数形式 
       </categories>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/post/hello-world/</url>
+    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start
+Create a new post
+$ hexo new &quot;My New Post&quot;
+More info: Writing
+Run server
+$ hexo server
+More info: Server
+Generate static files
+$ hexo generate
+More info: Generating
+Deploy to remote sites
+$ hexo deploy
+More info: Deployment
+]]></content>
+  </entry>
+  <entry>
     <title>洛谷 P1131 题解</title>
     <url>/post/luogu-p1131-editorial/</url>
     <content><![CDATA[传送门
@@ -473,25 +492,6 @@ Code：
       <categories>
         <category>editorial</category>
       </categories>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/post/hello-world/</url>
-    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start
-Create a new post
-$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server
-$ hexo server
-More info: Server
-Generate static files
-$ hexo generate
-More info: Generating
-Deploy to remote sites
-$ hexo deploy
-More info: Deployment
-]]></content>
   </entry>
   <entry>
     <title>中线定理的几种证明</title>
@@ -711,7 +711,7 @@ The first to the fourth volumes of The Selected Works of Mao Zedong published in
 In the new historical period after the founding of the People’s Republic of China, Comrade Mao Zedong persisted in the consistent principles of uniting the universal truths of Marxism-Leninism with the specific practice of revolution, and led our Party and the people of our country inherit, defend and developed Marxism-Leninism in the struggle of carrying out the Socialist Revolution and Socialist Construction, in the struggle of opposing the revisionist lines of Gao-Rao, Peng Dehuai, Liu Shaoqi, Lin Biao, and Wang-Zhang-Jiang-Yao, in the struggle of opposing imperialism and reactionaries in various countries, and in the struggle of opposing modern revisionism centred around the Soviet revisionist traitor group. In this period, the greatest theoretic contributions of Comrade Mao Zedong is that he systematically summarised the historical experiences of the proletarian dictatorship both international and of our country, applied the basic standpoint of the unity of opposites of materialist dialectics, analysed the laws of development of socialism, and established the great theory of Continuing Revolution Under Proletarian Dictatorship. The new thought and theory of proletarian revolution and proletarian dictatorship by Comrade Mao Zedong, greatly enriched the theoretic treasure-house of Marxism-Leninism in the fields of philosophy, political economy and scientific socialism. It not only points out the fundamental road to consolidating proletarian dictatorship, guarding against restoration of capitalism, and constructing socialism, but possesses great, far-reaching global significance as well.
 The fifth volume of The Selected Works of Mao Zedong contains important works from July 1949 to 1957. The scientific thesis of conflicts between the proletariat and the bourgeoisie and between the socialist road and the capitalist road still long-lastingly exist after the basic accomplishment of the socialist transformation of the system of ownership of the means of production, the theory of how to distinguish and deal with the two contradictions of different nature, contradictions between ourselves and the enemy and contradictions among the people, correctly, the great theory of Continuing Revolution Under Proletarian Dictatorship, and the basic concept of the general line of socialist construction by Comrade Mao Zedong are first advanced in this volume of works, Later, especially in the Great Proletarian Cultural Revolution, Comrade Mao Zedong continually enriched and developed these glorious thoughts according to the experiences of revolutional practice.
 Comrade Mao Zedong was the greatest Marxist-Leninist in the contemporary era. Mao Zedong Thought is the victorious flag of the unitedly fighting and continuing revolution of our Party, our Army, and our people, and is the common treasure of international proletariats and each country’s revolutionary people. The thoughts and theories of Comrade Mao Zedong are immortal.
-The selected works of Comrade Mao Zedong during the period of the Socialist Revolution and Socialist Construction have part of them publicly issued in the past, the others not, including the files, manuscripts and speeches’ formal records by Comrade Mao Zedong. Speech records were essentially, technically straightened out when editing.
+The selected works of Comrade Mao Zedong during the period of the Socialist Revolution and Socialist Construction have part of them publicly issued in the past, the others not, including the files, manuscripts and speeches’ formal transcripts by Comrade Mao Zedong. Speech transcripts were essentially, technically straightened out when editing.
 
 The Committee of Editing and Publishing the Works of Chairman Mao Zedong of the Central Committee of the Communist Party of China
 1st March, 1977
