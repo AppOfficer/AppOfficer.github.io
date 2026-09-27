@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="en-US" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>洛谷 P1131 题解 | AOBlog</title><meta name="author" content="AppOfficer"><meta name="copyright" content="AppOfficer"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="传送门 题意 有一棵 $n$ 个节点的以 $s$ 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 $1$。 问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。 结论 $1$ 对于任意子树，其根节点到其每个叶子节点的距离相等。  证明： 反证法。 设对于根为 $R$ 的树的根为 $r$ 的某一子树，有两个叶子 $a$、$b$ 到 $r$ 的距离不等。 那么不妨设节点 $x$">
+<!DOCTYPE html><html lang="en-US" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>洛谷 P1131 题解 | AOBlog</title><meta name="author" content="AppOfficer"><meta name="copyright" content="AppOfficer"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="传送门 题意 有一棵 $n$ 个节点的以 $s$ 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 $1$。 问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。 结论 $1$ 对于任意子树，其根节点到其每个叶子节点的距离相等。  证明：反证法。设对于根为 $R$ 的树的根为 $r$ 的某一子树，有两个叶子 $a$、$b$ 到 $r$ 的距离不等。那么不妨设节点 $x$ 与 $">
 <meta property="og:type" content="article">
 <meta property="og:title" content="洛谷 P1131 题解">
 <meta property="og:url" content="https://appofficer.github.io/post/luogu-p1131-editorial/">
 <meta property="og:site_name" content="AOBlog">
-<meta property="og:description" content="传送门 题意 有一棵 $n$ 个节点的以 $s$ 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 $1$。 问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。 结论 $1$ 对于任意子树，其根节点到其每个叶子节点的距离相等。  证明： 反证法。 设对于根为 $R$ 的树的根为 $r$ 的某一子树，有两个叶子 $a$、$b$ 到 $r$ 的距离不等。 那么不妨设节点 $x$">
+<meta property="og:description" content="传送门 题意 有一棵 $n$ 个节点的以 $s$ 为根的树。每条树边都有一个长度。每次操作可以把一条树边的长度加 $1$。 问：至少操作多少次，可以使根节点到每个叶子节点的距离相等。 结论 $1$ 对于任意子树，其根节点到其每个叶子节点的距离相等。  证明：反证法。设对于根为 $R$ 的树的根为 $r$ 的某一子树，有两个叶子 $a$、$b$ 到 $r$ 的距离不等。那么不妨设节点 $x$ 与 $">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://appofficer.github.io/bassets/author.jpg">
 <meta property="article:published_time" content="2023-05-11T14:11:27.000Z">
@@ -242,10 +242,7 @@
 <h2 id="结论-1">结论 $1$</h2>
 <p>对于任意子树，其根节点到其每个叶子节点的距离相等。</p>
 <blockquote>
-<p><strong>证明</strong>：<br>
-反证法。<br>
-设对于根为 $R$ 的树的根为 $r$ 的某一子树，有两个叶子 $a$、$b$ 到 $r$ 的距离不等。<br>
-那么不妨设节点 $x$ 与 $y$ 间的距离为 $dis(x,y)$，则有<br>
+<p><strong>证明</strong>：反证法。设对于根为 $R$ 的树的根为 $r$ 的某一子树，有两个叶子 $a$、$b$ 到 $r$ 的距离不等。那么不妨设节点 $x$ 与 $y$ 间的距离为 $dis(x,y)$，则有<br>
 $$dis(a,r)\not=dis(b,r)$$<br>
 所以<br>
 $$dis(a,r)+dis(r,R)\not=dis(b,r)+dis(r,R)$$<br>
