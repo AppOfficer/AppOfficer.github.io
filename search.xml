@@ -438,25 +438,6 @@ z=reiθz=r\mathrm{e}^{\mathrm{i}\theta}z=reiθ 称为复数 zzz 的指数形式 
       </categories>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/post/hello-world/</url>
-    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start
-Create a new post
-$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server
-$ hexo server
-More info: Server
-Generate static files
-$ hexo generate
-More info: Generating
-Deploy to remote sites
-$ hexo deploy
-More info: Deployment
-]]></content>
-  </entry>
-  <entry>
     <title>洛谷 P1131 题解</title>
     <url>/post/luogu-p1131-editorial/</url>
     <content><![CDATA[传送门
@@ -489,6 +470,25 @@ Code：
       <categories>
         <category>editorial</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/post/hello-world/</url>
+    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start
+Create a new post
+$ hexo new &quot;My New Post&quot;
+More info: Writing
+Run server
+$ hexo server
+More info: Server
+Generate static files
+$ hexo generate
+More info: Generating
+Deploy to remote sites
+$ hexo deploy
+More info: Deployment
+]]></content>
   </entry>
   <entry>
     <title>中线定理的几种证明</title>
@@ -594,16 +594,16 @@ We do not recommend reading the following text. The translator has merely provid
 Letter to Jiang Qing[1][2] (8th July, 1966)
 Author: Mao Zedong
 Jiang Qing[3]:
-I received your letter of 29th June. It would be best for you to stay there for a while, following the advice of Comrades Wei and Chen[4]. I have two foreign guests to meet this month; shall tell you my whereabouts after meeting them. Since leaving Wulin[5] on 15th June, I have been living in a mountain cave in the west[6] for over ten days, thus being somehow out of touch with the news. I arrived at the land of ‘White Clouds and Yellow Cranes’[7], and have been here for ten days. Reading the materials every day is very interesting all the time.
-Great disorder under heaven leads to great order. It happens every seven or eight years. The ‘ox-demons and snake-spirits’ will jump out of their own accord. Driven by their own class natures, they have no choice but to jump out. The Central Committee urges the distribution of my friend’s speech[8], and I am preparing for accepting the release—he focused specially on the issue of coups. No one had ever discussed the issue as he did. I have always felt uneasy about some of his formulations. I never believed such magical powers ever exist in those small books of mine. Now, after his touting, the whole Party and the whole nation have joined in the hype—truly a case of blowing my own trumpet. I was driven up Mount Liang by them; it seems that I have to agree with them.
-It is the first time for me to approve others on such a major issue against my own judgment; such should be called ‘independent of human will’. Ruan Ji of Jin Dynasty opposed Liu Bang; walking from Luoyang to Chen’gao, he sighed: ‘With no heroes in the world, mere scoundrels made themselves a name.’ Lu Xun said similar things for his miscellaneous essays; I share a kindred mind with Lu Xun. I like his way of being frank. He said: ‘Dissecting oneself is often harder than dissecting others.’ After tumbling several times, I often do that as well. But fellow comrades do not believe it usually; I am confident yet diffident.
-When I was young, I once said: ‘Confident that I shall live two hundred years, I will strike the waters over three thousand li.’ That just shows what high spirits I was in. However, I was not so confident, always feeling it will be ‘with no tigers in the mountain, monkeys will claim to be king.’ I just became a king like this. But it was not eclecticism as well; there is some ‘tiger spirits’ on me, prominently; also there is some ‘monkey spirits’, secondarily. I used to cite several sentences from the letter written by Li Gu of Eastern Han Dynasty to Huang Qiong: ‘Yáoyao zhě yì zhé, jiǎojiǎo zhě yì wū. Yángchūn báixuě, hé zhě gài guǎ. Shèngmíng zhī xià, qíshí nán fù.’[9] The latter two sentences describe me exactly.
-I once read these sentences at the meeting of the Standing Committee of the Political Bureau. Self-knowledge is a virtue. At the Hangzhou Meeting this April, I expressed disagreement with the ways my friends expressed it. But what good did it do? He still talked about it like that at the Beijing Meeting in May; The newspapers and magazines trumpeted it even more fiercely—extolling me in almost supernatural terms. In this way, I have to go onto Mount Liang. I guess their incentives are to use ‘Zhong Kui’ to beat ghosts. I just became the ‘Zhong Kui’ of the Communist Party in the 1960s.
-Things will always go to the opposite, rising higher, tumbling harder; I am preparing to tumble into pieces. That is nothing at all: matter is indestructible; it is merely shattered into pieces. There are more than one hundred Parties in the world, most of them not believing in Marxism-Leninism, and Marx and Lenin themselves have been shattered by people—so what chances do we have? I urge you to pay attention to this problem: do not let victory go to your head, and think about your own weaknesses, shortcomings and faults. I talked this issue with you for countless times; you must remember that I have just talked it in Shanghai in April. The writing above is rather ‘black talk’; don’t some counter-party elements just say it like this? But they intend to overthrow our entire Party and myself, while I merely speak of that some characterisations of my role are inappropriate; that is the difference between me and the ‘black gang.’
-This matter cannot be made public; The entire left-wing and broad masses hold this view. If we made it public, we are pouring cold water on them and helping the right-wing; the mission now is to fundamentally (completely is not possible) beat the right-wing down, and a movement to sweep the ‘ox-demons and snake-spirits’ would be done seven or eight years later; there will be more later. Thus these nearly ‘black talks’ of mine must not be made public; when to make it public can not be determined at the moment, because the left-wing and broad masses will not welcome me saying like this. Maybe sometime after my death, when the right-wing hold the power, let them make it public. They will use my talks like this to attempt to raise the ‘black flag’ forever; but if they do that, they will bring about their own downfall.
-Since the emperor was beaten in 1911, reactionary regimes in China never lasted long, the longest of them lasting a merely twenty years (under Chiang Kai-shek), which fell the moment the people raise the flag for rebellion. Chiang Kai-shek exploited Sun Yat-sen’s trust of him to establish the Whampoa Military School, gathering a bunch of reactionaries forming his power. Once he turned against the Communists, nearly all of the landlords and bourgeoisie classes support him; the Communist Party still lacking experience then, he rose to power happily and temporarily. But in this twenty years, he never achieved true unification: there was the war between the Kuomintang and the CPC, the war between KMT and various warlord factions, the Sino-Japanese War, and finally the four-year great civil war; after that he was driven to a group of islands.
-If a counter-communist right-wing coup happened in China, I bet they would find no peace and would be short-lived, for all of the revolutionaries representing more than ninety percent of the people’s interests will not tolerate it. At then the right-wing may cite my words to rise in a time, and the left-wing will cite my other words to organise themselves and overthrow them. This Great Cultural Revolution is a serious rehearsal. Some regions (like Beijing City) have their roots deep, and will vanish overnight; some certain institutions have entrenched networks, and will be dissected soon. The more arrogant the right-wing are, the more disastrous their defeat will be, and the more spirited the left-wing will become. This is a national rehearsal, and all the left-wing, the right-wing and the wavering middle-wing will get their own lessons.
-Conclusion: the future is bright, the road is tortuous—still these two old sayings.
+I received your letter of 29th June. It would be best for you to stay there for a while, following the advice of Comrades Wei and Chen[4]. I have two receptions for foreign guests this month; I shall let you know my whereabouts after meeting them. Since leaving Wulin[5] on 15th June, I spent over ten days living in a mountain cave in the west[6], somewhat out of touch with the news. I arrived at the land of ‘White Clouds and Yellow Cranes’[7] on the 28th, and have been here for ten days now. Reading the materials every day has proven quite captivating.
+Great disorder under heaven leads to great order. This recurs every seven or eight years. ‘Monsters and demons’ leap out of their own accord. Driven by their own class nature, they cannot help but break cover. The Central Committee urges the distribution of my friend’s speech[8], and I am preparing to agree to its release—he dealt exclusively with the question of coups d’état. No one had ever spoken on the issue as he did. I have always felt uneasy about some of his formulations. I never believed those few small books of mine possessed such magical powers. Now, inflated by his hype, the whole Party and the whole nation have joined in the fanfare—truly like Wang Po extolling her own melons, pure self-praise. I was forced up Mount Liang by them; it seems that I have no choice but to agree with them.
+It is the first time for me to agree with others on such a major issue against my own better judgment; this is what one might call ‘independent of human will’. Ruan Ji of the Jin Dynasty opposed Liu Bang; he walked from Luoyang to Chen’gao, and sighed: ‘With no heroes in the world, mere scoundrels have made a name for themselves.’ Lu Xun said something similar about his own essays; I fell a deep spiritual affinity with Lu Xun. I like his way of being frank. He said: ‘Dissecting oneself is often more ruthless than dissecting others.’ Having tumbled several times myself, I often do the same. But fellow comrades usually do not believe it. I am confident, yet also somewhat diffident.
+In my youth I once said: ‘Confident that I shall live two hundred years, I will strike the waters over three thousand li.’ That just shows how full of swagger I was. Yet I was never quite so confident, always mindful of the saying ‘When there are no tigers in the mountain, the monkey claims to be king.’ And so I became such a ‘king’. Nor was it eclecticism; there is a primary ‘tiger spirit’ in me, alongside a secondary ‘monkey spirit’. I once quoted lines from the letter written by Li Gu of the Eastern Han Dynasty to Huang Qiong: ‘Yáoyáo zhě yì zhé, jiǎojiǎo zhě yì wū. Yángchūn báixuě, hé zhě gài guǎ. Shèngmíng zhī xià, qíshí nán fù.’[9] The last two sentences describe me exactly.
+I once read these sentences at a meeting of the Standing Committee of the Political Bureau. Self-knowledge is a virtue. At the Hangzhou Meeting this April, I expressed disagreement with the ways my friends expressed it. But what good did it do? He still talked about it like that at the Beijing Meeting in May; the newspapers and magazines trumpeted it even more fiercely—extolling me in almost supernatural terms. Thus, I was forced up Mount Liang. I suspect their intention is to borrow ‘Zhong Kui’ to strike at ghosts. I just became the ‘Zhong Kui’ of the Communist Party in the 1960s.
+Things always turn into their opposites: the higher one is puffed up, the harder one falls; I am preparing to tumble into pieces. That is nothing at all: matter is indestructible; it is merely shattered into pieces. There are more than one hundred Parties in the world, most of them not believing in Marxism-Leninism, and Marx and Lenin themselves have been shattered by people—so what chances do we have? I urge you to pay attention to this problem: do not let victory go to your head, and think about your own weaknesses, shortcomings and faults. I have discussed this issue with you countless times; you must remember that I have just discussed it in Shanghai in April. What I have written above sounds rather like ‘subversive talk’; don’t some anti-Party elements just say it like this? But they intend to overthrow our entire Party and myself, whereas I merely state that some characterisations of my role are inappropriate; that is the difference between me and the ‘black gang.’
+This matter cannot be made public now; the entire Left and the broad masses hold this view. If we make it public, we will be pouring cold water on them and helping the Right; the mission now is to fundamentally (completely is not possible) beat the Right down across the entire Party and nation, and another campaign to sweep away ‘monsters and demons’ would take place in seven or eight years; there will be more afterwards. Thus these nearly ‘subversive talks’ of mine must not be made public; when it can be made public cannot be determined at the moment, because the Left and broad masses will not welcome me saying like this. Maybe sometime after my death, when the Right hold the power, let them make it public. They will use my talks like this to attempt to raise the ‘black flag’ forever; but if they do that, they will bring about their own downfall.
+Since the emperor was overthrown in 1911, reactionary regimes in China never lasted long, the longest of them lasting a merely twenty years (under Chiang Kai-shek), only to collapse the moment the people rose in rebellion. Chiang Kai-shek exploited Sun Yat-sen’s trust in him to establish the Whampoa Military Academy, gathering a bunch of reactionaries to build his power base. Once he turned against the Communists, nearly all of the landlords and bourgeoisie classes supported him; with the Communist Party still lacking experience at the time, he temporarily gained the upper hand with great relish. But in these twenty years, he never achieved true unification: there was the war between the Kuomintang and the CPC, the war between KMT and various warlord factions, the Sino-Japanese War, and finally the four-year great civil war; after that he scuttled off to a cluster of islands.
+If a anti-Communist Rightist coup were to occur in China, I am certain they would find no peace and would be short-lived, for all of the revolutionaries representing more than ninety percent of the people’s interests will not tolerate it. At then the Right might use my words to prevail in a time, and the Left will cite my other words to organise themselves and overthrow them. This Great Cultural Revolution is a serious rehearsal. Some areas (such as Beijing), deeply entrenched, yet collapsed overnight; certain institutions (such as Peking University and Tsinghua University), intricately intertwined, collapsed in an instant. The more arrogant the Right are, the more disastrous their defeat will be, and the more spirited the Left will become. This is a national rehearsal, and all the Left, the Right and the wavering centrists will get their own lessons.
+Conclusion: the future is bright, the road is tortuous—the same old two lines as always.
 The Resolution of Publishing The Selected Works of Mao Zedong and Preparing for the Publication of The Complete Works of Mao Zedong by the Central Committee of the Communist Party of China
 In more than half a century, the great leader and tutor Chairman Mao Zedong has inherited, defended and developed Marxism-Leninism and has enriched the theoretic treasure-house of Marxism, according to the principles of uniting the universal truths of Marxism-Leninism with the specific practice of revolution, in the great struggle of leading our country to complete the New-Democratic Revolution and carry out the Socialist Revolution and Socialist Construction, in the great struggle of opposing the right-wing and ‘left-wing’ opportunist lines in the Party, and in the great struggle of opposing modern revisionism centred around the Soviet revisionist traitor group and reactionaries in various countries. Publishing the works of Chairman Mao has great realistic significance and far-reaching historical significance both to our country’s people to inherit Chairman Mao’s unfulfilled wish and carry the proletarian revolutionary cause through to the end and to the liberation cause of the world’s proletariats and the oppressed people of oppressed nations. This is a great deed in the developing history of Marxism, and it is a must to carry out the work seriously and diligently with utmost care. The Central Committee of the Communist Party of China has decided that:
 (Ⅰ) Publish the fifth volume of The Selected Works of Mao Zedong as soon as possible, and successively publish further volumes. While publishing The Selected Works, actively prepare for the publication of The Complete Works of Mao Zedong.
@@ -635,7 +635,7 @@ This is a letter written by Comrade Mao Zedong’s to Jiang Qing in Wuhan; after
 
 Jiang Qing: Mao Zedong’s wife; at the time, she was Deputy Head of the Central Cultural Revolution Group. ↩︎
 
-Comrades Wei and Chen: Wei refers to Wei Wenbo, then Secretary of the Shanghai Municipal Party Committee and Secretary of the East China Bureau; Chen refers to Chen Pixian, then First Secretary of the Shanghai Municipal Party Committee, Secretary of the East China Bureau and concurrently First Policical Commissar of the Shanghai Garrison Command. ↩︎
+Comrades Wei and Chen: Wei refers to Wei Wenbo, then Secretary of the Shanghai Municipal Party Committee and Secretary of the East China Bureau; Chen refers to Chen Pixian, then First Secretary of the Shanghai Municipal Party Committee, Secretary of the East China Bureau and concurrently First Political Commissar of the Shanghai Garrison Command. ↩︎
 
 Wulin: a former name of Hangzhou. ↩︎
 
@@ -645,13 +645,36 @@ The land of ‘White Clouds and Yellow Cranes’: Refers to the Yellow Crane Tow
 
 My friend’s speech: refers to Lin Biao’s speech at the Enlarged Meeting of the Political Bureau of the CPC Central Committee on 18th May, 1966, in which he raised the issue of ‘preventing counterrevolutionary coups’. ↩︎
 
-‘Yáoyao zhě yì zhé, jiǎojiǎo zhě yì wū. Yángchūn báixuě, hé zhě gài guǎ. Shèngmíng zhī xià, qíshí nán fù’: Things that stand tall are easily damaged; things that are clean are easily sullied. When the elegant ancient melody “Spring Snow” is sung, few are able to sing along; reputation often surpasses actual talent. (by Google Translate) ↩︎
+‘Yáoyao zhě yì zhé, jiǎojiǎo zhě yì wū. Yángchūn báixuě, hé zhě gài guǎ. Shèngmíng zhī xià, qíshí nán fù’: That which stands tallest is easily broken; that which is purest is easily stained. High classical tunes like ‘Spring Snow’ find few who can sing along; a soaring reputation is difficult to live up to in reality. ↩︎
 
 
 
 ]]></content>
       <categories>
         <category>translations</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>OI 名言</title>
+    <url>/post/well-known-OI-sayings/</url>
+    <content><![CDATA[《OI 子》三章
+
+《骗分榜一，暴力爆零》by 20210732ktq
+正解不如暴力，暴力不如骗分。一道题目，两种做法，想而编之而WA。夫想而编之，必有得正解者矣，然而WA者，是正解不如暴力也。手非不酸也，码非不短也，部分分非不多也，暴力非不正确也，排名第二，是暴力不如骗分也。故曰，AC不以思路之深，暴力不以代码之短，首杀不以手速之快。骗分者榜一，暴力者爆零。爆零之至，老师骂之。榜一之至，全球膜之。以全球之所膜，攻教练之所骂，故OIer有不战，战必AK。
+
+
+《水题不能淫》by 20210927chr
+chr曰：“ktq，xcx岂不诚奆佬哉？骗分而OIers惧，正解而OI熄。”
+xrz曰：“是焉得为奆佬乎？子未学OI乎？奆佬之冠也，zc命之，蒟蒻之冠也，ls命之，往送之CSP，戒之曰：‘往之CSP，必敬必戒，无违考规！’以骗为正者，蒟蒻之道也。做天下之难题，写天下之正解，AK天下之比赛。AK，与OIers由之；不AK，自己切题。水题不能淫，难题不能移，毒瘤不能屈，此之谓奆佬。”
+
+
+《生于练习，死于退费》by 20211202lxy
+轩发于范赵之中，Sai_t举于richup之间，澜译举于冰火之中，孔韬棋举于gen，项承煦举于florr，蒋亦霖举于ma，故天将降大任于是人也，必先苦其射飞，劳其破产，饿其王塔，空乏连击，行拂乱其所为，使其停止退费，曾益其所不会。
+人恒错，然后能改；减于空，缩于时，而后过；骗于分，暴于力，而后涨。入则无暴力骗分，出则无AC过题者，人恒寄。然后知生于练习而死于退费也。
+
+]]></content>
+      <categories>
+        <category>others</category>
       </categories>
   </entry>
   <entry>
@@ -752,29 +775,6 @@ When the Great Way prevailed, the whole world is as one community. People select
 ]]></content>
       <categories>
         <category>translations</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>OI 名言</title>
-    <url>/post/well-known-OI-sayings/</url>
-    <content><![CDATA[《OI 子》三章
-
-《骗分榜一，暴力爆零》by 20210732ktq
-正解不如暴力，暴力不如骗分。一道题目，两种做法，想而编之而WA。夫想而编之，必有得正解者矣，然而WA者，是正解不如暴力也。手非不酸也，码非不短也，部分分非不多也，暴力非不正确也，排名第二，是暴力不如骗分也。故曰，AC不以思路之深，暴力不以代码之短，首杀不以手速之快。骗分者榜一，暴力者爆零。爆零之至，老师骂之。榜一之至，全球膜之。以全球之所膜，攻教练之所骂，故OIer有不战，战必AK。
-
-
-《水题不能淫》by 20210927chr
-chr曰：“ktq，xcx岂不诚奆佬哉？骗分而OIers惧，正解而OI熄。”
-xrz曰：“是焉得为奆佬乎？子未学OI乎？奆佬之冠也，zc命之，蒟蒻之冠也，ls命之，往送之CSP，戒之曰：‘往之CSP，必敬必戒，无违考规！’以骗为正者，蒟蒻之道也。做天下之难题，写天下之正解，AK天下之比赛。AK，与OIers由之；不AK，自己切题。水题不能淫，难题不能移，毒瘤不能屈，此之谓奆佬。”
-
-
-《生于练习，死于退费》by 20211202lxy
-轩发于范赵之中，Sai_t举于richup之间，澜译举于冰火之中，孔韬棋举于gen，项承煦举于florr，蒋亦霖举于ma，故天将降大任于是人也，必先苦其射飞，劳其破产，饿其王塔，空乏连击，行拂乱其所为，使其停止退费，曾益其所不会。
-人恒错，然后能改；减于空，缩于时，而后过；骗于分，暴于力，而后涨。入则无暴力骗分，出则无AC过题者，人恒寄。然后知生于练习而死于退费也。
-
-]]></content>
-      <categories>
-        <category>others</category>
       </categories>
   </entry>
   <entry>
