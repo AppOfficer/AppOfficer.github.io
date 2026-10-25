@@ -187,25 +187,6 @@ to do.
       </categories>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/post/hello-world/</url>
-    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start
-Create a new post
-$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server
-$ hexo server
-More info: Server
-Generate static files
-$ hexo generate
-More info: Generating
-Deploy to remote sites
-$ hexo deploy
-More info: Deployment
-]]></content>
-  </entry>
-  <entry>
     <title>复数 (I)</title>
     <url>/post/complex-numbers/</url>
     <content><![CDATA[复数 (I)
@@ -455,6 +436,25 @@ z=reiθz=r\mathrm{e}^{\mathrm{i}\theta}z=reiθ 称为复数 zzz 的指数形式 
       <categories>
         <category>notes</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/post/hello-world/</url>
+    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start
+Create a new post
+$ hexo new &quot;My New Post&quot;
+More info: Writing
+Run server
+$ hexo server
+More info: Server
+Generate static files
+$ hexo generate
+More info: Generating
+Deploy to remote sites
+$ hexo deploy
+More info: Deployment
+]]></content>
   </entry>
   <entry>
     <title>洛谷 P1131 题解</title>
@@ -748,6 +748,22 @@ When the Great Way prevailed, the whole world is as one community. People select
 
 礼记·礼运（节选）
 大道之行也，天下为公。选贤与能，讲信修睦。故人不独亲其亲，不独子其子，使老有所终，壮有所用，幼有所长，矜、寡、孤、独废疾者皆有所养，男有分，女有归。货恶其弃于地也，不必藏于己；力恶其不出于身也，不必为己。是故谋闭而不兴，盗窃乱贼而不作，故外户而不闭。是谓大同。
+
+Biography of the Tree Planter Guo Tuotuo
+Author: LIU Zongyuan [Tang Dynasty]
+This man Guo Tuotuo, we don’t know what he was called at first. An illness made him a humpback; looking like a camel as he walked, fellow villagers nicknamed him ‘camel’. Hearing it, he said: ‘Great! That is a proper name for me.’ Therefore, he gave up his name and took ‘Tuotuo’ (which means ‘camel’) instead.
+Where he lived was called Fengle Village, to the west of Chang’an. Guo Tuotuo planted trees for a living; all of Chang’an’s noble and rich people who wanted to either enjoy the sights or sell fruits compete in greeting and hiring him. Observe the trees he planted, you’ll find they never fail to survive when moved and are tall and lush, bearing fruit early. Others were not able to do so, even if they peeked and copied his actions.
+Someone asked him how he did it, and he replied: 'It is not that I can make trees live long and fruit much, but that I can comply with their nature and let them grow naturally. When planting a tree, one should let the roots stretch, earth up flat, use old soil, and pound it to make it dense. After completing them, do not move it, be not concerned about it; do not care for it since leaving. Children should you treat it like when planting; discarding should you leave it like when done; therefore, its nature would be complete. Thus I am just not interrupting his growth, not being able to make it lush; I am just not consuming its fruits, not being able to let it bear fruit early. Other planters are not like this. Roots are curly and soil is replaced; earthing up, if not too much then not enough. Even if someone did it right, they would care it too much and be too concerned about it. They watch in the morning and stroke in the evening; have already left but come back again. The most extreme ones even scratch to prove it is alive and shake it to observe its density; therefore, the tree departs from its nature. Though they claim to love it, they are harming it; though they claim to worry about it, they resent it; thus, they are not so good as me. What special ability do I have then?
+The questioner asked: ‘Is it plausible to use your methods for officials to govern people?’ Guo Tuotuo replied: ‘I only know about planting; governing is not my career. However, as I lived in my village, I saw the governing love to publish decrees, seeming to love civilians so much, but impairing them finally. In the mornings and evenings, the clerks come and yell: “The Official orders to urge you to plough, encourage you to plant, and supervise your harvest; he also orders you to early reel silk from cocoons, early sew the strings, raise your children and feed your chickens and pigs.” They beat drums and sound bells to gather people. We civilians spend all time giving up breakfasts and suppers to appreciate their services; then, how could we grow our population and settle our lives? Thus, we are in distress and tiredness. Does this have similarities with what I do?’
+The questioner said: ‘Ah, isn’t that great! I was asking about caring trees, but got the art of governing people.’ He then recorded the deeds to warn the officials.
+
+种树郭橐驼传
+柳宗元【唐】
+郭橐驼，不知始何名。病偻，隆然伏行，有类橐驼者，故乡人号之「驼」。驼闻之曰：「甚善。名我固当。」因舍其名，亦自谓「橐驼」云。
+其乡曰丰乐乡，在长安西。驼业种树，凡长安豪富人为观游及卖果者，皆争迎取养。视驼所种树，或移徙，无不活；且硕茂，早实以蕃。他植者虽窥伺效慕，莫能如也。
+有问之，对曰：「橐驼非能使木寿且孳也，能顺木之天，以致其性焉尔。凡植木之性，其本欲舒，其培欲平，其土欲故，其筑欲密。既然已，勿动勿虑，去不复顾。其莳也若子，其置也若弃，则其天者全而其性得矣。故吾不害其长而已，非有能硕茂之也；不抑耗其实而已，非有能早而蕃之也。他植者则不然。根拳而土易，其培之也，若不过焉则不及。苟有能反是者，则又爱之太恩，忧之太勤。旦视而暮抚，已去而复顾。甚者，爪其肤以验其生枯，摇其本以观其疏密，而木之性日以离矣。虽曰爱之，其实害之；虽曰忧之，其实仇之；故不我若也。吾又何能为哉！」
+问者曰：「以子之道，移之官理，可乎？」驼曰：「我知种树而已，理，非吾业也。然吾居乡，见长人者好烦其令，若甚怜焉，而卒以祸。旦暮吏来而呼曰：『官命促尔耕，勖尔植，督尔获，早缫而绪，早织而缕，字而幼孩，遂而鸡豚。』鸣鼓而聚之，击木而召之。吾小人辍飧饔以劳吏者，且不得暇，又何以蕃吾生而安吾性耶？故病且怠。若是，则与吾业者其亦有类乎？」
+问者曰：「嘻，不亦善夫！吾问养树，得养人术。」传其事以为官戒也。
 
 ]]></content>
       <categories>
