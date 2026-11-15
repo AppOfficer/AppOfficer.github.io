@@ -1,7 +1,6 @@
 :root {
     --AO-font-latin-serif:
-        "Palatino Linotype", "Tex Gyre Termes", "EB Garamond", "Noto Serif",
-        "Times New Roman";
+        "Palatino Linotype", "Palatino", "Tex Gyre Pagella", "Times New Roman"
     --AO-font-cjk-serif:
         "WenYuan Serif SC", "Source Han Serif SC", "Noto Serif CJK SC",
         "华文中宋", SimSun, serif;
