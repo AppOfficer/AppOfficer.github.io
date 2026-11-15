@@ -187,25 +187,6 @@ to do.
       </categories>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/post/hello-world/</url>
-    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start
-Create a new post
-$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server
-$ hexo server
-More info: Server
-Generate static files
-$ hexo generate
-More info: Generating
-Deploy to remote sites
-$ hexo deploy
-More info: Deployment
-]]></content>
-  </entry>
-  <entry>
     <title>复数 (I)</title>
     <url>/post/complex-numbers/</url>
     <content><![CDATA[复数 (I)
@@ -334,7 +315,7 @@ z−m=zm1​ .
 对于每一个复数 z=a+bi(a,b∈R)z=a+b\mathrm{i} (a,b\in\Bbb{R})z=a+bi(a,b∈R)，都有唯一的数对 (a,b)(a,b)(a,b) 与其对应．同时，在直角坐标系中的每一个点，也都有唯一确定的数对 (a,b)(a,b)(a,b) 与其对应．
 因此，我们可以仿照直角坐标系，建立一个平面，将复数 z=a+biz=a+b\mathrm{i}z=a+bi 与平面上的点一一对应．
 
-如图 3-1．这个平面叫作复平面（complex plane）或阿甘得图（Argand diagram），xxx 轴叫作实轴（real axis），yyy 轴叫作虚轴（imaginary axis）．显然，实轴上的点都表示实数；除原点外，虚轴上的点都表示虚数．容易发现，复平面实质上是数轴的扩展．
+如图 3-1．这个平面叫作复平面（complex plane）或阿甘得图（Argand diagram），xxx 轴叫作实轴（real axis），yyy 轴叫作虚轴（imaginary axis）．显然，实轴上的点都表示实数；除原点外，虚轴上的点都表示纯虚数．容易发现，复平面实质上是数轴的扩展．
 可以发现，复数 z=a+biz=a+b\mathrm{i}z=a+bi 同时与向量 OZ→\overrightarrow{OZ}OZ 一一对应，于是，我们也可以用一个向量 OZ→\overrightarrow{OZ}OZ 来表示复数．
 在此基础上，我们把向量 OZ→\overrightarrow{OZ}OZ 的模（即 ZZZ 到 OOO 的距离）rrr 称为复数 zzz 的模（module）或强度（magnitude）或绝对值（absolute value），用 ∣z∣\lvert z\rvert∣z∣ 表示．图 3-1 中 rrr 即为 zzz 的模．容易得到， ∣z∣=a2+b2\lvert z\rvert=\sqrt{a^2+b^2}∣z∣=a2+b2​，∣z∣∈R\lvert z\rvert\in\Bbb{R}∣z∣∈R 且 ∣z∣≥0\lvert z\rvert\ge 0∣z∣≥0．
 我们把实轴正半轴旋转到向量 OZ→\overrightarrow{OZ}OZ 方向的角 θ\thetaθ（或 φ\varphiφ）称为复数 zzz 的辐角（argument）或相位（phase），记作 Arg⁡z\operatorname{Arg} zArgz．容易发现，一个复数 zzz 的辐角有无穷多个，因此，我们将处在区间 [0,2π)[0,2\pi)[0,2π)（更常用的另一种区间为 (−π,π](-\pi,\pi](−π,π]）的辐角称为复数 zzz 的辐角主值（principal value of argument），记作 arg⁡z\arg zargz．
@@ -455,6 +436,25 @@ z=reiθz=r\mathrm{e}^{\mathrm{i}\theta}z=reiθ 称为复数 zzz 的指数形式 
       <categories>
         <category>notes</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/post/hello-world/</url>
+    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start
+Create a new post
+$ hexo new &quot;My New Post&quot;
+More info: Writing
+Run server
+$ hexo server
+More info: Server
+Generate static files
+$ hexo generate
+More info: Generating
+Deploy to remote sites
+$ hexo deploy
+More info: Deployment
+]]></content>
   </entry>
   <entry>
     <title>洛谷 P1131 题解</title>
@@ -771,6 +771,23 @@ The questioner said: ‘Ah, isn’t that great! I was asking about tending trees
       </categories>
   </entry>
   <entry>
+    <title>《又四日文集》序</title>
+    <url>/post/yousiri-foreword/</url>
+    <content><![CDATA[欣闻又四日先生（AllInTime）决定编辑这部《又四日文集》，又命不才任主编一职，不胜感激，故为又四日先生作序一篇，谨此。
+余初识又四日先生，已是公元纪年二〇二三年矣。自昔日起，便发现又四日先生素有非凡不同于常人之气质也。又四日先生虽形容枯槁，体形瘦削，但见过他的人必会发现他神情严肃，姿态挺拔，颇有一代豪杰之势也。与他交往数日，闻者必得深刻之见解，因是又四日先生常用独到而一针见血的推理，得出深刻而精致的结论，并用他那朴实、简洁而又精确的浅显语言表达出口，传至听者之耳，使其顿悟得人生大道；然再细细咀嚼，又可品出其背后又四日先生的独家精髓。
+余阅又四日先生之文，实乃近二年之事也，未敢详细评之。但阅前余便认定，又四日先生之文章，必是与其实人相似风格之物矣。阅，确如此。俗语言曰：“字如其人，文亦如其人。”又四日先生之字迹，实与其本人一致，粗犷而豪放；虽潦草但不失风度，虽崎岖却不丢端正。读又四日先生之字，恰似研究那古体文字，优美而透有庄重、沉稳之感。再详读又四日先生之数十篇文章，可见又四日先生之见识广博，语言深入而不失瑰丽之感。无论是像“社会性的严肃可得严肃性的社会”这样的对社会的剖析，还是像“湖中岛，岛中湖。人中心，心中人”这样的对人情感的深挖，都凸显出又四日先生独特的处世哲学。
+先生“又四日”之名号，实为拆字之法。而得“又四日”三字，又正符先生之性情特征，故先生取之以作号也。“又四日”者，四日一计，方有其“四”；而生命无穷，故有“又”字居于词头。“又四日”云云，实蕴生命之无穷，而又循环周始也。
+呜呼！世如又四日先生之人，有几何哉？幸今有此《又四日文集》存，而先生之言得以永传焉。
+
+AppOfficer
+二〇二六年二月一日夜，子时
+
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+  </entry>
+  <entry>
     <title>OI 名言</title>
     <url>/post/well-known-OI-sayings/</url>
     <content><![CDATA[《OI 子》三章
@@ -791,23 +808,6 @@ xrz曰：“是焉得为奆佬乎？子未学OI乎？奆佬之冠也，zc命之�
 ]]></content>
       <categories>
         <category>others</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>《又四日文集》序</title>
-    <url>/post/yousiri-foreword/</url>
-    <content><![CDATA[欣闻又四日先生（AllInTime）决定编辑这部《又四日文集》，又命不才任主编一职，不胜感激，故为又四日先生作序一篇，谨此。
-余初识又四日先生，已是公元纪年二〇二三年矣。自昔日起，便发现又四日先生素有非凡不同于常人之气质也。又四日先生虽形容枯槁，体形瘦削，但见过他的人必会发现他神情严肃，姿态挺拔，颇有一代豪杰之势也。与他交往数日，闻者必得深刻之见解，因是又四日先生常用独到而一针见血的推理，得出深刻而精致的结论，并用他那朴实、简洁而又精确的浅显语言表达出口，传至听者之耳，使其顿悟得人生大道；然再细细咀嚼，又可品出其背后又四日先生的独家精髓。
-余阅又四日先生之文，实乃近二年之事也，未敢详细评之。但阅前余便认定，又四日先生之文章，必是与其实人相似风格之物矣。阅，确如此。俗语言曰：“字如其人，文亦如其人。”又四日先生之字迹，实与其本人一致，粗犷而豪放；虽潦草但不失风度，虽崎岖却不丢端正。读又四日先生之字，恰似研究那古体文字，优美而透有庄重、沉稳之感。再详读又四日先生之数十篇文章，可见又四日先生之见识广博，语言深入而不失瑰丽之感。无论是像“社会性的严肃可得严肃性的社会”这样的对社会的剖析，还是像“湖中岛，岛中湖。人中心，心中人”这样的对人情感的深挖，都凸显出又四日先生独特的处世哲学。
-先生“又四日”之名号，实为拆字之法。而得“又四日”三字，又正符先生之性情特征，故先生取之以作号也。“又四日”者，四日一计，方有其“四”；而生命无穷，故有“又”字居于词头。“又四日”云云，实蕴生命之无穷，而又循环周始也。
-呜呼！世如又四日先生之人，有几何哉？幸今有此《又四日文集》存，而先生之言得以永传焉。
-
-AppOfficer
-二〇二六年二月一日夜，子时
-
-]]></content>
-      <categories>
-        <category>articles</category>
       </categories>
   </entry>
 </search>
