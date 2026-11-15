@@ -15,8 +15,7 @@
         "Source Han Sans SC", "Noto Sans CJK SC", "PingFang SC",
         "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 
-    --AO-font-cjk-kai:
-        "WenYuan Round SC", "LXGW WenKai GB", "LXGW WenKai";
+    --AO-font-cjk-kai: "WenYuan Round SC", "LXGW WenKai GB", "LXGW WenKai";
 
     --AO-font-mono:
         "LXGW Bright Code GB", "LXGW Bright Code", "Fira Code", "Fira Mono",
@@ -45,17 +44,17 @@ body {
 }
 
 article {
-    font-family: var(--AO-font-serif);
-    
+    font-family: var(--AO-font-latin-serif), var(--AO-font-cjk-serif);
+
     h1,
     h2,
     h3,
     h4,
     h5,
     h6 {
-        font-family: var(--AO-font-sans);
+        font-family: var(--AO-font-latin-sans), var(--AO-font-cjk-sans);
     }
-    
+
     strong {
         font-family: var(--AO-font-latin-serif), var(--AO-font-cjk-sans);
     }
