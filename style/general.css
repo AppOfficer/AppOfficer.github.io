@@ -57,6 +57,10 @@ article {
     h5,
     h6 {
         font-family: var(--AO-font-latin-sans), var(--AO-font-cjk-sans);
+
+        em {
+            font-family: var(--AO-font-latin-sans), var(--AO-font-cjk-kai);
+        }
     }
 
     strong {
