@@ -5,14 +5,10 @@
         "WenYuan Serif SC", "Source Han Serif SC", "Noto Serif CJK SC",
         "华文中宋", SimSun, serif;
 
-    --AO-font-latin-sans:
-        "HarmonyOS Sans", "Source Sans Pro", "Noto Sans", "Fira Sans",
-        "Open Sans", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, "Helvetica Neue", Helvetica, Arial;
+    --AO-font-latin-sans: "HarmonyOS Sans", "Fira Sans", "Open Sans";
     --AO-font-cjk-sans:
-        "Sarasa Gothic SC", "WenYuan Sans SC", "HarmonyOS Sans SC",
-        "Source Han Sans SC", "Noto Sans CJK SC", "PingFang SC",
-        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        "Sarasa Gothic SC", "WenYuan Sans SC", "Source Han Sans SC",
+        "Noto Sans CJK SC", sans-serif;
 
     --AO-font-cjk-kai: "WenYuan Rounded SC", "LXGW WenKai GB", "LXGW WenKai";
 
