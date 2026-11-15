@@ -4,7 +4,12 @@ body {
         "Sarasa Gothic SC", "HarmonyOS Sans SC", "Source Han Sans SC", "Noto Sans CJK SC",
         "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
         sans-serif;
-    font-feature-settings: "locl" 1, "palt" 1;
+    font-feature-settings: "locl" 1, "halt" 1;
+}
+
+p {
+    line-height: 1em;
+    margin: 1em 0;
 }
 
 .font-serif {

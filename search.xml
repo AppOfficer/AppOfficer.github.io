@@ -1,6 +1,257 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>复数 (I)</title>
+    <url>/post/complex-numbers/</url>
+    <content><![CDATA[复数 (I)
+(0) 数集的扩充
+自人类诞生以来，数的概念就在不断地发展着．
+为了计数的需要，人们发展了自然数集的概念，建立了自然数集 N\Bbb{N}N．
+在自然数集 N\Bbb{N}N 中，加法与乘法总能实施．但是，小数不能减大数，方程 x+6=0x+6=0x+6=0 无解．由此引入负数，数集扩展到整数集 Z\Bbb{Z}Z．
+在整数集 Z\Bbb{Z}Z 中，加法、减法与乘法总能实施．但是，由于除法只能解决整除的问题，方程 3x−2=03x-2=03x−2=0 无解．由此引入分数，数集扩展到有理数集 Q\Bbb{Q}Q．
+在有理数集 Q\Bbb{Q}Q 中，加法、减法、乘法与除法（除数不为 000）总能实施．但是，开方的结果可能不是有理数，方程 x2−2=0x^2-2=0x2−2=0 无解．由此引入无理数，数集扩展到实数集 R\Bbb{R}R．
+在实数集 R\Bbb{R}R 中，加法、减法、乘法与除法（除数不为 000）总能实施，并解决了正数的开方问题．
+现在在实数集 R\Bbb{R}R 中，我们又面临着方程 x2+1=0x^2+1=0x2+1=0 无解，负数不能开平方的问题．这表明，数的概念仍需要进一步发展．
+(1) 定义
+为了使得方程 x2+1=0x^2+1=0x2+1=0 有解，使实数的开方运算总能实施，我们引入一个新数 i\mathrm{i}i，叫做虚数单位（imaginary unit），并规定：
+
+i2=−1\mathrm{i}^2=-1i2=−1；
+实数可与 i\mathrm{i}i 进行四则运算，且原有的加法、乘法运算律仍成立．
+
+从而，i\mathrm{i}i 可与实数 bbb 相乘，再与实数 aaa 相加，得到一个数 a+bia+b\mathrm{i}a+bi．
+这样，数的范围又扩充了，出现了形如 a+bi(a,b∈R)a+b\mathrm{i}(a,b\in\Bbb{R})a+bi(a,b∈R) 的数，这种树叫做复数（complex number），全体复数组成的集合叫做复数集 (set of complex numbers)，记作 C\Bbb{C}C．显然有 N⊆Z⊆Q⊆R⊆C\Bbb{N}\subseteq\Bbb{Z}\subseteq\Bbb{Q}\subseteq\Bbb{R}\subseteq\Bbb{C}N⊆Z⊆Q⊆R⊆C．
+复数通常用字母 zzz 表示，即 z=a+bi(a,b∈R)z=a+b\mathrm{i}(a,b\in\Bbb{R})z=a+bi(a,b∈R)，其中 aaa 和 bbb 分别叫做复数 zzz 的实部（real part） 和虚部 （imaginary part），记作 Re⁡z,ℜz,Rz\operatorname{Re}z,\Re z,\mathfrak{R} zRez,ℜz,Rz 与 Im⁡z,ℑz,Iz\operatorname{Im}z,\Im z,\mathfrak{I} zImz,ℑz,Iz．其中，国标要求为 Re⁡z\operatorname{Re}zRez 与 Im⁡z\operatorname{Im}zImz．下文为简便，使用 ℜz\Re zℜz 与 ℑz\Im zℑz．
+当且仅当 b=ℑz=0b=\Im z=0b=ℑz=0 时，z∈Rz\in \Bbb{R}z∈R．当 b=ℑz≠0b=\Im z\neq 0b=ℑz=0 时，zzz 叫作虚数（imaginary number）．
+特别地，当 a=ℜz=0a=\Re z=0a=ℜz=0 且 b=ℑz≠0b=\Im z\neq 0b=ℑz=0 时，zzz 叫作纯虚数（pure imaginary number）．
+即
+复数 z=a+bi{实数(b=0),虚数(b≠0) (当 a=0 时为纯虚数) .\text{复数} ~ z=a+b\mathrm{i} \begin{cases}
+\text{实数} &amp; (b=0),\\
+\text{虚数} &amp; (b\neq 0)~(\text{当}~a=0~\text{时为纯虚数}) ~.
+\end{cases}
+复数 z=a+bi{实数虚数​(b=0),(b=0) (当 a=0 时为纯虚数) .​
+如果两个复数的实部与虚部分别相等，那么我们就说这两个复数相等，即
+z1=z2  ⟺  ℜz1=ℜz2 且 ℑz1=ℑz2 .z_1=z_2 \iff \Re z_1=\Re z_2 ~\text{且}~ \Im z_1=\Im z_2 ~. 
+z1​=z2​⟺ℜz1​=ℜz2​ 且 ℑz1​=ℑz2​ .
+或
+a+bi=c+di  ⟺  a=c 且 b=d .a+b\mathrm{i}=c+d\mathrm{i} \iff a=c ~\text{且}~ b=d ~. 
+a+bi=c+di⟺a=c 且 b=d .
+也就是说
+
+两个复数相等的充要条件是它们的实部和虚部分别相等．
+
+(2) 复数的运算
+本节中，a,b,c,d∈Ra,b,c,d\in\Bbb{R}a,b,c,d∈R．
+已经知道虚数单位 i\mathrm{i}i 与实数一起可以按照实数的运算法则进行运算．
+2.1 复数的加减　相反数
+设 z1=a+bi,z2=c+diz_1=a+b\mathrm{i},z_2=c+d\mathrm{i}z1​=a+bi,z2​=c+di，复数的加法如此计算：
+(a+bi)+(c+di)=(a+c)+(b+d)i .(a+b\mathrm{i})+(c+d\mathrm{i})=(a+c)+(b+d)\mathrm{i} ~. 
+(a+bi)+(c+di)=(a+c)+(b+d)i .
+显然，两个复数的和仍为复数．
+容易验证，复数的加法满足交换律与结合律，即 ∀z1,z2,z3∈C\forall z_1,z_2,z_3\in\Bbb{C}∀z1​,z2​,z3​∈C，有
+z1+z2=z2+z1 ,(z1+z2)+z3=z1+(z2+z3) .\begin{aligned}
+z_1+z_2 &amp; = z_2+z_1 ~,\\
+(z_1+z_2)+z_3 &amp; = z_1+(z_2+z_3) ~.
+\end{aligned}
+z1​+z2​(z1​+z2​)+z3​​=z2​+z1​ ,=z1​+(z2​+z3​) .​
+我们将满足 (c+di)+(x+yi)=a+bi(c+d\mathrm{i})+(x+y\mathrm{i})=a+b\mathrm{i}(c+di)+(x+yi)=a+bi 的复数 x+yi(x,y∈R)x+y\mathrm{i} (x,y\in\Bbb{R})x+yi(x,y∈R) 叫作复数 a+bia+b\mathrm{i}a+bi 减去复数 c+dic+d\mathrm{i}c+di 所得的差，记作
+(a+bi)−(c+di) .(a+b\mathrm{i})-(c+d\mathrm{i}) ~. 
+(a+bi)−(c+di) .
+明显有
+c+x=a,d+y=b,c+x=a,d+y=b , 
+c+x=a,d+y=b,
+即
+x=a−c,y=b−d,x=a-c,y=b-d , 
+x=a−c,y=b−d,
+所以
+x+yi=(a−c)+(b−d)i .x+y\mathrm{i}=(a-c)+(b-d)\mathrm{i} ~. 
+x+yi=(a−c)+(b−d)i .
+于是得到复数的减法法则：
+(a+bi)−(c+di)=(a−c)+(b−d)i .(a+b\mathrm{i})-(c+d\mathrm{i})=(a-c)+(b-d)\mathrm{i} ~. 
+(a+bi)−(c+di)=(a−c)+(b−d)i .
+类似于实数，定义复数 z=a+biz=a+b\mathrm{i}z=a+bi 的相反数 −z=−a−bi-z=-a-b\mathrm{i}−z=−a−bi．
+那么复数的减法法则也可以是：(z1,z2∈C)(z_1,z_2\in\Bbb{C})(z1​,z2​∈C)
+z1−z2=z1+(−z2) .z_1-z_2=z_1+(-z_2) ~. 
+z1​−z2​=z1​+(−z2​) .
+2.2 复数的乘法与正整数次幂
+复数的乘法这样计算：
+(a+bi)(c+di)=ac+adi+bci+bdi2,(a+b\mathrm{i})(c+d\mathrm{i})=ac+ad\mathrm{i}+bc\mathrm{i}+bd\mathrm{i}^2 , 
+(a+bi)(c+di)=ac+adi+bci+bdi2,
+即
+(a+bi)(c+di)=(ac−bd)+(bc+ad)i .(a+b\mathrm{i})(c+d\mathrm{i})=(ac-bd)+(bc+ad)\mathrm{i} ~. 
+(a+bi)(c+di)=(ac−bd)+(bc+ad)i .
+显然，两个复数的积仍为复数．
+容易验证，复数的乘法满足交换律、结合律以及分配律，即 ∀z1,z2,z3∈C\forall z_1,z_2,z_3\in\Bbb{C}∀z1​,z2​,z3​∈C，有
+z1z2=z2z1 ,(z1z2)z3=z1(z2z3) ,z1(z2+z3)=z1z2+z1z3 .\begin{aligned}
+z_1z_2 &amp; = z_2z_1 ~,\\
+(z_1z_2)z_3 &amp; = z_1(z_2z_3) ~,\\
+z_1(z_2+z_3) &amp; = z_1z_2+z_1z_3 ~.
+\end{aligned}
+z1​z2​(z1​z2​)z3​z1​(z2​+z3​)​=z2​z1​ ,=z1​(z2​z3​) ,=z1​z2​+z1​z3​ .​
+复数的乘方是相同复数的积．根据复数乘法运算律，实数内正整数指数幂的运算律在复数范围内仍成立，即对于任何 z,z1,z2∈C,m,n∈N∗z,z_1,z_2\in\Bbb{C},m,n\in\Bbb{N}^*z,z1​,z2​∈C,m,n∈N∗，有
+zmzn=zm+n ,(zm)n=zmn ,(z1z2)n=z1nz2n .\begin{aligned}
+z^mz^n &amp; = z^{m+n} ~,\\
+(z^m)^n &amp; = z^{mn} ~,\\
+(z_1z_2)^n &amp; = z_1^nz_2^n ~.
+\end{aligned}
+zmzn(zm)n(z1​z2​)n​=zm+n ,=zmn ,=z1n​z2n​ .​
+计算复数乘方时，需用到虚数单位 i\mathrm{i}i 的乘方：
+i1=i,i2=−1,i3=−i,i4=1  ⟹  i4n=1,i4n+1=i,i4n+2=−1,i4n+3=−i .\begin{aligned}
+&amp; \mathrm{i}^1=\mathrm{i},\mathrm{i}^2=-1,\mathrm{i}^3=-\mathrm{i},\mathrm{i}^4=1\\
+\implies &amp; \mathrm{i}^{4n}=1,\mathrm{i}^{4n+1}=\mathrm{i},\mathrm{i}^{4n+2}=-1,\mathrm{i}^{4n+3}=-\mathrm{i} ~.
+\end{aligned}
+⟹​i1=i,i2=−1,i3=−i,i4=1i4n=1,i4n+1=i,i4n+2=−1,i4n+3=−i .​
+2.3 共轭复数与复数的除法
+我们把实部相等，虚部互为相反数的两个复数叫作互为共轭复数（complex conjugate）．复数 z=a+biz=a+b\mathrm{i}z=a+bi 的共轭复数记作 zˉ\bar zzˉ 或 conj⁡z\operatorname{conj}zconjz，即
+zˉ=conj⁡z=a−bi\bar z = \operatorname{conj} z = a-b\mathrm{i} 
+zˉ=conjz=a−bi
+当 b=0b=0b=0 时，z=zˉz=\bar zz=zˉ．也就是说，实数的共轭数是它本身．
+容易发现
+zzˉ=(a+bi)(a−bi)=a2−b2i2=a2+b2 .z\bar z = (a+b\mathrm{i})(a-b\mathrm{i})=a^2-b^2\mathrm{i}^2=a^2+b^2 ~. 
+zzˉ=(a+bi)(a−bi)=a2−b2i2=a2+b2 .
+我们把满足
+(c+di)(x+yi)=a+bi (c+di≠0)(c+d\mathrm{i})(x+y\mathrm{i})=a+b\mathrm{i} ~ (c+d\mathrm{i}\neq 0) 
+(c+di)(x+yi)=a+bi (c+di=0)
+的复数 x+yi(x,y∈R)x+y\mathrm{i}(x,y\in\Bbb{R})x+yi(x,y∈R) 叫作复数 a+bia+b\mathrm{i}a+bi 除以 c+dic+d\mathrm{i}c+di 所得的商，记作 a+bic+di\dfrac{a+b\mathrm{i}}{c+d\mathrm{i}}c+dia+bi​ 或 (a+bi)÷(c+di)(a+b\mathrm{i})\div(c+d\mathrm{i})(a+bi)÷(c+di)．
+容易证明，z1z2=z1zz2z(z,z1,z2∈C 且 z,z2≠0)\dfrac{z_1}{z_2}=\dfrac{z_1z}{z_2z}(z,z_1,z_2\in\Bbb{C}~\text{且}~z,z_2\neq0)z2​z1​​=z2​zz1​z​(z,z1​,z2​∈C 且 z,z2​=0)．
+一般地，我们有
+a+bic+di=(a+bi)(c−di)(c+di)(c−di)=ac+bdc2+d2+bc−adc2+d2i .\frac{a+b\mathrm{i}}{c+d\mathrm{i}} = \frac{(a+b\mathrm{i})(c-d\mathrm{i})}{(c+d\mathrm{i})(c-d\mathrm{i})} = \frac{ac+bd}{c^2+d^2}+\frac{bc-ad}{c^2+d^2}\mathrm{i} ~. 
+c+dia+bi​=(c+di)(c−di)(a+bi)(c−di)​=c2+d2ac+bd​+c2+d2bc−ad​i .
+因为 c+di≠0c+d\mathrm{i}\neq 0c+di=0，所以 c2+d2≠0c^2+d^2\neq 0c2+d2=0．
+由此可见，两个复数的商仍为复数．
+由此也就可以定义复数 zzz 的倒数 1z\frac{1}{z}z1​．
+2.4 复数的整数次幂
+类似于实数，复数 zzz 的负整数幂 z−m(m∈N∗)z^{-m}(m\in\Bbb{N}^*)z−m(m∈N∗) 定义为对应正整数幂的倒数，即
+z−m=1zm .z^{-m}=\frac{1}{z^m} ~. 
+z−m=zm1​ .
+并且有 z0=1(z≠0)z^0=1(z\neq 0)z0=1(z=0)．复数乘方满足实数乘方所有运算律．
+(3) 复数的几何意义
+3.1 复平面　模与辐角
+对于每一个复数 z=a+bi(a,b∈R)z=a+b\mathrm{i} (a,b\in\Bbb{R})z=a+bi(a,b∈R)，都有唯一的数对 (a,b)(a,b)(a,b) 与其对应．同时，在直角坐标系中的每一个点，也都有唯一确定的数对 (a,b)(a,b)(a,b) 与其对应．
+因此，我们可以仿照直角坐标系，建立一个平面，将复数 z=a+biz=a+b\mathrm{i}z=a+bi 与平面上的点一一对应．
+
+如图 3-1．这个平面叫作复平面（complex plane）或阿甘得图（Argand diagram），xxx 轴叫作实轴（real axis），yyy 轴叫作虚轴（imaginary axis）．显然，实轴上的点都表示实数；除原点外，虚轴上的点都表示虚数．容易发现，复平面实质上是数轴的扩展．
+可以发现，复数 z=a+biz=a+b\mathrm{i}z=a+bi 同时与向量 OZ→\overrightarrow{OZ}OZ 一一对应，于是，我们也可以用一个向量 OZ→\overrightarrow{OZ}OZ 来表示复数．
+在此基础上，我们把向量 OZ→\overrightarrow{OZ}OZ 的模（即 ZZZ 到 OOO 的距离）rrr 称为复数 zzz 的模（module） 或强度（magnitude） 或绝对值（absolute value），用 ∣z∣\lvert z\rvert∣z∣ 表示．图 3-1 中 rrr 即为 zzz 的模．容易得到， ∣z∣=a2+b2\lvert z\rvert=\sqrt{a^2+b^2}∣z∣=a2+b2​，∣z∣∈R\lvert z\rvert\in\Bbb{R}∣z∣∈R 且 ∣z∣≥0\lvert z\rvert\ge 0∣z∣≥0．
+我们把实轴正半轴旋转到向量 OZ→\overrightarrow{OZ}OZ 方向的角 θ\thetaθ（或 φ\varphiφ）称为复数 zzz 的辐角（argument）或相位（phase），记作 Arg⁡z\operatorname{Arg} zArgz．容易发现，一个复数 zzz 的辐角有无穷多个，因此，我们将处在区间 [0,2π)[0,2\pi)[0,2π)（更常用的另一种区间为 (−π,π](-\pi,\pi](−π,π]）的辐角称为复数 zzz 的辐角主值（principal value of argument），记作 arg⁡z\arg zargz．
+显然，每一个非零复数 z=a+biz=a+b\mathrm{i}z=a+bi 都有唯一确定的模和辐角主值；反过来，复数模和辐角主值可以唯一确定这个复数．于是
+
+两个非零复数相等的充要条件是这两个复数的模与辐角主值分别相等．
+
+即
+z1=z2  ⟺  ∣z1∣=∣z2∣ 且 arg⁡z1=arg⁡z2 (z1,z2≠0) .z_1=z_2 \iff \lvert z_1\rvert=\lvert z_2\rvert ~\text{且}~ \arg z_1=\arg z_2 ~(z_1,z_2\neq 0) ~. 
+z1​=z2​⟺∣z1​∣=∣z2​∣ 且 argz1​=argz2​ (z1​,z2​=0) .
+复数 z=0z=0z=0 与原点 O(0,0)O(0,0)O(0,0) 对应，向量 OZ→=0\overrightarrow{OZ}=\mathbf{0}OZ=0，此时复数的模为 000，辐角是任意的．有时为了方便讨论，会规定 z=0z=0z=0 的辐角主值为 000．
+3.2 复数加减法的几何意义
+如图 3-2，向量 OZ1→,OZ2→\overrightarrow{OZ_1},\overrightarrow{OZ_2}OZ1​​,OZ2​​ 分别与复数 a+bi,c+dia+b\mathrm{i},c+d\mathrm{i}a+bi,c+di 对应，且 OZ1→,OZ2→\overrightarrow{OZ_1},\overrightarrow{OZ_2}OZ1​​,OZ2​​ 不共线，以 OZ1→,OZ2→\overrightarrow{OZ_1},\overrightarrow{OZ_2}OZ1​​,OZ2​​ 为两条邻边画平行四边形，则对角线 OZOZOZ 所表示的向量 OZ→\overrightarrow{OZ}OZ 就是与复数 (a+c)+(b+d)i(a+c)+(b+d)\mathrm{i}(a+c)+(b+d)i 对应的向量．这就是复数加法的几何意义．
+
+根据复数减法的定义以及复数加法的几何意义，可以得到复数减法的几何意义．
+如图 3-3，，若向量 OZ1→,OZ2→\overrightarrow{OZ_1},\overrightarrow{OZ_2}OZ1​​,OZ2​​ 分别与复数 z1,z2z_1,z_2z1​,z2​ 对应，则它们的差 z1−z2z_1-z_2z1​−z2​ 对应着 向量 OZ1→−OZ2→\overrightarrow{OZ_1}-\overrightarrow{OZ_2}OZ1​​−OZ2​​，即向量 Z2Z1→\overrightarrow{Z_2Z_1}Z2​Z1​​．
+如果作 OZ→=Z2Z1→\overrightarrow{OZ}=\overrightarrow{Z_2Z_1}OZ=Z2​Z1​​，那么点 ZZZ 对应的复数就是 z1−z2z_1-z_2z1​−z2​．这就是复数减法的几何意义．
+
+设 z1=a+bi,z2=c+diz_1=a+b\mathrm{i},z_2=c+d\mathrm{i}z1​=a+bi,z2​=c+di，则 z1−z2=(a−c)+(b−d)iz_1-z_2=(a-c)+(b-d)\mathrm{i}z1​−z2​=(a−c)+(b−d)i，故
+∣z1−z2∣=∣OZ→∣=∣Z2Z1→∣=(a−c)2+(b−d)2 .\lvert z_1-z_2 \rvert = \left\lvert \overrightarrow{OZ} \right\rvert = \left\lvert \overrightarrow{Z_2Z_1} \right\rvert = \sqrt{(a-c)^2+(b-d)^2} ~. 
+∣z1​−z2​∣=​OZ​=​Z2​Z1​​​=(a−c)2+(b−d)2​ .
+这表明：两个复数的差的模就是复平面内与这两个复数对应的两点间的距离．
+3.3 复数的三角形式
+由图 3-1 易得（r=∣z∣,θ=Arg⁡zr=\lvert z\rvert,\theta=\operatorname{Arg} zr=∣z∣,θ=Argz）
+a=rcos⁡θ,b=rsin⁡θ .a=r\cos\theta,b=r\sin\theta ~. 
+a=rcosθ,b=rsinθ .
+于是，可以得到 z=a+bi=rcos⁡θ+irsin⁡θ=r(cos⁡θ+isin⁡θ)z=a+b\mathrm{i}=r\cos\theta+\mathrm{i}r\sin\theta=r(\cos\theta+\mathrm{i}\sin\theta)z=a+bi=rcosθ+irsinθ=r(cosθ+isinθ)．这就是复数 zzz 的三角形式 (trigonometric form of complex numbers)，而 a+bia+b\mathrm{i}a+bi 称为复数 zzz 的代数形式（algebraic form of complex numbers）．
+有时，会使用 cis⁡θ\operatorname{cis}\thetacisθ 代替 cos⁡θ+isin⁡θ\cos\theta+\mathrm{i}\sin\thetacosθ+isinθ．
+3.4 复数乘除法的几何意义　棣莫弗公式
+设复数 z1=r1(cos⁡θ1+isin⁡θ1),z2=r2(cos⁡θ2+isin⁡θ2)z_1=r_1(\cos\theta_1+\mathrm{i}\sin\theta_1),z_2=r_2(\cos\theta_2+\mathrm{i}\sin\theta_2)z1​=r1​(cosθ1​+isinθ1​),z2​=r2​(cosθ2​+isinθ2​)．若它们的乘积为 z=z1z2z=z_1z_2z=z1​z2​，且 z=r(cos⁡θ+isin⁡θ)z=r(\cos\theta+\mathrm{i}\sin\theta)z=r(cosθ+isinθ)，则根据三角函数和角公式有
+z=z1z2=r1(cos⁡θ1+isin⁡θ1)⋅r2(cos⁡θ2+isin⁡θ2)=r1r2(cos⁡θ1cos⁡θ2+icos⁡θ1sin⁡θ2+isin⁡θ1cos⁡θ2+i2sin⁡θ1sin⁡θ2)=r1r2[(cos⁡θ1cos⁡θ2−sin⁡θ1sin⁡θ2)+i(sin⁡θ1cos⁡θ2+cos⁡θ1sin⁡θ2)]=r1r2[cos⁡(θ1+θ2)+isin⁡(θ1+θ2)]\begin{aligned}
+z=z_1z_2 &amp;= r_1(\cos\theta_1+\mathrm{i}\sin\theta_1)\cdot r_2(\cos\theta_2+\mathrm{i}\sin\theta_2) \\
+&amp;= r_1r_2(\cos\theta_1\cos\theta_2+\mathrm{i}\cos\theta_1\sin\theta_2+\mathrm{i}\sin\theta_1\cos\theta_2+\mathrm{i}^2\sin\theta_1\sin\theta_2) \\
+&amp;= r_1r_2\big[(\cos\theta_1\cos\theta_2-\sin\theta_1\sin\theta_2)+\mathrm{i}(\sin\theta_1\cos\theta_2+\cos\theta_1\sin\theta_2)\big] \\
+&amp;= r_1r_2\big[\cos(\theta_1+\theta_2)+\mathrm{i}\sin(\theta_1+\theta_2)\big] \\
+\end{aligned}
+z=z1​z2​​=r1​(cosθ1​+isinθ1​)⋅r2​(cosθ2​+isinθ2​)=r1​r2​(cosθ1​cosθ2​+icosθ1​sinθ2​+isinθ1​cosθ2​+i2sinθ1​sinθ2​)=r1​r2​[(cosθ1​cosθ2​−sinθ1​sinθ2​)+i(sinθ1​cosθ2​+cosθ1​sinθ2​)]=r1​r2​[cos(θ1​+θ2​)+isin(θ1​+θ2​)]​
+上式称为棣莫弗公式 (De Moivre’s formula) 或棣莫弗定理．于是可以得到
+r=r1r2,θ=θ1+θ2 .r=r_1r_2,\theta=\theta_1+\theta_2 ~. 
+r=r1​r2​,θ=θ1​+θ2​ .
+即：
+
+两个复数相乘，其积的模等于这两个复数的模的积，其积的辐角等于这两个复数的辐角的和．
+
+由此可得出复数乘法的几何意义．
+类似的，可以得出复数除法的几何意义．
+根据棣莫弗公式，设有 nnn 个复数 z1=r1(cos⁡θ1+isin⁡θ1),z2=r2(cos⁡θ2+isin⁡θ2),⋯ ,zn=rn(cos⁡θn+isin⁡θn)z_1=r_1(\cos\theta_1+\mathrm{i}\sin\theta_1),z_2=r_2(\cos\theta_2+\mathrm{i}\sin\theta_2),\cdots,z_n=r_n(\cos\theta_n+\mathrm{i}\sin\theta_n)z1​=r1​(cosθ1​+isinθ1​),z2​=r2​(cosθ2​+isinθ2​),⋯,zn​=rn​(cosθn​+isinθn​)，则有：
+z1z2⋯zn=r1r2⋯rn[cos⁡(θ1+θ2+⋯+θn)+isin⁡(θ1+θ2+⋯+θn)] .z_1z_2\cdots z_n = r_1r_2\cdots r_n\big[\cos(\theta_1+\theta_2+\cdots+\theta_n)+\mathrm{i}\sin(\theta_1+\theta_2+\cdots+\theta_n)\big] ~. 
+z1​z2​⋯zn​=r1​r2​⋯rn​[cos(θ1​+θ2​+⋯+θn​)+isin(θ1​+θ2​+⋯+θn​)] .
+即：
+∏i=1nzi=∏i=1nri⋅(cos⁡∑i=1nθi+isin⁡∑i=1nθi) .\prod_{i=1}^{n}z_i = \prod_{i=1}^{n}r_i\cdot\left(\cos\sum_{i=1}^{n}\theta_i+\mathrm{i}\sin\sum_{i=1}^{n}\theta_i\right) ~. 
+i=1∏n​zi​=i=1∏n​ri​⋅(cosi=1∑n​θi​+isini=1∑n​θi​) .
+这称为一般的棣莫弗公式．
+若令 z1=z2=⋯=zn=z=r(cos⁡θ+isin⁡θ)z_1=z_2=\cdots=z_n=z=r(\cos\theta+\mathrm{i}\sin\theta)z1​=z2​=⋯=zn​=z=r(cosθ+isinθ)，则有
+zn=[r(cos⁡θ+isin⁡θ)]n=rn(cos⁡nθ+isin⁡nθ) .z^n = \big[r(\cos\theta+\mathrm{i}\sin\theta)\big]^n = r^n(\cos n\theta+\mathrm{i}\sin n\theta) ~. 
+zn=[r(cosθ+isinθ)]n=rn(cosnθ+isinnθ) .
+即为复数的乘方公式．其为棣莫弗公式的一个特例．
+3.5 欧拉公式　复数的指数形式
+
+欧拉 (Euler) 对复数进行了系统研究后，得出欧拉公式 (Euler’s formula)：
+eiθ=cos⁡θ+isin⁡θ .\mathrm{e}^{\mathrm{i}\theta} = \cos\theta+\mathrm{i}\sin\theta ~. 
+eiθ=cosθ+isinθ .
+当 θ=π\theta=\piθ=π 时，即为著名的欧拉恒等式：
+eiπ=−1 .\mathrm{e}^{\mathrm{i}\pi} = -1 ~. 
+eiπ=−1 .
+欧拉证明此公式时，使用了此方法（方法一），而促进了复数域指数函数（exp⁡z\exp zexpz 等）的产生．但由于复数域中的泰勒展开等运算均需用到欧拉公式，故此一方法会造成循环论证，而不能作为证明，只能作为一种“验证方法”．
+下面证明过程引自 Wikipedia：
+
+首先，在复数域上对 ex\mathrm{e}^xex 进行定义：
+
+对于 a,b∈R,c=a+bi∈Ca,b\in\Bbb{R},c=a+b\mathrm{i}\in\Bbb{C}a,b∈R,c=a+bi∈C，规定 ec=lim⁡n→∞(1+cn)n\mathrm{e}^c=\lim\limits_{n\to\infty}\left(1+\dfrac{c}{n}\right)^nec=n→∞lim​(1+nc​)n．
+
+对复数的三角形式 w=u+vi=r(cos⁡θ+isin⁡θ)w=u+v\mathrm{i}=r(\cos\theta+\mathrm{i}\sin\theta)w=u+vi=r(cosθ+isinθ)，有：
+r=u2+v2∈R,θ=arctan⁡(vu)∈R .r=\sqrt{u^2+v^2}\in\Bbb{R},\theta=\arctan\left(\frac{v}{u}\right)\in\Bbb{R} ~. 
+r=u2+v2​∈R,θ=arctan(uv​)∈R .
+且根据棣莫弗公式，wn=(u+vi)n=rn(cos⁡nθ+isin⁡nθ)w^n=(u+v\mathrm{i})^n=r^n(\cos n\theta+\mathrm{i}\sin n\theta)wn=(u+vi)n=rn(cosnθ+isinnθ)．
+从而有：
+(1+a+bin)=[(1+an)+i⋅bn]=rn(cos⁡θn+isin⁡θn) .\left(1+\frac{a+b\mathrm{i}}{n}\right) = \left[\left(1+\frac{a}{n}\right)+\mathrm{i}\cdot\frac{b}{n}\right] = r^n(\cos\theta^n+\mathrm{i}\sin\theta^n) ~. 
+(1+na+bi​)=[(1+na​)+i⋅nb​]=rn(cosθn+isinθn) .
+假设 n&gt;∣a∣n&gt;\lvert a\rvertn&gt;∣a∣，则：
+rn=[(1+an)+(bn)2]n2,θn=narctan⁡bn1+an .r^n=\left[\left(1+\frac{a}{n}\right)+\left(\frac{b}{n}\right)^2\right]^{\frac{n}{2}},\theta^n=n\arctan\frac{\frac{b}{n}}{1+\frac{a}{n}} ~. 
+rn=[(1+na​)+(nb​)2]2n​,θn=narctan1+na​nb​​ .
+为除去幂上的 nnn，两边取对数得
+lim⁡n→∞ln⁡rn=lim⁡n→∞[n2ln⁡(1+2an+a2+b2n2)]=lim⁡n→∞[n2(2an+a2+b2n2)]=a .\begin{aligned}
+\lim\limits_{n\to\infty}\ln r^n
+&amp;= \lim\limits_{n\to\infty}\left[\frac{n}{2}\ln\left(1+\frac{2a}{n}+\frac{a^2+b^2}{n^2}\right)\right] \\
+&amp;= \lim\limits_{n\to\infty}\left[\frac{n}{2}\left(\frac{2a}{n}+\frac{a^2+b^2}{n^2}\right)\right] \\
+&amp;= a ~.
+\end{aligned}
+n→∞lim​lnrn​=n→∞lim​[2n​ln(1+n2a​+n2a2+b2​)]=n→∞lim​[2n​(n2a​+n2a2+b2​)]=a .​
+这一步骤用到 ln⁡(1+x)≈x\ln(1+x)\approx xln(1+x)≈x（墨卡托级数）.
+即：
+lim⁡n→∞rn=lim⁡n→∞eln⁡rn=ea .\lim\limits_{n\to\infty}r^n = \lim\limits_{n\to\infty}\mathrm{e}^{\ln r^n} = \mathrm{e}^a ~.
+n→∞lim​rn=n→∞lim​elnrn=ea .
+又有（arctan⁡x\arctan xarctanx 在 000 附近约等于 000）：
+lim⁡n→∞θn=lim⁡n→∞(narctan⁡bn1+an)=lim⁡n→∞(n⋅bn1+an)=b .\begin{aligned}
+\lim\limits_{n\to\infty}\theta^n
+&amp;= \lim\limits_{n\to\infty}\left(n\arctan\frac{\frac{b}{n}}{1+\frac{a}{n}}\right) \\
+&amp;= \lim\limits_{n\to\infty}\left(n\cdot\frac{\frac{b}{n}}{1+\frac{a}{n}}\right) \\
+&amp;= b ~.
+\end{aligned}
+n→∞lim​θn​=n→∞lim​(narctan1+na​nb​​)=n→∞lim​(n⋅1+na​nb​​)=b .​
+从而可以证明：
+lim⁡n→∞(1+a+bin)n=ea(cos⁡b+isin⁡b) .\lim\limits_{n\to\infty}\left(1+\frac{a+b\mathrm{i}}{n}\right)^n = \mathrm{e}^a(\cos b+\mathrm{i}\sin b) ~.
+n→∞lim​(1+na+bi​)n=ea(cosb+isinb) .
+即：
+ea+ib=ea(cos⁡b+isin⁡b) .\mathrm{e}^{a+\mathrm{i}b} = \mathrm{e}^a(\cos b+\mathrm{i}\sin b) ~. 
+ea+ib=ea(cosb+isinb) .
+令 a=0a=0a=0，可得欧拉公式．
+证毕．
+
+利用欧拉公式与复数的三角形式，可以得到：
+z=a+bi=r(cos⁡θ+isin⁡θ)=reiθ .z=a+b\mathrm{i}=r(\cos\theta+\mathrm{i}\sin\theta)=r\mathrm{e}^{\mathrm{i}\theta} ~. 
+z=a+bi=r(cosθ+isinθ)=reiθ .
+z=reiθz=r\mathrm{e}^{\mathrm{i}\theta}z=reiθ 称为复数 zzz 的指数形式 (exponential form of complex numbers)．
+复数的三角形式与指数形式由于都用模 rrr 与辐角 θ\thetaθ 表示复数，故又称为复数的极坐标形式 (polar form of complex numbers)；同样的，复数的代数形式又称为复数的直角坐标形式 (cartesian form of complex numbers)．
+]]></content>
+      <categories>
+        <category>notes</category>
+      </categories>
+  </entry>
+  <entry>
     <title>复数 (II)</title>
     <url>/post/complex-numbers-2/</url>
     <content><![CDATA[复数 (II)
@@ -181,257 +432,6 @@ epln⁡rq\mathrm{e}^{\frac{p\ln r}{q}}eqplnr​ 是实数域内的计算，值�
 
 4.6 复变三角函数与双曲函数
 to do.
-]]></content>
-      <categories>
-        <category>notes</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>复数 (I)</title>
-    <url>/post/complex-numbers/</url>
-    <content><![CDATA[复数 (I)
-(0) 数集的扩充
-自人类诞生以来，数的概念就在不断地发展着．
-为了计数的需要，人们发展了自然数集的概念，建立了自然数集 N\Bbb{N}N．
-在自然数集 N\Bbb{N}N 中，加法与乘法总能实施．但是，小数不能减大数，方程 x+6=0x+6=0x+6=0 无解．由此引入负数，数集扩展到整数集 Z\Bbb{Z}Z．
-在整数集 Z\Bbb{Z}Z 中，加法、减法与乘法总能实施．但是，由于除法只能解决整除的问题，方程 3x−2=03x-2=03x−2=0 无解．由此引入分数，数集扩展到有理数集 Q\Bbb{Q}Q．
-在有理数集 Q\Bbb{Q}Q 中，加法、减法、乘法与除法（除数不为 000）总能实施．但是，开方的结果可能不是有理数，方程 x2−2=0x^2-2=0x2−2=0 无解．由此引入无理数，数集扩展到实数集 R\Bbb{R}R．
-在实数集 R\Bbb{R}R 中，加法、减法、乘法与除法（除数不为 000）总能实施，并解决了正数的开方问题．
-现在在实数集 R\Bbb{R}R 中，我们又面临着方程 x2+1=0x^2+1=0x2+1=0 无解，负数不能开平方的问题．这表明，数的概念仍需要进一步发展．
-(1) 定义
-为了使得方程 x2+1=0x^2+1=0x2+1=0 有解，使实数的开方运算总能实施，我们引入一个新数 i\mathrm{i}i，叫做虚数单位 (imaginary unit)，并规定：
-
-i2=−1\mathrm{i}^2=-1i2=−1；
-实数可与 i\mathrm{i}i 进行四则运算，且原有的加法、乘法运算律仍成立．
-
-从而，i\mathrm{i}i 可与实数 bbb 相乘，再与实数 aaa 相加，得到一个数 a+bia+b\mathrm{i}a+bi．
-这样，数的范围又扩充了，出现了形如 a+bi(a,b∈R)a+b\mathrm{i}(a,b\in\Bbb{R})a+bi(a,b∈R) 的数，这种树叫做复数 (complex number)，全体复数组成的集合叫做复数集 (set of complex numbers)，记作 C\Bbb{C}C．显然有 N⊆Z⊆Q⊆R⊆C\Bbb{N}\subseteq\Bbb{Z}\subseteq\Bbb{Q}\subseteq\Bbb{R}\subseteq\Bbb{C}N⊆Z⊆Q⊆R⊆C．
-复数通常用字母 zzz 表示，即 z=a+bi(a,b∈R)z=a+b\mathrm{i}(a,b\in\Bbb{R})z=a+bi(a,b∈R)，其中 aaa 和 bbb 分别叫做复数 zzz 的实部 (real part) 和虚部 (imaginary part)，记作 Re⁡z,ℜz,Rz\operatorname{Re}z,\Re z,\mathfrak{R} zRez,ℜz,Rz 与 Im⁡z,ℑz,Iz\operatorname{Im}z,\Im z,\mathfrak{I} zImz,ℑz,Iz．其中，国标要求为 Re⁡z\operatorname{Re}zRez 与 Im⁡z\operatorname{Im}zImz．下文为简便，使用 ℜz\Re zℜz 与 ℑz\Im zℑz．
-当且仅当 b=ℑz=0b=\Im z=0b=ℑz=0 时，z∈Rz\in \Bbb{R}z∈R．当 b=ℑz≠0b=\Im z\neq 0b=ℑz=0 时，zzz 叫作虚数 (imaginary number)．
-特别地，当 a=ℜz=0a=\Re z=0a=ℜz=0 且 b=ℑz≠0b=\Im z\neq 0b=ℑz=0 时，zzz 叫作纯虚数 (pure imaginary number)．
-即
-复数 z=a+bi{实数(b=0),虚数(b≠0) (当 a=0 时为纯虚数) .\text{复数} ~ z=a+b\mathrm{i} \begin{cases}
-\text{实数} &amp; (b=0),\\
-\text{虚数} &amp; (b\neq 0)~(\text{当}~a=0~\text{时为纯虚数}) ~.
-\end{cases}
-复数 z=a+bi{实数虚数​(b=0),(b=0) (当 a=0 时为纯虚数) .​
-如果两个复数的实部与虚部分别相等，那么我们就说这两个复数相等，即
-z1=z2  ⟺  ℜz1=ℜz2 且 ℑz1=ℑz2 .z_1=z_2 \iff \Re z_1=\Re z_2 ~\text{且}~ \Im z_1=\Im z_2 ~. 
-z1​=z2​⟺ℜz1​=ℜz2​ 且 ℑz1​=ℑz2​ .
-或
-a+bi=c+di  ⟺  a=c 且 b=d .a+b\mathrm{i}=c+d\mathrm{i} \iff a=c ~\text{且}~ b=d ~. 
-a+bi=c+di⟺a=c 且 b=d .
-也就是说
-
-两个复数相等的充要条件是它们的实部和虚部分别相等．
-
-(2) 复数的运算
-本节中，a,b,c,d∈Ra,b,c,d\in\Bbb{R}a,b,c,d∈R．
-已经知道虚数单位 i\mathrm{i}i 与实数一起可以按照实数的运算法则进行运算．
-2.1 复数的加减　相反数
-设 z1=a+bi,z2=c+diz_1=a+b\mathrm{i},z_2=c+d\mathrm{i}z1​=a+bi,z2​=c+di，复数的加法如此计算：
-(a+bi)+(c+di)=(a+c)+(b+d)i .(a+b\mathrm{i})+(c+d\mathrm{i})=(a+c)+(b+d)\mathrm{i} ~. 
-(a+bi)+(c+di)=(a+c)+(b+d)i .
-显然，两个复数的和仍为复数．
-容易验证，复数的加法满足交换律与结合律，即 ∀z1,z2,z3∈C\forall z_1,z_2,z_3\in\Bbb{C}∀z1​,z2​,z3​∈C，有
-z1+z2=z2+z1 ,(z1+z2)+z3=z1+(z2+z3) .\begin{aligned}
-z_1+z_2 &amp; = z_2+z_1 ~,\\
-(z_1+z_2)+z_3 &amp; = z_1+(z_2+z_3) ~.
-\end{aligned}
-z1​+z2​(z1​+z2​)+z3​​=z2​+z1​ ,=z1​+(z2​+z3​) .​
-我们将满足 (c+di)+(x+yi)=a+bi(c+d\mathrm{i})+(x+y\mathrm{i})=a+b\mathrm{i}(c+di)+(x+yi)=a+bi 的复数 x+yi(x,y∈R)x+y\mathrm{i} (x,y\in\Bbb{R})x+yi(x,y∈R) 叫作复数 a+bia+b\mathrm{i}a+bi 减去复数 c+dic+d\mathrm{i}c+di 所得的差，记作
-(a+bi)−(c+di) .(a+b\mathrm{i})-(c+d\mathrm{i}) ~. 
-(a+bi)−(c+di) .
-明显有
-c+x=a,d+y=b,c+x=a,d+y=b , 
-c+x=a,d+y=b,
-即
-x=a−c,y=b−d,x=a-c,y=b-d , 
-x=a−c,y=b−d,
-所以
-x+yi=(a−c)+(b−d)i .x+y\mathrm{i}=(a-c)+(b-d)\mathrm{i} ~. 
-x+yi=(a−c)+(b−d)i .
-于是得到复数的减法法则：
-(a+bi)−(c+di)=(a−c)+(b−d)i .(a+b\mathrm{i})-(c+d\mathrm{i})=(a-c)+(b-d)\mathrm{i} ~. 
-(a+bi)−(c+di)=(a−c)+(b−d)i .
-类似于实数，定义复数 z=a+biz=a+b\mathrm{i}z=a+bi 的相反数 −z=−a−bi-z=-a-b\mathrm{i}−z=−a−bi．
-那么复数的减法法则也可以是：(z1,z2∈C)(z_1,z_2\in\Bbb{C})(z1​,z2​∈C)
-z1−z2=z1+(−z2) .z_1-z_2=z_1+(-z_2) ~. 
-z1​−z2​=z1​+(−z2​) .
-2.2 复数的乘法与正整数次幂
-复数的乘法这样计算：
-(a+bi)(c+di)=ac+adi+bci+bdi2,(a+b\mathrm{i})(c+d\mathrm{i})=ac+ad\mathrm{i}+bc\mathrm{i}+bd\mathrm{i}^2 , 
-(a+bi)(c+di)=ac+adi+bci+bdi2,
-即
-(a+bi)(c+di)=(ac−bd)+(bc+ad)i .(a+b\mathrm{i})(c+d\mathrm{i})=(ac-bd)+(bc+ad)\mathrm{i} ~. 
-(a+bi)(c+di)=(ac−bd)+(bc+ad)i .
-显然，两个复数的积仍为复数．
-容易验证，复数的乘法满足交换律、结合律以及分配律，即 ∀z1,z2,z3∈C\forall z_1,z_2,z_3\in\Bbb{C}∀z1​,z2​,z3​∈C，有
-z1z2=z2z1 ,(z1z2)z3=z1(z2z3) ,z1(z2+z3)=z1z2+z1z3 .\begin{aligned}
-z_1z_2 &amp; = z_2z_1 ~,\\
-(z_1z_2)z_3 &amp; = z_1(z_2z_3) ~,\\
-z_1(z_2+z_3) &amp; = z_1z_2+z_1z_3 ~.
-\end{aligned}
-z1​z2​(z1​z2​)z3​z1​(z2​+z3​)​=z2​z1​ ,=z1​(z2​z3​) ,=z1​z2​+z1​z3​ .​
-复数的乘方是相同复数的积．根据复数乘法运算律，实数内正整数指数幂的运算律在复数范围内仍成立，即对于任何 z,z1,z2∈C,m,n∈N∗z,z_1,z_2\in\Bbb{C},m,n\in\Bbb{N}^*z,z1​,z2​∈C,m,n∈N∗，有
-zmzn=zm+n ,(zm)n=zmn ,(z1z2)n=z1nz2n .\begin{aligned}
-z^mz^n &amp; = z^{m+n} ~,\\
-(z^m)^n &amp; = z^{mn} ~,\\
-(z_1z_2)^n &amp; = z_1^nz_2^n ~.
-\end{aligned}
-zmzn(zm)n(z1​z2​)n​=zm+n ,=zmn ,=z1n​z2n​ .​
-计算复数乘方时，需用到虚数单位 i\mathrm{i}i 的乘方：
-i1=i,i2=−1,i3=−i,i4=1  ⟹  i4n=1,i4n+1=i,i4n+2=−1,i4n+3=−i .\begin{aligned}
-&amp; \mathrm{i}^1=\mathrm{i},\mathrm{i}^2=-1,\mathrm{i}^3=-\mathrm{i},\mathrm{i}^4=1\\
-\implies &amp; \mathrm{i}^{4n}=1,\mathrm{i}^{4n+1}=\mathrm{i},\mathrm{i}^{4n+2}=-1,\mathrm{i}^{4n+3}=-\mathrm{i} ~.
-\end{aligned}
-⟹​i1=i,i2=−1,i3=−i,i4=1i4n=1,i4n+1=i,i4n+2=−1,i4n+3=−i .​
-2.3 共轭复数与复数的除法
-我们把实部相等，虚部互为相反数的两个复数叫作互为共轭复数 (complex conjugate)．复数 z=a+biz=a+b\mathrm{i}z=a+bi 的共轭复数记作 zˉ\bar zzˉ 或 conj⁡z\operatorname{conj}zconjz，即
-zˉ=conj⁡z=a−bi\bar z = \operatorname{conj} z = a-b\mathrm{i} 
-zˉ=conjz=a−bi
-当 b=0b=0b=0 时，z=zˉz=\bar zz=zˉ．也就是说，实数的共轭数是它本身．
-容易发现
-zzˉ=(a+bi)(a−bi)=a2−b2i2=a2+b2 .z\bar z = (a+b\mathrm{i})(a-b\mathrm{i})=a^2-b^2\mathrm{i}^2=a^2+b^2 ~. 
-zzˉ=(a+bi)(a−bi)=a2−b2i2=a2+b2 .
-我们把满足
-(c+di)(x+yi)=a+bi (c+di≠0)(c+d\mathrm{i})(x+y\mathrm{i})=a+b\mathrm{i} ~ (c+d\mathrm{i}\neq 0) 
-(c+di)(x+yi)=a+bi (c+di=0)
-的复数 x+yi(x,y∈R)x+y\mathrm{i}(x,y\in\Bbb{R})x+yi(x,y∈R) 叫作复数 a+bia+b\mathrm{i}a+bi 除以 c+dic+d\mathrm{i}c+di 所得的商，记作 a+bic+di\dfrac{a+b\mathrm{i}}{c+d\mathrm{i}}c+dia+bi​ 或 (a+bi)÷(c+di)(a+b\mathrm{i})\div(c+d\mathrm{i})(a+bi)÷(c+di)．
-容易证明，z1z2=z1zz2z(z,z1,z2∈C 且 z,z2≠0)\dfrac{z_1}{z_2}=\dfrac{z_1z}{z_2z}(z,z_1,z_2\in\Bbb{C}~\text{且}~z,z_2\neq0)z2​z1​​=z2​zz1​z​(z,z1​,z2​∈C 且 z,z2​=0)．
-一般地，我们有
-a+bic+di=(a+bi)(c−di)(c+di)(c−di)=ac+bdc2+d2+bc−adc2+d2i .\frac{a+b\mathrm{i}}{c+d\mathrm{i}} = \frac{(a+b\mathrm{i})(c-d\mathrm{i})}{(c+d\mathrm{i})(c-d\mathrm{i})} = \frac{ac+bd}{c^2+d^2}+\frac{bc-ad}{c^2+d^2}\mathrm{i} ~. 
-c+dia+bi​=(c+di)(c−di)(a+bi)(c−di)​=c2+d2ac+bd​+c2+d2bc−ad​i .
-因为 c+di≠0c+d\mathrm{i}\neq 0c+di=0，所以 c2+d2≠0c^2+d^2\neq 0c2+d2=0．
-由此可见，两个复数的商仍为复数．
-由此也就可以定义复数 zzz 的倒数 1z\frac{1}{z}z1​．
-2.4 复数的整数次幂
-类似于实数，复数 zzz 的负整数幂 z−m(m∈N∗)z^{-m}(m\in\Bbb{N}^*)z−m(m∈N∗) 定义为对应正整数幂的倒数，即
-z−m=1zm .z^{-m}=\frac{1}{z^m} ~. 
-z−m=zm1​ .
-并且有 z0=1(z≠0)z^0=1(z\neq 0)z0=1(z=0)．复数乘方满足实数乘方所有运算律．
-(3) 复数的几何意义
-3.1 复平面　模与辐角
-对于每一个复数 z=a+bi(a,b∈R)z=a+b\mathrm{i} (a,b\in\Bbb{R})z=a+bi(a,b∈R)，都有唯一的数对 (a,b)(a,b)(a,b) 与其对应．同时，在直角坐标系中的每一个点，也都有唯一确定的数对 (a,b)(a,b)(a,b) 与其对应．
-因此，我们可以仿照直角坐标系，建立一个平面，将复数 z=a+biz=a+b\mathrm{i}z=a+bi 与平面上的点一一对应．
-
-如图 3-1．这个平面叫作复平面 (complex plane) 或阿甘得图 (Argand diagram)，xxx 轴叫作实轴 (real axis)，yyy 轴叫作虚轴 (imaginary axis)．显然，实轴上的点都表示实数；除原点外，虚轴上的点都表示虚数．容易发现，复平面实质上是数轴的扩展．
-可以发现，复数 z=a+biz=a+b\mathrm{i}z=a+bi 同时与向量 OZ→\overrightarrow{OZ}OZ 一一对应，于是，我们也可以用一个向量 OZ→\overrightarrow{OZ}OZ 来表示复数．
-在此基础上，我们把向量 OZ→\overrightarrow{OZ}OZ 的模（即 ZZZ 到 OOO 的距离）rrr 称为复数 zzz 的模 (module) 或强度 (magnitude) 或绝对值 (absolute value)，用 ∣z∣\lvert z\rvert∣z∣ 表示．图 3-1 中 rrr 即为 zzz 的模．容易得到， ∣z∣=a2+b2\lvert z\rvert=\sqrt{a^2+b^2}∣z∣=a2+b2​，∣z∣∈R\lvert z\rvert\in\Bbb{R}∣z∣∈R 且 ∣z∣≥0\lvert z\rvert\ge 0∣z∣≥0．
-我们把实轴正半轴旋转到向量 OZ→\overrightarrow{OZ}OZ 方向的角 θ\thetaθ（或 φ\varphiφ）称为复数 zzz 的辐角 (argument)或相位 (phase)，记作 Arg⁡z\operatorname{Arg} zArgz．容易发现，一个复数 zzz 的辐角有无穷多个，因此，我们将处在区间 [0,2π)[0,2\pi)[0,2π)（更常用的另一种区间为 (−π,π](-\pi,\pi](−π,π]）的辐角称为复数 zzz 的辐角主值 (principal value of argument)，记作 arg⁡z\arg zargz．
-显然，每一个非零复数 z=a+biz=a+b\mathrm{i}z=a+bi 都有唯一确定的模和辐角主值；反过来，复数模和辐角主值可以唯一确定这个复数．于是
-
-两个非零复数相等的充要条件是这两个复数的模与辐角主值分别相等．
-
-即
-z1=z2  ⟺  ∣z1∣=∣z2∣ 且 arg⁡z1=arg⁡z2 (z1,z2≠0) .z_1=z_2 \iff \lvert z_1\rvert=\lvert z_2\rvert ~\text{且}~ \arg z_1=\arg z_2 ~(z_1,z_2\neq 0) ~. 
-z1​=z2​⟺∣z1​∣=∣z2​∣ 且 argz1​=argz2​ (z1​,z2​=0) .
-复数 z=0z=0z=0 与原点 O(0,0)O(0,0)O(0,0) 对应，向量 OZ→=0\overrightarrow{OZ}=\mathbf{0}OZ=0，此时复数的模为 000，辐角是任意的．有时为了方便讨论，会规定 z=0z=0z=0 的辐角主值为 000．
-3.2 复数加减法的几何意义
-如图 3-2，向量 OZ1→,OZ2→\overrightarrow{OZ_1},\overrightarrow{OZ_2}OZ1​​,OZ2​​ 分别与复数 a+bi,c+dia+b\mathrm{i},c+d\mathrm{i}a+bi,c+di 对应，且 OZ1→,OZ2→\overrightarrow{OZ_1},\overrightarrow{OZ_2}OZ1​​,OZ2​​ 不共线，以 OZ1→,OZ2→\overrightarrow{OZ_1},\overrightarrow{OZ_2}OZ1​​,OZ2​​ 为两条邻边画平行四边形，则对角线 OZOZOZ 所表示的向量 OZ→\overrightarrow{OZ}OZ 就是与复数 (a+c)+(b+d)i(a+c)+(b+d)\mathrm{i}(a+c)+(b+d)i 对应的向量．这就是复数加法的几何意义．
-
-根据复数减法的定义以及复数加法的几何意义，可以得到复数减法的几何意义．
-如图 3-3，，若向量 OZ1→,OZ2→\overrightarrow{OZ_1},\overrightarrow{OZ_2}OZ1​​,OZ2​​ 分别与复数 z1,z2z_1,z_2z1​,z2​ 对应，则它们的差 z1−z2z_1-z_2z1​−z2​ 对应着 向量 OZ1→−OZ2→\overrightarrow{OZ_1}-\overrightarrow{OZ_2}OZ1​​−OZ2​​，即向量 Z2Z1→\overrightarrow{Z_2Z_1}Z2​Z1​​．
-如果作 OZ→=Z2Z1→\overrightarrow{OZ}=\overrightarrow{Z_2Z_1}OZ=Z2​Z1​​，那么点 ZZZ 对应的复数就是 z1−z2z_1-z_2z1​−z2​．这就是复数减法的几何意义．
-
-设 z1=a+bi,z2=c+diz_1=a+b\mathrm{i},z_2=c+d\mathrm{i}z1​=a+bi,z2​=c+di，则 z1−z2=(a−c)+(b−d)iz_1-z_2=(a-c)+(b-d)\mathrm{i}z1​−z2​=(a−c)+(b−d)i，故
-∣z1−z2∣=∣OZ→∣=∣Z2Z1→∣=(a−c)2+(b−d)2 .\lvert z_1-z_2 \rvert = \left\lvert \overrightarrow{OZ} \right\rvert = \left\lvert \overrightarrow{Z_2Z_1} \right\rvert = \sqrt{(a-c)^2+(b-d)^2} ~. 
-∣z1​−z2​∣=​OZ​=​Z2​Z1​​​=(a−c)2+(b−d)2​ .
-这表明：两个复数的差的模就是复平面内与这两个复数对应的两点间的距离．
-3.3 复数的三角形式
-由图 3-1 易得（r=∣z∣,θ=Arg⁡zr=\lvert z\rvert,\theta=\operatorname{Arg} zr=∣z∣,θ=Argz）
-a=rcos⁡θ,b=rsin⁡θ .a=r\cos\theta,b=r\sin\theta ~. 
-a=rcosθ,b=rsinθ .
-于是，可以得到 z=a+bi=rcos⁡θ+irsin⁡θ=r(cos⁡θ+isin⁡θ)z=a+b\mathrm{i}=r\cos\theta+\mathrm{i}r\sin\theta=r(\cos\theta+\mathrm{i}\sin\theta)z=a+bi=rcosθ+irsinθ=r(cosθ+isinθ)．这就是复数 zzz 的三角形式 (trigonometric form of complex numbers)，而 a+bia+b\mathrm{i}a+bi 称为复数 zzz 的代数形式 (algebraic form of complex numbers)．
-有时，会使用 cis⁡θ\operatorname{cis}\thetacisθ 代替 cos⁡θ+isin⁡θ\cos\theta+\mathrm{i}\sin\thetacosθ+isinθ．
-3.4 复数乘除法的几何意义　棣莫弗公式
-设复数 z1=r1(cos⁡θ1+isin⁡θ1),z2=r2(cos⁡θ2+isin⁡θ2)z_1=r_1(\cos\theta_1+\mathrm{i}\sin\theta_1),z_2=r_2(\cos\theta_2+\mathrm{i}\sin\theta_2)z1​=r1​(cosθ1​+isinθ1​),z2​=r2​(cosθ2​+isinθ2​)．若它们的乘积为 z=z1z2z=z_1z_2z=z1​z2​，且 z=r(cos⁡θ+isin⁡θ)z=r(\cos\theta+\mathrm{i}\sin\theta)z=r(cosθ+isinθ)，则根据三角函数和角公式有
-z=z1z2=r1(cos⁡θ1+isin⁡θ1)⋅r2(cos⁡θ2+isin⁡θ2)=r1r2(cos⁡θ1cos⁡θ2+icos⁡θ1sin⁡θ2+isin⁡θ1cos⁡θ2+i2sin⁡θ1sin⁡θ2)=r1r2[(cos⁡θ1cos⁡θ2−sin⁡θ1sin⁡θ2)+i(sin⁡θ1cos⁡θ2+cos⁡θ1sin⁡θ2)]=r1r2[cos⁡(θ1+θ2)+isin⁡(θ1+θ2)]\begin{aligned}
-z=z_1z_2 &amp;= r_1(\cos\theta_1+\mathrm{i}\sin\theta_1)\cdot r_2(\cos\theta_2+\mathrm{i}\sin\theta_2) \\
-&amp;= r_1r_2(\cos\theta_1\cos\theta_2+\mathrm{i}\cos\theta_1\sin\theta_2+\mathrm{i}\sin\theta_1\cos\theta_2+\mathrm{i}^2\sin\theta_1\sin\theta_2) \\
-&amp;= r_1r_2\big[(\cos\theta_1\cos\theta_2-\sin\theta_1\sin\theta_2)+\mathrm{i}(\sin\theta_1\cos\theta_2+\cos\theta_1\sin\theta_2)\big] \\
-&amp;= r_1r_2\big[\cos(\theta_1+\theta_2)+\mathrm{i}\sin(\theta_1+\theta_2)\big] \\
-\end{aligned}
-z=z1​z2​​=r1​(cosθ1​+isinθ1​)⋅r2​(cosθ2​+isinθ2​)=r1​r2​(cosθ1​cosθ2​+icosθ1​sinθ2​+isinθ1​cosθ2​+i2sinθ1​sinθ2​)=r1​r2​[(cosθ1​cosθ2​−sinθ1​sinθ2​)+i(sinθ1​cosθ2​+cosθ1​sinθ2​)]=r1​r2​[cos(θ1​+θ2​)+isin(θ1​+θ2​)]​
-上式称为棣莫弗公式 (De Moivre’s formula) 或棣莫弗定理．于是可以得到
-r=r1r2,θ=θ1+θ2 .r=r_1r_2,\theta=\theta_1+\theta_2 ~. 
-r=r1​r2​,θ=θ1​+θ2​ .
-即：
-
-两个复数相乘，其积的模等于这两个复数的模的积，其积的辐角等于这两个复数的辐角的和．
-
-由此可得出复数乘法的几何意义．
-类似的，可以得出复数除法的几何意义．
-根据棣莫弗公式，设有 nnn 个复数 z1=r1(cos⁡θ1+isin⁡θ1),z2=r2(cos⁡θ2+isin⁡θ2),⋯ ,zn=rn(cos⁡θn+isin⁡θn)z_1=r_1(\cos\theta_1+\mathrm{i}\sin\theta_1),z_2=r_2(\cos\theta_2+\mathrm{i}\sin\theta_2),\cdots,z_n=r_n(\cos\theta_n+\mathrm{i}\sin\theta_n)z1​=r1​(cosθ1​+isinθ1​),z2​=r2​(cosθ2​+isinθ2​),⋯,zn​=rn​(cosθn​+isinθn​)，则有：
-z1z2⋯zn=r1r2⋯rn[cos⁡(θ1+θ2+⋯+θn)+isin⁡(θ1+θ2+⋯+θn)] .z_1z_2\cdots z_n = r_1r_2\cdots r_n\big[\cos(\theta_1+\theta_2+\cdots+\theta_n)+\mathrm{i}\sin(\theta_1+\theta_2+\cdots+\theta_n)\big] ~. 
-z1​z2​⋯zn​=r1​r2​⋯rn​[cos(θ1​+θ2​+⋯+θn​)+isin(θ1​+θ2​+⋯+θn​)] .
-即：
-∏i=1nzi=∏i=1nri⋅(cos⁡∑i=1nθi+isin⁡∑i=1nθi) .\prod_{i=1}^{n}z_i = \prod_{i=1}^{n}r_i\cdot\left(\cos\sum_{i=1}^{n}\theta_i+\mathrm{i}\sin\sum_{i=1}^{n}\theta_i\right) ~. 
-i=1∏n​zi​=i=1∏n​ri​⋅(cosi=1∑n​θi​+isini=1∑n​θi​) .
-这称为一般的棣莫弗公式．
-若令 z1=z2=⋯=zn=z=r(cos⁡θ+isin⁡θ)z_1=z_2=\cdots=z_n=z=r(\cos\theta+\mathrm{i}\sin\theta)z1​=z2​=⋯=zn​=z=r(cosθ+isinθ)，则有
-zn=[r(cos⁡θ+isin⁡θ)]n=rn(cos⁡nθ+isin⁡nθ) .z^n = \big[r(\cos\theta+\mathrm{i}\sin\theta)\big]^n = r^n(\cos n\theta+\mathrm{i}\sin n\theta) ~. 
-zn=[r(cosθ+isinθ)]n=rn(cosnθ+isinnθ) .
-即为复数的乘方公式．其为棣莫弗公式的一个特例．
-3.5 欧拉公式　复数的指数形式
-
-欧拉 (Euler) 对复数进行了系统研究后，得出欧拉公式 (Euler’s formula)：
-eiθ=cos⁡θ+isin⁡θ .\mathrm{e}^{\mathrm{i}\theta} = \cos\theta+\mathrm{i}\sin\theta ~. 
-eiθ=cosθ+isinθ .
-当 θ=π\theta=\piθ=π 时，即为著名的欧拉恒等式：
-eiπ=−1 .\mathrm{e}^{\mathrm{i}\pi} = -1 ~. 
-eiπ=−1 .
-欧拉证明此公式时，使用了此方法（方法一），而促进了复数域指数函数（exp⁡z\exp zexpz 等）的产生．但由于复数域中的泰勒展开等运算均需用到欧拉公式，故此一方法会造成循环论证，而不能作为证明，只能作为一种“验证方法”．
-下面证明过程引自 Wikipedia：
-
-首先，在复数域上对 ex\mathrm{e}^xex 进行定义：
-
-对于 a,b∈R,c=a+bi∈Ca,b\in\Bbb{R},c=a+b\mathrm{i}\in\Bbb{C}a,b∈R,c=a+bi∈C，规定 ec=lim⁡n→∞(1+cn)n\mathrm{e}^c=\lim\limits_{n\to\infty}\left(1+\dfrac{c}{n}\right)^nec=n→∞lim​(1+nc​)n．
-
-对复数的三角形式 w=u+vi=r(cos⁡θ+isin⁡θ)w=u+v\mathrm{i}=r(\cos\theta+\mathrm{i}\sin\theta)w=u+vi=r(cosθ+isinθ)，有：
-r=u2+v2∈R,θ=arctan⁡(vu)∈R .r=\sqrt{u^2+v^2}\in\Bbb{R},\theta=\arctan\left(\frac{v}{u}\right)\in\Bbb{R} ~. 
-r=u2+v2​∈R,θ=arctan(uv​)∈R .
-且根据棣莫弗公式，wn=(u+vi)n=rn(cos⁡nθ+isin⁡nθ)w^n=(u+v\mathrm{i})^n=r^n(\cos n\theta+\mathrm{i}\sin n\theta)wn=(u+vi)n=rn(cosnθ+isinnθ)．
-从而有：
-(1+a+bin)=[(1+an)+i⋅bn]=rn(cos⁡θn+isin⁡θn) .\left(1+\frac{a+b\mathrm{i}}{n}\right) = \left[\left(1+\frac{a}{n}\right)+\mathrm{i}\cdot\frac{b}{n}\right] = r^n(\cos\theta^n+\mathrm{i}\sin\theta^n) ~. 
-(1+na+bi​)=[(1+na​)+i⋅nb​]=rn(cosθn+isinθn) .
-假设 n&gt;∣a∣n&gt;\lvert a\rvertn&gt;∣a∣，则：
-rn=[(1+an)+(bn)2]n2,θn=narctan⁡bn1+an .r^n=\left[\left(1+\frac{a}{n}\right)+\left(\frac{b}{n}\right)^2\right]^{\frac{n}{2}},\theta^n=n\arctan\frac{\frac{b}{n}}{1+\frac{a}{n}} ~. 
-rn=[(1+na​)+(nb​)2]2n​,θn=narctan1+na​nb​​ .
-为除去幂上的 nnn，两边取对数得
-lim⁡n→∞ln⁡rn=lim⁡n→∞[n2ln⁡(1+2an+a2+b2n2)]=lim⁡n→∞[n2(2an+a2+b2n2)]=a .\begin{aligned}
-\lim\limits_{n\to\infty}\ln r^n
-&amp;= \lim\limits_{n\to\infty}\left[\frac{n}{2}\ln\left(1+\frac{2a}{n}+\frac{a^2+b^2}{n^2}\right)\right] \\
-&amp;= \lim\limits_{n\to\infty}\left[\frac{n}{2}\left(\frac{2a}{n}+\frac{a^2+b^2}{n^2}\right)\right] \\
-&amp;= a ~.
-\end{aligned}
-n→∞lim​lnrn​=n→∞lim​[2n​ln(1+n2a​+n2a2+b2​)]=n→∞lim​[2n​(n2a​+n2a2+b2​)]=a .​
-这一步骤用到 ln⁡(1+x)≈x\ln(1+x)\approx xln(1+x)≈x（墨卡托级数）.
-即：
-lim⁡n→∞rn=lim⁡n→∞eln⁡rn=ea .\lim\limits_{n\to\infty}r^n = \lim\limits_{n\to\infty}\mathrm{e}^{\ln r^n} = \mathrm{e}^a ~.
-n→∞lim​rn=n→∞lim​elnrn=ea .
-又有（arctan⁡x\arctan xarctanx 在 000 附近约等于 000）：
-lim⁡n→∞θn=lim⁡n→∞(narctan⁡bn1+an)=lim⁡n→∞(n⋅bn1+an)=b .\begin{aligned}
-\lim\limits_{n\to\infty}\theta^n
-&amp;= \lim\limits_{n\to\infty}\left(n\arctan\frac{\frac{b}{n}}{1+\frac{a}{n}}\right) \\
-&amp;= \lim\limits_{n\to\infty}\left(n\cdot\frac{\frac{b}{n}}{1+\frac{a}{n}}\right) \\
-&amp;= b ~.
-\end{aligned}
-n→∞lim​θn​=n→∞lim​(narctan1+na​nb​​)=n→∞lim​(n⋅1+na​nb​​)=b .​
-从而可以证明：
-lim⁡n→∞(1+a+bin)n=ea(cos⁡b+isin⁡b) .\lim\limits_{n\to\infty}\left(1+\frac{a+b\mathrm{i}}{n}\right)^n = \mathrm{e}^a(\cos b+\mathrm{i}\sin b) ~.
-n→∞lim​(1+na+bi​)n=ea(cosb+isinb) .
-即：
-ea+ib=ea(cos⁡b+isin⁡b) .\mathrm{e}^{a+\mathrm{i}b} = \mathrm{e}^a(\cos b+\mathrm{i}\sin b) ~. 
-ea+ib=ea(cosb+isinb) .
-令 a=0a=0a=0，可得欧拉公式．
-证毕．
-
-利用欧拉公式与复数的三角形式，可以得到：
-z=a+bi=r(cos⁡θ+isin⁡θ)=reiθ .z=a+b\mathrm{i}=r(\cos\theta+\mathrm{i}\sin\theta)=r\mathrm{e}^{\mathrm{i}\theta} ~. 
-z=a+bi=r(cosθ+isinθ)=reiθ .
-z=reiθz=r\mathrm{e}^{\mathrm{i}\theta}z=reiθ 称为复数 zzz 的指数形式 (exponential form of complex numbers)．
-复数的三角形式与指数形式由于都用模 rrr 与辐角 θ\thetaθ 表示复数，故又称为复数的极坐标形式 (polar form of complex numbers)；同样的，复数的代数形式又称为复数的直角坐标形式 (cartesian form of complex numbers)．
 ]]></content>
       <categories>
         <category>notes</category>
