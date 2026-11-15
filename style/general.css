@@ -48,6 +48,8 @@ body {
 }
 
 article {
+    text-align: justify;
+
     font-family: var(--AO-font-latin-serif), var(--AO-font-cjk-serif);
 
     h1,
