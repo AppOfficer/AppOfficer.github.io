@@ -187,6 +187,25 @@ to do.
       </categories>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/post/hello-world/</url>
+    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start
+Create a new post
+$ hexo new &quot;My New Post&quot;
+More info: Writing
+Run server
+$ hexo server
+More info: Server
+Generate static files
+$ hexo generate
+More info: Generating
+Deploy to remote sites
+$ hexo deploy
+More info: Deployment
+]]></content>
+  </entry>
+  <entry>
     <title>复数（Ⅰ）</title>
     <url>/post/complex-numbers/</url>
     <content><![CDATA[复数（Ⅰ）
@@ -315,10 +334,10 @@ z−m=zm1​ .
 对于每一个复数 z=a+bi(a,b∈R)z=a+b\mathrm{i} (a,b\in\Bbb{R})z=a+bi(a,b∈R)，都有唯一的数对 (a,b)(a,b)(a,b) 与其对应．同时，在直角坐标系中的每一个点，也都有唯一确定的数对 (a,b)(a,b)(a,b) 与其对应．
 因此，我们可以仿照直角坐标系，建立一个平面，将复数 z=a+biz=a+b\mathrm{i}z=a+bi 与平面上的点一一对应．
 
-如图 3-1．这个平面叫作复平面（complex plane）或阿甘得图（Argand diagram），xxx 轴叫作实轴（real axis），yyy 轴叫作虚轴（imaginary axis）．显然，实轴上的点都表示实数；除原点外，虚轴上的点都表示纯虚数．容易发现，复平面实质上是数轴的扩展．
+如图 3-1．这个平面叫作 复平面（complex plane） 或 阿甘得图（Argand diagram），xxx 轴叫作实轴（real axis），yyy 轴叫作虚轴（imaginary axis）．显然，实轴上的点都表示实数；除原点外，虚轴上的点都表示纯虚数．容易发现，复平面实质上是数轴的扩展．
 可以发现，复数 z=a+biz=a+b\mathrm{i}z=a+bi 同时与向量 OZ→\overrightarrow{OZ}OZ 一一对应，于是，我们也可以用一个向量 OZ→\overrightarrow{OZ}OZ 来表示复数．
-在此基础上，我们把向量 OZ→\overrightarrow{OZ}OZ 的模（即 ZZZ 到 OOO 的距离）rrr 称为复数 zzz 的模（module）或强度（magnitude）或绝对值（absolute value），用 ∣z∣\lvert z\rvert∣z∣ 表示．图 3-1 中 rrr 即为 zzz 的模．容易得到， ∣z∣=a2+b2\lvert z\rvert=\sqrt{a^2+b^2}∣z∣=a2+b2​，∣z∣∈R\lvert z\rvert\in\Bbb{R}∣z∣∈R 且 ∣z∣≥0\lvert z\rvert\ge 0∣z∣≥0．
-我们把实轴正半轴旋转到向量 OZ→\overrightarrow{OZ}OZ 方向的角 θ\thetaθ（或 φ\varphiφ）称为复数 zzz 的辐角（argument）或相位（phase），记作 Arg⁡z\operatorname{Arg} zArgz．容易发现，一个复数 zzz 的辐角有无穷多个，因此，我们将处在区间 [0,2π)[0,2\pi)[0,2π)（更常用的另一种区间为 (−π,π](-\pi,\pi](−π,π]）的辐角称为复数 zzz 的辐角主值（principal value of argument），记作 arg⁡z\arg zargz．
+在此基础上，我们把向量 OZ→\overrightarrow{OZ}OZ 的模（即 ZZZ 到 OOO 的距离）rrr 称为复数 zzz 的 模（module） 或 强度（magnitude） 或 绝对值（absolute value），用 ∣z∣\lvert z\rvert∣z∣ 表示．图 3-1 中 rrr 即为 zzz 的模．容易得到， ∣z∣=a2+b2\lvert z\rvert=\sqrt{a^2+b^2}∣z∣=a2+b2​，∣z∣∈R\lvert z\rvert\in\Bbb{R}∣z∣∈R 且 ∣z∣≥0\lvert z\rvert\ge 0∣z∣≥0．
+我们把实轴正半轴旋转到向量 OZ→\overrightarrow{OZ}OZ 方向的角 θ\thetaθ（或 φ\varphiφ）称为复数 zzz 的 辐角（argument） 或 相位（phase），记作 Arg⁡z\operatorname{Arg} zArgz．容易发现，一个复数 zzz 的辐角有无穷多个，因此，我们将处在区间 [0,2π)[0,2\pi)[0,2π)（更常用的另一种区间为 (−π,π](-\pi,\pi](−π,π]）的辐角称为复数 zzz 的辐角主值（principal value of argument），记作 arg⁡z\arg zargz．
 显然，每一个非零复数 z=a+biz=a+b\mathrm{i}z=a+bi 都有唯一确定的模和辐角主值；反过来，复数模和辐角主值可以唯一确定这个复数．于是
 
 两个非零复数相等的充要条件是这两个复数的模与辐角主值分别相等．
@@ -342,7 +361,7 @@ z1​=z2​⟺∣z1​∣=∣z2​∣ 且 argz1​=argz2​ (z1​,z2​=0
 由图 3-1 易得（r=∣z∣,θ=Arg⁡zr=\lvert z\rvert,\theta=\operatorname{Arg} zr=∣z∣,θ=Argz）
 a=rcos⁡θ,b=rsin⁡θ .a=r\cos\theta,b=r\sin\theta ~. 
 a=rcosθ,b=rsinθ .
-于是，可以得到 z=a+bi=rcos⁡θ+irsin⁡θ=r(cos⁡θ+isin⁡θ)z=a+b\mathrm{i}=r\cos\theta+\mathrm{i}r\sin\theta=r(\cos\theta+\mathrm{i}\sin\theta)z=a+bi=rcosθ+irsinθ=r(cosθ+isinθ)．这就是复数 zzz 的三角形式 (trigonometric form of complex numbers)，而 a+bia+b\mathrm{i}a+bi 称为复数 zzz 的代数形式（algebraic form of complex numbers）．
+于是，可以得到 z=a+bi=rcos⁡θ+irsin⁡θ=r(cos⁡θ+isin⁡θ)z=a+b\mathrm{i}=r\cos\theta+\mathrm{i}r\sin\theta=r(\cos\theta+\mathrm{i}\sin\theta)z=a+bi=rcosθ+irsinθ=r(cosθ+isinθ)．这就是复数 zzz 的三角形式（trigonometric form of complex numbers），而 a+bia+b\mathrm{i}a+bi 称为复数 zzz 的代数形式（algebraic form of complex numbers）．
 有时，会使用 cis⁡θ\operatorname{cis}\thetacisθ 代替 cos⁡θ+isin⁡θ\cos\theta+\mathrm{i}\sin\thetacosθ+isinθ．
 3.4 复数乘除法的几何意义　棣莫弗公式
 设复数 z1=r1(cos⁡θ1+isin⁡θ1),z2=r2(cos⁡θ2+isin⁡θ2)z_1=r_1(\cos\theta_1+\mathrm{i}\sin\theta_1),z_2=r_2(\cos\theta_2+\mathrm{i}\sin\theta_2)z1​=r1​(cosθ1​+isinθ1​),z2​=r2​(cosθ2​+isinθ2​)．若它们的乘积为 z=z1z2z=z_1z_2z=z1​z2​，且 z=r(cos⁡θ+isin⁡θ)z=r(\cos\theta+\mathrm{i}\sin\theta)z=r(cosθ+isinθ)，则根据三角函数和角公式有
@@ -353,7 +372,7 @@ z=z_1z_2 &amp;= r_1(\cos\theta_1+\mathrm{i}\sin\theta_1)\cdot r_2(\cos\theta_2+\
 &amp;= r_1r_2\big[\cos(\theta_1+\theta_2)+\mathrm{i}\sin(\theta_1+\theta_2)\big] \\
 \end{aligned}
 z=z1​z2​​=r1​(cosθ1​+isinθ1​)⋅r2​(cosθ2​+isinθ2​)=r1​r2​(cosθ1​cosθ2​+icosθ1​sinθ2​+isinθ1​cosθ2​+i2sinθ1​sinθ2​)=r1​r2​[(cosθ1​cosθ2​−sinθ1​sinθ2​)+i(sinθ1​cosθ2​+cosθ1​sinθ2​)]=r1​r2​[cos(θ1​+θ2​)+isin(θ1​+θ2​)]​
-上式称为棣莫弗公式 (De Moivre’s formula)或棣莫弗定理（De Moivre’s theorem）．于是可以得到
+上式称为棣莫弗公式（De Moivre’s formula）或棣莫弗定理（De Moivre’s theorem）．于是可以得到
 r=r1r2,θ=θ1+θ2 .r=r_1r_2,\theta=\theta_1+\theta_2 ~. 
 r=r1​r2​,θ=θ1​+θ2​ .
 即：
@@ -430,31 +449,12 @@ ea+ib=ea(cosb+isinb) .
 利用欧拉公式与复数的三角形式，可以得到：
 z=a+bi=r(cos⁡θ+isin⁡θ)=reiθ .z=a+b\mathrm{i}=r(\cos\theta+\mathrm{i}\sin\theta)=r\mathrm{e}^{\mathrm{i}\theta} ~. 
 z=a+bi=r(cosθ+isinθ)=reiθ .
-z=reiθz=r\mathrm{e}^{\mathrm{i}\theta}z=reiθ 称为复数 zzz 的指数形式 (exponential form of complex numbers)．
-复数的三角形式与指数形式由于都用模 rrr 与辐角 θ\thetaθ 表示复数，故又称为复数的极坐标形式 (polar form of complex numbers)；同样的，复数的代数形式又称为复数的直角坐标形式 (cartesian form of complex numbers)．
+z=reiθz=r\mathrm{e}^{\mathrm{i}\theta}z=reiθ 称为复数 zzz 的指数形式（exponential form of complex numbers）．
+复数的三角形式与指数形式由于都用模 rrr 与辐角 θ\thetaθ 表示复数，故又称为复数的极坐标形式（polar form of complex numbers）；同样的，复数的代数形式又称为复数的直角坐标形式（cartesian form of complex numbers）．
 ]]></content>
       <categories>
         <category>notes</category>
       </categories>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/post/hello-world/</url>
-    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start
-Create a new post
-$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server
-$ hexo server
-More info: Server
-Generate static files
-$ hexo generate
-More info: Generating
-Deploy to remote sites
-$ hexo deploy
-More info: Deployment
-]]></content>
   </entry>
   <entry>
     <title>洛谷 P1131 题解</title>
