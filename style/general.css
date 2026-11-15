@@ -24,7 +24,7 @@
 }
 
 body {
-    font-family: var(--AO-font-sans);
+    font-family: var(--AO-font-latin-sans), var(--AO-font-cjk-sans);
     font-feature-settings:
         "locl" 1,
         "halt" 1;
