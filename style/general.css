@@ -1,10 +1,28 @@
+:root {
+    --AO-font-serif:
+        "Tex Gyre Termes", "EB Garamond", "Source Serif Pro", "Noto Serif",
+        "Times New Roman", "WenYuan Serif SC", "Source Han Serif SC",
+        "Noto Serif CJK SC", "华文中宋", SimSun, serif;
+
+    --AO-font-sans:
+        "HarmonyOS Sans", "Source Sans Pro", "Noto Sans", "Fira Sans",
+        "Open Sans", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Helvetica, Arial, "Sarasa Gothic SC",
+        "WenYuan Sans SC", "HarmonyOS Sans SC", "Source Han Sans SC",
+        "Noto Sans CJK SC", "PingFang SC", "Hiragino Sans GB",
+        "Microsoft YaHei", sans-serif;
+
+    --AO-font-mono:
+        "LXGW Bright Code GB", "LXGW Bright Code", "Fira Code", "Fira Mono",
+        "Jetbrains Mono", "Ubuntu Mono", Consolas, "Courier New",
+        "Sarasa Mono SC", "Source Han Mono SC", "Noto Mono CJK SC", monospace;
+}
+
 body {
-    font-family: "HarmonyOS Sans", "Source Sans Pro", "Noto Sans", "Fira Sans", "Open Sans", Inter, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,
-        "Sarasa Gothic SC", "HarmonyOS Sans SC", "Source Han Sans SC", "Noto Sans CJK SC",
-        "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
-        sans-serif;
-    font-feature-settings: "locl" 1, "halt" 1;
+    font-family: var(--AO-font-sans);
+    font-feature-settings:
+        "locl" 1,
+        "halt" 1;
 }
 
 /* p {
@@ -13,23 +31,20 @@ body {
 } */
 
 .font-serif {
-    font-family: "Tex Gyre Termes", "EB Garamond", "Source Serif Pro", "Noto Serif",
-        "Times New Roman", "KingHwaOldSong-GB", "Source Han Serif SC", "Noto Serif CJK SC",
-        "华文中宋", SimSun, serif;
+    font-family: var(--AO-font-serif);
 }
 
 .font-sans {
-    font-family: "HarmonyOS Sans", "Source Sans Pro", "Noto Sans", "Fira Sans", "Open Sans", Inter, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,
-        "Sarasa Gothic SC", "HarmonyOS Sans SC", "Source Han Sans SC", "Noto Sans CJK SC",
-        "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
-        sans-serif;
+    font-family: var(--AO-font-sans);
+}
+
+article {
+    font-family: var(--AO-font-serif);
 }
 
 pre,
 code {
-    font-family: "LXGW Bright Code GB", "LXGW Bright Code", "Fira Code", "Fira Mono", "Jetbrains Mono", "Ubuntu Mono",
-        Consolas, "Courier New", "Sarasa Mono SC", "Source Han Mono SC", "Noto Mono CJK SC", monospace;
+    font-family: var(--AO-font-mono);
 }
 
 .katex {
