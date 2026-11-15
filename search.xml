@@ -187,6 +187,25 @@ to do.
       </categories>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/post/hello-world/</url>
+    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start
+Create a new post
+$ hexo new &quot;My New Post&quot;
+More info: Writing
+Run server
+$ hexo server
+More info: Server
+Generate static files
+$ hexo generate
+More info: Generating
+Deploy to remote sites
+$ hexo deploy
+More info: Deployment
+]]></content>
+  </entry>
+  <entry>
     <title>复数 (I)</title>
     <url>/post/complex-numbers/</url>
     <content><![CDATA[复数 (I)
@@ -205,7 +224,7 @@ i2=−1\mathrm{i}^2=-1i2=−1；
 实数可与 i\mathrm{i}i 进行四则运算，且原有的加法、乘法运算律仍成立．
 
 从而，i\mathrm{i}i 可与实数 bbb 相乘，再与实数 aaa 相加，得到一个数 a+bia+b\mathrm{i}a+bi．
-这样，数的范围又扩充了，出现了形如 a+bi(a,b∈R)a+b\mathrm{i}(a,b\in\Bbb{R})a+bi(a,b∈R) 的数，这种树叫做复数（complex number），全体复数组成的集合叫做复数集 (set of complex numbers)，记作 C\Bbb{C}C．显然有 N⊆Z⊆Q⊆R⊆C\Bbb{N}\subseteq\Bbb{Z}\subseteq\Bbb{Q}\subseteq\Bbb{R}\subseteq\Bbb{C}N⊆Z⊆Q⊆R⊆C．
+这样，数的范围又扩充了，出现了形如 a+bi(a,b∈R)a+b\mathrm{i}(a,b\in\Bbb{R})a+bi(a,b∈R) 的数，这种数叫做复数（complex number），全体复数组成的集合叫做复数集 (set of complex numbers)，记作 C\Bbb{C}C．显然有 N⊆Z⊆Q⊆R⊆C\Bbb{N}\subseteq\Bbb{Z}\subseteq\Bbb{Q}\subseteq\Bbb{R}\subseteq\Bbb{C}N⊆Z⊆Q⊆R⊆C．
 复数通常用字母 zzz 表示，即 z=a+bi(a,b∈R)z=a+b\mathrm{i}(a,b\in\Bbb{R})z=a+bi(a,b∈R)，其中 aaa 和 bbb 分别叫做复数 zzz 的实部（real part） 和虚部 （imaginary part），记作 Re⁡z,ℜz,Rz\operatorname{Re}z,\Re z,\mathfrak{R} zRez,ℜz,Rz 与 Im⁡z,ℑz,Iz\operatorname{Im}z,\Im z,\mathfrak{I} zImz,ℑz,Iz．其中，国标要求为 Re⁡z\operatorname{Re}zRez 与 Im⁡z\operatorname{Im}zImz．下文为简便，使用 ℜz\Re zℜz 与 ℑz\Im zℑz．
 当且仅当 b=ℑz=0b=\Im z=0b=ℑz=0 时，z∈Rz\in \Bbb{R}z∈R．当 b=ℑz≠0b=\Im z\neq 0b=ℑz=0 时，zzz 叫作虚数（imaginary number）．
 特别地，当 a=ℜz=0a=\Re z=0a=ℜz=0 且 b=ℑz≠0b=\Im z\neq 0b=ℑz=0 时，zzz 叫作纯虚数（pure imaginary number）．
@@ -472,25 +491,6 @@ Code：
       </categories>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/post/hello-world/</url>
-    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start
-Create a new post
-$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server
-$ hexo server
-More info: Server
-Generate static files
-$ hexo generate
-More info: Generating
-Deploy to remote sites
-$ hexo deploy
-More info: Deployment
-]]></content>
-  </entry>
-  <entry>
     <title>中线定理的几种证明</title>
     <url>/post/pappus-law/</url>
     <content><![CDATA[中线定理
@@ -655,46 +655,6 @@ My friend’s speech: refers to Lin Biao’s speech at the Enlarged Meeting of t
       </categories>
   </entry>
   <entry>
-    <title>OI 名言</title>
-    <url>/post/well-known-OI-sayings/</url>
-    <content><![CDATA[《OI 子》三章
-
-《骗分榜一，暴力爆零》by 20210732ktq
-正解不如暴力，暴力不如骗分。一道题目，两种做法，想而编之而WA。夫想而编之，必有得正解者矣，然而WA者，是正解不如暴力也。手非不酸也，码非不短也，部分分非不多也，暴力非不正确也，排名第二，是暴力不如骗分也。故曰，AC不以思路之深，暴力不以代码之短，首杀不以手速之快。骗分者榜一，暴力者爆零。爆零之至，老师骂之。榜一之至，全球膜之。以全球之所膜，攻教练之所骂，故OIer有不战，战必AK。
-
-
-《水题不能淫》by 20210927chr
-chr曰：“ktq，xcx岂不诚奆佬哉？骗分而OIers惧，正解而OI熄。”
-xrz曰：“是焉得为奆佬乎？子未学OI乎？奆佬之冠也，zc命之，蒟蒻之冠也，ls命之，往送之CSP，戒之曰：‘往之CSP，必敬必戒，无违考规！’以骗为正者，蒟蒻之道也。做天下之难题，写天下之正解，AK天下之比赛。AK，与OIers由之；不AK，自己切题。水题不能淫，难题不能移，毒瘤不能屈，此之谓奆佬。”
-
-
-《生于练习，死于退费》by 20211202lxy
-轩发于范赵之中，Sai_t举于richup之间，澜译举于冰火之中，孔韬棋举于gen，项承煦举于florr，蒋亦霖举于ma，故天将降大任于是人也，必先苦其射飞，劳其破产，饿其王塔，空乏连击，行拂乱其所为，使其停止退费，曾益其所不会。
-人恒错，然后能改；减于空，缩于时，而后过；骗于分，暴于力，而后涨。入则无暴力骗分，出则无AC过题者，人恒寄。然后知生于练习而死于退费也。
-
-]]></content>
-      <categories>
-        <category>others</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>《又四日文集》序</title>
-    <url>/post/yousiri-foreword/</url>
-    <content><![CDATA[欣闻又四日先生（AllInTime）决定编辑这部《又四日文集》，又命不才任主编一职，不胜感激，故为又四日先生作序一篇，谨此。
-余初识又四日先生，已是公元纪年二〇二三年矣。自昔日起，便发现又四日先生素有非凡不同于常人之气质也。又四日先生虽形容枯槁，体形瘦削，但见过他的人必会发现他神情严肃，姿态挺拔，颇有一代豪杰之势也。与他交往数日，闻者必得深刻之见解，因是又四日先生常用独到而一针见血的推理，得出深刻而精致的结论，并用他那朴实、简洁而又精确的浅显语言表达出口，传至听者之耳，使其顿悟得人生大道；然再细细咀嚼，又可品出其背后又四日先生的独家精髓。
-余阅又四日先生之文，实乃近二年之事也，未敢详细评之。但阅前余便认定，又四日先生之文章，必是与其实人相似风格之物矣。阅，确如此。俗语言曰：“字如其人，文亦如其人。”又四日先生之字迹，实与其本人一致，粗犷而豪放；虽潦草但不失风度，虽崎岖却不丢端正。读又四日先生之字，恰似研究那古体文字，优美而透有庄重、沉稳之感。再详读又四日先生之数十篇文章，可见又四日先生之见识广博，语言深入而不失瑰丽之感。无论是像“社会性的严肃可得严肃性的社会”这样的对社会的剖析，还是像“湖中岛，岛中湖。人中心，心中人”这样的对人情感的深挖，都凸显出又四日先生独特的处世哲学。
-先生“又四日”之名号，实为拆字之法。而得“又四日”三字，又正符先生之性情特征，故先生取之以作号也。“又四日”者，四日一计，方有其“四”；而生命无穷，故有“又”字居于词头。“又四日”云云，实蕴生命之无穷，而又循环周始也。
-呜呼！世如又四日先生之人，有几何哉？幸今有此《又四日文集》存，而先生之言得以永传焉。
-
-AppOfficer
-二〇二六年二月一日夜，子时
-
-]]></content>
-      <categories>
-        <category>articles</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Weird Translations</title>
     <url>/post/weird-translations/</url>
     <content><![CDATA[Thought at Quiet Night
@@ -808,6 +768,46 @@ The questioner said: ‘Ah, isn’t that great! I was asking about tending trees
 ]]></content>
       <categories>
         <category>translations</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>OI 名言</title>
+    <url>/post/well-known-OI-sayings/</url>
+    <content><![CDATA[《OI 子》三章
+
+《骗分榜一，暴力爆零》by 20210732ktq
+正解不如暴力，暴力不如骗分。一道题目，两种做法，想而编之而WA。夫想而编之，必有得正解者矣，然而WA者，是正解不如暴力也。手非不酸也，码非不短也，部分分非不多也，暴力非不正确也，排名第二，是暴力不如骗分也。故曰，AC不以思路之深，暴力不以代码之短，首杀不以手速之快。骗分者榜一，暴力者爆零。爆零之至，老师骂之。榜一之至，全球膜之。以全球之所膜，攻教练之所骂，故OIer有不战，战必AK。
+
+
+《水题不能淫》by 20210927chr
+chr曰：“ktq，xcx岂不诚奆佬哉？骗分而OIers惧，正解而OI熄。”
+xrz曰：“是焉得为奆佬乎？子未学OI乎？奆佬之冠也，zc命之，蒟蒻之冠也，ls命之，往送之CSP，戒之曰：‘往之CSP，必敬必戒，无违考规！’以骗为正者，蒟蒻之道也。做天下之难题，写天下之正解，AK天下之比赛。AK，与OIers由之；不AK，自己切题。水题不能淫，难题不能移，毒瘤不能屈，此之谓奆佬。”
+
+
+《生于练习，死于退费》by 20211202lxy
+轩发于范赵之中，Sai_t举于richup之间，澜译举于冰火之中，孔韬棋举于gen，项承煦举于florr，蒋亦霖举于ma，故天将降大任于是人也，必先苦其射飞，劳其破产，饿其王塔，空乏连击，行拂乱其所为，使其停止退费，曾益其所不会。
+人恒错，然后能改；减于空，缩于时，而后过；骗于分，暴于力，而后涨。入则无暴力骗分，出则无AC过题者，人恒寄。然后知生于练习而死于退费也。
+
+]]></content>
+      <categories>
+        <category>others</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>《又四日文集》序</title>
+    <url>/post/yousiri-foreword/</url>
+    <content><![CDATA[欣闻又四日先生（AllInTime）决定编辑这部《又四日文集》，又命不才任主编一职，不胜感激，故为又四日先生作序一篇，谨此。
+余初识又四日先生，已是公元纪年二〇二三年矣。自昔日起，便发现又四日先生素有非凡不同于常人之气质也。又四日先生虽形容枯槁，体形瘦削，但见过他的人必会发现他神情严肃，姿态挺拔，颇有一代豪杰之势也。与他交往数日，闻者必得深刻之见解，因是又四日先生常用独到而一针见血的推理，得出深刻而精致的结论，并用他那朴实、简洁而又精确的浅显语言表达出口，传至听者之耳，使其顿悟得人生大道；然再细细咀嚼，又可品出其背后又四日先生的独家精髓。
+余阅又四日先生之文，实乃近二年之事也，未敢详细评之。但阅前余便认定，又四日先生之文章，必是与其实人相似风格之物矣。阅，确如此。俗语言曰：“字如其人，文亦如其人。”又四日先生之字迹，实与其本人一致，粗犷而豪放；虽潦草但不失风度，虽崎岖却不丢端正。读又四日先生之字，恰似研究那古体文字，优美而透有庄重、沉稳之感。再详读又四日先生之数十篇文章，可见又四日先生之见识广博，语言深入而不失瑰丽之感。无论是像“社会性的严肃可得严肃性的社会”这样的对社会的剖析，还是像“湖中岛，岛中湖。人中心，心中人”这样的对人情感的深挖，都凸显出又四日先生独特的处世哲学。
+先生“又四日”之名号，实为拆字之法。而得“又四日”三字，又正符先生之性情特征，故先生取之以作号也。“又四日”者，四日一计，方有其“四”；而生命无穷，故有“又”字居于词头。“又四日”云云，实蕴生命之无穷，而又循环周始也。
+呜呼！世如又四日先生之人，有几何哉？幸今有此《又四日文集》存，而先生之言得以永传焉。
+
+AppOfficer
+二〇二六年二月一日夜，子时
+
+]]></content>
+      <categories>
+        <category>articles</category>
       </categories>
   </entry>
 </search>
