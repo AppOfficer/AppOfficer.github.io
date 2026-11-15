@@ -1,16 +1,22 @@
 :root {
-    --AO-font-serif:
+    --AO-font-latin-serif:
         "Tex Gyre Termes", "EB Garamond", "Source Serif Pro", "Noto Serif",
-        "Times New Roman", "WenYuan Serif SC", "Source Han Serif SC",
-        "Noto Serif CJK SC", "华文中宋", SimSun, serif;
+        "Times New Roman";
+    --AO-font-cjk-serif:
+        "WenYuan Serif SC", "Source Han Serif SC", "Noto Serif CJK SC",
+        "华文中宋", SimSun, serif;
 
-    --AO-font-sans:
+    --AO-font-latin-sans:
         "HarmonyOS Sans", "Source Sans Pro", "Noto Sans", "Fira Sans",
         "Open Sans", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, "Helvetica Neue", Helvetica, Arial, "Sarasa Gothic SC",
-        "WenYuan Sans SC", "HarmonyOS Sans SC", "Source Han Sans SC",
-        "Noto Sans CJK SC", "PingFang SC", "Hiragino Sans GB",
-        "Microsoft YaHei", sans-serif;
+        Roboto, "Helvetica Neue", Helvetica, Arial;
+    --AO-font-cjk-sans:
+        "Sarasa Gothic SC", "WenYuan Sans SC", "HarmonyOS Sans SC",
+        "Source Han Sans SC", "Noto Sans CJK SC", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+
+    --AO-font-cjk-kai:
+        "WenYuan Round SC", "LXGW WenKai GB", "LXGW WenKai";
 
     --AO-font-mono:
         "LXGW Bright Code GB", "LXGW Bright Code", "Fira Code", "Fira Mono",
@@ -31,15 +37,32 @@ body {
 } */
 
 .font-serif {
-    font-family: var(--AO-font-serif);
+    font-family: var(--AO-font-latin-serif), var(--AO-font-cjk-serif);
 }
 
 .font-sans {
-    font-family: var(--AO-font-sans);
+    font-family: var(--AO-font-latin-sans), var(--AO-font-cjk-sans);
 }
 
 article {
     font-family: var(--AO-font-serif);
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--AO-font-sans);
+    }
+    
+    strong {
+        font-family: var(--AO-font-latin-serif), var(--AO-font-cjk-sans);
+    }
+
+    em {
+        font-family: var(--AO-font-latin-serif), var(--AO-font-cjk-kai);
+    }
 }
 
 pre,
