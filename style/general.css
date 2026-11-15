@@ -26,6 +26,11 @@
 body {
     font-family: var(--AO-font-latin-sans), var(--AO-font-cjk-sans);
     font-feature-settings:
+        "kern" 1,
+        "liga" 1,
+        "clig" 1,
+        "calt" 1,
+        "rlig" 1,
         "locl" 1,
         "halt" 1;
 }
