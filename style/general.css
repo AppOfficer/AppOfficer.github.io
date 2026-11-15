@@ -7,10 +7,10 @@ body {
     font-feature-settings: "locl" 1, "halt" 1;
 }
 
-p {
+/* p {
     line-height: 1em;
     margin: 1em 0;
-}
+} */
 
 .font-serif {
     font-family: "Tex Gyre Termes", "EB Garamond", "Source Serif Pro", "Noto Serif",
